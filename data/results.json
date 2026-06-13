@@ -1,0 +1,151 @@
+{
+  "updated_at": "2026-06-13 05:15 UTC",
+  "matches": [
+    {
+      "home": "canada",
+      "away": "bosnia-and-herzegovina",
+      "home_score": 1,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
+    },
+    {
+      "home": "usa",
+      "away": "paraguay",
+      "home_score": 4,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
+    }
+  ],
+  "elo_rankings": [
+    {
+      "slug": "spain",
+      "elo": 2074
+    },
+    {
+      "slug": "argentina",
+      "elo": 2064
+    },
+    {
+      "slug": "france",
+      "elo": 2040
+    },
+    {
+      "slug": "brazil",
+      "elo": 1994
+    },
+    {
+      "slug": "england",
+      "elo": 1982
+    },
+    {
+      "slug": "netherlands",
+      "elo": 1942
+    },
+    {
+      "slug": "portugal",
+      "elo": 1934
+    },
+    {
+      "slug": "germany",
+      "elo": 1927
+    },
+    {
+      "slug": "italy",
+      "elo": 1915
+    },
+    {
+      "slug": "colombia",
+      "elo": 1884
+    },
+    {
+      "slug": "croatia",
+      "elo": 1878
+    },
+    {
+      "slug": "morocco",
+      "elo": 1875
+    },
+    {
+      "slug": "belgium",
+      "elo": 1871
+    },
+    {
+      "slug": "japan",
+      "elo": 1851
+    },
+    {
+      "slug": "mexico",
+      "elo": 1849
+    },
+    {
+      "slug": "uruguay",
+      "elo": 1833
+    },
+    {
+      "slug": "senegal",
+      "elo": 1830
+    },
+    {
+      "slug": "usa",
+      "elo": 1816
+    },
+    {
+      "slug": "switzerland",
+      "elo": 1807
+    },
+    {
+      "slug": "denmark",
+      "elo": 1790
+    },
+    {
+      "slug": "ecuador",
+      "elo": 1790
+    },
+    {
+      "slug": "australia",
+      "elo": 1769
+    },
+    {
+      "slug": "south-korea",
+      "elo": 1755
+    },
+    {
+      "slug": "iran",
+      "elo": 1733
+    },
+    {
+      "slug": "austria",
+      "elo": 1720
+    },
+    {
+      "slug": "poland",
+      "elo": 1715
+    },
+    {
+      "slug": "canada",
+      "elo": 1709
+    },
+    {
+      "slug": "ivory-coast",
+      "elo": 1706
+    },
+    {
+      "slug": "turkey",
+      "elo": 1700
+    },
+    {
+      "slug": "serbia",
+      "elo": 1695
+    },
+    {
+      "slug": "algeria",
+      "elo": 1676
+    },
+    {
+      "slug": "egypt",
+      "elo": 1671
+    }
+  ]
+}

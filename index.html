@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚽ WC2026 预测</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0e17;--card:#141b2d;--border:#1e2a40;--accent:#00d4ff;--green:#00e676;--red:#ff5252;--yellow:#ffd740;--text:#e0e6ed;--dim:#6b7a94}
+body{font-family:-apple-system,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:12px;max-width:480px;margin:0 auto}
+.header{text-align:center;padding:16px 0 12px}
+.header h1{font-size:20px;color:var(--accent)}
+.header .meta{font-size:12px;color:var(--dim);margin-top:4px}
+.tabs{display:flex;gap:4px;margin-bottom:12px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tab{flex:1;padding:8px 4px;text-align:center;font-size:13px;border-radius:8px;background:var(--card);color:var(--dim);cursor:pointer;white-space:nowrap;border:1px solid var(--border)}
+.tab.active{background:var(--accent);color:#000;font-weight:600}
+.section{display:none}.section.active{display:block}
+.match-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px}
+.match-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.match-time{font-size:12px;color:var(--dim)}
+.match-venue{font-size:11px;color:var(--dim)}
+.teams{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.team{text-align:center;flex:1}
+.team .flag{font-size:28px}
+.team .name{font-size:13px;margin-top:2px;font-weight:500}
+.vs{font-size:14px;color:var(--dim);padding:0 8px}
+.score-display{font-size:24px;font-weight:700;color:var(--accent);text-align:center;padding:4px 0}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0}
+.metric{background:var(--bg);border-radius:8px;padding:8px;text-align:center}
+.metric .label{font-size:10px;color:var(--dim);text-transform:uppercase}
+.metric .value{font-size:16px;font-weight:600;margin-top:2px}
+.bar{height:6px;border-radius:3px;background:var(--bg);margin:8px 0;overflow:hidden;display:flex}
+.bar .seg{height:100%;transition:width .3s}
+.bar .home{background:var(--green)}
+.bar .draw{background:var(--yellow)}
+.bar .away{background:var(--red)}
+.probs{display:flex;justify-content:space-between;font-size:12px;margin-top:4px}
+.probs .p{text-align:center}
+.probs .p .pct{font-size:18px;font-weight:700}
+.probs .p.home .pct{color:var(--green)}
+.probs .p.draw .pct{color:var(--yellow)}
+.probs .p.away .pct{color:var(--red)}
+.recommendation{background:#1a2744;border:1px solid #2a3f66;border-radius:8px;padding:10px;margin-top:10px}
+.rec-title{font-size:12px;font-weight:600;margin-bottom:6px}
+.rec-platform{font-size:12px;padding:3px 0}
+.rec-platform .tag{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10px;font-weight:600;margin-right:4px}
+.tag-okx{background:#ff6b00;color:#fff}
+.tag-pr{background:#7c4dff;color:#fff}
+.rec-platform .pick{color:var(--green);font-weight:600}
+.score-list{font-size:11px;color:var(--dim);margin-top:6px}
+.score-list span{margin-right:8px}
+.elo-table{width:100%;border-collapse:collapse;font-size:13px}
+.elo-table th{text-align:left;padding:8px 6px;color:var(--dim);font-size:11px;border-bottom:1px solid var(--border)}
+.elo-table td{padding:8px 6px;border-bottom:1px solid var(--border)}
+.elo-table .rank{color:var(--dim);width:28px}
+.elo-table .team-name{font-weight:500}
+.elo-table .elo-val{font-weight:600;color:var(--accent);text-align:right}
+.elo-change{font-size:11px;margin-left:4px}
+.elo-change.up{color:var(--green)}.elo-change.down{color:var(--red)}
+.result-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px}
+.result-teams{display:flex;justify-content:space-between;align-items:center}
+.result-score{font-size:20px;font-weight:700;color:var(--accent)}
+.loading{text-align:center;padding:40px;color:var(--dim)}
+.updated{text-align:center;font-size:11px;color:var(--dim);padding:12px 0}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>⚽ WC2026 AI 预测</h1>
+<div class="meta" id="lastUpdate">加载中...</div>
+</div>
+
+<div class="tabs">
+<div class="tab active" onclick="showTab('upcoming')">🔮 预测</div>
+<div class="tab" onclick="showTab('results')">📊 赛果</div>
+<div class="tab" onclick="showTab('elo')">🏆 Elo排名</div>
+</div>
+
+<div class="section active" id="sec-upcoming">
+<div class="loading" id="loadingUpcoming">加载预测数据...</div>
+<div id="upcomingList"></div>
+</div>
+
+<div class="section" id="sec-results">
+<div class="loading" id="loadingResults">加载赛果...</div>
+<div id="resultsList"></div>
+</div>
+
+<div class="section" id="sec-elo">
+<div class="loading" id="loadingElo">加载Elo排名...</div>
+<div id="eloTable"></div>
+</div>
+
+<div class="updated" id="footer"></div>
+
+<script>
+function showTab(id){
+document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',['upcoming','results','elo'][i]===id));
+document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+document.getElementById('sec-'+id).classList.add('active');
+}
+
+function flag(slug){
+const m={mexico:'🇲🇽','south-africa':'🇿🇦','south-korea':'🇰🇷','czech-republic':'🇨🇿',canada:'🇨🇦','bosnia-and-herzegovina':'🇧🇦',qatar:'🇶🇦',switzerland:'🇨🇭',brazil:'🇧🇷',morocco:'🇲🇦',haiti:'🇭🇹',scotland:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',usa:'🇺🇸',paraguay:'🇵🇾',australia:'🇦🇺',turkey:'🇹🇷',germany:'🇩🇪',curacao:'🇨🇼','ivory-coast':'🇨🇮',ecuador:'🇪🇨',netherlands:'🇳🇱',japan:'🇯🇵',sweden:'🇸🇪',tunisia:'🇹🇳',belgium:'🇧🇪',egypt:'🇪🇬',iran:'🇮🇷','new-zealand':'🇳🇿',spain:'🇪🇸','cape-verde':'🇨🇻','saudi-arabia':'🇸🇦',uruguay:'🇺🇾',france:'🇫🇷',senegal:'🇸🇳',iraq:'🇮🇶',norway:'🇳🇴',argentina:'🇦🇷',algeria:'🇩🇿',austria:'🇦🇹',jordan:'🇯🇴',portugal:'🇵🇹','dr-congo':'🇨🇩',uzbekistan:'🇺🇿',colombia:'🇨🇴',england:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',croatia:'🇭🇷',ghana:'🇬🇭',panama:'🇵🇦'};
+return m[slug]||'🏳️';
+}
+function cn(slug){
+const m={mexico:'墨西哥','south-africa':'南非','south-korea':'韩国','czech-republic':'捷克',canada:'加拿大','bosnia-and-herzegovina':'波黑',qatar:'卡塔尔',switzerland:'瑞士',brazil:'巴西',morocco:'摩洛哥',haiti:'海地',scotland:'苏格兰',usa:'美国',paraguay:'巴拉圭',australia:'澳大利亚',turkey:'土耳其',germany:'德国',curacao:'库拉索','ivory-coast':'科特迪瓦',ecuador:'厄瓜多尔',netherlands:'荷兰',japan:'日本',sweden:'瑞典',tunisia:'突尼斯',belgium:'比利时',egypt:'埃及',iran:'伊朗','new-zealand':'新西兰',spain:'西班牙','cape-verde':'佛得角','saudi-arabia':'沙特',uruguay:'乌拉圭',france:'法国',senegal:'塞内加尔',iraq:'伊拉克',norway:'挪威',argentina:'阿根廷',algeria:'阿尔及利亚',austria:'奥地利',jordan:'约旦',portugal:'葡萄牙','dr-congo':'刚果金',uzbekistan:'乌兹别克斯坦',colombia:'哥伦比亚',england:'英格兰',croatia:'克罗地亚',ghana:'加纳',panama:'巴拿马'};
+return m[slug]||slug;
+}
+
+function renderMatch(m){
+const ml=m.money_line||{};
+const hw=parseFloat(ml.win_a)||0,dw=parseFloat(ml.draw)||0,aw=parseFloat(ml.win_b)||0;
+const ou=m.over_under?.['2.5']||{};
+const btts=m.btts||{};
+const scores=(m.top_scores||[]).slice(0,3).map(s=>s[0]+':'+s[1]+'%').join(' / ');
+const isMy=['spain','argentina','france','brazil','england'].some(t=>t===m.home||t===m.away);
+
+let recHtml='';
+if(isMy){
+recHtml=`<div class="recommendation">
+<div class="rec-title">🎯 Predict.fun 推荐</div>
+<div class="rec-platform"><span class="tag tag-pr">PR</span> 我的球队 ✅ ${cn(m.home)} — 全市场可买</div>
+<div class="rec-platform">大小 O2.5: ${ou.over||'-'}% | BTTS: ${btts.yes||'-'}%</div>
+</div>`;
+}else{
+recHtml=`<div class="recommendation">
+<div class="rec-title">⏭️ PR 跳过</div>
+<div class="rec-platform" style="color:var(--dim)">非我的5队，仅OKX</div>
+</div>`;
+}
+
+return `<div class="match-card">
+<div class="match-header">
+<span class="match-time">${m.hours_until>0?Math.round(m.hours_until)+'h后':'进行中'}</span>
+<span class="match-venue">${m.city||m.venue||''}</span>
+</div>
+<div class="teams">
+<div class="team"><div class="flag">${flag(m.home)}</div><div class="name">${cn(m.home)}</div></div>
+<div class="vs">VS</div>
+<div class="team"><div class="flag">${flag(m.away)}</div><div class="name">${cn(m.away)}</div></div>
+</div>
+<div class="bar">
+<div class="seg home" style="width:${hw}%"></div>
+<div class="seg draw" style="width:${dw}%"></div>
+<div class="seg away" style="width:${aw}%"></div>
+</div>
+<div class="probs">
+<div class="p home"><div class="pct">${hw}%</div><div>胜</div></div>
+<div class="p draw"><div class="pct">${dw}%</div><div>平</div></div>
+<div class="p away"><div class="pct">${aw}%</div><div>负</div></div>
+</div>
+<div class="metrics">
+<div class="metric"><div class="label">xG</div><div class="value">${m.xg?.a||'-'} – ${m.xg?.b||'-'}</div></div>
+<div class="metric"><div class="label">大小2.5</div><div class="value">O ${ou.over||'-'}%</div></div>
+<div class="metric"><div class="label">BTTS</div><div class="value">${btts.yes||'-'}%</div></div>
+<div class="metric"><div class="label">Elo差</div><div class="value">${m.elo?.diff||'-'}</div></div>
+</div>
+<div class="score-list">📊 ${scores}</div>
+<div class="recommendation">
+<div class="rec-title">🏆 OKX 推荐</div>
+<div class="rec-platform"><span class="tag tag-okx">OKX</span> 买 <span class="pick">${hw>=aw?cn(m.home):cn(m.away)}</span> (${Math.max(hw,aw)}%)</div>
+</div>
+${recHtml}
+</div>`;
+}
+
+async function load(){
+try{
+const[pr,rr]=await Promise.all([
+fetch('data/predictions.json').then(r=>r.json()).catch(()=>null),
+fetch('data/results.json').then(r=>r.json()).catch(()=>null)
+]);
+
+if(pr){
+document.getElementById('lastUpdate').textContent='更新: '+pr.updated_at;
+const upcoming=pr.matches||[];
+if(upcoming.length){
+document.getElementById('loadingUpcoming').style.display='none';
+document.getElementById('upcomingList').innerHTML=upcoming.map(renderMatch).join('');
+}
+}
+
+if(rr){
+const results=rr.matches||[];
+if(results.length){
+document.getElementById('loadingResults').style.display='none';
+document.getElementById('resultsList').innerHTML=results.map(r=>`
+<div class="result-card">
+<div class="result-teams">
+<span>${flag(r.home)} ${cn(r.home)}</span>
+<span class="result-score">${r.home_score} - ${r.away_score}</span>
+<span>${cn(r.away)} ${flag(r.away)}</span>
+</div>
+<div style="text-align:center;font-size:11px;color:var(--dim);margin-top:4px">
+Elo: ${r.home_elo_change>=0?'+':''}${r.home_elo_change} / ${r.away_elo_change>=0?'+':''}${r.away_elo_change}
+</div>
+</div>`).join('');
+}
+
+if(rr?.elo_rankings){
+document.getElementById('loadingElo').style.display='none';
+const top=rr.elo_rankings.slice(0,20);
+document.getElementById('eloTable').innerHTML=`<table class="elo-table">
+<tr><th>#</th><th>球队</th><th>Elo</th></tr>
+${top.map((t,i)=>`<tr><td class="rank">${i+1}</td><td class="team-name">${flag(t.slug)} ${cn(t.slug)}</td>
+<td class="elo-val">${t.elo}</td></tr>`).join('')}
+</table>`;
+}
+}catch(e){
+console.error(e);
+document.getElementById('loadingUpcoming').textContent='数据加载失败';
+}
+}
+load();
+</script>
+</body>
+</html>
