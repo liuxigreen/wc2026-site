@@ -2,112 +2,164 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚽ WC2026 预测</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>⚽ WC2026 AI 预测中心</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0a0e17;--card:#141b2d;--border:#1e2a40;--accent:#00d4ff;--green:#00e676;--red:#ff5252;--yellow:#ffd740;--text:#e0e6ed;--dim:#6b7a94}
-body{font-family:-apple-system,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:12px;max-width:480px;margin:0 auto}
-.header{text-align:center;padding:16px 0 12px}
-.header h1{font-size:20px;color:var(--accent)}
-.header .meta{font-size:12px;color:var(--dim);margin-top:4px}
-.tabs{display:flex;gap:4px;margin-bottom:12px;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.tab{flex:1;padding:8px 4px;text-align:center;font-size:13px;border-radius:8px;background:var(--card);color:var(--dim);cursor:pointer;white-space:nowrap;border:1px solid var(--border)}
-.tab.active{background:var(--accent);color:#000;font-weight:600}
-.section{display:none}.section.active{display:block}
-.match-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px}
-.match-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.match-time{font-size:12px;color:var(--dim)}
-.match-venue{font-size:11px;color:var(--dim)}
-.teams{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
-.team{text-align:center;flex:1}
-.team .flag{font-size:28px}
-.team .name{font-size:13px;margin-top:2px;font-weight:500}
-.vs{font-size:14px;color:var(--dim);padding:0 8px}
-.score-display{font-size:24px;font-weight:700;color:var(--accent);text-align:center;padding:4px 0}
-.metrics{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:10px 0}
-.metric{background:var(--bg);border-radius:8px;padding:8px;text-align:center}
-.metric .label{font-size:10px;color:var(--dim);text-transform:uppercase}
-.metric .value{font-size:16px;font-weight:600;margin-top:2px}
-.bar{height:6px;border-radius:3px;background:var(--bg);margin:8px 0;overflow:hidden;display:flex}
-.bar .seg{height:100%;transition:width .3s}
-.bar .home{background:var(--green)}
-.bar .draw{background:var(--yellow)}
-.bar .away{background:var(--red)}
-.probs{display:flex;justify-content:space-between;font-size:12px;margin-top:4px}
-.probs .p{text-align:center}
-.probs .p .pct{font-size:18px;font-weight:700}
-.probs .p.home .pct{color:var(--green)}
-.probs .p.draw .pct{color:var(--yellow)}
-.probs .p.away .pct{color:var(--red)}
-.recommendation{background:#1a2744;border:1px solid #2a3f66;border-radius:8px;padding:10px;margin-top:10px}
-.rec-title{font-size:12px;font-weight:600;margin-bottom:6px}
-.rec-platform{font-size:12px;padding:3px 0}
-.rec-platform .tag{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10px;font-weight:600;margin-right:4px}
-.tag-okx{background:#ff6b00;color:#fff}
-.tag-pr{background:#7c4dff;color:#fff}
-.tag-xbit{background:#00bfa5;color:#fff}
-.rec-platform .pick{color:var(--green);font-weight:600}
-.score-list{font-size:11px;color:var(--dim);margin-top:6px}
-.score-list span{margin-right:8px}
-.elo-table{width:100%;border-collapse:collapse;font-size:13px}
-.elo-table th{text-align:left;padding:8px 6px;color:var(--dim);font-size:11px;border-bottom:1px solid var(--border)}
-.elo-table td{padding:8px 6px;border-bottom:1px solid var(--border)}
-.elo-table .rank{color:var(--dim);width:28px}
-.elo-table .team-name{font-weight:500}
-.elo-table .elo-val{font-weight:600;color:var(--accent);text-align:right}
-.elo-change{font-size:11px;margin-left:4px}
-.elo-change.up{color:var(--green)}.elo-change.down{color:var(--red)}
+:root{
+--bg:#06080d;--card:#0d1117;--card2:#161b22;--border:#21262d;
+--accent:#58a6ff;--green:#3fb950;--red:#f85149;--yellow:#d29922;--purple:#bc8cff;--cyan:#39d2c0;--orange:#f0883e;
+--text:#e6edf3;--dim:#7d8590;--dim2:#484f58;
+}
+body{font-family:-apple-system,system-ui,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:0;max-width:520px;margin:0 auto;-webkit-font-smoothing:antialiased}
+/* Header */
+.hero{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#0d1117 100%);padding:24px 16px 16px;text-align:center;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(88,166,255,0.08) 0%,transparent 50%),radial-gradient(circle at 70% 50%,rgba(188,140,255,0.06) 0%,transparent 50%);animation:pulse 8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:0.5}50%{opacity:1}}
+.hero h1{font-size:22px;font-weight:700;position:relative;letter-spacing:-0.5px}
+.hero h1 span{background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{font-size:12px;color:var(--dim);margin-top:4px;position:relative}
+.hero .live-dot{display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:4px;animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+/* Stats bar */
+.stats{display:flex;gap:6px;padding:12px 16px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.stat-card{flex:1;min-width:90px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 8px;text-align:center}
+.stat-card .val{font-size:20px;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-card .lbl{font-size:10px;color:var(--dim);margin-top:2px;text-transform:uppercase;letter-spacing:0.5px}
+/* Tabs */
+.tabs{display:flex;gap:4px;padding:8px 16px;position:sticky;top:0;z-index:10;background:var(--bg)}
+.tab{flex:1;padding:10px 4px;text-align:center;font-size:12px;font-weight:500;border-radius:8px;background:var(--card);color:var(--dim);cursor:pointer;border:1px solid var(--border);transition:all .2s}
+.tab.active{background:var(--accent);color:#000;border-color:var(--accent)}
+.tab:active{transform:scale(0.97)}
+/* Sections */
+.section{display:none;padding:0 16px 16px}.section.active{display:block}
+/* Match cards */
+.match-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px;position:relative;overflow:hidden}
+.match-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--purple),var(--cyan));opacity:0.6}
+.match-card.is-my::after{background:linear-gradient(90deg,var(--green),var(--cyan));opacity:1;height:3px}
+.match-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.match-time{font-size:11px;color:var(--dim);display:flex;align-items:center;gap:4px}
+.match-time .countdown{color:var(--yellow);font-weight:600;font-variant-numeric:tabular-nums}
+.match-venue{font-size:10px;color:var(--dim2)}
+/* Teams */
+.teams{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px}
+.team{text-align:center;min-width:80px}
+.team .flag{font-size:36px;line-height:1}
+.team .name{font-size:13px;font-weight:600;margin-top:4px}
+.team .elo-badge{font-size:10px;color:var(--dim);background:var(--bg);padding:2px 6px;border-radius:4px;margin-top:2px;display:inline-block}
+.vs-badge{font-size:11px;color:var(--dim2);background:var(--bg);padding:4px 8px;border-radius:6px;font-weight:600}
+/* Win probability bar */
+.win-bar{height:8px;border-radius:4px;background:var(--bg);margin:8px 0;display:flex;overflow:hidden}
+.win-bar .seg{height:100%;transition:width .5s ease}
+.win-bar .seg-home{background:linear-gradient(90deg,var(--green),#2ea043)}
+.win-bar .seg-draw{background:linear-gradient(90deg,var(--yellow),#e3b341)}
+.win-bar .seg-away{background:linear-gradient(90deg,var(--red),#da3633)}
+.probs{display:flex;justify-content:space-between;margin-top:6px}
+.prob{text-align:center}
+.prob .pct{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.prob .label{font-size:10px;color:var(--dim)}
+.prob.home .pct{color:var(--green)}.prob.draw .pct{color:var(--yellow)}.prob.away .pct{color:var(--red)}
+/* Metrics grid */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:12px 0}
+.metric{background:var(--bg);border-radius:8px;padding:8px 4px;text-align:center}
+.metric .label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:0.3px}
+.metric .value{font-size:14px;font-weight:600;margin-top:2px}
+.metric .value.positive{color:var(--green)}.metric .value.negative{color:var(--red)}
+/* Score predictions */
+.scores{display:flex;gap:6px;margin:10px 0;justify-content:center}
+.score-chip{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:6px 10px;text-align:center}
+.score-chip .sc{font-size:16px;font-weight:700;color:var(--accent)}
+.score-chip .pct{font-size:10px;color:var(--dim)}
+/* Recommendation cards */
+.rec{border-radius:10px;padding:12px;margin-top:10px;position:relative}
+.rec-okx{background:rgba(255,107,0,0.08);border:1px solid rgba(255,107,0,0.2)}
+.rec-pr{background:rgba(124,77,255,0.08);border:1px solid rgba(124,77,255,0.2)}
+.rec-xbit{background:rgba(0,191,165,0.08);border:1px solid rgba(0,191,165,0.2)}
+.rec-title{font-size:12px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.rec-title .platform-tag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:700}
+.tag-okx{background:#ff6b00;color:#fff}.tag-pr{background:#7c4dff;color:#fff}.tag-xbit{background:#00bfa5;color:#fff}
+.rec-line{font-size:12px;padding:3px 0;display:flex;justify-content:space-between}
+.rec-pick{color:var(--green);font-weight:600}
+.rec-avoid{color:var(--red)}
+.edge-badge{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600}
+.edge-pos{background:rgba(63,185,80,0.15);color:var(--green)}
+.edge-neg{background:rgba(248,81,73,0.15);color:var(--red)}
+/* Result cards */
 .result-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px}
-.result-teams{display:flex;justify-content:space-between;align-items:center}
-.result-score{font-size:20px;font-weight:700;color:var(--accent)}
-.loading{text-align:center;padding:40px;color:var(--dim)}
-.updated{text-align:center;font-size:11px;color:var(--dim);padding:12px 0}
+.result-row{display:flex;align-items:center;justify-content:space-between}
+.result-team{flex:1;text-align:center}
+.result-score{font-size:24px;font-weight:700;color:var(--accent);padding:0 12px;font-variant-numeric:tabular-nums}
+.result-elo{font-size:11px;text-align:center;margin-top:6px;color:var(--dim)}
+/* Elo table */
+.elo-table{width:100%;font-size:13px}
+.elo-table th{text-align:left;padding:10px 8px;color:var(--dim);font-size:11px;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:0.5px}
+.elo-table td{padding:10px 8px;border-bottom:1px solid var(--border)}
+.elo-table tr:hover{background:rgba(88,166,255,0.04)}
+.elo-table .rank{color:var(--dim);width:32px;font-weight:600}
+.elo-table .rank-top{color:var(--yellow)}
+.elo-table .team-cell{display:flex;align-items:center;gap:8px}
+.elo-table .elo-val{font-weight:700;color:var(--accent);text-align:right;font-variant-numeric:tabular-nums}
+.elo-bar{height:4px;border-radius:2px;background:var(--bg);margin-top:4px}
+.elo-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--purple))}
+/* Model info */
+.model-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px}
+.model-card h3{font-size:14px;margin-bottom:8px;color:var(--accent)}
+.model-card .feature{display:flex;align-items:flex-start;gap:8px;padding:6px 0;font-size:12px;color:var(--dim)}
+.model-card .feature .icon{font-size:14px;flex-shrink:0}
+/* Footer */
+.footer{text-align:center;padding:16px;font-size:11px;color:var(--dim2)}
+.footer a{color:var(--accent);text-decoration:none}
+/* Animations */
+.fade-in{animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+/* Scrollbar */
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--dim2);border-radius:2px}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>⚽ WC2026 AI 预测</h1>
-<div class="meta" id="lastUpdate">加载中...</div>
+
+<div class="hero">
+<h1>⚽ <span>WC2026</span> AI 预测中心</h1>
+<div class="sub"><span class="live-dot"></span>实时更新 · 三平台对比 · Elo+Dixon-Coles 模型</div>
+</div>
+
+<div class="stats" id="statsBar">
+<div class="stat-card"><div class="val" id="statMatches">-</div><div class="lbl">已赛</div></div>
+<div class="stat-card"><div class="val" id="statUpcoming">-</div><div class="lbl">待赛</div></div>
+<div class="stat-card"><div class="val" id="statAccuracy">-</div><div class="lbl">准确率</div></div>
+<div class="stat-card"><div class="val" id="statUpdated">-</div><div class="lbl">更新</div></div>
 </div>
 
 <div class="tabs">
 <div class="tab active" onclick="showTab('upcoming')">🔮 预测</div>
 <div class="tab" onclick="showTab('results')">📊 赛果</div>
-<div class="tab" onclick="showTab('elo')">🏆 Elo排名</div>
+<div class="tab" onclick="showTab('elo')">🏆 Elo</div>
+<div class="tab" onclick="showTab('model')">🧠 模型</div>
 </div>
 
-<div class="section active" id="sec-upcoming">
-<div class="loading" id="loadingUpcoming">加载预测数据...</div>
-<div id="upcomingList"></div>
-</div>
+<div class="section active" id="sec-upcoming"><div class="fade-in" id="upcomingList"></div></div>
+<div class="section" id="sec-results"><div class="fade-in" id="resultsList"></div></div>
+<div class="section" id="sec-elo"><div class="fade-in" id="eloTable"></div></div>
+<div class="section" id="sec-model"><div class="fade-in" id="modelInfo"></div></div>
 
-<div class="section" id="sec-results">
-<div class="loading" id="loadingResults">加载赛果...</div>
-<div id="resultsList"></div>
+<div class="footer">
+Powered by <a href="#">Elo+Dixon-Coles v4</a> · 数据来源 ESPN API<br>
+<a href="https://wc2026.opspilot.me">wc2026.opspilot.me</a>
 </div>
-
-<div class="section" id="sec-elo">
-<div class="loading" id="loadingElo">加载Elo排名...</div>
-<div id="eloTable"></div>
-</div>
-
-<div class="updated" id="footer"></div>
 
 <script>
+const MY_TEAMS=['spain','argentina','france','brazil','england'];
+const FLAG={mexico:'🇲🇽','south-africa':'🇿🇦','south-korea':'🇰🇷','czech-republic':'🇨🇿',canada:'🇨🇦','bosnia-and-herzegovina':'🇧🇦',qatar:'🇶🇦',switzerland:'🇨🇭',brazil:'🇧🇷',morocco:'🇲🇦',haiti:'🇭🇹',scotland:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',usa:'🇺🇸',paraguay:'🇵🇾',australia:'🇦🇺',turkey:'🇹🇷',germany:'🇩🇪',curacao:'🇨🇼','ivory-coast':'🇨🇮',ecuador:'🇪🇨',netherlands:'🇳🇱',japan:'🇯🇵',sweden:'🇸🇪',tunisia:'🇹🇳',belgium:'🇧🇪',egypt:'🇪🇬',iran:'🇮🇷','new-zealand':'🇳🇿',spain:'🇪🇸','cape-verde':'🇨🇻','saudi-arabia':'🇸🇦',uruguay:'🇺🇾',france:'🇫🇷',senegal:'🇸🇳',iraq:'🇮🇶',norway:'🇳🇴',argentina:'🇦🇷',algeria:'🇩🇿',austria:'🇦🇹',jordan:'🇯🇴',portugal:'🇵🇹','dr-congo':'🇨🇩',uzbekistan:'🇺🇿',colombia:'🇨🇴',england:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',croatia:'🇭🇷',ghana:'🇬🇭',panama:'🇵🇦',italy:'🇮🇹',denmark:'🇩🇰',poland:'🇵🇱',serbia:'🇷🇸'};
+const CN={mexico:'墨西哥','south-africa':'南非','south-korea':'韩国','czech-republic':'捷克',canada:'加拿大','bosnia-and-herzegovina':'波黑',qatar:'卡塔尔',switzerland:'瑞士',brazil:'巴西',morocco:'摩洛哥',haiti:'海地',scotland:'苏格兰',usa:'美国',paraguay:'巴拉圭',australia:'澳大利亚',turkey:'土耳其',germany:'德国',curacao:'库拉索','ivory-coast':'科特迪瓦',ecuador:'厄瓜多尔',netherlands:'荷兰',japan:'日本',sweden:'瑞典',tunisia:'突尼斯',belgium:'比利时',egypt:'埃及',iran:'伊朗','new-zealand':'新西兰',spain:'西班牙','cape-verde':'佛得角','saudi-arabia':'沙特',uruguay:'乌拉圭',france:'法国',senegal:'塞内加尔',iraq:'伊拉克',norway:'挪威',argentina:'阿根廷',algeria:'阿尔及利亚',austria:'奥地利',jordan:'约旦',portugal:'葡萄牙','dr-congo':'刚果金',uzbekistan:'乌兹别克斯坦',colombia:'哥伦比亚',england:'英格兰',croatia:'克罗地亚',ghana:'加纳',panama:'巴拿马',italy:'意大利',denmark:'丹麦',poland:'波兰',serbia:'塞尔维亚'};
+const f=s=>FLAG[s]||'🏳️';
+const c=s=>CN[s]||s;
+
 function showTab(id){
-document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',['upcoming','results','elo'][i]===id));
+document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',['upcoming','results','elo','model'][i]===id));
 document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
 document.getElementById('sec-'+id).classList.add('active');
-}
-
-function flag(slug){
-const m={mexico:'🇲🇽','south-africa':'🇿🇦','south-korea':'🇰🇷','czech-republic':'🇨🇿',canada:'🇨🇦','bosnia-and-herzegovina':'🇧🇦',qatar:'🇶🇦',switzerland:'🇨🇭',brazil:'🇧🇷',morocco:'🇲🇦',haiti:'🇭🇹',scotland:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',usa:'🇺🇸',paraguay:'🇵🇾',australia:'🇦🇺',turkey:'🇹🇷',germany:'🇩🇪',curacao:'🇨🇼','ivory-coast':'🇨🇮',ecuador:'🇪🇨',netherlands:'🇳🇱',japan:'🇯🇵',sweden:'🇸🇪',tunisia:'🇹🇳',belgium:'🇧🇪',egypt:'🇪🇬',iran:'🇮🇷','new-zealand':'🇳🇿',spain:'🇪🇸','cape-verde':'🇨🇻','saudi-arabia':'🇸🇦',uruguay:'🇺🇾',france:'🇫🇷',senegal:'🇸🇳',iraq:'🇮🇶',norway:'🇳🇴',argentina:'🇦🇷',algeria:'🇩🇿',austria:'🇦🇹',jordan:'🇯🇴',portugal:'🇵🇹','dr-congo':'🇨🇩',uzbekistan:'🇺🇿',colombia:'🇨🇴',england:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',croatia:'🇭🇷',ghana:'🇬🇭',panama:'🇵🇦'};
-return m[slug]||'🏳️';
-}
-function cn(slug){
-const m={mexico:'墨西哥','south-africa':'南非','south-korea':'韩国','czech-republic':'捷克',canada:'加拿大','bosnia-and-herzegovina':'波黑',qatar:'卡塔尔',switzerland:'瑞士',brazil:'巴西',morocco:'摩洛哥',haiti:'海地',scotland:'苏格兰',usa:'美国',paraguay:'巴拉圭',australia:'澳大利亚',turkey:'土耳其',germany:'德国',curacao:'库拉索','ivory-coast':'科特迪瓦',ecuador:'厄瓜多尔',netherlands:'荷兰',japan:'日本',sweden:'瑞典',tunisia:'突尼斯',belgium:'比利时',egypt:'埃及',iran:'伊朗','new-zealand':'新西兰',spain:'西班牙','cape-verde':'佛得角','saudi-arabia':'沙特',uruguay:'乌拉圭',france:'法国',senegal:'塞内加尔',iraq:'伊拉克',norway:'挪威',argentina:'阿根廷',algeria:'阿尔及利亚',austria:'奥地利',jordan:'约旦',portugal:'葡萄牙','dr-congo':'刚果金',uzbekistan:'乌兹别克斯坦',colombia:'哥伦比亚',england:'英格兰',croatia:'克罗地亚',ghana:'加纳',panama:'巴拿马'};
-return m[slug]||slug;
 }
 
 function renderMatch(m){
@@ -115,119 +167,154 @@ const ml=m.money_line||{};
 const hw=parseFloat(ml.win_a)||0,dw=parseFloat(ml.draw)||0,aw=parseFloat(ml.win_b)||0;
 const ou=m.over_under?.['2.5']||{};
 const btts=m.btts||{};
-const scores=(m.top_scores||[]).slice(0,3).map(s=>s[0]+':'+s[1]+'%').join(' / ');
-const isMy=['spain','argentina','france','brazil','england'].some(t=>t===m.home||t===m.away);
+const scores=(m.top_scores||[]).slice(0,3);
+const isMy=m.is_my_team||MY_TEAMS.includes(m.home)||MY_TEAMS.includes(m.away);
+const elo=m.elo||{};
+const h=Math.floor(m.hours_until),min=Math.round((m.hours_until-h)*60);
 
-let recHtml='';
+let recCards='';
+// OKX
+recCards+=`<div class="rec rec-okx">
+<div class="rec-title"><span class="platform-tag tag-okx">OKX</span> 赢/平/输</div>
+<div class="rec-line"><span>推荐</span><span class="rec-pick">${hw>=aw?c(m.home):c(m.away)} (${Math.max(hw,aw)}%)</span></div>
+${dw>25?`<div class="rec-line"><span>关注</span><span style="color:var(--yellow)">平局 ${dw}%</span></div>`:''}
+</div>`;
+
+// PR
 if(isMy){
-recHtml=`<div class="recommendation">
-<div class="rec-title">🎯 Predict.fun 推荐</div>
-<div class="rec-platform"><span class="tag tag-pr">PR</span> 我的球队 ✅ ${cn(m.home)} — 全市场可买</div>
-<div class="rec-platform">大小 O2.5: ${ou.over||'-'}% | BTTS: ${btts.yes||'-'}%</div>
+recCards+=`<div class="rec rec-pr">
+<div class="rec-title"><span class="platform-tag tag-pr">PR</span> Predict.fun 全市场</div>
+<div class="rec-line"><span>我的球队</span><span class="rec-pick">${MY_TEAMS.includes(m.home)?'✅ '+c(m.home):''} ${MY_TEAMS.includes(m.away)?'✅ '+c(m.away):''}</span></div>
+<div class="rec-line"><span>O2.5</span><span>${ou.over||'-'}%</span></div>
+<div class="rec-line"><span>BTTS</span><span>${btts.yes||'-'}%</span></div>
+<div class="rec-line"><span>让球</span><span>${m.spread_raw||'-'}</span></div>
 </div>`;
 }else{
-recHtml=`<div class="recommendation">
-<div class="rec-title">⏭️ PR 跳过</div>
-<div class="rec-platform" style="color:var(--dim)">非我的5队，仅OKX</div>
+recCards+=`<div class="rec rec-pr" style="opacity:0.5">
+<div class="rec-title"><span class="platform-tag tag-pr">PR</span> Predict.fun</div>
+<div class="rec-line"><span style="color:var(--dim)">⏭️ 非我的5队，跳过</span><span></span></div>
 </div>`;
 }
 
-return `<div class="match-card">
+// XBIT
+if(m.xbit){
+const xa=hw-m.xbit.win_a, xd=dw-m.xbit.draw, xb=aw-m.xbit.win_b;
+const edges=[{l:'赢'+c(m.home),e:xa},{l:'平局',e:xd},{l:'赢'+c(m.away),e:xb}];
+const best=edges.reduce((a,b)=>a.e>b.e?a:b);
+recCards+=`<div class="rec rec-xbit">
+<div class="rec-title"><span class="platform-tag tag-xbit">XBIT</span> 奖券预测</div>
+<div class="rec-line"><span>奖池</span><span style="color:var(--cyan)">$${(m.xbit.pool||0).toLocaleString()}</span></div>
+<div class="rec-line"><span>票面</span><span>${m.xbit.win_a}% / ${m.xbit.draw}% / ${m.xbit.win_b}%</span></div>
+<div class="rec-line"><span>推荐</span><span class="rec-pick">${best.l} <span class="edge-badge ${best.e>0?'edge-pos':'edge-neg'}">edge ${best.e>0?'+':''}${best.e.toFixed(0)}%</span></span></div>
+</div>`;
+}
+
+return `<div class="match-card ${isMy?'is-my':''} fade-in">
 <div class="match-header">
-<span class="match-time">${m.hours_until>0?Math.round(m.hours_until)+'h后':'进行中'}</span>
-<span class="match-venue">${m.city||m.venue||''}</span>
+<div class="match-time">⏱ <span class="countdown">${h}h${min.toString().padStart(2,'0')}m</span></div>
+<div class="match-venue">📍 ${m.city||m.venue||''}</div>
 </div>
 <div class="teams">
-<div class="team"><div class="flag">${flag(m.home)}</div><div class="name">${cn(m.home)}</div></div>
-<div class="vs">VS</div>
-<div class="team"><div class="flag">${flag(m.away)}</div><div class="name">${cn(m.away)}</div></div>
+<div class="team"><div class="flag">${f(m.home)}</div><div class="name">${c(m.home)}</div>${elo.a?`<div class="elo-badge">Elo ${elo.a}</div>`:''}</div>
+<div class="vs-badge">VS</div>
+<div class="team"><div class="flag">${f(m.away)}</div><div class="name">${c(m.away)}</div>${elo.b?`<div class="elo-badge">Elo ${elo.b}</div>`:''}</div>
 </div>
-<div class="bar">
-<div class="seg home" style="width:${hw}%"></div>
-<div class="seg draw" style="width:${dw}%"></div>
-<div class="seg away" style="width:${aw}%"></div>
+<div class="win-bar">
+<div class="seg seg-home" style="width:${hw}%"></div>
+<div class="seg seg-draw" style="width:${dw}%"></div>
+<div class="seg seg-away" style="width:${aw}%"></div>
 </div>
 <div class="probs">
-<div class="p home"><div class="pct">${hw}%</div><div>胜</div></div>
-<div class="p draw"><div class="pct">${dw}%</div><div>平</div></div>
-<div class="p away"><div class="pct">${aw}%</div><div>负</div></div>
+<div class="prob home"><div class="pct">${hw}%</div><div class="label">胜</div></div>
+<div class="prob draw"><div class="pct">${dw}%</div><div class="label">平</div></div>
+<div class="prob away"><div class="pct">${aw}%</div><div class="label">负</div></div>
 </div>
 <div class="metrics">
 <div class="metric"><div class="label">xG</div><div class="value">${m.xg?.a||'-'} – ${m.xg?.b||'-'}</div></div>
-<div class="metric"><div class="label">大小2.5</div><div class="value">O ${ou.over||'-'}%</div></div>
+<div class="metric"><div class="label">O2.5</div><div class="value">${ou.over||'-'}%</div></div>
 <div class="metric"><div class="label">BTTS</div><div class="value">${btts.yes||'-'}%</div></div>
-<div class="metric"><div class="label">Elo差</div><div class="value">${m.elo?.diff||'-'}</div></div>
+<div class="metric"><div class="label">Elo差</div><div class="value ${elo.diff>0?'positive':'negative'}">${elo.diff>0?'+':''}${elo.diff||'-'}</div></div>
 </div>
-<div class="score-list">📊 ${scores}</div>
-<div class="recommendation">
-<div class="rec-title">🏆 OKX 推荐</div>
-<div class="rec-platform"><span class="tag tag-okx">OKX</span> 买 <span class="pick">${hw>=aw?cn(m.home):cn(m.away)}</span> (${Math.max(hw,aw)}%)</div>
-</div>
-${recHtml}
-${m.xbit ? `<div class="recommendation">
-<div class="rec-title">🎫 XBIT 奖券</div>
-<div class="rec-platform">奖池: $${(m.xbit.pool||0).toLocaleString()} | ${m.xbit.tickets||0}张</div>
-<div class="rec-platform">票面: 赢${cn(m.home)} ${m.xbit.win_a}% | 平${m.xbit.draw}% | 赢${cn(m.away)} ${m.xbit.win_b}%</div>
-<div class="rec-platform"><span class="tag tag-xbit">XBIT</span> <span class="pick">${(()=>{
-  const ea=hw-m.xbit.win_a, ed=dw-m.xbit.draw, eb=aw-m.xbit.win_b;
-  const mx=Math.max(ea,ed,eb);
-  if(mx===ea) return '买赢'+cn(m.home)+' (edge +'+ea.toFixed(0)+'%)';
-  if(mx===ed) return '买平局 (edge +'+ed.toFixed(0)+'%)';
-  return '买赢'+cn(m.away)+' (edge +'+eb.toFixed(0)+'%)';
-})()}</span></div>
-</div>` : ''}
+<div class="scores">${scores.map(s=>`<div class="score-chip"><div class="sc">${s[0]}</div><div class="pct">${s[1]}%</div></div>`).join('')}</div>
+${recCards}
 </div>`;
 }
 
 async function load(){
 try{
 const[pr,rr]=await Promise.all([
-fetch('data/predictions.json').then(r=>r.json()).catch(()=>null),
-fetch('data/results.json').then(r=>r.json()).catch(()=>null)
+fetch('data/predictions.json?v='+Date.now()).then(r=>r.json()).catch(()=>null),
+fetch('data/results.json?v='+Date.now()).then(r=>r.json()).catch(()=>null)
 ]);
 
 if(pr){
-document.getElementById('lastUpdate').textContent='更新: '+pr.updated_at;
-const upcoming=pr.matches||[];
-if(upcoming.length){
-document.getElementById('loadingUpcoming').style.display='none';
-document.getElementById('upcomingList').innerHTML=upcoming.map(renderMatch).join('');
+document.getElementById('statUpcoming').textContent=pr.matches?.length||0;
+document.getElementById('statUpdated').textContent=pr.updated_at?.split(' ')[1]||'-';
+const el=pr.matches||[];
+if(el.length){
+document.getElementById('upcomingList').innerHTML=el.map(renderMatch).join('');
 }
 }
 
 if(rr){
-const results=rr.matches||[];
-if(results.length){
-document.getElementById('loadingResults').style.display='none';
-document.getElementById('resultsList').innerHTML=results.map(r=>`
-<div class="result-card">
-<div class="result-teams">
-<span>${flag(r.home)} ${cn(r.home)}</span>
-<span class="result-score">${r.home_score} - ${r.away_score}</span>
-<span>${cn(r.away)} ${flag(r.away)}</span>
+const res=rr.matches||[];
+document.getElementById('statMatches').textContent=res.length;
+if(res.length){
+document.getElementById('resultsList').innerHTML=res.map(r=>`<div class="result-card fade-in">
+<div class="result-row">
+<div class="result-team">${f(r.home)}<br><strong>${c(r.home)}</strong></div>
+<div class="result-score">${r.home_score} : ${r.away_score}</div>
+<div class="result-team">${f(r.away)}<br><strong>${c(r.away)}</strong></div>
 </div>
-<div style="text-align:center;font-size:11px;color:var(--dim);margin-top:4px">
-Elo: ${r.home_elo_change>=0?'+':''}${r.home_elo_change} / ${r.away_elo_change>=0?'+':''}${r.away_elo_change}
-</div>
+<div class="result-elo">Elo: ${r.home_elo_change>=0?'+':''}${r.home_elo_change} / ${r.away_elo_change>=0?'+':''}${r.away_elo_change}</div>
 </div>`).join('');
 }
 
 if(rr?.elo_rankings){
-document.getElementById('loadingElo').style.display='none';
-const top=rr.elo_rankings.slice(0,20);
+const top=rr.elo_rankings.slice(0,32);
+const maxElo=top[0]?.elo||2100;
 document.getElementById('eloTable').innerHTML=`<table class="elo-table">
-<tr><th>#</th><th>球队</th><th>Elo</th></tr>
-${top.map((t,i)=>`<tr><td class="rank">${i+1}</td><td class="team-name">${flag(t.slug)} ${cn(t.slug)}</td>
-<td class="elo-val">${t.elo}</td></tr>`).join('')}
+<tr><th>#</th><th>球队</th><th>Elo</th><th></th></tr>
+${top.map((t,i)=>`<tr>
+<td class="rank ${i<3?'rank-top':''}">${i<3?['🥇','🥈','🥉'][i]:i+1}</td>
+<td><div class="team-cell">${f(t.slug)} ${c(t.slug)}</div></td>
+<td class="elo-val">${t.elo}</td>
+<td style="width:40%"><div class="elo-bar"><div class="elo-bar-fill" style="width:${t.elo/maxElo*100}%"></div></div></td>
+</tr>`).join('')}
 </table>`;
 }
-}
+
+// Model info
+document.getElementById('modelInfo').innerHTML=`
+<div class="model-card">
+<h3>🧠 预测模型 v4</h3>
+<div class="feature"><span class="icon">📐</span><span>Dixon-Coles (1997) 双变量泊松分布 — 足球比分建模的黄金标准</span></div>
+<div class="feature"><span class="icon">📊</span><span>Shin (1993) 去除市场overround — 校准真实概率</span></div>
+<div class="feature"><span class="icon">⏱</span><span>时间变化进球强度 — 比赛不同阶段进球率不同（75-90min +15%）</span></div>
+<div class="feature"><span class="icon">🏟</span><span>世界杯场地因素 — 主场、海拔、气候、旅行距离</span></div>
+<div class="feature"><span class="icon">👥</span><span>阵容质量评分 — 基于Transfermarkt身价+联赛水平</span></div>
+<div class="feature"><span class="icon">🔄</span><span>Elo动态更新 — 每场比赛后实时更新（K=55世界杯权重）</span></div>
+<div class="feature"><span class="icon">📈</span><span>Ensemble集成 — Elo+DC基础 + 市场校准 + 场地 + 阵容调整</span></div>
+</div>
+<div class="model-card">
+<h3>📊 三平台策略</h3>
+<div class="feature"><span class="icon">🏆</span><span><strong>OKX</strong> — 赢/平/输，所有比赛，模型概率最高的选项</span></div>
+<div class="feature"><span class="icon">🎯</span><span><strong>Predict.fun</strong> — 全市场（大小球/BTTS/让球/比分），仅我的5队</span></div>
+<div class="feature"><span class="icon">🎫</span><span><strong>XBIT</strong> — 奖券预测，Focus Match有奖池，找模型vs票面的edge</span></div>
+</div>
+<div class="model-card">
+<h3>⚙️ 自动化</h3>
+<div class="feature"><span class="icon">🔄</span><span>每4小时自动更新 — 赛后更新Elo + 赛前推送推荐</span></div>
+<div class="feature"><span class="icon">📡</span><span>ESPN API实时数据 — 比分、赛程、场地信息</span></div>
+<div class="feature"><span class="icon">📱</span><span>Telegram自动推送 — Cron定时通知</span></div>
+</div>`;
 }catch(e){
-console.error(e);
-document.getElementById('loadingUpcoming').textContent='数据加载失败';
+document.getElementById('upcomingList').innerHTML='<div style="text-align:center;padding:40px;color:var(--dim)">数据加载失败</div>';
 }
 }
 load();
+// Auto refresh every 5 min
+setInterval(load,300000);
 </script>
 </body>
 </html>
