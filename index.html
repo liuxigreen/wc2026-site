@@ -285,7 +285,7 @@ body{font-family:-apple-system,system-ui,'Segoe UI',sans-serif;background:var(--
 <div class="section" id="sec-model"><div class="fade-in" id="modelInfo"></div></div>
 
 <div class="footer">
-  Powered by <a href="#">Elo+Dixon-Coles v4</a> · 数据来源 ESPN API<br>
+  Powered by <a href="#">Elo+Dixon-Coles v4</a> · 数据来源 OpenLigaDB + ESPN<br>
   <a href="https://wc2026.opspilot.me">wc2026.opspilot.me</a>
 </div>
 
@@ -408,27 +408,25 @@ function renderMatch(m){
 /* ===== Performance Tab ===== */
 function renderPerformance(perfData, resultsData){
   let html='';
-  
-  // Summary stats
-  const matches=resultsData?.matches||[];
-  const total=matches.length;
-  const brier=perfData?.brier_score||0.536;
-  const accuracy=perfData?.accuracy||61;
-  
+  const total=perfData?.total_reviewed||0;
+  const brier=perfData?.cumulative_brier||0.536;
+  const accPct=perfData?.accuracy?(perfData.accuracy*100):61;
+  const correct=perfData?.correct_count||0;
+
   html+=`<div class="perf-grid"><div class="perf-card">
     <h3>📊 累计表现</h3>
     <div class="param-grid">
-      <div class="param-item"><div class="param-name">Brier Score</div><div class="param-val">${typeof brier==='number'?brier.toFixed(3):brier}</div></div>
-      <div class="param-item"><div class="param-name">准确率</div><div class="param-val" style="color:var(--green)">${typeof accuracy==='number'?accuracy+'%':accuracy}</div></div>
+      <div class="param-item"><div class="param-name">Brier Score</div><div class="param-val">${brier.toFixed(3)}</div></div>
+      <div class="param-item"><div class="param-name">准确率</div><div class="param-val" style="color:var(--green)">${Math.round(accPct)}%</div></div>
       <div class="param-item"><div class="param-name">已验证场次</div><div class="param-val">${total}</div></div>
-      <div class="param-item"><div class="param-name">校准偏差</div><div class="param-val">${perfData?.calibration_error||'-'}</div></div>
+      <div class="param-item"><div class="param-name">命中/总数</div><div class="param-val">${correct}/${total}</div></div>
     </div>
   </div>
   <div class="perf-card">
     <h3>📈 Brier Score 趋势</h3>
     <div class="chart-container"><canvas id="brierChart" width="400" height="200"></canvas></div>
   </div></div>`;
-  
+
   // Calibration chart
   html+=`<div class="perf-card">
     <h3>🎯 校准图 (预测概率 vs 实际频率)</h3>
@@ -438,38 +436,34 @@ function renderPerformance(perfData, resultsData){
       <span><span class="dot" style="background:var(--dim2)"></span>完美校准线</span>
     </div>
   </div>`;
-  
+
   // Match-by-match review
-  if(total>0){
+  const reviews=perfData?.match_reviews||[];
+  if(reviews.length){
     html+=`<div class="perf-card"><h3>📋 逐场回顾</h3>`;
-    // Round summaries
     html+=`<div class="round-summary">
-      <div class="round-stat">✅ 正确: <strong>${perfData?.correct_count||'-'}</strong></div>
-      <div class="round-stat">❌ 错误: <strong>${perfData?.wrong_count||'-'}</strong></div>
+      <div class="round-stat">✅ 正确: <strong>${correct}</strong></div>
+      <div class="round-stat">❌ 错误: <strong>${total-correct}</strong></div>
       <div class="round-stat">📊 总计: <strong>${total}</strong></div>
+      <div class="round-stat">📉 Brier: <strong>${brier.toFixed(3)}</strong></div>
     </div>`;
     html+='<div class="review-grid">';
-    matches.slice().reverse().forEach(r=>{
-      // Determine if model prediction was correct
-      const homeWin=(r.home_score>r.away_score);
-      const draw=(r.home_score===r.away_score);
-      const awayWin=(r.home_score<r.away_score);
-      // Use a simple heuristic for display
-      const resultClass=homeWin?'correct':awayWin?'wrong':'draw-result';
-      const icon=homeWin?'✅':awayWin?'❌':'🟡';
-      
+    reviews.slice().reverse().forEach(r=>{
+      const icon=r.correct?'✅':'❌';
+      const resultClass=r.correct?'correct':'wrong';
+      const predPct=r.predicted?`${Math.round(r.predicted.home*100)}/${Math.round(r.predicted.draw*100)}/${Math.round(r.predicted.away*100)}`:'-';
       html+=`<div class="review-card ${resultClass}">
         <div class="review-icon">${icon}</div>
-        <div class="review-teams">${f(r.home)} ${c(r.home)} vs ${c(r.away)} ${f(r.away)}</div>
-        <div class="review-score">${r.home_score} : ${r.away_score}</div>
-        <div class="review-pred">${r.home_elo_change>=0?'+':''}${r.home_elo_change}</div>
+        <div class="review-teams">${r.match}</div>
+        <div class="review-score">${r.result}</div>
+        <div class="review-pred">${predPct}<br><span style="font-size:9px">Brier ${r.brier?.toFixed(3)||'-'}</span></div>
       </div>`;
     });
     html+='</div></div>';
   }else{
-    html+='<div class="perf-card" style="text-align:center;color:var(--dim);padding:40px">暂无历史比赛数据</div>';
+    html+='<div class="perf-card" style="text-align:center;color:var(--dim);padding:40px">🔮 首场比赛结束后自动开始追踪模型表现</div>';
   }
-  
+
   return html;
 }
 
@@ -514,8 +508,14 @@ function drawCalibrationChart(canvasId, perfData){
   ctx.beginPath();ctx.moveTo(pad.l,pad.t+h);ctx.lineTo(pad.l+w,pad.t);ctx.stroke();
   ctx.setLineDash([]);
   
-  // Model data points (use calibration data if available, else generate from results)
-  const calPoints=perfData?.calibration_points||generateCalibrationPoints(perfData);
+  // Model data points from model_performance.json calibration_bins
+  const calBins=perfData?.calibration_bins||[];
+  const calPoints=calBins.length?calBins.map(b=>({
+    predicted:b.predicted*100,
+    actual:b.actual*100,
+    count:b.count,
+    label:b.bin
+  })):null;
   if(calPoints&&calPoints.length){
     ctx.fillStyle='#58a6ff';ctx.strokeStyle='#58a6ff';ctx.lineWidth=2;
     ctx.beginPath();
@@ -573,8 +573,9 @@ function drawBrierChart(canvasId, perfData){
   ctx.fillStyle='rgba(248,81,73,0.5)';ctx.font='10px system-ui';ctx.textAlign='left';
   ctx.fillText('基准线 0.5',pad.l+4,pad.t+h*0.625-4);
   
-  // Brier trend data
-  const brierData=perfData?.brier_trend||[0.536,0.530,0.525,0.520,0.518,0.515];
+  // Brier trend data from model_performance.json
+  const brierTrend=perfData?.brier_trend||[];
+  const brierData=brierTrend.length?brierTrend.map(t=>t.brier):[0.536];
   const minB=0.3,maxB=0.6;
   
   ctx.fillStyle='#7d8590';ctx.font='10px system-ui';ctx.textAlign='right';
@@ -618,21 +619,18 @@ async function load(){
       fetch('data/model_performance.json?v='+Date.now()).then(r=>r.json()).catch(()=>null)
     ]);
     
-    // Stats bar
-    const matches=rr?.matches||[];
-    const total=matches.length;
-    document.getElementById('statReviewed').textContent=total;
-    document.getElementById('statUpdated').textContent=(pr?.updated_at||rr?.updated_at||'-').split(' ')[1]||'-';
-    
-    // Performance metrics
+    // Stats bar — use model_performance.json (generated by wc_daily_update.py)
     const perf=mp||{};
-    const brier=perf.brier_score||0.536;
-    const accuracy=perf.accuracy||(total>0?Math.round(total*0.61):61);
-    document.getElementById('statBrier').textContent=typeof brier==='number'?brier.toFixed(3):brier;
-    document.getElementById('statAccuracy').textContent=(typeof accuracy==='number'?accuracy:61)+'%';
-    
-    // Confidence meter
-    const confVal=perf.confidence||(total>0?Math.round(68*(total/16)):68);
+    const total=perf.total_reviewed||rr?.matches?.length||0;
+    const brier=perf.cumulative_brier||0.536;
+    const accPct=perf.accuracy?(perf.accuracy*100):61;
+    document.getElementById('statBrier').textContent=brier.toFixed(3);
+    document.getElementById('statAccuracy').textContent=Math.round(accPct)+'%';
+    document.getElementById('statReviewed').textContent=total||'-';
+    document.getElementById('statUpdated').textContent=perf.updated_at?perf.updated_at.split('T')[1]?.substring(0,5)+' UTC':'-';
+
+    // Confidence meter — based on total reviewed + brier quality
+    const confVal=total>0?Math.round(Math.min(95,50+total*2+(0.536-brier)*200)):35;
     document.getElementById('confValue').textContent=confVal+'%';
     setTimeout(()=>{
       document.getElementById('confFill').style.width=confVal+'%';
@@ -735,7 +733,7 @@ async function load(){
     <div class="model-card">
       <h3>📡 数据来源与更新</h3>
       <div class="feature"><span class="icon">🔄</span><span>每 <strong>4 小时</strong>自动更新 — 赛后更新 Elo + 赛前生成预测</span></div>
-      <div class="feature"><span class="icon">📡</span><span>ESPN API 实时数据 — 比分、赛程、场地信息</span></div>
+      <div class="feature"><span class="icon">📡</span><span>OpenLigaDB + ESPN API 实时数据 — 比分、赛程、场地信息</span></div>
       <div class="feature"><span class="icon">📱</span><span>Telegram 自动推送 — Cron 定时通知</span></div>
       <div class="feature"><span class="icon">☁️</span><span>Cloudflare Pages 部署 — 全球 CDN 加速</span></div>
     </div>`;
