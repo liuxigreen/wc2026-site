@@ -616,12 +616,19 @@ function drawCalibrationChart(canvasId, perfData, backtestData){
       
       ctx.shadowBlur=0;
       
-      // Label — short, positioned above dot
-      const lx=x+12, ly=y-4;
-      ctx.fillStyle='#e6edf3';ctx.font='bold 10px system-ui';ctx.textAlign='left';
-      ctx.fillText(b.bin, lx, ly-6);
-      ctx.fillStyle=correct?'#3fb950':'#f85149';ctx.font='10px system-ui';
-      ctx.fillText(`${b.count}场 ${Math.round(px)}%→${Math.round(py)}%`, lx, ly+7);
+      // Label — avoid overlap: alternate above/below, use leader line
+      const above=py<80; // put label below if point is high
+      const lx=x, ly=above?y+20:y-18;
+      const anchor=above?'start':'start';
+      
+      // Leader line
+      ctx.strokeStyle='rgba(230,237,243,0.15)';ctx.lineWidth=0.5;
+      ctx.beginPath();ctx.moveTo(x,y+(above?8:-8));ctx.lineTo(lx,ly+(above?-4:10));ctx.stroke();
+      
+      ctx.fillStyle=correct?'#3fb950':'#f85149';ctx.font='10px system-ui';ctx.textAlign='left';
+      ctx.fillText(`${b.bin} ${b.count}场`, lx+8, ly);
+      ctx.fillStyle='#7d8590';ctx.font='9px system-ui';
+      ctx.fillText(`${Math.round(px)}%→${Math.round(py)}%`, lx+8, ly+11);
     });
   }
   
