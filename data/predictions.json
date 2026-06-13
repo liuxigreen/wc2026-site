@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13 05:15 UTC",
+  "updated_at": "2026-06-13 05:52 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1552→1550 (rest+10 venue-10) vs 1807→1809 (rest+10 venue-10)",
@@ -8,7 +8,7 @@
         "b": "1.98"
       },
       "money_line": {
-        "win_a": "63.2",
+        "win_a": "13.5",
         "draw": "23.3",
         "win_b": "63.2"
       },
@@ -62,7 +62,7 @@
       },
       "home": "qatar",
       "away": "switzerland",
-      "hours_until": 13.7,
+      "hours_until": 13.1,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "is_my_team": false
@@ -74,7 +74,7 @@
         "b": "0.88"
       },
       "money_line": {
-        "win_a": "15.3",
+        "win_a": "60.5",
         "draw": "24.2",
         "win_b": "15.3"
       },
@@ -128,7 +128,7 @@
       },
       "home": "brazil",
       "away": "morocco",
-      "hours_until": 16.7,
+      "hours_until": 16.1,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true
@@ -140,7 +140,7 @@
         "b": "1.61"
       },
       "money_line": {
-        "win_a": "45.6",
+        "win_a": "26.8",
         "draw": "27.6",
         "win_b": "45.6"
       },
@@ -194,7 +194,7 @@
       },
       "home": "haiti",
       "away": "scotland",
-      "hours_until": 19.7,
+      "hours_until": 19.1,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false
@@ -206,7 +206,7 @@
         "b": "1.05"
       },
       "money_line": {
-        "win_a": "21.1",
+        "win_a": "52.5",
         "draw": "26.4",
         "win_b": "21.1"
       },
@@ -260,7 +260,7 @@
       },
       "home": "australia",
       "away": "turkey",
-      "hours_until": 22.7,
+      "hours_until": 22.1,
       "venue": "BC Place",
       "city": "Vancouver",
       "is_my_team": false
