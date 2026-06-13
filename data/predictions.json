@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T07:17:43.699519+00:00",
+  "updated_at": "2026-06-13T07:18:13.816946+00:00",
   "matches": [
     {
       "home": "qatar",
@@ -46,7 +46,7 @@
         "no": "50.3"
       },
       "spread": {
-        "让球      qatar -1.5": "4.5",
+        "qatar -1.5": "4.5",
         "switzerland +1.5": "95.5"
       },
       "half_time": {
@@ -100,7 +100,7 @@
         "no": "48.2"
       },
       "spread": {
-        "让球      brazil -1.5": "36.5",
+        "brazil -1.5": "36.5",
         "morocco +1.5": "63.5"
       },
       "half_time": {
@@ -154,7 +154,7 @@
         "no": "78.5"
       },
       "spread": {
-        "让球      germany -1.5": "75.9",
+        "germany -1.5": "75.9",
         "curacao +1.5": "24.1"
       },
       "half_time": {
@@ -208,7 +208,7 @@
         "no": "46.2"
       },
       "spread": {
-        "让球      netherlands -1.5": "33.0",
+        "netherlands -1.5": "33.0",
         "japan +1.5": "67.0"
       },
       "half_time": {
@@ -262,7 +262,7 @@
         "no": "41.7"
       },
       "spread": {
-        "让球      ivory-coast -1.5": "14.9",
+        "ivory-coast -1.5": "14.9",
         "ecuador +1.5": "85.1"
       },
       "half_time": {
@@ -316,7 +316,7 @@
         "no": "43.0"
       },
       "spread": {
-        "让球      haiti -1.5": "10.8",
+        "haiti -1.5": "10.8",
         "scotland +1.5": "89.2"
       },
       "half_time": {
@@ -370,7 +370,7 @@
         "no": "44.8"
       },
       "spread": {
-        "让球      australia -1.5": "30.0",
+        "australia -1.5": "30.0",
         "turkey +1.5": "70.0"
       },
       "half_time": {
