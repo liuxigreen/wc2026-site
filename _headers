@@ -1,0 +1,16 @@
+# Cloudflare Pages custom headers
+# Force no-cache on HTML to prevent stale content
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/data/*
+  Cache-Control: public, max-age=60, s-maxage=60
+  
+/*.js
+  Cache-Control: public, max-age=3600
+
+/*.css
+  Cache-Control: public, max-age=3600
+
+/*.json
+  Cache-Control: public, max-age=60, s-maxage=60

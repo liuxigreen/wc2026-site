@@ -945,5 +945,21 @@ async function load(){
 load();
 setInterval(load,300000); // Auto refresh every 5 min
 </script>
+
+<script>
+// Version check: force reload if server has new version
+(async()=>{
+  try{
+    const r=await fetch('data/predictions.json?t='+Date.now(),{cache:'no-store'});
+    const d=await r.json();
+    const serverVer=d.updated_at||'';
+    const localVer=sessionStorage.getItem('_wc_ver')||'';
+    if(serverVer&&serverVer!==localVer){
+      sessionStorage.setItem('_wc_ver',serverVer);
+      if(localVer)location.reload(true);
+    }
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
