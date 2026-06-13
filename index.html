@@ -206,8 +206,9 @@ document.getElementById('eloTable').innerHTML=`<table class="elo-table">
 <tr><th>#</th><th>球队</th><th>Elo</th></tr>
 ${top.map((t,i)=>`<tr><td class="rank">${i+1}</td><td class="team-name">${flag(t.slug)} ${cn(t.slug)}</td>
 <td class="elo-val">${t.elo}</td></tr>`).join('')}
-</table>`;
+};
 }
+} // close if(rr)
 }catch(e){
 console.error(e);
 document.getElementById('loadingUpcoming').textContent='数据加载失败';
