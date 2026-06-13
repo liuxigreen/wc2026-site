@@ -325,12 +325,11 @@ function confBadge(score){
 function renderEdge(m){
   const edge=m.edge||{};
   const mo=m.market_odds;
-  if(!mo||!Object.keys(edge).length) return '';
+  const hasEdge=mo&&Object.keys(edge).length;
 
   const hw=parseFloat(m.money_line?.win_a||0);
   const dw=parseFloat(m.money_line?.draw||0);
   const aw=parseFloat(m.money_line?.win_b||0);
-  const maxP=Math.max(hw,dw,aw);
   const elo=m.elo||{};
   const absDiff=Math.abs(elo.diff||0);
 
@@ -345,12 +344,14 @@ function renderEdge(m){
   // Find all edges
   const labels={home:c(m.home),draw:'平局',away:c(m.away)};
   let edgeItems=[];
-  ['home','draw','away'].forEach(k=>{
-    const d=edge[k];
-    if(d&&d.has_edge){
-      edgeItems.push({label:labels[k],edge:d.edge,odds:d.market_odds,kelly:posSize(d.edge),model:d.model_pct,implied:d.market_implied});
-    }
-  });
+  if(hasEdge){
+    ['home','draw','away'].forEach(k=>{
+      const d=edge[k];
+      if(d&&d.has_edge){
+        edgeItems.push({label:labels[k],edge:d.edge,odds:d.market_odds,kelly:posSize(d.edge),model:d.model_pct,implied:d.market_implied});
+      }
+    });
+  }
 
   // Predict.fun multi-market edges
   const pfItems=[];
@@ -374,6 +375,9 @@ function renderEdge(m){
     }
   }
 
+  // Early return if nothing to show
+  if(!edgeItems.length&&!pfItems.length) return '';
+
   let html='';
   // Market edge section
   if(edgeItems.length){
@@ -396,14 +400,6 @@ function renderEdge(m){
       html+=`<div class="kelly-row"><span>${p.market}</span><span class="kelly-pick">${p.pick} (${p.prob}%)${confLabel}</span></div>`;
     });
     html+='</div>';
-  }
-
-  // No edge message
-  if(!edgeItems.length&&!pfItems.length){
-    html+=`<div class="kelly-section" style="border-color:var(--border);background:var(--bg)">
-      <div class="kelly-title" style="color:var(--dim)">💤 暂无机会</div>
-      <div class="kelly-row"><span style="color:var(--dim);font-size:11px">模型与市场一致，等待赔率变动</span></div>
-    </div>`;
   }
 
   return html;
