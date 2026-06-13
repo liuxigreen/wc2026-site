@@ -318,47 +318,88 @@ function confBadge(score){
   return '<span class="conf-badge conf-low">低置信</span>';
 }
 
-/* ===== Kelly Criterion ===== */
-function kellyFraction(prob, odds){
-  // prob = model probability (0-1), odds = decimal odds
-  if(!odds||odds<=1||!prob) return 0;
-  const b=odds-1;
-  const q=1-prob;
-  const k=(prob*b-q)/b;
-  return Math.max(0,k);
-}
-function impliedOdds(pct){
-  // pct is string like "63.2" meaning 63.2%
-  const p=parseFloat(pct)/100;
-  return p>0?1/p:0;
-}
-function renderKelly(m){
-  const hw=parseFloat(m.money_line?.win_a||0)/100;
-  const dw=parseFloat(m.money_line?.draw||0)/100;
-  const aw=parseFloat(m.money_line?.win_b||0)/100;
-  // Implied odds from market (if available) — use model prob vs fair odds
-  // Since we don't have market odds, we use model vs uniform edge calculation
-  // Actually, we can compute Kelly using model probability and implied fair odds
-  const maxProb=Math.max(hw,dw,aw);
-  if(maxProb<0.5) return ''; // No clear edge
-  
-  let pick='', kellyPct=0;
-  if(hw>=dw&&hw>=aw){pick=c(m.home)+' 胜';kellyPct=kellyFraction(hw,1/hw);}
-  else if(aw>=hw&&aw>=dw){pick=c(m.away)+' 胜';kellyPct=kellyFraction(aw,1/aw);}
-  else{pick='平局';kellyPct=kellyFraction(dw,1/dw);}
-  
-  // Only show if there's a meaningful edge (prob > 50%)
-  if(maxProb<0.5) return '';
-  
-  // Format kelly as percentage of bankroll
-  const kellyDisplay=(kellyPct*100).toFixed(1);
-  
-  return `<div class="kelly-section">
-    <div class="kelly-title">💰 Kelly 建议仓位</div>
-    <div class="kelly-row"><span>推荐</span><span class="kelly-pick">${pick}</span></div>
-    <div class="kelly-row"><span>模型概率</span><span>${(maxProb*100).toFixed(1)}%</span></div>
-    <div class="kelly-row"><span>建议仓位</span><span class="kelly-size">${kellyDisplay > 0 ? kellyDisplay+'%' : '无优势'}</span></div>
-  </div>`;
+/* ===== Edge & Position Sizing ===== */
+function renderEdge(m){
+  const edge=m.edge||{};
+  const mo=m.market_odds;
+  if(!mo||!Object.keys(edge).length) return '';
+
+  const hw=parseFloat(m.money_line?.win_a||0);
+  const dw=parseFloat(m.money_line?.draw||0);
+  const aw=parseFloat(m.money_line?.win_b||0);
+  const maxP=Math.max(hw,dw,aw);
+  const elo=m.elo||{};
+  const absDiff=Math.abs(elo.diff||0);
+
+  // Position sizing: map edge 2-15% → position 1-8%, boosted by Elo diff
+  function posSize(e){
+    let base=Math.max(0,(e-1)*0.6); // edge 2%→0.6%, 5%→2.4%, 10%→5.4%
+    if(absDiff>150) base*=1.2;
+    if(absDiff>250) base*=1.1;
+    return Math.min(8,Math.max(0,base)).toFixed(1);
+  }
+
+  // Find all edges
+  const labels={home:c(m.home),draw:'平局',away:c(m.away)};
+  let edgeItems=[];
+  ['home','draw','away'].forEach(k=>{
+    const d=edge[k];
+    if(d&&d.has_edge){
+      edgeItems.push({label:labels[k],edge:d.edge,odds:d.market_odds,kelly:posSize(d.edge),model:d.model_pct,implied:d.market_implied});
+    }
+  });
+
+  // Predict.fun multi-market edges
+  const pfItems=[];
+  const isMy=MY_TEAMS.includes(m.home)||MY_TEAMS.includes(m.away);
+  if(isMy){
+    const btts=m.btts||{};
+    const ou=m.over_under?.['2.5']||{};
+    const bttsYes=parseFloat(btts.yes)||0;
+    const over=parseFloat(ou.over)||0;
+    if(bttsYes>57) pfItems.push({market:'双方进球',pick:'Yes',prob:bttsYes});
+    else if(bttsYes<38) pfItems.push({market:'双方进球',pick:'No',prob:100-bttsYes});
+    if(over>58) pfItems.push({market:'大小球',pick:'O2.5',prob:over});
+    else if(over<42) pfItems.push({market:'大小球',pick:'U2.5',prob:100-over});
+    // Spread
+    const spread=m.spread||{};
+    const favSlug=hw>=aw?m.home:m.away;
+    const spreadKey=favSlug+' -1.5';
+    const spPct=parseFloat(spread[spreadKey])||0;
+    if(spPct>35) pfItems.push({market:'让球',pick:c(favSlug)+' -1.5',prob:spPct});
+  }
+
+  let html='';
+  // Market edge section
+  if(edgeItems.length){
+    html+=`<div class="kelly-section" style="border-color:rgba(57,210,192,0.2);background:rgba(57,210,192,0.04)">
+      <div class="kelly-title" style="color:var(--cyan)">💰 Pinnacle Edge (${mo.source||'pinnacle'})</div>`;
+    edgeItems.forEach(e=>{
+      html+=`<div class="kelly-row"><span>${e.label}</span><span><span style="color:var(--green);font-weight:700">+${e.edge}%</span> <span style="color:var(--dim);font-size:10px">赔率${e.odds} 模型${e.model}% vs 市场${e.implied}%</span></span></div>`;
+      html+=`<div class="kelly-row"><span>建议仓位</span><span class="kelly-size" style="color:var(--cyan)">${e.kelly}%</span></div>`;
+    });
+    html+='</div>';
+  }
+
+  // Predict.fun multi-market for my teams
+  if(isMy&&pfItems.length){
+    html+=`<div class="kelly-section" style="margin-top:8px;border-color:rgba(188,140,255,0.15);background:rgba(188,140,255,0.04)">
+      <div class="kelly-title" style="color:var(--purple)">🎯 Predict.fun 推荐盘口</div>`;
+    pfItems.forEach(p=>{
+      html+=`<div class="kelly-row"><span>${p.market}</span><span class="kelly-pick">${p.pick} (${p.prob}%)</span></div>`;
+    });
+    html+='</div>';
+  }
+
+  // No edge message
+  if(!edgeItems.length&&!pfItems.length){
+    html+=`<div class="kelly-section" style="border-color:var(--border);background:var(--bg)">
+      <div class="kelly-title" style="color:var(--dim)">💤 暂无机会</div>
+      <div class="kelly-row"><span style="color:var(--dim);font-size:11px">模型与市场一致，等待赔率变动</span></div>
+    </div>`;
+  }
+
+  return html;
 }
 
 /* ===== Render Match Card ===== */
@@ -372,6 +413,8 @@ function renderMatch(m){
   const h=Math.floor(m.hours_until||0),min=Math.round(((m.hours_until||0)-h)*60);
   const maxProb=Math.max(hw,dw,aw)/100;
   const conf=getConfidence(maxProb,elo.diff);
+  const mo=m.market_odds;
+  const isMy=MY_TEAMS.includes(m.home)||MY_TEAMS.includes(m.away);
   
   return `<div class="match-card ${confClass(conf)} fade-in">
     <div class="match-header">
@@ -401,7 +444,7 @@ function renderMatch(m){
       <div class="metric"><div class="label">Elo差</div><div class="value ${(elo.diff||0)>0?'positive':'negative'}">${(elo.diff||0)>0?'+':''}${elo.diff||'-'}</div></div>
     </div>
     <div class="scores">${scores.map(s=>`<div class="score-chip"><div class="sc">${s[0]}</div><div class="pct">${s[1]}%</div></div>`).join('')}</div>
-    ${renderKelly(m)}
+    ${renderEdge(m)}
   </div>`;
 }
 
