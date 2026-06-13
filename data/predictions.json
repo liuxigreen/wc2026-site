@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13 12:44 UTC",
+  "updated_at": "2026-06-13 12:54 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1552→1585 (rest+10 venue-10) vs 1807→1836 (rest+10 venue-10)",
@@ -67,11 +67,19 @@
       "home": "qatar",
       "away": "switzerland",
       "match_time": "2026-06-13T19:00Z",
-      "hours_until": 6.3,
+      "hours_until": 6.1,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
-      "is_my_team": false,
-      "predict_fun": null
+      "is_my_team": true,
+      "predict_fun": null,
+      "binance": [
+        {
+          "market": "比分",
+          "pick": "0-2",
+          "probability": 11.6,
+          "confidence": "低"
+        }
+      ]
     },
     {
       "elo_raw": "Elo: 1994→2030 (rest+10 venue-5) vs 1875→1870 (rest+10 venue-10)",
@@ -139,7 +147,7 @@
       "home": "brazil",
       "away": "morocco",
       "match_time": "2026-06-13T22:00Z",
-      "hours_until": 9.3,
+      "hours_until": 9.1,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -157,6 +165,7 @@
           "confidence": "低"
         }
       ],
+      "binance": null,
       "xbit": {
         "home": "brazil",
         "away": "morocco",
@@ -235,11 +244,12 @@
       "home": "haiti",
       "away": "scotland",
       "match_time": "2026-06-14T01:00Z",
-      "hours_until": 12.3,
+      "hours_until": 12.1,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
-      "predict_fun": null
+      "predict_fun": null,
+      "binance": null
     },
     {
       "elo_raw": "Elo: 1769→1726 (rest+10 venue-10) vs 1700→1729 (rest+10 venue-10)",
@@ -307,11 +317,12 @@
       "home": "australia",
       "away": "turkey",
       "match_time": "2026-06-14T04:00Z",
-      "hours_until": 15.3,
+      "hours_until": 15.1,
       "venue": "BC Place",
       "city": "Vancouver",
       "is_my_team": false,
-      "predict_fun": null
+      "predict_fun": null,
+      "binance": null
     },
     {
       "elo_raw": "Elo: 1927→1963 (rest+10 venue-20) vs 1400→1345 (rest+10 venue-7)",
@@ -379,11 +390,37 @@
       "home": "germany",
       "away": "curacao",
       "match_time": "2026-06-14T17:00Z",
-      "hours_until": 28.3,
+      "hours_until": 28.1,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
-      "is_my_team": false,
-      "predict_fun": null
+      "is_my_team": true,
+      "predict_fun": null,
+      "binance": [
+        {
+          "market": "胜负盘",
+          "pick": "主胜 (germany)",
+          "probability": 92.9,
+          "confidence": "高"
+        },
+        {
+          "market": "大小球",
+          "pick": "大2.5",
+          "probability": 69.2,
+          "confidence": "中"
+        },
+        {
+          "market": "双方进球",
+          "pick": "否",
+          "probability": 78.4,
+          "confidence": "高"
+        },
+        {
+          "market": "比分",
+          "pick": "3-0",
+          "probability": 17.3,
+          "confidence": "中"
+        }
+      ]
     },
     {
       "elo_raw": "Elo: 1942→1982 (rest+10 venue-21) vs 1851→1829 (rest+10 venue-20)",
@@ -451,7 +488,7 @@
       "home": "netherlands",
       "away": "japan",
       "match_time": "2026-06-14T20:00Z",
-      "hours_until": 31.3,
+      "hours_until": 31.1,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -462,7 +499,8 @@
           "probability": 12.1,
           "confidence": "低"
         }
-      ]
+      ],
+      "binance": null
     },
     {
       "elo_raw": "Elo: 1706→1686 (rest+10 venue-10) vs 1790→1818 (rest+10 venue+38)",
@@ -530,11 +568,12 @@
       "home": "ivory-coast",
       "away": "ecuador",
       "match_time": "2026-06-14T23:00Z",
-      "hours_until": 34.3,
+      "hours_until": 34.1,
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, Pennsylvania",
       "is_my_team": false,
-      "predict_fun": null
+      "predict_fun": null,
+      "binance": null
     },
     {
       "elo_raw": "Elo: 1640→1581 (rest+10 venue-23) vs 1666→1592 (rest+10 venue-23)",
@@ -602,11 +641,12 @@
       "home": "sweden",
       "away": "tunisia",
       "match_time": "2026-06-15T02:00Z",
-      "hours_until": 37.3,
+      "hours_until": 37.1,
       "venue": "Estadio BBVA",
       "city": "Guadalupe",
       "is_my_team": false,
-      "predict_fun": null
+      "predict_fun": null,
+      "binance": null
     },
     {
       "elo_raw": "Elo: 2074→2118 (rest+10 venue-13) vs 1450→1405 (rest+10 venue-12)",
@@ -674,7 +714,7 @@
       "home": "spain",
       "away": "cape-verde",
       "match_time": "2026-06-15T16:00Z",
-      "hours_until": 51.3,
+      "hours_until": 51.1,
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, Georgia",
       "is_my_team": true,
@@ -703,7 +743,8 @@
           "probability": 17.0,
           "confidence": "中"
         }
-      ]
+      ],
+      "binance": null
     },
     {
       "elo_raw": "Elo: 1871→1946 (rest+10 venue-10) vs 1671→1659 (rest+10 venue-10)",
@@ -771,11 +812,31 @@
       "home": "belgium",
       "away": "egypt",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 54.3,
+      "hours_until": 54.1,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
-      "is_my_team": false,
-      "predict_fun": null
+      "is_my_team": true,
+      "predict_fun": null,
+      "binance": [
+        {
+          "market": "胜负盘",
+          "pick": "主胜 (belgium)",
+          "probability": 80.4,
+          "confidence": "高"
+        },
+        {
+          "market": "双方进球",
+          "pick": "否",
+          "probability": 67.9,
+          "confidence": "中"
+        },
+        {
+          "market": "比分",
+          "pick": "2-0",
+          "probability": 17.2,
+          "confidence": "中"
+        }
+      ]
     },
     {
       "elo_raw": "Elo: 1619→1585 (rest+10 venue-15) vs 1833→1827 (rest+10 venue-9)",
@@ -843,11 +904,19 @@
       "home": "saudi-arabia",
       "away": "uruguay",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 57.3,
+      "hours_until": 57.1,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
-      "is_my_team": false,
-      "predict_fun": null
+      "is_my_team": true,
+      "predict_fun": null,
+      "binance": [
+        {
+          "market": "比分",
+          "pick": "1-1",
+          "probability": 11.5,
+          "confidence": "低"
+        }
+      ]
     },
     {
       "elo_raw": "Elo: 1733→1757 (rest+10 venue+7) vs 1567→1560 (rest+10 venue+0)",
@@ -915,11 +984,25 @@
       "home": "iran",
       "away": "new-zealand",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 60.3,
+      "hours_until": 60.1,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
-      "is_my_team": false,
-      "predict_fun": null
+      "is_my_team": true,
+      "predict_fun": null,
+      "binance": [
+        {
+          "market": "胜负盘",
+          "pick": "主胜 (iran)",
+          "probability": 69.8,
+          "confidence": "中"
+        },
+        {
+          "market": "比分",
+          "pick": "2-0",
+          "probability": 13.7,
+          "confidence": "低"
+        }
+      ]
     }
   ]
 }
