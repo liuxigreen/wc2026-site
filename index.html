@@ -171,6 +171,9 @@ body{font-family:-apple-system,system-ui,'Segoe UI',sans-serif;background:var(--
 .review-card.draw-result{border-left:3px solid var(--yellow)}
 .review-teams{flex:1;display:flex;align-items:center;gap:6px;font-size:13px}
 .review-score{font-size:18px;font-weight:700;color:var(--accent);min-width:50px;text-align:center;font-variant-numeric:tabular-nums}
+.live-score-bar{text-align:center;margin:8px 0;font-size:20px;font-weight:700;color:var(--green);letter-spacing:2px}
+.live-score-bar .live-dot{width:8px;height:8px;background:var(--green);border-radius:50%;display:inline-block;animation:blink 1.5s infinite;margin-right:6px;vertical-align:middle}
+.live-score-bar .live-detail{font-size:11px;font-weight:400;color:var(--dim);margin-left:8px}
 .review-pred{text-align:right;font-size:11px;color:var(--dim);min-width:60px}
 .review-icon{font-size:18px;min-width:24px;text-align:center}
 .round-summary{
@@ -452,6 +455,7 @@ function renderMatch(m){
       <div class="vs-badge">VS</div>
       <div class="team"><div class="flag">${f(m.away)}</div><div class="name">${c(m.away)}</div>${elo.b?`<div class="elo-badge">Elo ${elo.b}</div>`:''}</div>
     </div>
+    ${m.state==='in'?`<div class="live-score-bar"><span class="live-dot"></span>${m.home_score} - ${m.away_score}<span class="live-detail">${m.status||'进行中'}</span></div>`:''}
     <div class="win-bar">
       <div class="seg seg-home" style="width:${hw}%"></div>
       <div class="seg seg-draw" style="width:${dw}%"></div>
