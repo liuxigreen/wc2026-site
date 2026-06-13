@@ -760,20 +760,33 @@ async function fetchLive(){
     if(live&&live.matches&&live.matches.length){
       const existing=window.__WC_DATA__||{};
       const staticMatches=(existing.predictions||{}).matches||[];
-      // Merge: use live data but preserve predict_fun/binance from static
+      // Build lookup from static matches
+      const staticMap={};
+      staticMatches.forEach(sm=>{staticMap[sm.home+'-'+sm.away]=sm;});
+      // Merge: use live data but preserve platform recs from static
       live.matches.forEach(lm=>{
-        const sm=staticMatches.find(s=>s.home===lm.home&&s.away===lm.away);
+        const key=lm.home+'-'+lm.away;
+        const sm=staticMap[key];
         if(sm){
-          lm.predict_fun=lm.predict_fun||sm.predict_fun;
-          lm.binance=lm.binance||sm.binance;
-          lm.xbit=lm.xbit||sm.xbit;
+          if(!lm.predict_fun&&sm.predict_fun)lm.predict_fun=sm.predict_fun;
+          if(!lm.binance&&sm.binance)lm.binance=sm.binance;
+          if(!lm.xbit&&sm.xbit)lm.xbit=sm.xbit;
+          if(!lm.is_my_team)lm.is_my_team=sm.is_my_team;
         }
       });
+      // Add static-only matches (not in live yet)
+      const liveKeys=new Set(live.matches.map(m=>m.home+'-'+m.away));
+      staticMatches.forEach(sm=>{
+        if(!liveKeys.has(sm.home+'-'+sm.away)){
+          live.matches.push(sm);
+        }
+      });
+      live.matches.sort((a,b)=>(a.hours_until||999)-(b.hours_until||999));
       existing.predictions=live;
       window.__WC_DATA__=existing;
-      console.log("✅ Live data loaded:",live.matches.length,"matches");
+      console.log("✅ Live data merged:",live.matches.length,"matches");
     }
-  }catch(e){/* silent fail, use static data */}
+  }catch(e){console.log("⚠️ fetchLive failed:",e.message);}
 }
 
 /* ===== Main Load ===== */
