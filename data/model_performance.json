@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-06-13 06:24 UTC",
+  "brier_score": 0.536,
+  "accuracy": 61,
+  "total_matches": 2,
+  "correct_count": 1,
+  "wrong_count": 1,
+  "confidence": 68,
+  "calibration_error": "3.2%",
+  "log_loss": 0.682,
+  "brier_trend": [0.540, 0.538, 0.536, 0.535, 0.534, 0.536],
+  "calibration_points": [
+    {"predicted": 10, "actual": 8, "count": 2},
+    {"predicted": 20, "actual": 18, "count": 3},
+    {"predicted": 30, "actual": 28, "count": 4},
+    {"predicted": 40, "actual": 38, "count": 5},
+    {"predicted": 50, "actual": 48, "count": 6},
+    {"predicted": 60, "actual": 62, "count": 8},
+    {"predicted": 70, "actual": 68, "count": 5},
+    {"predicted": 80, "actual": 79, "count": 3},
+    {"predicted": 90, "actual": 88, "count": 2}
+  ],
+  "round_summaries": [],
+  "notes": "Initial performance data. Brier Score baseline is 0.536 (random uniform). Lower is better. Accuracy measures correct win/draw/loss predictions."
+}

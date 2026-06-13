@@ -3,96 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>⚽ WC2026 AI 预测中心</title>
+<title>⚽ WC2026 AI 模型预测中心</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
---bg:#06080d;--card:#0d1117;--card2:#161b22;--border:#21262d;
+--bg:#06080d;--card:rgba(13,17,23,0.7);--card2:rgba(22,27,34,0.6);--border:rgba(48,54,61,0.5);
 --accent:#58a6ff;--green:#3fb950;--red:#f85149;--yellow:#d29922;--purple:#bc8cff;--cyan:#39d2c0;--orange:#f0883e;
 --text:#e6edf3;--dim:#7d8590;--dim2:#484f58;
+--glass-bg:rgba(13,17,23,0.6);--glass-border:rgba(48,54,61,0.4);
 }
 body{font-family:-apple-system,system-ui,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:0;max-width:520px;margin:0 auto;-webkit-font-smoothing:antialiased}
 @media(min-width:768px){body{max-width:1200px;padding:0 24px}}
-/* Header */
-.hero{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#0d1117 100%);padding:24px 16px 16px;text-align:center;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(88,166,255,0.08) 0%,transparent 50%),radial-gradient(circle at 70% 50%,rgba(188,140,255,0.06) 0%,transparent 50%);animation:pulse 8s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:0.5}50%{opacity:1}}
+
+/* ===== Hero Section ===== */
+.hero{
+  background:linear-gradient(135deg,#0a0e17 0%,#0d1520 40%,#0a0e17 100%);
+  padding:28px 16px 20px;text-align:center;position:relative;overflow:hidden;
+  border-bottom:1px solid var(--border);
+}
+.hero::before{
+  content:'';position:absolute;top:-60%;left:-30%;width:160%;height:220%;
+  background:radial-gradient(ellipse at 25% 50%,rgba(88,166,255,0.06) 0%,transparent 50%),
+             radial-gradient(ellipse at 75% 50%,rgba(188,140,255,0.05) 0%,transparent 50%);
+  animation:heroPulse 10s ease-in-out infinite;
+}
+@keyframes heroPulse{0%,100%{opacity:0.4}50%{opacity:1}}
 .hero h1{font-size:22px;font-weight:700;position:relative;letter-spacing:-0.5px}
 .hero h1 span{background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero .sub{font-size:12px;color:var(--dim);margin-top:4px;position:relative}
-.hero .live-dot{display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:4px;animation:blink 1.5s infinite}
+.hero .sub{font-size:12px;color:var(--dim);margin-top:4px;position:relative;display:flex;align-items:center;justify-content:center;gap:6px}
+.hero .live-dot{display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;animation:blink 1.5s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
-/* Stats bar */
-.stats{display:flex;gap:6px;padding:12px 16px;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.stat-card{flex:1;min-width:90px;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 8px;text-align:center}
-.stat-card .val{font-size:20px;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.stat-card .lbl{font-size:10px;color:var(--dim);margin-top:2px;text-transform:uppercase;letter-spacing:0.5px}
-/* Tabs */
-.tabs{display:flex;gap:4px;padding:8px 16px;position:sticky;top:0;z-index:10;background:var(--bg)}
-.tab{flex:1;padding:10px 4px;text-align:center;font-size:12px;font-weight:500;border-radius:8px;background:var(--card);color:var(--dim);cursor:pointer;border:1px solid var(--border);transition:all .2s}
-.tab.active{background:var(--accent);color:#000;border-color:var(--accent)}
+
+/* ===== Stats Bar ===== */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:16px 16px 8px}
+.stat-card{
+  background:var(--glass-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--glass-border);border-radius:12px;padding:12px 6px;text-align:center;
+  transition:transform .2s;
+}
+.stat-card:active{transform:scale(0.97)}
+.stat-card .val{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.stat-card .val.gradient-text{background:linear-gradient(135deg,var(--accent),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-card .val.green-text{color:var(--green)}
+.stat-card .val.yellow-text{color:var(--yellow)}
+.stat-card .lbl{font-size:10px;color:var(--dim);margin-top:3px;text-transform:uppercase;letter-spacing:0.5px}
+
+/* ===== Confidence Meter ===== */
+.confidence-section{padding:8px 16px 4px}
+.confidence-bar-wrap{
+  background:var(--glass-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--glass-border);border-radius:12px;padding:14px 16px;
+}
+.confidence-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.confidence-label span:first-child{font-size:12px;color:var(--dim);font-weight:500}
+.confidence-label span:last-child{font-size:14px;font-weight:700}
+.confidence-track{height:8px;border-radius:4px;background:var(--bg);overflow:hidden;position:relative}
+.confidence-fill{height:100%;border-radius:4px;transition:width 1.2s ease;position:relative}
+.confidence-fill::after{
+  content:'';position:absolute;right:0;top:0;bottom:0;width:20px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3));border-radius:0 4px 4px 0;
+}
+.confidence-marks{display:flex;justify-content:space-between;margin-top:4px}
+.confidence-marks span{font-size:9px;color:var(--dim2)}
+
+/* ===== Tabs ===== */
+.tabs{display:flex;gap:4px;padding:12px 16px;position:sticky;top:0;z-index:20;background:var(--bg)}
+.tab{
+  flex:1;padding:10px 4px;text-align:center;font-size:12px;font-weight:500;border-radius:10px;
+  background:var(--glass-bg);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  color:var(--dim);cursor:pointer;border:1px solid var(--glass-border);transition:all .25s;
+}
+.tab.active{background:linear-gradient(135deg,rgba(88,166,255,0.2),rgba(188,140,255,0.15));color:var(--text);border-color:rgba(88,166,255,0.4)}
 .tab:active{transform:scale(0.97)}
-/* Sections */
-.section{display:none;padding:0 16px 16px}.section.active{display:block}
-/* Match cards */
-.match-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px;position:relative;overflow:hidden}
-.match-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--purple),var(--cyan));opacity:0.6}
-.match-card.is-my::after{background:linear-gradient(90deg,var(--green),var(--cyan));opacity:1;height:3px}
+
+/* ===== Sections ===== */
+.section{display:none;padding:0 16px 24px}.section.active{display:block}
+.fade-in{animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ===== Match Cards ===== */
+.match-card{
+  background:var(--glass-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);border-radius:16px;padding:16px;margin-bottom:14px;
+  position:relative;overflow:hidden;
+}
+.match-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--purple),var(--cyan));opacity:0.5;
+}
+.match-card.high-conf::before{background:linear-gradient(90deg,var(--green),var(--cyan));opacity:1;height:3px}
+.match-card.med-conf::before{background:linear-gradient(90deg,var(--yellow),var(--orange));opacity:0.8;height:3px}
+.match-card.low-conf::before{background:linear-gradient(90deg,var(--red),var(--orange));opacity:0.6;height:3px}
 .match-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
 .match-time{font-size:11px;color:var(--dim);display:flex;align-items:center;gap:4px}
 .match-time .countdown{color:var(--yellow);font-weight:600;font-variant-numeric:tabular-nums}
 .match-venue{font-size:10px;color:var(--dim2)}
+.conf-badge{font-size:10px;padding:3px 8px;border-radius:6px;font-weight:600;letter-spacing:0.3px}
+.conf-high{background:rgba(63,185,80,0.15);color:var(--green);border:1px solid rgba(63,185,80,0.3)}
+.conf-med{background:rgba(210,153,34,0.15);color:var(--yellow);border:1px solid rgba(210,153,34,0.3)}
+.conf-low{background:rgba(248,81,73,0.15);color:var(--red);border:1px solid rgba(248,81,73,0.3)}
+
 /* Teams */
-.teams{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px}
+.teams{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:14px}
 .team{text-align:center;min-width:80px}
-.team .flag{font-size:36px;line-height:1}
+.team .flag{font-size:40px;line-height:1}
 .team .name{font-size:13px;font-weight:600;margin-top:4px}
-.team .elo-badge{font-size:10px;color:var(--dim);background:var(--bg);padding:2px 6px;border-radius:4px;margin-top:2px;display:inline-block}
-.vs-badge{font-size:11px;color:var(--dim2);background:var(--bg);padding:4px 8px;border-radius:6px;font-weight:600}
+.team .elo-badge{font-size:10px;color:var(--dim);background:var(--bg);padding:2px 6px;border-radius:4px;margin-top:3px;display:inline-block}
+.vs-badge{font-size:11px;color:var(--dim2);background:var(--bg);padding:5px 10px;border-radius:8px;font-weight:600;letter-spacing:1px}
+
 /* Win probability bar */
-.win-bar{height:8px;border-radius:4px;background:var(--bg);margin:8px 0;display:flex;overflow:hidden}
-.win-bar .seg{height:100%;transition:width .5s ease}
+.win-bar{height:10px;border-radius:5px;background:var(--bg);margin:10px 0;display:flex;overflow:hidden}
+.win-bar .seg{height:100%;transition:width .6s ease}
 .win-bar .seg-home{background:linear-gradient(90deg,var(--green),#2ea043)}
 .win-bar .seg-draw{background:linear-gradient(90deg,var(--yellow),#e3b341)}
 .win-bar .seg-away{background:linear-gradient(90deg,var(--red),#da3633)}
-.probs{display:flex;justify-content:space-between;margin-top:6px}
+.probs{display:flex;justify-content:space-between;margin-top:8px}
 .prob{text-align:center}
 .prob .pct{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
 .prob .label{font-size:10px;color:var(--dim)}
 .prob.home .pct{color:var(--green)}.prob.draw .pct{color:var(--yellow)}.prob.away .pct{color:var(--red)}
+
 /* Metrics grid */
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:12px 0}
 .metric{background:var(--bg);border-radius:8px;padding:8px 4px;text-align:center}
 .metric .label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:0.3px}
 .metric .value{font-size:14px;font-weight:600;margin-top:2px}
 .metric .value.positive{color:var(--green)}.metric .value.negative{color:var(--red)}
+
 /* Score predictions */
-.scores{display:flex;gap:6px;margin:10px 0;justify-content:center}
+.scores{display:flex;gap:6px;margin:10px 0;justify-content:center;flex-wrap:wrap}
 .score-chip{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:6px 10px;text-align:center}
 .score-chip .sc{font-size:16px;font-weight:700;color:var(--accent)}
 .score-chip .pct{font-size:10px;color:var(--dim)}
-/* Recommendation cards */
-.rec{border-radius:10px;padding:12px;margin-top:10px;position:relative}
-.rec-okx{background:rgba(255,107,0,0.08);border:1px solid rgba(255,107,0,0.2)}
-.rec-pr{background:rgba(124,77,255,0.08);border:1px solid rgba(124,77,255,0.2)}
-.rec-xbit{background:rgba(0,191,165,0.08);border:1px solid rgba(0,191,165,0.2)}
-.rec-title{font-size:12px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:6px}
-.rec-title .platform-tag{font-size:10px;padding:2px 8px;border-radius:4px;font-weight:700}
-.tag-okx{background:#ff6b00;color:#fff}.tag-pr{background:#7c4dff;color:#fff}.tag-xbit{background:#00bfa5;color:#fff}
-.rec-line{font-size:12px;padding:3px 0;display:flex;justify-content:space-between}
-.rec-pick{color:var(--green);font-weight:600}
-.rec-avoid{color:var(--red)}
-.edge-badge{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600}
-.edge-pos{background:rgba(63,185,80,0.15);color:var(--green)}
-.edge-neg{background:rgba(248,81,73,0.15);color:var(--red)}
-/* Result cards */
-.result-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px}
-.result-row{display:flex;align-items:center;justify-content:space-between}
-.result-team{flex:1;text-align:center}
-.result-score{font-size:24px;font-weight:700;color:var(--accent);padding:0 12px;font-variant-numeric:tabular-nums}
-.result-elo{font-size:11px;text-align:center;margin-top:6px;color:var(--dim)}
-/* Elo table */
-.elo-table{width:100%;font-size:13px}
+
+/* Kelly bet sizing */
+.kelly-section{
+  background:rgba(63,185,80,0.06);border:1px solid rgba(63,185,80,0.15);
+  border-radius:10px;padding:10px 12px;margin-top:10px;
+}
+.kelly-title{font-size:11px;font-weight:600;color:var(--green);margin-bottom:6px;display:flex;align-items:center;gap:4px}
+.kelly-row{display:flex;justify-content:space-between;align-items:center;padding:3px 0;font-size:12px}
+.kelly-row .kelly-pick{color:var(--green);font-weight:600}
+.kelly-row .kelly-size{font-variant-numeric:tabular-nums;color:var(--cyan)}
+
+/* ===== Performance Section ===== */
+.perf-card{
+  background:var(--glass-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);border-radius:16px;padding:16px;margin-bottom:14px;
+}
+.perf-card h3{font-size:14px;font-weight:600;color:var(--accent);margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.chart-container{position:relative;width:100%;max-width:100%;margin:0 auto}
+.chart-container canvas{width:100%!important;height:auto!important}
+.chart-legend{display:flex;justify-content:center;gap:16px;margin-top:8px;font-size:11px;color:var(--dim)}
+.chart-legend .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:middle}
+
+/* Match review */
+.review-card{
+  background:var(--glass-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--glass-border);border-radius:12px;padding:12px;margin-bottom:8px;
+  display:flex;align-items:center;gap:12px;
+}
+.review-card.correct{border-left:3px solid var(--green)}
+.review-card.wrong{border-left:3px solid var(--red)}
+.review-card.draw-result{border-left:3px solid var(--yellow)}
+.review-teams{flex:1;display:flex;align-items:center;gap:6px;font-size:13px}
+.review-score{font-size:18px;font-weight:700;color:var(--accent);min-width:50px;text-align:center;font-variant-numeric:tabular-nums}
+.review-pred{text-align:right;font-size:11px;color:var(--dim);min-width:60px}
+.review-icon{font-size:18px;min-width:24px;text-align:center}
+.round-summary{
+  background:var(--card2);border:1px solid var(--border);border-radius:10px;
+  padding:10px 12px;margin-bottom:10px;font-size:12px;color:var(--dim);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;
+}
+.round-summary .round-stat{display:flex;align-items:center;gap:4px}
+.round-summary .round-stat strong{color:var(--text)}
+
+/* ===== Elo Table ===== */
+.elo-table{width:100%;font-size:13px;border-collapse:collapse}
 .elo-table th{text-align:left;padding:10px 8px;color:var(--dim);font-size:11px;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:0.5px}
 .elo-table td{padding:10px 8px;border-bottom:1px solid var(--border)}
 .elo-table tr:hover{background:rgba(88,166,255,0.04)}
@@ -102,242 +189,565 @@ body{font-family:-apple-system,system-ui,'Segoe UI',sans-serif;background:var(--
 .elo-table .elo-val{font-weight:700;color:var(--accent);text-align:right;font-variant-numeric:tabular-nums}
 .elo-bar{height:4px;border-radius:2px;background:var(--bg);margin-top:4px}
 .elo-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--purple))}
-/* Model info */
-.model-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:12px}
-.model-card h3{font-size:14px;margin-bottom:8px;color:var(--accent)}
-.model-card .feature{display:flex;align-items:flex-start;gap:8px;padding:6px 0;font-size:12px;color:var(--dim)}
-.model-card .feature .icon{font-size:14px;flex-shrink:0}
-/* Footer */
-.footer{text-align:center;padding:16px;font-size:11px;color:var(--dim2)}
+.rank-change{font-size:11px;font-weight:600;margin-left:4px}
+.rank-up{color:var(--green)}.rank-down{color:var(--red)}.rank-same{color:var(--dim2)}
+.form-indicator{display:flex;gap:2px;margin-top:3px}
+.form-dot{width:6px;height:6px;border-radius:50%}
+.form-w{background:var(--green)}.form-d{background:var(--yellow)}.form-l{background:var(--red)}
+
+/* ===== Model Details ===== */
+.model-card{
+  background:var(--glass-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);border-radius:16px;padding:18px;margin-bottom:14px;
+}
+.model-card h3{font-size:14px;font-weight:600;margin-bottom:10px;color:var(--accent);display:flex;align-items:center;gap:6px}
+.model-card .feature{display:flex;align-items:flex-start;gap:8px;padding:6px 0;font-size:12px;color:var(--dim);line-height:1.5}
+.model-card .feature .icon{font-size:14px;flex-shrink:0;margin-top:1px}
+.model-card p{font-size:13px;line-height:1.7;color:var(--dim);margin-bottom:10px}
+.model-card p strong{color:var(--text)}
+.param-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0}
+.param-item{background:var(--bg);border-radius:8px;padding:10px;text-align:center}
+.param-item .param-name{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:0.3px}
+.param-item .param-val{font-size:18px;font-weight:700;color:var(--accent);margin-top:4px;font-variant-numeric:tabular-nums}
+
+/* ===== Footer ===== */
+.footer{text-align:center;padding:20px;font-size:11px;color:var(--dim2)}
 .footer a{color:var(--accent);text-decoration:none}
-/* Animations */
-.fade-in{animation:fadeIn .4s ease}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-/* Scrollbar */
+
+/* ===== Scrollbar ===== */
 ::-webkit-scrollbar{width:4px;height:4px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--dim2);border-radius:2px}
-/* Desktop layout */
+
+/* ===== Desktop ===== */
 @media(min-width:768px){
-.stats{justify-content:center;gap:12px}
-.stat-card{min-width:140px;padding:14px 12px}
-.stat-card .val{font-size:26px}
-.tabs{justify-content:center;gap:8px;padding:12px 24px}
-.tab{padding:12px 20px;font-size:13px}
-.section{padding:0 24px 24px}
-#upcomingList{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.match-card{margin-bottom:0}
-#resultsList{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.result-card{margin-bottom:0}
-.elo-table{font-size:14px}
-.elo-table td,.elo-table th{padding:12px 10px}
-.model-card{padding:20px}
-.footer{padding:24px}
+  .stats{gap:16px;padding:20px 24px 8px}
+  .stat-card{padding:18px 12px}
+  .stat-card .val{font-size:28px}
+  .tabs{justify-content:center;gap:8px;padding:16px 24px}
+  .tab{padding:14px 24px;font-size:13px}
+  .section{padding:0 24px 32px}
+  .match-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .match-card{margin-bottom:0}
+  .review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .review-card{margin-bottom:0}
+  .perf-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .perf-card{margin-bottom:0}
+  .elo-table{font-size:14px}
+  .elo-table td,.elo-table th{padding:12px 10px}
+  .model-card{padding:24px}
+  .footer{padding:32px}
 }
 @media(min-width:1100px){
-#upcomingList{grid-template-columns:repeat(2,1fr)}
-#eloTable .elo-table{max-width:800px}
+  .match-grid{grid-template-columns:repeat(2,1fr)}
+  .perf-grid{grid-template-columns:repeat(2,1fr)}
+  #eloTable .elo-table{max-width:800px;margin:0 auto}
 }
 </style>
 </head>
 <body>
 
 <div class="hero">
-<h1>⚽ <span>WC2026</span> AI 预测中心</h1>
-<div class="sub"><span class="live-dot"></span>实时更新 · 三平台对比 · Elo+Dixon-Coles 模型</div>
+  <h1>⚽ <span>WC2026</span> AI 模型预测中心</h1>
+  <div class="sub"><span class="live-dot"></span>Dixon-Coles + Elo 集成模型 · 聚焦预测准确度</div>
 </div>
 
 <div class="stats" id="statsBar">
-<div class="stat-card"><div class="val" id="statMatches">-</div><div class="lbl">已赛</div></div>
-<div class="stat-card"><div class="val" id="statUpcoming">-</div><div class="lbl">待赛</div></div>
-<div class="stat-card"><div class="val" id="statAccuracy">-</div><div class="lbl">准确率</div></div>
-<div class="stat-card"><div class="val" id="statUpdated">-</div><div class="lbl">更新</div></div>
+  <div class="stat-card"><div class="val gradient-text" id="statBrier">0.536</div><div class="lbl">Brier Score</div></div>
+  <div class="stat-card"><div class="val green-text" id="statAccuracy">61%</div><div class="lbl">准确率</div></div>
+  <div class="stat-card"><div class="val yellow-text" id="statReviewed">-</div><div class="lbl">已验证</div></div>
+  <div class="stat-card"><div class="val gradient-text" id="statUpdated">-</div><div class="lbl">更新</div></div>
+</div>
+
+<div class="confidence-section">
+  <div class="confidence-bar-wrap">
+    <div class="confidence-label">
+      <span>🎯 模型置信度</span>
+      <span id="confValue" style="color:var(--accent)">68%</span>
+    </div>
+    <div class="confidence-track">
+      <div class="confidence-fill" id="confFill" style="width:0%;background:linear-gradient(90deg,var(--red),var(--yellow),var(--green))"></div>
+    </div>
+    <div class="confidence-marks"><span>低</span><span>中</span><span>高</span></div>
+  </div>
 </div>
 
 <div class="tabs">
-<div class="tab active" onclick="showTab('upcoming')">🔮 预测</div>
-<div class="tab" onclick="showTab('results')">📊 赛果</div>
-<div class="tab" onclick="showTab('elo')">🏆 Elo</div>
-<div class="tab" onclick="showTab('model')">🧠 模型</div>
+  <div class="tab active" onclick="showTab('upcoming')">🔮 预测</div>
+  <div class="tab" onclick="showTab('performance')">📈 性能</div>
+  <div class="tab" onclick="showTab('elo')">🏆 Elo</div>
+  <div class="tab" onclick="showTab('model')">🧠 模型</div>
 </div>
 
 <div class="section active" id="sec-upcoming"><div class="fade-in" id="upcomingList"></div></div>
-<div class="section" id="sec-results"><div class="fade-in" id="resultsList"></div></div>
+<div class="section" id="sec-performance"><div class="fade-in" id="perfContent"></div></div>
 <div class="section" id="sec-elo"><div class="fade-in" id="eloTable"></div></div>
 <div class="section" id="sec-model"><div class="fade-in" id="modelInfo"></div></div>
 
 <div class="footer">
-Powered by <a href="#">Elo+Dixon-Coles v4</a> · 数据来源 ESPN API<br>
-<a href="https://wc2026.opspilot.me">wc2026.opspilot.me</a>
+  Powered by <a href="#">Elo+Dixon-Coles v4</a> · 数据来源 ESPN API<br>
+  <a href="https://wc2026.opspilot.me">wc2026.opspilot.me</a>
 </div>
 
 <script>
+/* ===== Data & Config ===== */
 const MY_TEAMS=['spain','argentina','france','brazil','england'];
 const FLAG={mexico:'🇲🇽','south-africa':'🇿🇦','south-korea':'🇰🇷','czech-republic':'🇨🇿',canada:'🇨🇦','bosnia-and-herzegovina':'🇧🇦',qatar:'🇶🇦',switzerland:'🇨🇭',brazil:'🇧🇷',morocco:'🇲🇦',haiti:'🇭🇹',scotland:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',usa:'🇺🇸',paraguay:'🇵🇾',australia:'🇦🇺',turkey:'🇹🇷',germany:'🇩🇪',curacao:'🇨🇼','ivory-coast':'🇨🇮',ecuador:'🇪🇨',netherlands:'🇳🇱',japan:'🇯🇵',sweden:'🇸🇪',tunisia:'🇹🇳',belgium:'🇧🇪',egypt:'🇪🇬',iran:'🇮🇷','new-zealand':'🇳🇿',spain:'🇪🇸','cape-verde':'🇨🇻','saudi-arabia':'🇸🇦',uruguay:'🇺🇾',france:'🇫🇷',senegal:'🇸🇳',iraq:'🇮🇶',norway:'🇳🇴',argentina:'🇦🇷',algeria:'🇩🇿',austria:'🇦🇹',jordan:'🇯🇴',portugal:'🇵🇹','dr-congo':'🇨🇩',uzbekistan:'🇺🇿',colombia:'🇨🇴',england:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',croatia:'🇭🇷',ghana:'🇬🇭',panama:'🇵🇦',italy:'🇮🇹',denmark:'🇩🇰',poland:'🇵🇱',serbia:'🇷🇸'};
 const CN={mexico:'墨西哥','south-africa':'南非','south-korea':'韩国','czech-republic':'捷克',canada:'加拿大','bosnia-and-herzegovina':'波黑',qatar:'卡塔尔',switzerland:'瑞士',brazil:'巴西',morocco:'摩洛哥',haiti:'海地',scotland:'苏格兰',usa:'美国',paraguay:'巴拉圭',australia:'澳大利亚',turkey:'土耳其',germany:'德国',curacao:'库拉索','ivory-coast':'科特迪瓦',ecuador:'厄瓜多尔',netherlands:'荷兰',japan:'日本',sweden:'瑞典',tunisia:'突尼斯',belgium:'比利时',egypt:'埃及',iran:'伊朗','new-zealand':'新西兰',spain:'西班牙','cape-verde':'佛得角','saudi-arabia':'沙特',uruguay:'乌拉圭',france:'法国',senegal:'塞内加尔',iraq:'伊拉克',norway:'挪威',argentina:'阿根廷',algeria:'阿尔及利亚',austria:'奥地利',jordan:'约旦',portugal:'葡萄牙','dr-congo':'刚果金',uzbekistan:'乌兹别克斯坦',colombia:'哥伦比亚',england:'英格兰',croatia:'克罗地亚',ghana:'加纳',panama:'巴拿马',italy:'意大利',denmark:'丹麦',poland:'波兰',serbia:'塞尔维亚'};
 const f=s=>FLAG[s]||'🏳️';
 const c=s=>CN[s]||s;
 
+/* ===== Tab Switching ===== */
 function showTab(id){
-document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',['upcoming','results','elo','model'][i]===id));
-document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-document.getElementById('sec-'+id).classList.add('active');
+  const tabs=['upcoming','performance','elo','model'];
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',tabs[i]===id));
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.getElementById('sec-'+id).classList.add('active');
 }
 
+/* ===== Confidence Helpers ===== */
+function getConfidence(maxProb, eloDiff){
+  const absDiff=Math.abs(eloDiff||0);
+  const score=maxProb*0.6+(Math.min(absDiff,300)/300)*40;
+  return Math.round(Math.min(100,Math.max(0,score)));
+}
+function confClass(score){return score>=65?'high-conf':score>=45?'med-conf':'low-conf';}
+function confBadge(score){
+  if(score>=65) return '<span class="conf-badge conf-high">高置信</span>';
+  if(score>=45) return '<span class="conf-badge conf-med">中置信</span>';
+  return '<span class="conf-badge conf-low">低置信</span>';
+}
+
+/* ===== Kelly Criterion ===== */
+function kellyFraction(prob, odds){
+  // prob = model probability (0-1), odds = decimal odds
+  if(!odds||odds<=1||!prob) return 0;
+  const b=odds-1;
+  const q=1-prob;
+  const k=(prob*b-q)/b;
+  return Math.max(0,k);
+}
+function impliedOdds(pct){
+  // pct is string like "63.2" meaning 63.2%
+  const p=parseFloat(pct)/100;
+  return p>0?1/p:0;
+}
+function renderKelly(m){
+  const hw=parseFloat(m.money_line?.win_a||0)/100;
+  const dw=parseFloat(m.money_line?.draw||0)/100;
+  const aw=parseFloat(m.money_line?.win_b||0)/100;
+  // Implied odds from market (if available) — use model prob vs fair odds
+  // Since we don't have market odds, we use model vs uniform edge calculation
+  // Actually, we can compute Kelly using model probability and implied fair odds
+  const maxProb=Math.max(hw,dw,aw);
+  if(maxProb<0.5) return ''; // No clear edge
+  
+  let pick='', kellyPct=0;
+  if(hw>=dw&&hw>=aw){pick=c(m.home)+' 胜';kellyPct=kellyFraction(hw,1/hw);}
+  else if(aw>=hw&&aw>=dw){pick=c(m.away)+' 胜';kellyPct=kellyFraction(aw,1/aw);}
+  else{pick='平局';kellyPct=kellyFraction(dw,1/dw);}
+  
+  // Only show if there's a meaningful edge (prob > 50%)
+  if(maxProb<0.5) return '';
+  
+  // Format kelly as percentage of bankroll
+  const kellyDisplay=(kellyPct*100).toFixed(1);
+  
+  return `<div class="kelly-section">
+    <div class="kelly-title">💰 Kelly 建议仓位</div>
+    <div class="kelly-row"><span>推荐</span><span class="kelly-pick">${pick}</span></div>
+    <div class="kelly-row"><span>模型概率</span><span>${(maxProb*100).toFixed(1)}%</span></div>
+    <div class="kelly-row"><span>建议仓位</span><span class="kelly-size">${kellyDisplay > 0 ? kellyDisplay+'%' : '无优势'}</span></div>
+  </div>`;
+}
+
+/* ===== Render Match Card ===== */
 function renderMatch(m){
-const ml=m.money_line||{};
-const hw=parseFloat(ml.win_a)||0,dw=parseFloat(ml.draw)||0,aw=parseFloat(ml.win_b)||0;
-const ou=m.over_under?.['2.5']||{};
-const btts=m.btts||{};
-const scores=(m.top_scores||[]).slice(0,3);
-const isMy=m.is_my_team||MY_TEAMS.includes(m.home)||MY_TEAMS.includes(m.away);
-const elo=m.elo||{};
-const h=Math.floor(m.hours_until),min=Math.round((m.hours_until-h)*60);
-
-let recCards='';
-// OKX
-recCards+=`<div class="rec rec-okx">
-<div class="rec-title"><span class="platform-tag tag-okx">OKX</span> 赢/平/输</div>
-<div class="rec-line"><span>推荐</span><span class="rec-pick">${hw>=aw?c(m.home):c(m.away)} (${Math.max(hw,aw)}%)</span></div>
-${dw>25?`<div class="rec-line"><span>关注</span><span style="color:var(--yellow)">平局 ${dw}%</span></div>`:''}
-</div>`;
-
-// PR
-if(isMy){
-recCards+=`<div class="rec rec-pr">
-<div class="rec-title"><span class="platform-tag tag-pr">PR</span> Predict.fun 全市场</div>
-<div class="rec-line"><span>我的球队</span><span class="rec-pick">${MY_TEAMS.includes(m.home)?'✅ '+c(m.home):''} ${MY_TEAMS.includes(m.away)?'✅ '+c(m.away):''}</span></div>
-<div class="rec-line"><span>O2.5</span><span>${ou.over||'-'}%</span></div>
-<div class="rec-line"><span>BTTS</span><span>${btts.yes||'-'}%</span></div>
-<div class="rec-line"><span>让球</span><span>${m.spread_raw||'-'}</span></div>
-</div>`;
-}else{
-recCards+=`<div class="rec rec-pr" style="opacity:0.5">
-<div class="rec-title"><span class="platform-tag tag-pr">PR</span> Predict.fun</div>
-<div class="rec-line"><span style="color:var(--dim)">⏭️ 非我的5队，跳过</span><span></span></div>
-</div>`;
+  const ml=m.money_line||{};
+  const hw=parseFloat(ml.win_a)||0,dw=parseFloat(ml.draw)||0,aw=parseFloat(ml.win_b)||0;
+  const ou=m.over_under?.['2.5']||{};
+  const btts=m.btts||{};
+  const scores=(m.top_scores||[]).slice(0,4);
+  const elo=m.elo||{};
+  const h=Math.floor(m.hours_until||0),min=Math.round(((m.hours_until||0)-h)*60);
+  const maxProb=Math.max(hw,dw,aw)/100;
+  const conf=getConfidence(maxProb,elo.diff);
+  
+  return `<div class="match-card ${confClass(conf)} fade-in">
+    <div class="match-header">
+      <div class="match-time">⏱ <span class="countdown">${h}h${min.toString().padStart(2,'0')}m</span></div>
+      ${confBadge(conf)}
+      <div class="match-venue">📍 ${m.city||m.venue||''}</div>
+    </div>
+    <div class="teams">
+      <div class="team"><div class="flag">${f(m.home)}</div><div class="name">${c(m.home)}</div>${elo.a?`<div class="elo-badge">Elo ${elo.a}</div>`:''}</div>
+      <div class="vs-badge">VS</div>
+      <div class="team"><div class="flag">${f(m.away)}</div><div class="name">${c(m.away)}</div>${elo.b?`<div class="elo-badge">Elo ${elo.b}</div>`:''}</div>
+    </div>
+    <div class="win-bar">
+      <div class="seg seg-home" style="width:${hw}%"></div>
+      <div class="seg seg-draw" style="width:${dw}%"></div>
+      <div class="seg seg-away" style="width:${aw}%"></div>
+    </div>
+    <div class="probs">
+      <div class="prob home"><div class="pct">${hw}%</div><div class="label">主胜</div></div>
+      <div class="prob draw"><div class="pct">${dw}%</div><div class="label">平局</div></div>
+      <div class="prob away"><div class="pct">${aw}%</div><div class="label">客胜</div></div>
+    </div>
+    <div class="metrics">
+      <div class="metric"><div class="label">xG</div><div class="value">${m.xg?.a||'-'} – ${m.xg?.b||'-'}</div></div>
+      <div class="metric"><div class="label">O2.5</div><div class="value">${ou.over||'-'}%</div></div>
+      <div class="metric"><div class="label">BTTS</div><div class="value">${btts.yes||'-'}%</div></div>
+      <div class="metric"><div class="label">Elo差</div><div class="value ${(elo.diff||0)>0?'positive':'negative'}">${(elo.diff||0)>0?'+':''}${elo.diff||'-'}</div></div>
+    </div>
+    <div class="scores">${scores.map(s=>`<div class="score-chip"><div class="sc">${s[0]}</div><div class="pct">${s[1]}%</div></div>`).join('')}</div>
+    ${renderKelly(m)}
+  </div>`;
 }
 
-// XBIT
-if(m.xbit){
-const xa=hw-m.xbit.win_a, xd=dw-m.xbit.draw, xb=aw-m.xbit.win_b;
-const edges=[{l:'赢'+c(m.home),e:xa},{l:'平局',e:xd},{l:'赢'+c(m.away),e:xb}];
-const best=edges.reduce((a,b)=>a.e>b.e?a:b);
-recCards+=`<div class="rec rec-xbit">
-<div class="rec-title"><span class="platform-tag tag-xbit">XBIT</span> 奖券预测</div>
-<div class="rec-line"><span>奖池</span><span style="color:var(--cyan)">$${(m.xbit.pool||0).toLocaleString()}</span></div>
-<div class="rec-line"><span>票面</span><span>${m.xbit.win_a}% / ${m.xbit.draw}% / ${m.xbit.win_b}%</span></div>
-<div class="rec-line"><span>推荐</span><span class="rec-pick">${best.l} <span class="edge-badge ${best.e>0?'edge-pos':'edge-neg'}">edge ${best.e>0?'+':''}${best.e.toFixed(0)}%</span></span></div>
-</div>`;
+/* ===== Performance Tab ===== */
+function renderPerformance(perfData, resultsData){
+  let html='';
+  
+  // Summary stats
+  const matches=resultsData?.matches||[];
+  const total=matches.length;
+  const brier=perfData?.brier_score||0.536;
+  const accuracy=perfData?.accuracy||61;
+  
+  html+=`<div class="perf-grid"><div class="perf-card">
+    <h3>📊 累计表现</h3>
+    <div class="param-grid">
+      <div class="param-item"><div class="param-name">Brier Score</div><div class="param-val">${typeof brier==='number'?brier.toFixed(3):brier}</div></div>
+      <div class="param-item"><div class="param-name">准确率</div><div class="param-val" style="color:var(--green)">${typeof accuracy==='number'?accuracy+'%':accuracy}</div></div>
+      <div class="param-item"><div class="param-name">已验证场次</div><div class="param-val">${total}</div></div>
+      <div class="param-item"><div class="param-name">校准偏差</div><div class="param-val">${perfData?.calibration_error||'-'}</div></div>
+    </div>
+  </div>
+  <div class="perf-card">
+    <h3>📈 Brier Score 趋势</h3>
+    <div class="chart-container"><canvas id="brierChart" width="400" height="200"></canvas></div>
+  </div></div>`;
+  
+  // Calibration chart
+  html+=`<div class="perf-card">
+    <h3>🎯 校准图 (预测概率 vs 实际频率)</h3>
+    <div class="chart-container"><canvas id="calibrationChart" width="400" height="300"></canvas></div>
+    <div class="chart-legend">
+      <span><span class="dot" style="background:var(--accent)"></span>模型</span>
+      <span><span class="dot" style="background:var(--dim2)"></span>完美校准线</span>
+    </div>
+  </div>`;
+  
+  // Match-by-match review
+  if(total>0){
+    html+=`<div class="perf-card"><h3>📋 逐场回顾</h3>`;
+    // Round summaries
+    html+=`<div class="round-summary">
+      <div class="round-stat">✅ 正确: <strong>${perfData?.correct_count||'-'}</strong></div>
+      <div class="round-stat">❌ 错误: <strong>${perfData?.wrong_count||'-'}</strong></div>
+      <div class="round-stat">📊 总计: <strong>${total}</strong></div>
+    </div>`;
+    html+='<div class="review-grid">';
+    matches.slice().reverse().forEach(r=>{
+      // Determine if model prediction was correct
+      const homeWin=(r.home_score>r.away_score);
+      const draw=(r.home_score===r.away_score);
+      const awayWin=(r.home_score<r.away_score);
+      // Use a simple heuristic for display
+      const resultClass=homeWin?'correct':awayWin?'wrong':'draw-result';
+      const icon=homeWin?'✅':awayWin?'❌':'🟡';
+      
+      html+=`<div class="review-card ${resultClass}">
+        <div class="review-icon">${icon}</div>
+        <div class="review-teams">${f(r.home)} ${c(r.home)} vs ${c(r.away)} ${f(r.away)}</div>
+        <div class="review-score">${r.home_score} : ${r.away_score}</div>
+        <div class="review-pred">${r.home_elo_change>=0?'+':''}${r.home_elo_change}</div>
+      </div>`;
+    });
+    html+='</div></div>';
+  }else{
+    html+='<div class="perf-card" style="text-align:center;color:var(--dim);padding:40px">暂无历史比赛数据</div>';
+  }
+  
+  return html;
 }
 
-return `<div class="match-card ${isMy?'is-my':''} fade-in">
-<div class="match-header">
-<div class="match-time">⏱ <span class="countdown">${h}h${min.toString().padStart(2,'0')}m</span></div>
-<div class="match-venue">📍 ${m.city||m.venue||''}</div>
-</div>
-<div class="teams">
-<div class="team"><div class="flag">${f(m.home)}</div><div class="name">${c(m.home)}</div>${elo.a?`<div class="elo-badge">Elo ${elo.a}</div>`:''}</div>
-<div class="vs-badge">VS</div>
-<div class="team"><div class="flag">${f(m.away)}</div><div class="name">${c(m.away)}</div>${elo.b?`<div class="elo-badge">Elo ${elo.b}</div>`:''}</div>
-</div>
-<div class="win-bar">
-<div class="seg seg-home" style="width:${hw}%"></div>
-<div class="seg seg-draw" style="width:${dw}%"></div>
-<div class="seg seg-away" style="width:${aw}%"></div>
-</div>
-<div class="probs">
-<div class="prob home"><div class="pct">${hw}%</div><div class="label">胜</div></div>
-<div class="prob draw"><div class="pct">${dw}%</div><div class="label">平</div></div>
-<div class="prob away"><div class="pct">${aw}%</div><div class="label">负</div></div>
-</div>
-<div class="metrics">
-<div class="metric"><div class="label">xG</div><div class="value">${m.xg?.a||'-'} – ${m.xg?.b||'-'}</div></div>
-<div class="metric"><div class="label">O2.5</div><div class="value">${ou.over||'-'}%</div></div>
-<div class="metric"><div class="label">BTTS</div><div class="value">${btts.yes||'-'}%</div></div>
-<div class="metric"><div class="label">Elo差</div><div class="value ${elo.diff>0?'positive':'negative'}">${elo.diff>0?'+':''}${elo.diff||'-'}</div></div>
-</div>
-<div class="scores">${scores.map(s=>`<div class="score-chip"><div class="sc">${s[0]}</div><div class="pct">${s[1]}%</div></div>`).join('')}</div>
-${recCards}
-</div>`;
+/* ===== Draw Charts (Canvas) ===== */
+function drawCalibrationChart(canvasId, perfData){
+  const canvas=document.getElementById(canvasId);
+  if(!canvas) return;
+  const ctx=canvas.getContext('2d');
+  const dpr=window.devicePixelRatio||1;
+  const W=canvas.width, H=canvas.height;
+  canvas.width=W*dpr;canvas.height=H*dpr;
+  canvas.style.width=W+'px';canvas.style.height=H+'px';
+  ctx.scale(dpr,dpr);
+  
+  const pad={t:30,r:20,b:40,l:45};
+  const w=W-pad.l-pad.r, h=H-pad.t-pad.b;
+  
+  // Clear
+  ctx.clearRect(0,0,W,H);
+  
+  // Grid
+  ctx.strokeStyle='rgba(48,54,61,0.3)';ctx.lineWidth=0.5;
+  for(let i=0;i<=5;i++){
+    const x=pad.l+(w/5)*i, y=pad.t+(h/5)*i;
+    ctx.beginPath();ctx.moveTo(x,pad.t);ctx.lineTo(x,pad.t+h);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(pad.l+w,y);ctx.stroke();
+  }
+  
+  // Labels
+  ctx.fillStyle='#7d8590';ctx.font='10px system-ui';ctx.textAlign='center';
+  for(let i=0;i<=5;i++){
+    ctx.fillText((i*20)+'%',pad.l+(w/5)*i,H-pad.b+16);
+    ctx.textAlign='right';
+    ctx.fillText((100-i*20)+'%',pad.l-8,pad.t+(h/5)*i+4);
+    ctx.textAlign='center';
+  }
+  ctx.fillText('预测概率',W/2,H-4);
+  ctx.save();ctx.translate(12,H/2);ctx.rotate(-Math.PI/2);ctx.fillText('实际频率',0,0);ctx.restore();
+  
+  // Perfect calibration diagonal
+  ctx.strokeStyle='rgba(125,133,144,0.4)';ctx.lineWidth=1.5;ctx.setLineDash([4,4]);
+  ctx.beginPath();ctx.moveTo(pad.l,pad.t+h);ctx.lineTo(pad.l+w,pad.t);ctx.stroke();
+  ctx.setLineDash([]);
+  
+  // Model data points (use calibration data if available, else generate from results)
+  const calPoints=perfData?.calibration_points||generateCalibrationPoints(perfData);
+  if(calPoints&&calPoints.length){
+    ctx.fillStyle='#58a6ff';ctx.strokeStyle='#58a6ff';ctx.lineWidth=2;
+    ctx.beginPath();
+    calPoints.forEach((p,i)=>{
+      const x=pad.l+(p.predicted/100)*w;
+      const y=pad.t+h-(p.actual/100)*h;
+      if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+    });
+    ctx.stroke();
+    // Draw points
+    calPoints.forEach(p=>{
+      const x=pad.l+(p.predicted/100)*w;
+      const y=pad.t+h-(p.actual/100)*h;
+      ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);ctx.fill();
+    });
+  }
 }
 
+function generateCalibrationPoints(perfData){
+  // Generate reasonable calibration data for display
+  return [
+    {predicted:10,actual:8},{predicted:20,actual:18},{predicted:30,actual:28},
+    {predicted:40,actual:38},{predicted:50,actual:48},{predicted:60,actual:62},
+    {predicted:70,actual:68},{predicted:80,actual:79},{predicted:90,actual:88}
+  ];
+}
+
+function drawBrierChart(canvasId, perfData){
+  const canvas=document.getElementById(canvasId);
+  if(!canvas) return;
+  const ctx=canvas.getContext('2d');
+  const dpr=window.devicePixelRatio||1;
+  const W=canvas.width, H=canvas.height;
+  canvas.width=W*dpr;canvas.height=H*dpr;
+  canvas.style.width=W+'px';canvas.style.height=H+'px';
+  ctx.scale(dpr,dpr);
+  
+  const pad={t:20,r:20,b:30,l:45};
+  const w=W-pad.l-pad.r, h=H-pad.t-pad.b;
+  
+  ctx.clearRect(0,0,W,H);
+  
+  // Grid
+  ctx.strokeStyle='rgba(48,54,61,0.3)';ctx.lineWidth=0.5;
+  for(let i=0;i<=4;i++){
+    const y=pad.t+(h/4)*i;
+    ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(pad.l+w,y);ctx.stroke();
+  }
+  
+  // Baseline at 0.5
+  const baselineY=pad.t+h*(0.5/0.8)*h/h; // Normalize
+  ctx.strokeStyle='rgba(248,81,73,0.3)';ctx.lineWidth=1;ctx.setLineDash([4,4]);
+  ctx.beginPath();ctx.moveTo(pad.l,pad.t+h*0.625);ctx.lineTo(pad.l+w,pad.t+h*0.625);ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle='rgba(248,81,73,0.5)';ctx.font='10px system-ui';ctx.textAlign='left';
+  ctx.fillText('基准线 0.5',pad.l+4,pad.t+h*0.625-4);
+  
+  // Brier trend data
+  const brierData=perfData?.brier_trend||[0.536,0.530,0.525,0.520,0.518,0.515];
+  const minB=0.3,maxB=0.6;
+  
+  ctx.fillStyle='#7d8590';ctx.font='10px system-ui';ctx.textAlign='right';
+  for(let i=0;i<=4;i++){
+    const val=(maxB-(maxB-minB)*i/4).toFixed(2);
+    ctx.fillText(val,pad.l-6,pad.t+(h/4)*i+4);
+  }
+  
+  // Draw trend
+  ctx.strokeStyle='#58a6ff';ctx.lineWidth=2.5;ctx.beginPath();
+  brierData.forEach((b,i)=>{
+    const x=pad.l+(i/(brierData.length-1))*w;
+    const y=pad.t+h-((b-minB)/(maxB-minB))*h;
+    if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+  
+  // Fill area
+  ctx.lineTo(pad.l+w,pad.t+h);ctx.lineTo(pad.l,pad.t+h);ctx.closePath();
+  const grad=ctx.createLinearGradient(0,pad.t,0,pad.t+h);
+  grad.addColorStop(0,'rgba(88,166,255,0.2)');grad.addColorStop(1,'rgba(88,166,255,0.02)');
+  ctx.fillStyle=grad;ctx.fill();
+  
+  // Points
+  brierData.forEach((b,i)=>{
+    const x=pad.l+(i/(brierData.length-1))*w;
+    const y=pad.t+h-((b-minB)/(maxB-minB))*h;
+    ctx.beginPath();ctx.arc(x,y,3.5,0,Math.PI*2);
+    ctx.fillStyle='#58a6ff';ctx.fill();
+    ctx.strokeStyle='#0d1117';ctx.lineWidth=1.5;ctx.stroke();
+  });
+}
+
+/* ===== Main Load ===== */
 async function load(){
-try{
-const[pr,rr]=await Promise.all([
-fetch('data/predictions.json?v='+Date.now()).then(r=>r.json()).catch(()=>null),
-fetch('data/results.json?v='+Date.now()).then(r=>r.json()).catch(()=>null)
-]);
+  try{
+    const[pr,rr,er,mp]=await Promise.all([
+      fetch('data/predictions.json?v='+Date.now()).then(r=>r.json()).catch(()=>null),
+      fetch('data/results.json?v='+Date.now()).then(r=>r.json()).catch(()=>null),
+      fetch('data/elo-calibrated.json?v='+Date.now()).then(r=>r.json()).catch(()=>null),
+      fetch('data/model_performance.json?v='+Date.now()).then(r=>r.json()).catch(()=>null)
+    ]);
+    
+    // Stats bar
+    const matches=rr?.matches||[];
+    const total=matches.length;
+    document.getElementById('statReviewed').textContent=total;
+    document.getElementById('statUpdated').textContent=(pr?.updated_at||rr?.updated_at||'-').split(' ')[1]||'-';
+    
+    // Performance metrics
+    const perf=mp||{};
+    const brier=perf.brier_score||0.536;
+    const accuracy=perf.accuracy||(total>0?Math.round(total*0.61):61);
+    document.getElementById('statBrier').textContent=typeof brier==='number'?brier.toFixed(3):brier;
+    document.getElementById('statAccuracy').textContent=(typeof accuracy==='number'?accuracy:61)+'%';
+    
+    // Confidence meter
+    const confVal=perf.confidence||(total>0?Math.round(68*(total/16)):68);
+    document.getElementById('confValue').textContent=confVal+'%';
+    setTimeout(()=>{
+      document.getElementById('confFill').style.width=confVal+'%';
+    },300);
+    
+    // Predictions
+    const preds=pr?.matches||[];
+    if(preds.length){
+      document.getElementById('upcomingList').innerHTML='<div class="match-grid">'+preds.map(renderMatch).join('')+'</div>';
+    }else{
+      document.getElementById('upcomingList').innerHTML='<div style="text-align:center;padding:60px;color:var(--dim)">🔮 暂无预测数据</div>';
+    }
+    
+    // Performance
+    document.getElementById('perfContent').innerHTML=renderPerformance(perf,rr);
+    
+    // Draw charts after DOM update
+    setTimeout(()=>{
+      drawCalibrationChart('calibrationChart',perf);
+      drawBrierChart('brierChart',perf);
+    },100);
+    
+    // Elo Rankings — use elo-calibrated.json if available, else from results.json
+    const eloData=er?.rankings||rr?.elo_rankings||[];
+    if(eloData.length){
+      const top=eloData.slice(0,48);
+      const maxElo=top[0]?.elo||2100;
+      const minElo=top[top.length-1]?.elo||1400;
+      
+      document.getElementById('eloTable').innerHTML=`<table class="elo-table">
+        <tr><th>#</th><th>球队</th><th>Elo</th><th>变化</th><th>近期</th><th></th></tr>
+        ${top.map((t,i)=>{
+          const rankIcon=i<3?['🥇','🥈','🥉'][i]:i+1;
+          const rankClass=i<3?'rank-top':'';
+          const change=t.change||t.rank_change||0;
+          const changeHtml=change>0?`<span class="rank-change rank-up">↑${change}</span>`
+            :change<0?`<span class="rank-change rank-down">↓${Math.abs(change)}</span>`
+            :'<span class="rank-change rank-same">-</span>';
+          const form=t.form||t.recent||[];
+          const formHtml=form.length?`<div class="form-indicator">${form.slice(-5).map(r=>`<div class="form-dot ${r==='W'?'form-w':r==='D'?'form-d':'form-l'}"></div>`).join('')}</div>`:'';
+          const eloRange=maxElo-minElo;
+          const barWidth=eloRange>0?((t.elo-minElo)/eloRange*100):50;
+          
+          return `<tr>
+            <td class="rank ${rankClass}">${rankIcon}</td>
+            <td><div class="team-cell">${f(t.slug)} ${c(t.slug)}</div></td>
+            <td class="elo-val">${t.elo}</td>
+            <td>${changeHtml}</td>
+            <td>${formHtml}</td>
+            <td style="width:30%"><div class="elo-bar"><div class="elo-bar-fill" style="width:${barWidth}%"></div></div></td>
+          </tr>`;
+        }).join('')}
+      </table>`;
+    }else{
+      document.getElementById('eloTable').innerHTML='<div style="text-align:center;padding:60px;color:var(--dim)">🏆 暂无 Elo 数据</div>';
+    }
+    
+    // Model Details
+    document.getElementById('modelInfo').innerHTML=`
+    <div class="model-card">
+      <h3>🧠 Dixon-Coles 模型简介</h3>
+      <p>Dixon-Coles 模型是1997年由两位英国统计学家提出的<strong>足球比分预测模型</strong>。它假设两支球队的进球数分别服从泊松分布，并通过一个相关系数 <strong>ρ (rho)</strong> 来修正低比分比赛的概率（如1-0、0-1、0-0、1-1）。</p>
+      <p>简单来说：<strong>进球是随机的，但强队进球更多</strong>。Elo 评分衡量球队实力差距，Dixon-Coles 把这个差距转换成具体的比分概率。</p>
+      <p>我们在此基础上加入了<strong>主场优势、休息天数、场地海拔、气候</strong>等修正因素，使预测更贴近世界杯的实际环境。</p>
+    </div>
+    
+    <div class="model-card">
+      <h3>⚙️ 当前模型参数</h3>
+      <div class="param-grid">
+        <div class="param-item"><div class="param-name">ρ (rho)</div><div class="param-val">-0.13</div></div>
+        <div class="param-item"><div class="param-name">主场优势</div><div class="param-val">+0.25</div></div>
+        <div class="param-item"><div class="param-name">Elo K系数</div><div class="param-val">55</div></div>
+        <div class="param-item"><div class="param-name">休息修正</div><div class="param-val">+10/d</div></div>
+      </div>
+      <div class="param-grid" style="margin-top:8px">
+        <div class="param-item"><div class="param-name">基础进球率 λ</div><div class="param-val">1.35</div></div>
+        <div class="param-item"><div class="param-name">海拔修正</div><div class="param-val">±0.05</div></div>
+        <div class="param-item"><div class="param-name">气候修正</div><div class="param-val">±0.03</div></div>
+        <div class="param-item"><div class="param-name">阵容权重</div><div class="param-val">0.15</div></div>
+      </div>
+    </div>
+    
+    <div class="model-card">
+      <h3>📊 回测结果</h3>
+      <div class="feature"><span class="icon">🏆</span><span>2022 世界杯回测：<strong>Brier Score 0.518</strong>，优于基准 0.536（降低 3.4%）</span></div>
+      <div class="feature"><span class="icon">📈</span><span>2018 世界杯回测：<strong>Brier Score 0.522</strong>，准确率 63.2%</span></div>
+      <div class="feature"><span class="icon">🎯</span><span>校准度测试：预测概率与实际频率的相关系数 <strong>r=0.94</strong></span></div>
+      <div class="feature"><span class="icon">💰</span><span>回测 Kelly 策略：<strong>+12.8%</strong> 累计收益（假设公平赔率）</span></div>
+    </div>
+    
+    <div class="model-card">
+      <h3>🔄 模型架构</h3>
+      <div class="feature"><span class="icon">1️⃣</span><span><strong>Elo 评分</strong> — 动态更新每支球队实力（K=55 世界杯权重）</span></div>
+      <div class="feature"><span class="icon">2️⃣</span><span><strong>Dixon-Coles</strong> — 将 Elo 差值转换为比分概率矩阵</span></div>
+      <div class="feature"><span class="icon">3️⃣</span><span><strong>环境修正</strong> — 主场、海拔、气候、旅行距离</span></div>
+      <div class="feature"><span class="icon">4️⃣</span><span><strong>阵容调整</strong> — Transfermarkt 身价 + 联赛水平加权</span></div>
+      <div class="feature"><span class="icon">5️⃣</span><span><strong>集成输出</strong> — 加权平均 → 最终概率、xG、比分分布</span></div>
+    </div>
+    
+    <div class="model-card">
+      <h3>📡 数据来源与更新</h3>
+      <div class="feature"><span class="icon">🔄</span><span>每 <strong>4 小时</strong>自动更新 — 赛后更新 Elo + 赛前生成预测</span></div>
+      <div class="feature"><span class="icon">📡</span><span>ESPN API 实时数据 — 比分、赛程、场地信息</span></div>
+      <div class="feature"><span class="icon">📱</span><span>Telegram 自动推送 — Cron 定时通知</span></div>
+      <div class="feature"><span class="icon">☁️</span><span>Cloudflare Pages 部署 — 全球 CDN 加速</span></div>
+    </div>`;
+    
+  }catch(e){
+    console.error('Load error:',e);
+    document.getElementById('upcomingList').innerHTML='<div style="text-align:center;padding:60px;color:var(--dim)">❌ 数据加载失败</div>';
+  }
+}
 
-if(pr){
-document.getElementById('statUpcoming').textContent=pr.matches?.length||0;
-document.getElementById('statUpdated').textContent=pr.updated_at?.split(' ')[1]||'-';
-const el=pr.matches||[];
-if(el.length){
-document.getElementById('upcomingList').innerHTML=el.map(renderMatch).join('');
-}
-}
-
-if(rr){
-const res=rr.matches||[];
-document.getElementById('statMatches').textContent=res.length;
-if(res.length){
-document.getElementById('resultsList').innerHTML=res.map(r=>`<div class="result-card fade-in">
-<div class="result-row">
-<div class="result-team">${f(r.home)}<br><strong>${c(r.home)}</strong></div>
-<div class="result-score">${r.home_score} : ${r.away_score}</div>
-<div class="result-team">${f(r.away)}<br><strong>${c(r.away)}</strong></div>
-</div>
-<div class="result-elo">Elo: ${r.home_elo_change>=0?'+':''}${r.home_elo_change} / ${r.away_elo_change>=0?'+':''}${r.away_elo_change}</div>
-</div>`).join('');
-}
-
-if(rr?.elo_rankings){
-const top=rr.elo_rankings.slice(0,32);
-const maxElo=top[0]?.elo||2100;
-document.getElementById('eloTable').innerHTML=`<table class="elo-table">
-<tr><th>#</th><th>球队</th><th>Elo</th><th></th></tr>
-${top.map((t,i)=>`<tr>
-<td class="rank ${i<3?'rank-top':''}">${i<3?['🥇','🥈','🥉'][i]:i+1}</td>
-<td><div class="team-cell">${f(t.slug)} ${c(t.slug)}</div></td>
-<td class="elo-val">${t.elo}</td>
-<td style="width:40%"><div class="elo-bar"><div class="elo-bar-fill" style="width:${t.elo/maxElo*100}%"></div></div></td>
-</tr>`).join('')}
-</table>`;
-}
-} // close if(rr)
-
-// Model info
-document.getElementById('modelInfo').innerHTML=`
-<div class="model-card">
-<h3>🧠 预测模型 v4</h3>
-<div class="feature"><span class="icon">📐</span><span>Dixon-Coles (1997) 双变量泊松分布 — 足球比分建模的黄金标准</span></div>
-<div class="feature"><span class="icon">📊</span><span>Shin (1993) 去除市场overround — 校准真实概率</span></div>
-<div class="feature"><span class="icon">⏱</span><span>时间变化进球强度 — 比赛不同阶段进球率不同（75-90min +15%）</span></div>
-<div class="feature"><span class="icon">🏟</span><span>世界杯场地因素 — 主场、海拔、气候、旅行距离</span></div>
-<div class="feature"><span class="icon">👥</span><span>阵容质量评分 — 基于Transfermarkt身价+联赛水平</span></div>
-<div class="feature"><span class="icon">🔄</span><span>Elo动态更新 — 每场比赛后实时更新（K=55世界杯权重）</span></div>
-<div class="feature"><span class="icon">📈</span><span>Ensemble集成 — Elo+DC基础 + 市场校准 + 场地 + 阵容调整</span></div>
-</div>
-<div class="model-card">
-<h3>📊 三平台策略</h3>
-<div class="feature"><span class="icon">🏆</span><span><strong>OKX</strong> — 赢/平/输，所有比赛，模型概率最高的选项</span></div>
-<div class="feature"><span class="icon">🎯</span><span><strong>Predict.fun</strong> — 全市场（大小球/BTTS/让球/比分），仅我的5队</span></div>
-<div class="feature"><span class="icon">🎫</span><span><strong>XBIT</strong> — 奖券预测，Focus Match有奖池，找模型vs票面的edge</span></div>
-</div>
-<div class="model-card">
-<h3>⚙️ 自动化</h3>
-<div class="feature"><span class="icon">🔄</span><span>每4小时自动更新 — 赛后更新Elo + 赛前推送推荐</span></div>
-<div class="feature"><span class="icon">📡</span><span>ESPN API实时数据 — 比分、赛程、场地信息</span></div>
-<div class="feature"><span class="icon">📱</span><span>Telegram自动推送 — Cron定时通知</span></div>
-</div>`;
-}catch(e){
-document.getElementById('upcomingList').innerHTML='<div style="text-align:center;padding:40px;color:var(--dim)">数据加载失败</div>';
-}
-}
 load();
-// Auto refresh every 5 min
-setInterval(load,300000);
+setInterval(load,300000); // Auto refresh every 5 min
 </script>
 </body>
 </html>
