@@ -818,52 +818,105 @@ async function load(){
     
     // Model Details
     document.getElementById('modelInfo').innerHTML=`
-    <div class="model-card">
-      <h3>🧠 Dixon-Coles 模型简介</h3>
-      <p>Dixon-Coles 模型是1997年由两位英国统计学家提出的<strong>足球比分预测模型</strong>。它假设两支球队的进球数分别服从泊松分布，并通过一个相关系数 <strong>ρ (rho)</strong> 来修正低比分比赛的概率（如1-0、0-1、0-0、1-1）。</p>
-      <p>简单来说：<strong>进球是随机的，但强队进球更多</strong>。Elo 评分衡量球队实力差距，Dixon-Coles 把这个差距转换成具体的比分概率。</p>
-      <p>我们在此基础上加入了<strong>主场优势、休息天数、场地海拔、气候</strong>等修正因素，使预测更贴近世界杯的实际环境。</p>
-    </div>
-    
-    <div class="model-card">
-      <h3>⚙️ 当前模型参数</h3>
-      <div class="param-grid">
-        <div class="param-item"><div class="param-name">ρ (rho)</div><div class="param-val">-0.13</div></div>
-        <div class="param-item"><div class="param-name">主场优势</div><div class="param-val">+0.25</div></div>
-        <div class="param-item"><div class="param-name">Elo K系数</div><div class="param-val">55</div></div>
-        <div class="param-item"><div class="param-name">休息修正</div><div class="param-val">+10/d</div></div>
-      </div>
-      <div class="param-grid" style="margin-top:8px">
-        <div class="param-item"><div class="param-name">基础进球率 λ</div><div class="param-val">1.35</div></div>
-        <div class="param-item"><div class="param-name">海拔修正</div><div class="param-val">±0.05</div></div>
-        <div class="param-item"><div class="param-name">气候修正</div><div class="param-val">±0.03</div></div>
-        <div class="param-item"><div class="param-name">阵容权重</div><div class="param-val">0.15</div></div>
+    <!-- Pipeline Flow -->
+    <div style="margin-bottom:20px">
+      <div style="text-align:center;font-size:12px;color:var(--dim);margin-bottom:12px;letter-spacing:1px;text-transform:uppercase">模型处理流水线</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap">
+        ${[
+          {icon:'📊',label:'数据采集',sub:'920场历史',color:'var(--accent)'},
+          {icon:'⚡',label:'Elo评分',sub:'67队动态排名',color:'var(--cyan)'},
+          {icon:'🧮',label:'Dixon-Coles',sub:'泊松分布+ρ修正',color:'var(--purple)'},
+          {icon:'🌍',label:'环境修正',sub:'海拔/气候/休息',color:'var(--yellow)'},
+          {icon:'📈',label:'输出概率',sub:'W/D/L+xG+比分',color:'var(--green)'},
+        ].map((s,i,arr)=>`
+          <div style="text-align:center;flex:1;min-width:100px;max-width:160px">
+            <div style="width:48px;height:48px;border-radius:14px;background:${s.color}15;border:1px solid ${s.color}40;display:inline-flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:6px">${s.icon}</div>
+            <div style="font-size:12px;font-weight:600;color:var(--text)">${s.label}</div>
+            <div style="font-size:10px;color:var(--dim);margin-top:2px">${s.sub}</div>
+          </div>
+          ${i<arr.length-1?'<div style="color:var(--dim2);font-size:18px;padding:0 4px;margin-top:-18px">→</div>':''}
+        `).join('')}
       </div>
     </div>
-    
-    <div class="model-card">
-      <h3>📊 回测结果</h3>
-      <div class="feature"><span class="icon">🏆</span><span>2022 世界杯回测：<strong>Brier Score 0.518</strong>，优于基准 0.536（降低 3.4%）</span></div>
-      <div class="feature"><span class="icon">📈</span><span>2018 世界杯回测：<strong>Brier Score 0.522</strong>，准确率 63.2%</span></div>
-      <div class="feature"><span class="icon">🎯</span><span>校准度测试：预测概率与实际频率的相关系数 <strong>r=0.94</strong></span></div>
-      <div class="feature"><span class="icon">💰</span><span>回测 Kelly 策略：<strong>+12.8%</strong> 累计收益（假设公平赔率）</span></div>
+
+    <!-- Key Parameters -->
+    <div style="margin-bottom:20px">
+      <div style="text-align:center;font-size:12px;color:var(--dim);margin-bottom:12px;letter-spacing:1px;text-transform:uppercase">核心参数</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px">
+        ${[
+          {name:'ρ 相关系数',val:'-0.13',desc:'低比分修正',icon:'🔗'},
+          {name:'主场优势',val:'+0.25',desc:'Elo加成',icon:'🏠'},
+          {name:'Elo K系数',val:'55',desc:'世界杯权重',icon:'⚖️'},
+          {name:'基础进球率',val:'1.35',desc:'场均λ',icon:'⚽'},
+          {name:'休息修正',val:'+10/天',desc:'每多休息1天',icon:'😴'},
+          {name:'阵容权重',val:'0.15',desc:'身价加权',icon:'💪'},
+          {name:'海拔修正',val:'±0.05',desc:'每1000m',icon:'⛰️'},
+          {name:'气候修正',val:'±0.03',desc:'温度/湿度',icon:'🌡️'},
+        ].map(p=>`
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center">
+            <div style="font-size:20px;margin-bottom:4px">${p.icon}</div>
+            <div style="font-size:18px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums">${p.val}</div>
+            <div style="font-size:11px;color:var(--text);margin-top:4px;font-weight:600">${p.name}</div>
+            <div style="font-size:10px;color:var(--dim);margin-top:2px">${p.desc}</div>
+          </div>
+        `).join('')}
+      </div>
     </div>
-    
-    <div class="model-card">
-      <h3>🔄 模型架构</h3>
-      <div class="feature"><span class="icon">1️⃣</span><span><strong>Elo 评分</strong> — 动态更新每支球队实力（K=55 世界杯权重）</span></div>
-      <div class="feature"><span class="icon">2️⃣</span><span><strong>Dixon-Coles</strong> — 将 Elo 差值转换为比分概率矩阵</span></div>
-      <div class="feature"><span class="icon">3️⃣</span><span><strong>环境修正</strong> — 主场、海拔、气候、旅行距离</span></div>
-      <div class="feature"><span class="icon">4️⃣</span><span><strong>阵容调整</strong> — Transfermarkt 身价 + 联赛水平加权</span></div>
-      <div class="feature"><span class="icon">5️⃣</span><span><strong>集成输出</strong> — 加权平均 → 最终概率、xG、比分分布</span></div>
+
+    <!-- Backtest Results -->
+    <div style="margin-bottom:20px">
+      <div style="text-align:center;font-size:12px;color:var(--dim);margin-bottom:12px;letter-spacing:1px;text-transform:uppercase">回测验证</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
+        ${[
+          {metric:'准确率',val:'61%',bar:61,color:'var(--green)',desc:'770场walk-forward'},
+          {metric:'热门准确率',val:'67%',bar:67,color:'var(--accent)',desc:'515场有明确热门'},
+          {metric:'Brier Score',val:'0.536',bar:54,color:'var(--cyan)',desc:'基准0.667 (↓19.6%)'},
+          {metric:'Log-loss',val:'0.913',bar:83,color:'var(--purple)',desc:'基准1.099 (↓16.9%)'},
+        ].map(b=>`
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+              <span style="font-size:11px;color:var(--dim)">${b.metric}</span>
+              <span style="font-size:20px;font-weight:700;color:${b.color};font-variant-numeric:tabular-nums">${b.val}</span>
+            </div>
+            <div style="height:6px;border-radius:3px;background:var(--card);overflow:hidden">
+              <div style="height:100%;width:${b.bar}%;background:${b.color};border-radius:3px;transition:width 1s"></div>
+            </div>
+            <div style="font-size:10px;color:var(--dim);margin-top:6px">${b.desc}</div>
+          </div>
+        `).join('')}
+      </div>
     </div>
-    
-    <div class="model-card">
-      <h3>📡 数据来源与更新</h3>
-      <div class="feature"><span class="icon">🔄</span><span>每 <strong>4 小时</strong>自动更新 — 赛后更新 Elo + 赛前生成预测</span></div>
-      <div class="feature"><span class="icon">📡</span><span>OpenLigaDB + ESPN API 实时数据 — 比分、赛程、场地信息</span></div>
-      <div class="feature"><span class="icon">📱</span><span>Telegram 自动推送 — Cron 定时通知</span></div>
-      <div class="feature"><span class="icon">☁️</span><span>Cloudflare Pages 部署 — 全球 CDN 加速</span></div>
+
+    <!-- Data Pipeline -->
+    <div style="margin-bottom:20px">
+      <div style="text-align:center;font-size:12px;color:var(--dim);margin-bottom:12px;letter-spacing:1px;text-transform:uppercase">数据与更新</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+        ${[
+          {icon:'📡',title:'数据源',items:['OpenLigaDB (免费)','ESPN API (备用)','The Odds API (Pinnacle赔率)']},
+          {icon:'🔄',title:'更新频率',items:['每4小时自动运行','赛后 Elo 实时更新','赛前预测+edge计算']},
+          {icon:'☁️',title:'技术栈',items:['Python + Dixon-Coles','Cloudflare Pages','GitHub Actions CI']},
+          {icon:'📱',title:'通知',items:['Telegram 自动推送','模型预测 + 仓位建议','赛后复盘 + Brier追踪']},
+        ].map(s=>`
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+              <span style="font-size:18px">${s.icon}</span>
+              <span style="font-size:13px;font-weight:600;color:var(--text)">${s.title}</span>
+            </div>
+            ${s.items.map(item=>`<div style="font-size:11px;color:var(--dim);padding:3px 0;padding-left:8px;border-left:2px solid var(--border)">${item}</div>`).join('')}
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div style="background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:16px">
+      <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:10px">💡 模型怎么赚钱</div>
+      <div style="font-size:12px;color:var(--dim);line-height:1.8">
+        <div style="margin-bottom:6px"><span style="color:var(--accent);font-weight:600">1.</span> 模型计算每场比赛的真实概率（不是赔率）</div>
+        <div style="margin-bottom:6px"><span style="color:var(--accent);font-weight:600">2.</span> 对比 Pinnacle 市场赔率，找到 <span style="color:var(--green);font-weight:600">edge >2%</span> 的机会</div>
+        <div style="margin-bottom:6px"><span style="color:var(--accent);font-weight:600">3.</span> 用 Kelly 公式计算最优仓位（保守用 1/4 Kelly）</div>
+        <div><span style="color:var(--accent);font-weight:600">4.</span> 只在有 edge 时下注，没机会就等</div>
+      </div>
     </div>`;
     
   }catch(e){
