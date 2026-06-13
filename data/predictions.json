@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-13T07:02:25.698006+00:00",
+  "updated_at": "2026-06-13T07:16:49.258439+00:00",
   "matches": [
     {
       "home": "qatar",
       "away": "switzerland",
-      "hours_until": 12.0,
+      "hours_until": 11.7,
       "city": "",
       "venue": "",
       "money_line": {
@@ -44,12 +44,21 @@
       "btts": {
         "yes": "49.7",
         "no": "50.3"
+      },
+      "spread": {
+        "-1.5": "4.5",
+        "+1.5": "95.5"
+      },
+      "half_time": {
+        "win_a": "14.3",
+        "draw": "41.4",
+        "win_b": "44.3"
       }
     },
     {
       "home": "brazil",
       "away": "morocco",
-      "hours_until": 15.0,
+      "hours_until": 14.7,
       "city": "",
       "venue": "",
       "money_line": {
@@ -89,12 +98,21 @@
       "btts": {
         "yes": "51.8",
         "no": "48.2"
+      },
+      "spread": {
+        "-1.5": "36.5",
+        "+1.5": "63.5"
+      },
+      "half_time": {
+        "win_a": "42.2",
+        "draw": "42.0",
+        "win_b": "15.8"
       }
     },
     {
       "home": "germany",
       "away": "curacao",
-      "hours_until": 17.0,
+      "hours_until": 16.7,
       "city": "",
       "venue": "",
       "money_line": {
@@ -134,12 +152,21 @@
       "btts": {
         "yes": "21.5",
         "no": "78.5"
+      },
+      "spread": {
+        "-1.5": "75.9",
+        "+1.5": "24.1"
+      },
+      "half_time": {
+        "win_a": "68.5",
+        "draw": "28.6",
+        "win_b": "2.9"
       }
     },
     {
       "home": "netherlands",
       "away": "japan",
-      "hours_until": 17.0,
+      "hours_until": 16.7,
       "city": "",
       "venue": "",
       "money_line": {
@@ -179,12 +206,21 @@
       "btts": {
         "yes": "53.8",
         "no": "46.2"
+      },
+      "spread": {
+        "-1.5": "33.0",
+        "+1.5": "67.0"
+      },
+      "half_time": {
+        "win_a": "39.9",
+        "draw": "42.5",
+        "win_b": "17.6"
       }
     },
     {
       "home": "ivory-coast",
       "away": "ecuador",
-      "hours_until": 17.0,
+      "hours_until": 16.7,
       "city": "",
       "venue": "",
       "money_line": {
@@ -224,12 +260,21 @@
       "btts": {
         "yes": "58.3",
         "no": "41.7"
+      },
+      "spread": {
+        "-1.5": "14.9",
+        "+1.5": "85.1"
+      },
+      "half_time": {
+        "win_a": "26.1",
+        "draw": "43.7",
+        "win_b": "30.2"
       }
     },
     {
       "home": "haiti",
       "away": "scotland",
-      "hours_until": 18.0,
+      "hours_until": 17.7,
       "city": "",
       "venue": "",
       "money_line": {
@@ -269,12 +314,21 @@
       "btts": {
         "yes": "57.0",
         "no": "43.0"
+      },
+      "spread": {
+        "-1.5": "10.8",
+        "+1.5": "89.2"
+      },
+      "half_time": {
+        "win_a": "22.1",
+        "draw": "43.4",
+        "win_b": "34.5"
       }
     },
     {
       "home": "australia",
       "away": "turkey",
-      "hours_until": 21.0,
+      "hours_until": 20.7,
       "city": "",
       "venue": "",
       "money_line": {
@@ -314,6 +368,15 @@
       "btts": {
         "yes": "55.2",
         "no": "44.8"
+      },
+      "spread": {
+        "-1.5": "30.0",
+        "+1.5": "70.0"
+      },
+      "half_time": {
+        "win_a": "37.8",
+        "draw": "42.9",
+        "win_b": "19.3"
       }
     }
   ]
