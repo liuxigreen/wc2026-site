@@ -758,8 +758,19 @@ async function fetchLive(){
     if(!r.ok)return;
     const live=await r.json();
     if(live&&live.matches&&live.matches.length){
-      window.__WC_DATA__=window.__WC_DATA__||{};
-      window.__WC_DATA__.predictions=live;
+      const existing=window.__WC_DATA__||{};
+      const staticMatches=(existing.predictions||{}).matches||[];
+      // Merge: use live data but preserve predict_fun/binance from static
+      live.matches.forEach(lm=>{
+        const sm=staticMatches.find(s=>s.home===lm.home&&s.away===lm.away);
+        if(sm){
+          lm.predict_fun=lm.predict_fun||sm.predict_fun;
+          lm.binance=lm.binance||sm.binance;
+          lm.xbit=lm.xbit||sm.xbit;
+        }
+      });
+      existing.predictions=live;
+      window.__WC_DATA__=existing;
       console.log("✅ Live data loaded:",live.matches.length,"matches");
     }
   }catch(e){/* silent fail, use static data */}
