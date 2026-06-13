@@ -356,20 +356,22 @@ function renderEdge(m){
   const pfItems=[];
   const isMy=MY_TEAMS.includes(m.home)||MY_TEAMS.includes(m.away);
   if(isMy){
-    const btts=m.btts||{};
-    const ou=m.over_under?.['2.5']||{};
-    const bttsYes=parseFloat(btts.yes)||0;
-    const over=parseFloat(ou.over)||0;
-    if(bttsYes>57) pfItems.push({market:'双方进球',pick:'Yes',prob:bttsYes});
-    else if(bttsYes<38) pfItems.push({market:'双方进球',pick:'No',prob:100-bttsYes});
-    if(over>58) pfItems.push({market:'大小球',pick:'O2.5',prob:over});
-    else if(over<42) pfItems.push({market:'大小球',pick:'U2.5',prob:100-over});
-    // Spread
-    const spread=m.spread||{};
-    const favSlug=hw>=aw?m.home:m.away;
-    const spreadKey=favSlug+' -1.5';
-    const spPct=parseFloat(spread[spreadKey])||0;
-    if(spPct>35) pfItems.push({market:'让球',pick:c(favSlug)+' -1.5',prob:spPct});
+    // Use predict_fun data from model if available
+    if(m.predict_fun && m.predict_fun.length){
+      m.predict_fun.forEach(r=>{
+        pfItems.push({market:r.market,pick:r.pick,prob:r.probability,confidence:r.confidence});
+      });
+    } else {
+      // Fallback to calculating from raw probabilities
+      const btts=m.btts||{};
+      const ou=m.over_under?.['2.5']||{};
+      const bttsYes=parseFloat(btts.yes)||0;
+      const over=parseFloat(ou.over)||0;
+      if(bttsYes>57) pfItems.push({market:'双方进球',pick:'Yes',prob:bttsYes});
+      else if(bttsYes<38) pfItems.push({market:'双方进球',pick:'No',prob:100-bttsYes});
+      if(over>58) pfItems.push({market:'大小球',pick:'O2.5',prob:over});
+      else if(over<42) pfItems.push({market:'大小球',pick:'U2.5',prob:100-over});
+    }
   }
 
   let html='';
@@ -389,7 +391,9 @@ function renderEdge(m){
     html+=`<div class="kelly-section" style="margin-top:8px;border-color:rgba(188,140,255,0.15);background:rgba(188,140,255,0.04)">
       <div class="kelly-title" style="color:var(--purple)">🎯 Predict.fun 推荐盘口</div>`;
     pfItems.forEach(p=>{
-      html+=`<div class="kelly-row"><span>${p.market}</span><span class="kelly-pick">${p.pick} (${p.prob}%)</span></div>`;
+      const confColor=p.confidence==='高'?'var(--green)':p.confidence==='中'?'var(--yellow)':'var(--dim)';
+      const confLabel=p.confidence?`<span style="color:${confColor};font-size:10px;margin-left:4px">[${p.confidence}]</span>`:'';
+      html+=`<div class="kelly-row"><span>${p.market}</span><span class="kelly-pick">${p.pick} (${p.prob}%)${confLabel}</span></div>`;
     });
     html+='</div>';
   }
