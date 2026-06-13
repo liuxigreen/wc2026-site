@@ -653,8 +653,14 @@ async function load(){
       drawBrierChart('brierChart',perf);
     },100);
     
-    // Elo Rankings — use elo-calibrated.json if available, else from results.json
-    const eloData=er?.rankings||rr?.elo_rankings||[];
+    // Elo Rankings — support both array [{slug,elo}] and object {slug:elo} formats
+    const eloRaw=er?.rankings||er?.ratings||rr?.elo_rankings||rr?.elo_ratings||[];
+    let eloData=[];
+    if(Array.isArray(eloRaw)){
+      eloData=eloRaw;
+    }else if(typeof eloRaw==='object'){
+      eloData=Object.entries(eloRaw).map(([slug,elo])=>({slug,elo})).sort((a,b)=>b.elo-a.elo);
+    }
     if(eloData.length){
       const top=eloData.slice(0,48);
       const maxElo=top[0]?.elo||2100;
