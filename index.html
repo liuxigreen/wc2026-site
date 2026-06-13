@@ -961,5 +961,22 @@ setInterval(load,300000); // Auto refresh every 5 min
   }catch(e){}
 })();
 </script>
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js?v=2').then(r=>{
+    // Check for updates every 60s
+    setInterval(()=>r.update(), 60000);
+    r.addEventListener('updatefound',()=>{
+      const nw=r.installing;
+      nw.addEventListener('statechange',()=>{
+        if(nw.state==='installed'&&navigator.serviceWorker.controller){
+          // New version available, reload
+          location.reload(true);
+        }
+      });
+    });
+  });
+}
+</script>
 </body>
 </html>
