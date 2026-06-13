@@ -946,36 +946,16 @@ load();
 setInterval(load,300000); // Auto refresh every 5 min
 </script>
 
+
+
 <script>
-// Version check: force reload if server has new version
-(async()=>{
-  try{
-    const r=await fetch('data/predictions.json?t='+Date.now(),{cache:'no-store'});
-    const d=await r.json();
-    const serverVer=d.updated_at||'';
-    const localVer=sessionStorage.getItem('_wc_ver')||'';
-    if(serverVer&&serverVer!==localVer){
-      sessionStorage.setItem('_wc_ver',serverVer);
-      if(localVer)location.reload(true);
-    }
-  }catch(e){}
-})();
-</script>
-<script>
+// Unregister any old service workers
 if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('sw.js?v=2').then(r=>{
-    // Check for updates every 60s
-    setInterval(()=>r.update(), 60000);
-    r.addEventListener('updatefound',()=>{
-      const nw=r.installing;
-      nw.addEventListener('statechange',()=>{
-        if(nw.state==='installed'&&navigator.serviceWorker.controller){
-          // New version available, reload
-          location.reload(true);
-        }
-      });
-    });
+  navigator.serviceWorker.getRegistrations().then(regs=>{
+    regs.forEach(r=>r.unregister());
   });
+  // Clear all caches
+  if('caches' in window) caches.keys().then(keys=>keys.forEach(k=>caches.delete(k)));
 }
 </script>
 </body>
