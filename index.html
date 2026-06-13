@@ -46,6 +46,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:var(--bg);color:v
 .rec-platform .tag{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10px;font-weight:600;margin-right:4px}
 .tag-okx{background:#ff6b00;color:#fff}
 .tag-pr{background:#7c4dff;color:#fff}
+.tag-xbit{background:#00bfa5;color:#fff}
 .rec-platform .pick{color:var(--green);font-weight:600}
 .score-list{font-size:11px;color:var(--dim);margin-top:6px}
 .score-list span{margin-right:8px}
@@ -163,6 +164,18 @@ return `<div class="match-card">
 <div class="rec-platform"><span class="tag tag-okx">OKX</span> 买 <span class="pick">${hw>=aw?cn(m.home):cn(m.away)}</span> (${Math.max(hw,aw)}%)</div>
 </div>
 ${recHtml}
+${m.xbit ? `<div class="recommendation">
+<div class="rec-title">🎫 XBIT 奖券</div>
+<div class="rec-platform">奖池: $${(m.xbit.pool||0).toLocaleString()} | ${m.xbit.tickets||0}张</div>
+<div class="rec-platform">票面: 赢${cn(m.home)} ${m.xbit.win_a}% | 平${m.xbit.draw}% | 赢${cn(m.away)} ${m.xbit.win_b}%</div>
+<div class="rec-platform"><span class="tag tag-xbit">XBIT</span> <span class="pick">${(()=>{
+  const ea=hw-m.xbit.win_a, ed=dw-m.xbit.draw, eb=aw-m.xbit.win_b;
+  const mx=Math.max(ea,ed,eb);
+  if(mx===ea) return '买赢'+cn(m.home)+' (edge +'+ea.toFixed(0)+'%)';
+  if(mx===ed) return '买平局 (edge +'+ed.toFixed(0)+'%)';
+  return '买赢'+cn(m.away)+' (edge +'+eb.toFixed(0)+'%)';
+})()}</span></div>
+</div>` : ''}
 </div>`;
 }
 

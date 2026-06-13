@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13 05:52 UTC",
+  "updated_at": "2026-06-13 06:18 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1552→1550 (rest+10 venue-10) vs 1807→1809 (rest+10 venue-10)",
@@ -62,7 +62,7 @@
       },
       "home": "qatar",
       "away": "switzerland",
-      "hours_until": 13.1,
+      "hours_until": 12.7,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "is_my_team": false
@@ -128,10 +128,21 @@
       },
       "home": "brazil",
       "away": "morocco",
-      "hours_until": 16.1,
+      "hours_until": 15.7,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
-      "is_my_team": true
+      "is_my_team": true,
+      "xbit": {
+        "home": "brazil",
+        "away": "morocco",
+        "pool": 10000,
+        "tickets": 3170,
+        "win_a": 55.7,
+        "draw": 1.5,
+        "win_b": 42.8,
+        "updated_at": "2026-06-13T06:00:00Z",
+        "note": "Focus Match data from XBIT. Update manually or via browser scraping."
+      }
     },
     {
       "elo_raw": "Elo: 1481→1489 (rest+10 venue+0) vs 1616→1618 (rest+10 venue-10)",
@@ -194,7 +205,7 @@
       },
       "home": "haiti",
       "away": "scotland",
-      "hours_until": 19.1,
+      "hours_until": 18.7,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false
@@ -260,7 +271,7 @@
       },
       "home": "australia",
       "away": "turkey",
-      "hours_until": 22.1,
+      "hours_until": 21.7,
       "venue": "BC Place",
       "city": "Vancouver",
       "is_my_team": false
