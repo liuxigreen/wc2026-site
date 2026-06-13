@@ -410,7 +410,21 @@ function renderMatch(m){
   const btts=m.btts||{};
   const scores=(m.top_scores||[]).slice(0,4);
   const elo=m.elo||{};
-  const h=Math.floor(m.hours_until||0),min=Math.round(((m.hours_until||0)-h)*60);
+  // Use real match_time if available, fallback to hours_until
+  let timeStr='',countdownStr='';
+  if(m.match_time){
+    const mt=new Date(m.match_time);
+    const cst=new Date(mt.getTime()+8*3600000);
+    const mon=cst.getUTCMonth()+1,day=cst.getUTCDate();
+    const hh=cst.getUTCHours().toString().padStart(2,'0'),mm=cst.getUTCMinutes().toString().padStart(2,'0');
+    timeStr=mon+'月'+day+'日 '+hh+':'+mm;
+    const diff=(mt.getTime()-Date.now())/3600000;
+    if(diff>0){const dh=Math.floor(diff),dm=Math.round((diff-dh)*60);countdownStr=dh+'h'+dm.toString().padStart(2,'0')+'m';}
+    else{countdownStr='进行中';}
+  }else{
+    const h=Math.floor(m.hours_until||0),min=Math.round(((m.hours_until||0)-h)*60);
+    countdownStr=h+'h'+min.toString().padStart(2,'0')+'m';
+  }
   const maxProb=Math.max(hw,dw,aw)/100;
   const conf=getConfidence(maxProb,elo.diff);
   const mo=m.market_odds;
@@ -418,7 +432,7 @@ function renderMatch(m){
   
   return `<div class="match-card ${confClass(conf)} fade-in">
     <div class="match-header">
-      <div class="match-time">⏱ <span class="countdown">${h}h${min.toString().padStart(2,'0')}m</span></div>
+      <div class="match-time">⏱ <span class="countdown">${countdownStr}</span>${timeStr?' · '+timeStr:''}</div>
       ${confBadge(conf)}
       <div class="match-venue">📍 ${m.city||m.venue||''}</div>
     </div>
