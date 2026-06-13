@@ -1,10 +1,107 @@
 {
-  "cumulative_brier": 0.536,
-  "accuracy": 0,
-  "total_reviewed": 0,
-  "correct_count": 0,
-  "calibration_bins": [],
-  "brier_trend": [],
-  "match_reviews": [],
-  "updated_at": "2026-06-13T07:00:00Z"
+  "cumulative_brier": 0.3085,
+  "accuracy": 0.75,
+  "total_reviewed": 4,
+  "correct_count": 3,
+  "calibration_bins": [
+    {
+      "bin": "40-60%",
+      "predicted": 0.571,
+      "actual": 0.0,
+      "count": 1
+    },
+    {
+      "bin": "60-80%",
+      "predicted": 0.704,
+      "actual": 1.0,
+      "count": 2
+    },
+    {
+      "bin": "80-100%",
+      "predicted": 0.845,
+      "actual": 1.0,
+      "count": 1
+    }
+  ],
+  "brier_trend": [
+    {
+      "match": 1,
+      "brier": 0.0416,
+      "label": "墨西哥 vs 南非"
+    },
+    {
+      "match": 2,
+      "brier": 0.1016,
+      "label": "韩国 vs 捷克"
+    },
+    {
+      "match": 3,
+      "brier": 0.3729,
+      "label": "加拿大 vs 波黑"
+    },
+    {
+      "match": 4,
+      "brier": 0.3085,
+      "label": "美国 vs 巴拉圭"
+    }
+  ],
+  "match_reviews": [
+    {
+      "match": "墨西哥 vs 南非",
+      "home": "mexico",
+      "away": "south-africa",
+      "predicted": {
+        "home": 0.845,
+        "draw": 0.13,
+        "away": 0.025
+      },
+      "result": "2-0",
+      "actual_outcome": "主胜",
+      "brier": 0.0416,
+      "correct": true
+    },
+    {
+      "match": "韩国 vs 捷克",
+      "home": "south-korea",
+      "away": "czech-republic",
+      "predicted": {
+        "home": 0.6779999999999999,
+        "draw": 0.21600000000000003,
+        "away": 0.106
+      },
+      "result": "2-1",
+      "actual_outcome": "主胜",
+      "brier": 0.1616,
+      "correct": true
+    },
+    {
+      "match": "加拿大 vs 波黑",
+      "home": "canada",
+      "away": "bosnia-and-herzegovina",
+      "predicted": {
+        "home": 0.5710000000000001,
+        "draw": 0.253,
+        "away": 0.177
+      },
+      "result": "1-1",
+      "actual_outcome": "平局",
+      "brier": 0.9154,
+      "correct": false
+    },
+    {
+      "match": "美国 vs 巴拉圭",
+      "home": "usa",
+      "away": "paraguay",
+      "predicted": {
+        "home": 0.731,
+        "draw": 0.193,
+        "away": 0.077
+      },
+      "result": "4-1",
+      "actual_outcome": "主胜",
+      "brier": 0.1155,
+      "correct": true
+    }
+  ],
+  "updated_at": "2026-06-13T07:30:00Z"
 }
