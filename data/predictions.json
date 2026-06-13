@@ -1,40 +1,23 @@
 {
-  "updated_at": "2026-06-13T08:55:51.081867+00:00",
+  "updated_at": "2026-06-13 09:15 UTC",
   "matches": [
     {
-      "home": "qatar",
-      "away": "switzerland",
-      "hours_until": 10.1,
-      "city": "",
-      "venue": "",
-      "money_line": {
-        "win_a": "13.5",
-        "draw": "23.3",
-        "win_b": "63.2"
-      },
+      "elo_raw": "Elo: 1552→1585 (rest+10 venue-10) vs 1807→1836 (rest+10 venue-10)",
       "xg": {
-        "a": "0.82",
-        "b": "1.98"
+        "a": "0.85",
+        "b": "1.96"
       },
-      "elo": {
-        "a": 1552,
-        "b": 10,
-        "diff": 1542
+      "money_line": {
+        "win_a": "14.2",
+        "draw": "23.7",
+        "win_b": "62.1"
       },
-      "top_scores": [
-        [
-          "0-2",
-          "11.9"
-        ],
-        [
-          "1-1",
-          "11.2"
-        ],
-        [
-          "0-1",
-          "10.7"
-        ]
-      ],
+      "half_time": {
+        "win_a": "14.8",
+        "draw": "41.6",
+        "win_b": "43.6"
+      },
+      "spread_raw": "让球      qatar -1.5: 4.8% | switzerland +1.5: 95.2%",
       "over_under": {
         "2.5": {
           "over": "53.2",
@@ -42,263 +25,412 @@
         }
       },
       "btts": {
-        "yes": "49.7",
-        "no": "50.3"
+        "yes": "50.4",
+        "no": "49.6"
       },
-      "spread": {
-        "qatar -1.5": "4.5",
-        "switzerland +1.5": "95.5"
+      "clean_sheet_raw": "零封      qatar: 14.1%  switzerland: 42.8%",
+      "top_scores": [
+        [
+          "0-2",
+          "11.6"
+        ],
+        [
+          "1-1",
+          "11.3"
+        ],
+        [
+          "0-1",
+          "10.5"
+        ],
+        [
+          "1-2",
+          "9.8"
+        ],
+        [
+          "0-3",
+          "7.6"
+        ],
+        [
+          "0-0",
+          "7.3"
+        ]
+      ],
+      "elo": {
+        "a": 1585,
+        "b": 1836,
+        "diff": -251
+      },
+      "home": "qatar",
+      "away": "switzerland",
+      "match_time": "2026-06-13T19:00Z",
+      "hours_until": 9.7,
+      "venue": "Levi's Stadium",
+      "city": "Santa Clara, California",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 1994→2030 (rest+10 venue-5) vs 1875→1870 (rest+10 venue-10)",
+      "xg": {
+        "a": "2.02",
+        "b": "0.79"
+      },
+      "money_line": {
+        "win_a": "65.0",
+        "draw": "22.7",
+        "win_b": "12.3"
       },
       "half_time": {
-        "win_a": "14.3",
-        "draw": "41.4",
-        "win_b": "44.3"
+        "win_a": "45.4",
+        "draw": "41.1",
+        "win_b": "13.4"
       },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-13T19:00:00Z",
-        "home_odds": 14.36,
-        "home_implied": 7.0,
-        "away_odds": 1.22,
-        "away_implied": 82.0,
-        "draw_odds": 7.11,
-        "draw_implied": 14.1,
-        "dog_spread": 1.75,
-        "dog_odds": 2.07,
-        "fav_spread": -1.75,
-        "fav_odds": 1.86,
-        "over_odds": 1.98,
-        "over_point": 3.0,
-        "under_odds": 1.93
-      },
-      "edge": {
-        "home": {
-          "model_pct": 13.5,
-          "market_odds": 14.36,
-          "market_implied": 7.0,
-          "edge": 6.5,
-          "kelly_full": 7.0,
-          "kelly_quarter": 1.8,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 23.3,
-          "market_odds": 7.11,
-          "market_implied": 14.1,
-          "edge": 9.2,
-          "kelly_full": 10.7,
-          "kelly_quarter": 2.7,
-          "has_edge": true
-        },
-        "away": {
-          "model_pct": 63.2,
-          "market_odds": 1.22,
-          "market_implied": 82.0,
-          "edge": -18.8,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.98,
-          "point": 3.0
+      "spread_raw": "让球      brazil -1.5: 41.4% | morocco +1.5: 58.6%",
+      "over_under": {
+        "2.5": {
+          "over": "53.2",
+          "under": "46.8"
         }
+      },
+      "btts": {
+        "yes": "48.5",
+        "no": "51.5"
+      },
+      "clean_sheet_raw": "零封      brazil: 45.6%  morocco: 13.3%",
+      "top_scores": [
+        [
+          "2-0",
+          "12.3"
+        ],
+        [
+          "1-0",
+          "11.0"
+        ],
+        [
+          "1-1",
+          "10.8"
+        ],
+        [
+          "2-1",
+          "9.7"
+        ],
+        [
+          "3-0",
+          "8.3"
+        ],
+        [
+          "0-0",
+          "7.3"
+        ]
+      ],
+      "elo": {
+        "a": 2030,
+        "b": 1870,
+        "diff": 160
+      },
+      "home": "brazil",
+      "away": "morocco",
+      "match_time": "2026-06-13T22:00Z",
+      "hours_until": 12.7,
+      "venue": "MetLife Stadium",
+      "city": "East Rutherford, New Jersey",
+      "is_my_team": true,
+      "xbit": {
+        "home": "brazil",
+        "away": "morocco",
+        "pool": 10000,
+        "tickets": 3170,
+        "win_a": 55.7,
+        "draw": 1.5,
+        "win_b": 42.8,
+        "updated_at": "2026-06-13T06:00:00Z",
+        "note": "Focus Match data from XBIT. Update manually or via browser scraping."
       }
     },
     {
-      "home": "brazil",
-      "away": "morocco",
-      "hours_until": 13.1,
-      "city": "",
-      "venue": "",
-      "money_line": {
-        "win_a": "59.8",
-        "draw": "24.4",
-        "win_b": "15.7"
-      },
+      "elo_raw": "Elo: 1481→1444 (rest+10 venue+0) vs 1616→1622 (rest+10 venue-10)",
       "xg": {
-        "a": "1.91",
-        "b": "0.9"
+        "a": "1.05",
+        "b": "1.75"
       },
-      "elo": {
-        "a": 1994,
-        "b": 10,
-        "diff": 1984
+      "money_line": {
+        "win_a": "21.3",
+        "draw": "26.4",
+        "win_b": "52.3"
       },
+      "half_time": {
+        "win_a": "19.4",
+        "draw": "42.9",
+        "win_b": "37.7"
+      },
+      "spread_raw": "让球      haiti -1.5: 8.4% | scotland +1.5: 91.6%",
+      "over_under": {
+        "2.5": {
+          "over": "53.2",
+          "under": "46.8"
+        }
+      },
+      "btts": {
+        "yes": "55.3",
+        "no": "44.7"
+      },
+      "clean_sheet_raw": "零封      haiti: 17.3%  scotland: 34.8%",
       "top_scores": [
         [
           "1-1",
-          "11.7"
+          "12.6"
+        ],
+        [
+          "1-2",
+          "9.8"
+        ],
+        [
+          "0-2",
+          "9.3"
+        ],
+        [
+          "0-1",
+          "9.1"
+        ],
+        [
+          "0-0",
+          "7.5"
+        ],
+        [
+          "2-1",
+          "5.9"
+        ]
+      ],
+      "elo": {
+        "a": 1444,
+        "b": 1622,
+        "diff": -178
+      },
+      "home": "haiti",
+      "away": "scotland",
+      "match_time": "2026-06-14T01:00Z",
+      "hours_until": 15.7,
+      "venue": "Gillette Stadium",
+      "city": "Foxborough, Massachusetts",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 1769→1726 (rest+10 venue-10) vs 1700→1729 (rest+10 venue-10)",
+      "xg": {
+        "a": "1.56",
+        "b": "1.25"
+      },
+      "money_line": {
+        "win_a": "42.9",
+        "draw": "28.0",
+        "win_b": "29.1"
+      },
+      "half_time": {
+        "win_a": "32.2",
+        "draw": "43.6",
+        "win_b": "24.2"
+      },
+      "spread_raw": "让球      australia -1.5: 22.4% | turkey +1.5: 77.6%",
+      "over_under": {
+        "2.5": {
+          "over": "53.2",
+          "under": "46.8"
+        }
+      },
+      "btts": {
+        "yes": "57.9",
+        "no": "42.1"
+      },
+      "clean_sheet_raw": "零封      australia: 28.6%  turkey: 21.1%",
+      "top_scores": [
+        [
+          "1-1",
+          "13.3"
+        ],
+        [
+          "2-1",
+          "9.1"
+        ],
+        [
+          "1-0",
+          "7.9"
+        ],
+        [
+          "0-0",
+          "7.6"
+        ],
+        [
+          "1-2",
+          "7.4"
         ],
         [
           "2-0",
+          "7.3"
+        ]
+      ],
+      "elo": {
+        "a": 1726,
+        "b": 1729,
+        "diff": -3
+      },
+      "home": "australia",
+      "away": "turkey",
+      "match_time": "2026-06-14T04:00Z",
+      "hours_until": 18.7,
+      "venue": "BC Place",
+      "city": "Vancouver",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 1927→1963 (rest+10 venue-20) vs 1400→1345 (rest+10 venue-7)",
+      "xg": {
+        "a": "3.33",
+        "b": "0.25"
+      },
+      "money_line": {
+        "win_a": "92.9",
+        "draw": "6.3",
+        "win_b": "0.9"
+      },
+      "half_time": {
+        "win_a": "71.1",
+        "draw": "26.2",
+        "win_b": "2.6"
+      },
+      "spread_raw": "让球      germany -1.5: 79.3% | curacao +1.5: 20.7%",
+      "over_under": {
+        "2.5": {
+          "over": "69.2",
+          "under": "30.799999999999997"
+        }
+      },
+      "btts": {
+        "yes": "21.6",
+        "no": "78.4"
+      },
+      "clean_sheet_raw": "零封      germany: 77.9%  curacao: 3.6%",
+      "top_scores": [
+        [
+          "3-0",
+          "17.3"
+        ],
+        [
+          "2-0",
+          "15.6"
+        ],
+        [
+          "4-0",
+          "14.4"
+        ],
+        [
+          "5-0",
+          "9.6"
+        ],
+        [
+          "1-0",
+          "9.0"
+        ],
+        [
+          "6-0",
+          "5.3"
+        ]
+      ],
+      "elo": {
+        "a": 1963,
+        "b": 1345,
+        "diff": 618
+      },
+      "home": "germany",
+      "away": "curacao",
+      "match_time": "2026-06-14T17:00Z",
+      "hours_until": 31.7,
+      "venue": "NRG Stadium",
+      "city": "Houston, Texas",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 1942→1982 (rest+10 venue-21) vs 1851→1829 (rest+10 venue-20)",
+      "xg": {
+        "a": "2.0",
+        "b": "0.81"
+      },
+      "money_line": {
+        "win_a": "64.0",
+        "draw": "23.0",
+        "win_b": "12.9"
+      },
+      "half_time": {
+        "win_a": "44.8",
+        "draw": "41.3",
+        "win_b": "13.9"
+      },
+      "spread_raw": "让球      netherlands -1.5: 40.5% | japan +1.5: 59.5%",
+      "over_under": {
+        "2.5": {
+          "over": "53.2",
+          "under": "46.8"
+        }
+      },
+      "btts": {
+        "yes": "49.1",
+        "no": "50.9"
+      },
+      "clean_sheet_raw": "零封      netherlands: 44.6%  japan: 13.5%",
+      "top_scores": [
+        [
+          "2-0",
+          "12.1"
+        ],
+        [
+          "1-1",
           "11.0"
         ],
         [
           "1-0",
-          "10.2"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "53.2",
-          "under": "46.8"
-        }
-      },
-      "btts": {
-        "yes": "51.8",
-        "no": "48.2"
-      },
-      "spread": {
-        "brazil -1.5": "36.5",
-        "morocco +1.5": "63.5"
-      },
-      "half_time": {
-        "win_a": "42.2",
-        "draw": "42.0",
-        "win_b": "15.8"
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-13T22:00:00Z",
-        "home_odds": 1.71,
-        "home_implied": 58.5,
-        "away_odds": 5.56,
-        "away_implied": 18.0,
-        "draw_odds": 3.73,
-        "draw_implied": 26.8,
-        "fav_spread": -0.75,
-        "fav_odds": 1.94,
-        "dog_spread": 0.75,
-        "dog_odds": 1.98,
-        "over_odds": 1.98,
-        "over_point": 2.25,
-        "under_odds": 1.93
-      },
-      "edge": {
-        "home": {
-          "model_pct": 59.8,
-          "market_odds": 1.71,
-          "market_implied": 58.5,
-          "edge": 1.3,
-          "kelly_full": 3.2,
-          "kelly_quarter": 0.8,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 24.4,
-          "market_odds": 3.73,
-          "market_implied": 26.8,
-          "edge": -2.4,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 15.7,
-          "market_odds": 5.56,
-          "market_implied": 18.0,
-          "edge": -2.3,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.98,
-          "point": 2.25
-        }
-      }
-    },
-    {
-      "home": "germany",
-      "away": "curacao",
-      "hours_until": 15.1,
-      "city": "",
-      "venue": "",
-      "money_line": {
-        "win_a": "91.3",
-        "draw": "7.6",
-        "win_b": "1.1"
-      },
-      "xg": {
-        "a": "3.09",
-        "b": "0.25"
-      },
-      "elo": {
-        "a": 1927,
-        "b": 10,
-        "diff": 1917
-      },
-      "top_scores": [
+          "10.8"
+        ],
+        [
+          "2-1",
+          "9.7"
+        ],
         [
           "3-0",
-          "17.5"
+          "8.1"
         ],
         [
-          "2-0",
-          "17.0"
-        ],
-        [
-          "4-0",
-          "13.5"
+          "0-0",
+          "7.3"
         ]
       ],
-      "over_under": {
-        "2.5": {
-          "over": "64.8",
-          "under": "35.2"
-        }
+      "elo": {
+        "a": 1982,
+        "b": 1829,
+        "diff": 153
       },
-      "btts": {
-        "yes": "21.5",
-        "no": "78.5"
-      },
-      "spread": {
-        "germany -1.5": "75.9",
-        "curacao +1.5": "24.1"
-      },
-      "half_time": {
-        "win_a": "68.5",
-        "draw": "28.6",
-        "win_b": "2.9"
-      },
-      "market_odds": null,
-      "edge": {}
-    },
-    {
       "home": "netherlands",
       "away": "japan",
-      "hours_until": 15.1,
-      "city": "",
-      "venue": "",
-      "money_line": {
-        "win_a": "56.0",
-        "draw": "25.5",
-        "win_b": "18.5"
-      },
+      "match_time": "2026-06-14T20:00Z",
+      "hours_until": 34.7,
+      "venue": "AT&T Stadium",
+      "city": "Arlington, Texas",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 1706→1686 (rest+10 venue-10) vs 1790→1818 (rest+10 venue+38)",
       "xg": {
-        "a": "1.83",
-        "b": "0.98"
+        "a": "1.19",
+        "b": "1.62"
       },
-      "elo": {
-        "a": 1942,
-        "b": 10,
-        "diff": 1932
+      "money_line": {
+        "win_a": "26.4",
+        "draw": "27.6",
+        "win_b": "46.0"
       },
-      "top_scores": [
-        [
-          "1-1",
-          "12.2"
-        ],
-        [
-          "2-0",
-          "10.1"
-        ],
-        [
-          "2-1",
-          "9.9"
-        ]
-      ],
+      "half_time": {
+        "win_a": "22.6",
+        "draw": "43.4",
+        "win_b": "34.0"
+      },
+      "spread_raw": "让球      ivory-coast -1.5: 11.3% | ecuador +1.5: 88.7%",
       "over_under": {
         "2.5": {
           "over": "53.2",
@@ -306,193 +438,10 @@
         }
       },
       "btts": {
-        "yes": "53.8",
-        "no": "46.2"
+        "yes": "57.2",
+        "no": "42.8"
       },
-      "spread": {
-        "netherlands -1.5": "33.0",
-        "japan +1.5": "67.0"
-      },
-      "half_time": {
-        "win_a": "39.9",
-        "draw": "42.5",
-        "win_b": "17.6"
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-14T20:00:00Z",
-        "away_odds": 3.8,
-        "away_implied": 26.3,
-        "home_odds": 2.01,
-        "home_implied": 49.8,
-        "draw_odds": 3.64,
-        "draw_implied": 27.5,
-        "dog_spread": 0.5,
-        "dog_odds": 1.88,
-        "fav_spread": -0.5,
-        "fav_odds": 2.02,
-        "over_odds": 1.97,
-        "over_point": 2.5,
-        "under_odds": 1.92
-      },
-      "edge": {
-        "home": {
-          "model_pct": 56.0,
-          "market_odds": 2.01,
-          "market_implied": 49.8,
-          "edge": 6.2,
-          "kelly_full": 12.4,
-          "kelly_quarter": 3.1,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 25.5,
-          "market_odds": 3.64,
-          "market_implied": 27.5,
-          "edge": -2.0,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 18.5,
-          "market_odds": 3.8,
-          "market_implied": 26.3,
-          "edge": -7.8,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.97,
-          "point": 2.5
-        }
-      }
-    },
-    {
-      "home": "ivory-coast",
-      "away": "ecuador",
-      "hours_until": 15.1,
-      "city": "",
-      "venue": "",
-      "money_line": {
-        "win_a": "32.3",
-        "draw": "28.2",
-        "win_b": "39.5"
-      },
-      "xg": {
-        "a": "1.32",
-        "b": "1.48"
-      },
-      "elo": {
-        "a": 1706,
-        "b": 10,
-        "diff": 1696
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "13.4"
-        ],
-        [
-          "1-2",
-          "8.8"
-        ],
-        [
-          "2-1",
-          "7.8"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "53.2",
-          "under": "46.8"
-        }
-      },
-      "btts": {
-        "yes": "58.3",
-        "no": "41.7"
-      },
-      "spread": {
-        "ivory-coast -1.5": "14.9",
-        "ecuador +1.5": "85.1"
-      },
-      "half_time": {
-        "win_a": "26.1",
-        "draw": "43.7",
-        "win_b": "30.2"
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-14T23:00:00Z",
-        "away_odds": 2.43,
-        "away_implied": 41.2,
-        "home_odds": 3.73,
-        "home_implied": 26.8,
-        "draw_odds": 2.83,
-        "draw_implied": 35.3,
-        "fav_spread": -0.25,
-        "fav_odds": 2.02,
-        "dog_spread": 0.25,
-        "dog_odds": 1.88,
-        "over_odds": 1.82,
-        "over_point": 1.75,
-        "under_odds": 2.08
-      },
-      "edge": {
-        "home": {
-          "model_pct": 32.3,
-          "market_odds": 3.73,
-          "market_implied": 26.8,
-          "edge": 5.5,
-          "kelly_full": 7.5,
-          "kelly_quarter": 1.9,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 28.2,
-          "market_odds": 2.83,
-          "market_implied": 35.3,
-          "edge": -7.1,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 39.5,
-          "market_odds": 2.43,
-          "market_implied": 41.2,
-          "edge": -1.7,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.82,
-          "point": 1.75
-        }
-      }
-    },
-    {
-      "home": "haiti",
-      "away": "scotland",
-      "hours_until": 16.1,
-      "city": "",
-      "venue": "",
-      "money_line": {
-        "win_a": "25.6",
-        "draw": "27.4",
-        "win_b": "47.0"
-      },
-      "xg": {
-        "a": "1.17",
-        "b": "1.64"
-      },
-      "elo": {
-        "a": 1481,
-        "b": 10,
-        "diff": 1471
-      },
+      "clean_sheet_raw": "零封      ivory-coast: 19.8%  ecuador: 30.5%",
       "top_scores": [
         [
           "1-1",
@@ -500,117 +449,55 @@
         ],
         [
           "1-2",
-          "9.5"
+          "9.4"
         ],
         [
           "0-1",
-          "8.4"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "53.2",
-          "under": "46.8"
-        }
-      },
-      "btts": {
-        "yes": "57.0",
-        "no": "43.0"
-      },
-      "spread": {
-        "haiti -1.5": "10.8",
-        "scotland +1.5": "89.2"
-      },
-      "half_time": {
-        "win_a": "22.1",
-        "draw": "43.4",
-        "win_b": "34.5"
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-14T01:00:00Z",
-        "home_odds": 5.95,
-        "home_implied": 16.8,
-        "away_odds": 1.56,
-        "away_implied": 64.1,
-        "draw_odds": 4.46,
-        "draw_implied": 22.4,
-        "dog_spread": 1.0,
-        "dog_odds": 1.97,
-        "fav_spread": -1.0,
-        "fav_odds": 1.95,
-        "over_odds": 1.96,
-        "over_point": 2.75,
-        "under_odds": 1.94
-      },
-      "edge": {
-        "home": {
-          "model_pct": 25.6,
-          "market_odds": 5.95,
-          "market_implied": 16.8,
-          "edge": 8.8,
-          "kelly_full": 10.6,
-          "kelly_quarter": 2.6,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 27.4,
-          "market_odds": 4.46,
-          "market_implied": 22.4,
-          "edge": 5.0,
-          "kelly_full": 6.4,
-          "kelly_quarter": 1.6,
-          "has_edge": true
-        },
-        "away": {
-          "model_pct": 47.0,
-          "market_odds": 1.56,
-          "market_implied": 64.1,
-          "edge": -17.1,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.96,
-          "point": 2.75
-        }
-      }
-    },
-    {
-      "home": "australia",
-      "away": "turkey",
-      "hours_until": 19.1,
-      "city": "",
-      "venue": "",
-      "money_line": {
-        "win_a": "52.5",
-        "draw": "26.4",
-        "win_b": "21.1"
-      },
-      "xg": {
-        "a": "1.76",
-        "b": "1.05"
-      },
-      "elo": {
-        "a": 1769,
-        "b": 10,
-        "diff": 1759
-      },
-      "top_scores": [
+          "8.3"
+        ],
         [
-          "1-1",
-          "12.6"
+          "0-2",
+          "7.9"
+        ],
+        [
+          "0-0",
+          "7.5"
         ],
         [
           "2-1",
-          "9.8"
-        ],
-        [
-          "2-0",
-          "9.3"
+          "6.9"
         ]
       ],
+      "elo": {
+        "a": 1686,
+        "b": 1818,
+        "diff": -132
+      },
+      "home": "ivory-coast",
+      "away": "ecuador",
+      "match_time": "2026-06-14T23:00Z",
+      "hours_until": 37.7,
+      "venue": "Lincoln Financial Field",
+      "city": "Philadelphia, Pennsylvania",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 1640→1581 (rest+10 venue-23) vs 1666→1592 (rest+10 venue-23)",
+      "xg": {
+        "a": "1.53",
+        "b": "1.27"
+      },
+      "money_line": {
+        "win_a": "41.9",
+        "draw": "28.1",
+        "win_b": "30.1"
+      },
+      "half_time": {
+        "win_a": "31.6",
+        "draw": "43.6",
+        "win_b": "24.8"
+      },
+      "spread_raw": "让球      sweden -1.5: 21.6% | tunisia +1.5: 78.4%",
       "over_under": {
         "2.5": {
           "over": "53.2",
@@ -618,68 +505,316 @@
         }
       },
       "btts": {
-        "yes": "55.2",
-        "no": "44.8"
+        "yes": "58.0",
+        "no": "42.0"
       },
-      "spread": {
-        "australia -1.5": "30.0",
-        "turkey +1.5": "70.0"
+      "clean_sheet_raw": "零封      sweden: 28.0%  tunisia: 21.6%",
+      "top_scores": [
+        [
+          "1-1",
+          "13.3"
+        ],
+        [
+          "2-1",
+          "9.0"
+        ],
+        [
+          "1-0",
+          "7.7"
+        ],
+        [
+          "0-0",
+          "7.6"
+        ],
+        [
+          "1-2",
+          "7.5"
+        ],
+        [
+          "2-0",
+          "7.1"
+        ]
+      ],
+      "elo": {
+        "a": 1581,
+        "b": 1592,
+        "diff": -11
+      },
+      "home": "sweden",
+      "away": "tunisia",
+      "match_time": "2026-06-15T02:00Z",
+      "hours_until": 40.7,
+      "venue": "Estadio BBVA",
+      "city": "Guadalupe",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 2074→2118 (rest+10 venue-13) vs 1450→1405 (rest+10 venue-12)",
+      "xg": {
+        "a": "3.5",
+        "b": "0.25"
+      },
+      "money_line": {
+        "win_a": "93.8",
+        "draw": "5.5",
+        "win_b": "0.7"
       },
       "half_time": {
-        "win_a": "37.8",
-        "draw": "42.9",
-        "win_b": "19.3"
+        "win_a": "72.9",
+        "draw": "24.7",
+        "win_b": "2.5"
       },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-14T04:00:00Z",
-        "home_odds": 5.31,
-        "home_implied": 18.8,
-        "away_odds": 1.72,
-        "away_implied": 58.1,
-        "draw_odds": 3.8,
-        "draw_implied": 26.3,
-        "dog_spread": 0.75,
-        "dog_odds": 1.97,
-        "fav_spread": -0.75,
-        "fav_odds": 1.95,
-        "over_odds": 1.85,
-        "over_point": 2.25,
-        "under_odds": 2.07
-      },
-      "edge": {
-        "home": {
-          "model_pct": 52.5,
-          "market_odds": 5.31,
-          "market_implied": 18.8,
-          "edge": 33.7,
-          "kelly_full": 41.5,
-          "kelly_quarter": 10.4,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 26.4,
-          "market_odds": 3.8,
-          "market_implied": 26.3,
-          "edge": 0.1,
-          "kelly_full": 0.1,
-          "kelly_quarter": 0.0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 21.1,
-          "market_odds": 1.72,
-          "market_implied": 58.1,
-          "edge": -37.0,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.85,
-          "point": 2.25
+      "spread_raw": "让球      spain -1.5: 81.5% | cape-verde +1.5: 18.5%",
+      "over_under": {
+        "2.5": {
+          "over": "72.0",
+          "under": "28.0"
         }
-      }
+      },
+      "btts": {
+        "yes": "21.7",
+        "no": "78.3"
+      },
+      "clean_sheet_raw": "零封      spain: 77.9%  cape-verde: 3.0%",
+      "top_scores": [
+        [
+          "3-0",
+          "17.0"
+        ],
+        [
+          "4-0",
+          "14.9"
+        ],
+        [
+          "2-0",
+          "14.5"
+        ],
+        [
+          "5-0",
+          "10.4"
+        ],
+        [
+          "1-0",
+          "8.0"
+        ],
+        [
+          "6-0",
+          "6.1"
+        ]
+      ],
+      "elo": {
+        "a": 2118,
+        "b": 1405,
+        "diff": 713
+      },
+      "home": "spain",
+      "away": "cape-verde",
+      "match_time": "2026-06-15T16:00Z",
+      "hours_until": 54.7,
+      "venue": "Mercedes-Benz Stadium",
+      "city": "Atlanta, Georgia",
+      "is_my_team": true
+    },
+    {
+      "elo_raw": "Elo: 1871→1946 (rest+10 venue-10) vs 1671→1659 (rest+10 venue-10)",
+      "xg": {
+        "a": "2.38",
+        "b": "0.42"
+      },
+      "money_line": {
+        "win_a": "80.4",
+        "draw": "15.5",
+        "win_b": "4.2"
+      },
+      "half_time": {
+        "win_a": "56.3",
+        "draw": "37.3",
+        "win_b": "6.4"
+      },
+      "spread_raw": "让球      belgium -1.5: 58.2% | egypt +1.5: 41.8%",
+      "over_under": {
+        "2.5": {
+          "over": "53.2",
+          "under": "46.8"
+        }
+      },
+      "btts": {
+        "yes": "32.1",
+        "no": "67.9"
+      },
+      "clean_sheet_raw": "零封      belgium: 65.5%  egypt: 9.2%",
+      "top_scores": [
+        [
+          "2-0",
+          "17.2"
+        ],
+        [
+          "3-0",
+          "13.6"
+        ],
+        [
+          "1-0",
+          "13.6"
+        ],
+        [
+          "4-0",
+          "8.1"
+        ],
+        [
+          "2-1",
+          "7.3"
+        ],
+        [
+          "1-1",
+          "6.9"
+        ]
+      ],
+      "elo": {
+        "a": 1946,
+        "b": 1659,
+        "diff": 287
+      },
+      "home": "belgium",
+      "away": "egypt",
+      "match_time": "2026-06-15T19:00Z",
+      "hours_until": 57.7,
+      "venue": "Lumen Field",
+      "city": "Seattle, Washington",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 1619→1585 (rest+10 venue-15) vs 1833→1827 (rest+10 venue-9)",
+      "xg": {
+        "a": "0.87",
+        "b": "1.93"
+      },
+      "money_line": {
+        "win_a": "15.0",
+        "draw": "24.1",
+        "win_b": "60.9"
+      },
+      "half_time": {
+        "win_a": "15.3",
+        "draw": "41.8",
+        "win_b": "42.9"
+      },
+      "spread_raw": "让球      saudi-arabia -1.5: 5.2% | uruguay +1.5: 94.8%",
+      "over_under": {
+        "2.5": {
+          "over": "53.2",
+          "under": "46.8"
+        }
+      },
+      "btts": {
+        "yes": "51.2",
+        "no": "48.8"
+      },
+      "clean_sheet_raw": "零封      saudi-arabia: 14.5%  uruguay: 41.7%",
+      "top_scores": [
+        [
+          "1-1",
+          "11.5"
+        ],
+        [
+          "0-2",
+          "11.3"
+        ],
+        [
+          "0-1",
+          "10.3"
+        ],
+        [
+          "1-2",
+          "9.9"
+        ],
+        [
+          "0-0",
+          "7.4"
+        ],
+        [
+          "0-3",
+          "7.3"
+        ]
+      ],
+      "elo": {
+        "a": 1585,
+        "b": 1827,
+        "diff": -242
+      },
+      "home": "saudi-arabia",
+      "away": "uruguay",
+      "match_time": "2026-06-15T22:00Z",
+      "hours_until": 60.7,
+      "venue": "Hard Rock Stadium",
+      "city": "Miami Gardens, Florida",
+      "is_my_team": false
+    },
+    {
+      "elo_raw": "Elo: 1733→1757 (rest+10 venue+7) vs 1567→1560 (rest+10 venue+0)",
+      "xg": {
+        "a": "2.13",
+        "b": "0.68"
+      },
+      "money_line": {
+        "win_a": "69.8",
+        "draw": "20.8",
+        "win_b": "9.5"
+      },
+      "half_time": {
+        "win_a": "48.6",
+        "draw": "40.2",
+        "win_b": "11.3"
+      },
+      "spread_raw": "让球      iran -1.5: 46.2% | new-zealand +1.5: 53.8%",
+      "over_under": {
+        "2.5": {
+          "over": "53.2",
+          "under": "46.8"
+        }
+      },
+      "btts": {
+        "yes": "44.6",
+        "no": "55.4"
+      },
+      "clean_sheet_raw": "零封      iran: 50.7%  new-zealand: 11.9%",
+      "top_scores": [
+        [
+          "2-0",
+          "13.7"
+        ],
+        [
+          "1-0",
+          "11.7"
+        ],
+        [
+          "1-1",
+          "9.9"
+        ],
+        [
+          "3-0",
+          "9.7"
+        ],
+        [
+          "2-1",
+          "9.3"
+        ],
+        [
+          "0-0",
+          "7.2"
+        ]
+      ],
+      "elo": {
+        "a": 1757,
+        "b": 1560,
+        "diff": 197
+      },
+      "home": "iran",
+      "away": "new-zealand",
+      "match_time": "2026-06-16T01:00Z",
+      "hours_until": 63.7,
+      "venue": "SoFi Stadium",
+      "city": "Inglewood, California",
+      "is_my_team": false
     }
   ]
 }
