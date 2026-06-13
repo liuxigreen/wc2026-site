@@ -603,24 +603,25 @@ function drawCalibrationChart(canvasId, perfData, backtestData){
       const correct=b.actual>=b.predicted*0.8;
       
       // Glow effect
-      ctx.shadowColor=correct?'rgba(63,185,80,0.6)':'rgba(248,81,73,0.6)';
-      ctx.shadowBlur=8;
+      ctx.shadowColor=correct?'rgba(63,185,80,0.4)':'rgba(248,81,73,0.4)';
+      ctx.shadowBlur=6;
       
-      // Outer ring
-      ctx.strokeStyle=correct?'#3fb950':'#f85149';ctx.lineWidth=2;
-      ctx.beginPath();ctx.arc(x,y,7,0,Math.PI*2);ctx.stroke();
-      
-      // Inner dot
+      // Dot
       ctx.fillStyle=correct?'#3fb950':'#f85149';
-      ctx.beginPath();ctx.arc(x,y,4,0,Math.PI*2);ctx.fill();
+      ctx.beginPath();ctx.arc(x,y,5,0,Math.PI*2);ctx.fill();
+      
+      // Ring
+      ctx.strokeStyle=correct?'rgba(63,185,80,0.6)':'rgba(248,81,73,0.6)';ctx.lineWidth=1.5;
+      ctx.beginPath();ctx.arc(x,y,8,0,Math.PI*2);ctx.stroke();
       
       ctx.shadowBlur=0;
       
-      // Label
+      // Label — short, positioned above dot
+      const lx=x+12, ly=y-4;
       ctx.fillStyle='#e6edf3';ctx.font='bold 10px system-ui';ctx.textAlign='left';
-      ctx.fillText(`${b.bin} (${b.count}场)`,x+10,y-8);
-      ctx.fillStyle=correct?'#3fb950':'#f85149';ctx.font='11px system-ui';
-      ctx.fillText(`${Math.round(px)}%→${Math.round(py*100)/100}%`,x+10,y+6);
+      ctx.fillText(b.bin, lx, ly-6);
+      ctx.fillStyle=correct?'#3fb950':'#f85149';ctx.font='10px system-ui';
+      ctx.fillText(`${b.count}场 ${Math.round(px)}%→${Math.round(py)}%`, lx, ly+7);
     });
   }
   
