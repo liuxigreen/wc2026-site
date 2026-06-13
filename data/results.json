@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-06-13 11:18 UTC",
+  "updated_at": "2026-06-13 11:25 UTC",
   "matches": [
+    {
+      "home": "mexico",
+      "away": "south-africa",
+      "home_score": 2,
+      "away_score": 0,
+      "home_elo_change": 0,
+      "away_elo_change": 0
+    },
+    {
+      "home": "south-korea",
+      "away": "czech-republic",
+      "home_score": 2,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
+    },
     {
       "home": "canada",
       "away": "bosnia-and-herzegovina",

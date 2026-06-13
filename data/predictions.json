@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13 11:18 UTC",
+  "updated_at": "2026-06-13 11:25 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1552→1585 (rest+10 venue-10) vs 1807→1836 (rest+10 venue-10)",
@@ -67,7 +67,7 @@
       "home": "qatar",
       "away": "switzerland",
       "match_time": "2026-06-13T19:00Z",
-      "hours_until": 7.7,
+      "hours_until": 7.6,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "is_my_team": false
@@ -138,7 +138,7 @@
       "home": "brazil",
       "away": "morocco",
       "match_time": "2026-06-13T22:00Z",
-      "hours_until": 10.7,
+      "hours_until": 10.6,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -220,7 +220,7 @@
       "home": "haiti",
       "away": "scotland",
       "match_time": "2026-06-14T01:00Z",
-      "hours_until": 13.7,
+      "hours_until": 13.6,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false
@@ -291,7 +291,7 @@
       "home": "australia",
       "away": "turkey",
       "match_time": "2026-06-14T04:00Z",
-      "hours_until": 16.7,
+      "hours_until": 16.6,
       "venue": "BC Place",
       "city": "Vancouver",
       "is_my_team": false
@@ -362,7 +362,7 @@
       "home": "germany",
       "away": "curacao",
       "match_time": "2026-06-14T17:00Z",
-      "hours_until": 29.7,
+      "hours_until": 29.6,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false
@@ -433,7 +433,7 @@
       "home": "netherlands",
       "away": "japan",
       "match_time": "2026-06-14T20:00Z",
-      "hours_until": 32.7,
+      "hours_until": 32.6,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": false
@@ -504,7 +504,7 @@
       "home": "ivory-coast",
       "away": "ecuador",
       "match_time": "2026-06-14T23:00Z",
-      "hours_until": 35.7,
+      "hours_until": 35.6,
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, Pennsylvania",
       "is_my_team": false
@@ -575,7 +575,7 @@
       "home": "sweden",
       "away": "tunisia",
       "match_time": "2026-06-15T02:00Z",
-      "hours_until": 38.7,
+      "hours_until": 38.6,
       "venue": "Estadio BBVA",
       "city": "Guadalupe",
       "is_my_team": false
@@ -646,7 +646,7 @@
       "home": "spain",
       "away": "cape-verde",
       "match_time": "2026-06-15T16:00Z",
-      "hours_until": 52.7,
+      "hours_until": 52.6,
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, Georgia",
       "is_my_team": true
@@ -717,7 +717,7 @@
       "home": "belgium",
       "away": "egypt",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 55.7,
+      "hours_until": 55.6,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "is_my_team": false
@@ -788,7 +788,7 @@
       "home": "saudi-arabia",
       "away": "uruguay",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 58.7,
+      "hours_until": 58.6,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "is_my_team": false
@@ -859,7 +859,7 @@
       "home": "iran",
       "away": "new-zealand",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 61.7,
+      "hours_until": 61.6,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false
