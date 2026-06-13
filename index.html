@@ -863,7 +863,7 @@ async function load(){
           {name:'Elo K系数',val:'55',desc:'世界杯权重',icon:'⚖️'},
           {name:'基础进球率',val:'1.35',desc:'场均λ',icon:'⚽'},
           {name:'休息修正',val:'+10/天',desc:'每多休息1天',icon:'😴'},
-          {name:'阵容权重',val:'0.15',desc:'身价加权',icon:'💪'},
+          {name:'球员指数',val:'±40 Elo',desc:'1247名球员z-score',icon:'💪'},
           {name:'海拔修正',val:'±0.05',desc:'每1000m',icon:'⛰️'},
           {name:'气候修正',val:'±0.03',desc:'温度/湿度',icon:'🌡️'},
         ].map(p=>`
@@ -906,9 +906,9 @@ async function load(){
       <div style="text-align:center;font-size:12px;color:var(--dim);margin-bottom:12px;letter-spacing:1px;text-transform:uppercase">数据与更新</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
         ${[
-          {icon:'📡',title:'数据源',items:['OpenLigaDB (免费)','ESPN API (备用)','The Odds API (Pinnacle赔率)']},
+          {icon:'📡',title:'数据源',items:['OpenLigaDB + ESPN API','copa2026 球员数据库 (1247人)','The Odds API (Pinnacle赔率)']},
           {icon:'🔄',title:'更新频率',items:['每4小时自动运行','赛后 Elo 实时更新','赛前预测+edge计算']},
-          {icon:'☁️',title:'技术栈',items:['Python + Dixon-Coles','Cloudflare Pages','GitHub Actions CI']},
+          {icon:'☁️',title:'技术栈',items:['Elo + Dixon-Coles + 球员指数','copa2026 球员评分系统','Cloudflare Pages + GitHub CI']},
           {icon:'📱',title:'通知',items:['Telegram 自动推送','模型预测 + 仓位建议','赛后复盘 + Brier追踪']},
         ].map(s=>`
           <div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px">
