@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5145,
-  "accuracy": 0.625,
-  "total_reviewed": 8,
-  "correct_count": 5,
+  "cumulative_brier": 0.4584,
+  "accuracy": 0.6667,
+  "total_reviewed": 9,
+  "correct_count": 6,
   "calibration_bins": [
     {
       "bin": "40-60%",
@@ -18,9 +18,9 @@
     },
     {
       "bin": "80-100%",
-      "predicted": 0.845,
+      "predicted": 0.886,
       "actual": 1.0,
-      "count": 1
+      "count": 2
     }
   ],
   "brier_trend": [
@@ -63,6 +63,11 @@
       "match": 8,
       "brier": 0.7205,
       "label": "澳大利亚 vs 土耳其"
+    },
+    {
+      "match": 9,
+      "brier": 0.4759,
+      "label": "德国 vs 库拉索"
     }
   ],
   "match_reviews": [
@@ -185,7 +190,22 @@
       "brier": 0.5029,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "德国 vs 库拉索",
+      "home": "germany",
+      "away": "curacao",
+      "predicted": {
+        "home": 0.927,
+        "draw": 0.066,
+        "away": 0.006999999999999999
+      },
+      "result": "7-1",
+      "actual_outcome": "主胜",
+      "brier": 0.0097,
+      "correct": true,
+      "predicted_score": "3-0"
     }
   ],
-  "updated_at": "2026-06-14T06:06:10.722619+00:00"
+  "updated_at": "2026-06-14T19:15:10.427830+00:00"
 }
