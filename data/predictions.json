@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 21:54 UTC",
+  "updated_at": "2026-06-14 22:55 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1706→1686 (rest+10 venue-10) vs 1790→1818 (rest+10 venue+38)",
@@ -71,7 +71,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T23:00Z",
-      "hours_until": 1.1,
+      "hours_until": 0.1,
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, Pennsylvania",
       "is_my_team": false,
@@ -148,7 +148,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T02:00Z",
-      "hours_until": 4.1,
+      "hours_until": 3.1,
       "venue": "Estadio BBVA",
       "city": "Guadalupe",
       "is_my_team": false,
@@ -156,8 +156,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "实力接近，xG 1.53vs1.27差距不大。模型概率合理，无明显偏差。",
-        "model_vs_ai": "一致，平局29.7%已反映世界杯均值",
+        "summary": "xG 1.53vs1.27差距小，赔率三选项接近(41/30/29)，无模型偏差可利用。",
+        "model_vs_ai": "一致，平局29.7%合理，无需修正",
         "edge": null
       }
     },
@@ -231,7 +231,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T16:00Z",
-      "hours_until": 18.1,
+      "hours_until": 17.1,
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, Georgia",
       "is_my_team": true,
@@ -289,7 +289,7 @@
       ],
       "ai": {
         "verdict": "skip",
-        "summary": "碾压局93.6%，赔率无价值。佛得角xG仅0.25。",
+        "summary": "碾压局93.6%，佛得角xG仅0.25。赔率已充分定价，无edge。",
         "model_vs_ai": "一致，无需修正",
         "edge": null
       }
@@ -364,7 +364,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 21.1,
+      "hours_until": 20.1,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "is_my_team": false,
@@ -372,8 +372,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "比利时80%合理。埃及防守可能拖延但难挡，最可能2-0。",
-        "model_vs_ai": "一致，埃及xG 0.42反映其进攻乏力",
+        "summary": "比利时80%合理，埃及xG 0.42进攻乏力。赔率已反映实力差，无价值。",
+        "model_vs_ai": "一致，无需修正",
         "edge": null
       }
     },
@@ -447,45 +447,17 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 24.1,
+      "hours_until": 23.1,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "is_my_team": false,
       "predict_fun": null,
       "binance": null,
       "ai": {
-        "verdict": "buy",
-        "pick": "平局",
-        "summary": "沙特2022世界杯曾胜阿根廷，防守韧性极强。乌拉圭xG高但最可能比分1-1(12.4%)，模型低估平局。",
-        "model_vs_ai": "AI上调平局至30-33%，沙特主场气氛+防守纪律",
-        "edge": "+5-7%",
-        "confidence": "中",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "平局",
-            "odds": "~3.2",
-            "reason": "模型25.8%→AI修正30-33%"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "~6.5",
-            "reason": "最可能比分12.4%"
-          },
-          {
-            "market": "大小球",
-            "pick": "小2.5",
-            "odds": "~1.9",
-            "reason": "沙特防守为主+乌拉圭效率转化"
-          },
-          {
-            "market": "BTTS",
-            "pick": "否",
-            "odds": "~1.9",
-            "reason": "沙特xG仅0.89，难破门"
-          }
-        ]
+        "verdict": "skip",
+        "summary": "乌拉圭xG优势明显(1.92vs0.89)，模型59.4%合理。沙特防守有韧性但33%平局概率不够高，赔率已定价。",
+        "model_vs_ai": "AI认为平局可能略高于25.8%，但幅度不足5%，不构成推荐edge",
+        "edge": null
       }
     },
     {
@@ -558,7 +530,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 27.1,
+      "hours_until": 26.1,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
@@ -635,7 +607,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 45.1,
+      "hours_until": 44.1,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -726,7 +698,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 48.1,
+      "hours_until": 47.1,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
@@ -803,7 +775,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 51.1,
+      "hours_until": 50.1,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,
@@ -849,24 +821,5 @@
       ]
     }
   ],
-  "parlays": [
-    {
-      "name": "🔥 进攻串",
-      "picks": [
-        "科厄平局",
-        "荷日平局"
-      ],
-      "odds": "~8.4",
-      "reason": "两场都有明确edge，互不相关"
-    },
-    {
-      "name": "🛡️ 保守串",
-      "picks": [
-        "科厄BTTS是",
-        "荷日小2.5"
-      ],
-      "odds": "~3.2",
-      "reason": "确定性更高，收益低一些"
-    }
-  ]
+  "parlays": []
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 21:54 UTC",
+  "updated_at": "2026-06-14 22:55 UTC",
   "matches": [
     {
       "home": "mexico",
@@ -104,12 +104,12 @@
       "elo": 1963
     },
     {
-      "slug": "netherlands",
-      "elo": 1942
-    },
-    {
       "slug": "portugal",
       "elo": 1934
+    },
+    {
+      "slug": "japan",
+      "elo": 1921
     },
     {
       "slug": "italy",
@@ -128,16 +128,16 @@
       "elo": 1878
     },
     {
+      "slug": "netherlands",
+      "elo": 1872
+    },
+    {
       "slug": "belgium",
       "elo": 1871
     },
     {
       "slug": "mexico",
       "elo": 1857
-    },
-    {
-      "slug": "japan",
-      "elo": 1851
     },
     {
       "slug": "usa",
