@@ -831,6 +831,7 @@ async function fetchLive(){
         }
       });
       live.matches.sort((a,b)=>(a.hours_until||999)-(b.hours_until||999));
+      if(!live.parlays&&existing.predictions?.parlays)live.parlays=existing.predictions.parlays;
       existing.predictions=live;
       window.__WC_DATA__=existing;
       console.log("✅ Live data merged:",live.matches.length,"matches");
