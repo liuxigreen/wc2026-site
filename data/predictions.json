@@ -898,7 +898,13 @@
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "skip",
+        "summary": "挪威主55%有优势(哈兰德+厄德高)，但伊拉克西亚主场+防守韧性。首轮保守，不够确定。",
+        "model_vs_ai": "基本一致",
+        "edge": null
+      }
     },
     {
       "elo_raw": "Elo: 2064→2151 (rest+10 venue-8) vs 1676→1661 (rest+10 venue-12)",
