@@ -1,14 +1,14 @@
 {
-  "cumulative_brier": 0.5429,
-  "accuracy": 0.5,
-  "total_reviewed": 6,
-  "correct_count": 3,
+  "cumulative_brier": 0.5161,
+  "accuracy": 0.5714,
+  "total_reviewed": 7,
+  "correct_count": 4,
   "calibration_bins": [
     {
       "bin": "40-60%",
-      "predicted": 0.571,
-      "actual": 0.0,
-      "count": 1
+      "predicted": 0.543,
+      "actual": 0.5,
+      "count": 2
     },
     {
       "bin": "60-80%",
@@ -53,6 +53,11 @@
       "match": 6,
       "brier": 0.7635,
       "label": "巴西 vs 摩洛哥"
+    },
+    {
+      "match": 7,
+      "brier": 0.6236,
+      "label": "海地 vs 苏格兰"
     }
   ],
   "match_reviews": [
@@ -145,7 +150,22 @@
       "brier": 1.0352,
       "correct": false,
       "predicted_score": "2-0"
+    },
+    {
+      "match": "海地 vs 苏格兰",
+      "home": "haiti",
+      "away": "scotland",
+      "predicted": {
+        "home": 0.205,
+        "draw": 0.28,
+        "away": 0.515
+      },
+      "result": "0-1",
+      "actual_outcome": "客胜",
+      "brier": 0.3557,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-14T00:20:35.571697+00:00"
+  "updated_at": "2026-06-14T03:09:53.872922+00:00"
 }
