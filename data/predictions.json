@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 04:57 UTC",
+  "updated_at": "2026-06-14 04:58 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1927→1963 (rest+10 venue-20) vs 1400→1345 (rest+10 venue-7)",
@@ -1078,6 +1078,26 @@
         "model_vs_ai": "一致",
         "edge": null
       }
+    }
+  ],
+  "parlays": [
+    {
+      "name": "🔥 进攻串",
+      "picks": [
+        "科厄平局",
+        "荷日平局"
+      ],
+      "odds": "~8.4",
+      "reason": "两场都有明确edge，互不相关"
+    },
+    {
+      "name": "🛡️ 保守串",
+      "picks": [
+        "科厄BTTS是",
+        "荷日小2.5"
+      ],
+      "odds": "~3.2",
+      "reason": "确定性更高，收益低一些"
     }
   ]
 }
