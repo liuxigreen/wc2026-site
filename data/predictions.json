@@ -1,83 +1,6 @@
 {
-  "updated_at": "2026-06-14 02:03 UTC",
+  "updated_at": "2026-06-14 04:27 UTC",
   "matches": [
-    {
-      "elo_raw": "Elo: 1769→1726 (rest+10 venue-10) vs 1700→1729 (rest+10 venue-10)",
-      "squad_quality": {
-        "a": -1.09,
-        "b": 0.71
-      },
-      "xg": {
-        "a": "1.56",
-        "b": "1.25"
-      },
-      "money_line": {
-        "win_a": "42.1",
-        "draw": "29.6",
-        "win_b": "28.3"
-      },
-      "half_time": {
-        "win_a": "31.8",
-        "draw": "44.3",
-        "win_b": "23.9"
-      },
-      "spread_raw": "让球      australia -1.5: 22.4% | turkey +1.5: 77.6%",
-      "over_under": {
-        "2.5": {
-          "over": "53.2",
-          "under": "46.8"
-        }
-      },
-      "btts": {
-        "yes": "58.7",
-        "no": "41.3"
-      },
-      "clean_sheet_raw": "零封      australia: 28.6%  turkey: 21.1%",
-      "top_scores": [
-        [
-          "1-1",
-          "14.1"
-        ],
-        [
-          "2-1",
-          "9.1"
-        ],
-        [
-          "0-0",
-          "8.4"
-        ],
-        [
-          "1-2",
-          "7.4"
-        ],
-        [
-          "2-0",
-          "7.3"
-        ],
-        [
-          "1-0",
-          "7.0"
-        ]
-      ],
-      "elo": {
-        "a": 1726,
-        "b": 1729,
-        "diff": -3
-      },
-      "home": "australia",
-      "away": "turkey",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "match_time": "2026-06-14T04:00Z",
-      "hours_until": 1.9,
-      "venue": "BC Place",
-      "city": "Vancouver",
-      "is_my_team": false,
-      "predict_fun": null,
-      "binance": null
-    },
     {
       "elo_raw": "Elo: 1927→1963 (rest+10 venue-20) vs 1400→1345 (rest+10 venue-7)",
       "squad_quality": {
@@ -148,7 +71,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T17:00Z",
-      "hours_until": 14.9,
+      "hours_until": 12.5,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false,
@@ -225,7 +148,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T20:00Z",
-      "hours_until": 17.9,
+      "hours_until": 15.5,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -309,7 +232,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T23:00Z",
-      "hours_until": 20.9,
+      "hours_until": 18.5,
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, Pennsylvania",
       "is_my_team": false,
@@ -386,12 +309,18 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T02:00Z",
-      "hours_until": 23.9,
+      "hours_until": 21.5,
       "venue": "Estadio BBVA",
       "city": "Guadalupe",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "skip",
+        "summary": "三方概率接近(41/30/29)，北欧vs北非风格对冲。低比分概率高但确定性不够。",
+        "model_vs_ai": "基本一致",
+        "edge": null
+      }
     },
     {
       "elo_raw": "Elo: 2074→2118 (rest+10 venue-13) vs 1450→1405 (rest+10 venue-12)",
@@ -463,7 +392,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T16:00Z",
-      "hours_until": 37.9,
+      "hours_until": 35.5,
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, Georgia",
       "is_my_team": true,
@@ -518,7 +447,13 @@
           "probability": 17.0,
           "confidence": "中"
         }
-      ]
+      ],
+      "ai": {
+        "verdict": "skip",
+        "summary": "碾压局，赔率无价值。适合串关底但单买没意义。",
+        "model_vs_ai": "一致",
+        "edge": null
+      }
     },
     {
       "elo_raw": "Elo: 1871→1946 (rest+10 venue-10) vs 1671→1659 (rest+10 venue-10)",
@@ -590,12 +525,18 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 40.9,
+      "hours_until": 38.5,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "skip",
+        "summary": "比利时老龄化，埃及有萨拉赫。模型80%偏高，实际70%左右。但世界杯比利时大赛经验丰富，仍有优势。不够确定。",
+        "model_vs_ai": "AI下调比利时10%",
+        "edge": null
+      }
     },
     {
       "elo_raw": "Elo: 1619→1585 (rest+10 venue-15) vs 1833→1827 (rest+10 venue-9)",
@@ -667,12 +608,18 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 43.9,
+      "hours_until": 41.5,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "skip",
+        "summary": "沙特2022爆冷赢阿根廷，西亚气候主场优势。乌拉圭苏亚雷斯卡瓦尼退了。模型客胜59%偏高，45-50%更合理。但沙特不稳定，不敢反买。",
+        "model_vs_ai": "AI下调乌拉圭10%",
+        "edge": null
+      }
     },
     {
       "elo_raw": "Elo: 1733→1757 (rest+10 venue+7) vs 1567→1560 (rest+10 venue+0)",
@@ -744,7 +691,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 46.9,
+      "hours_until": 44.5,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
@@ -821,7 +768,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 64.9,
+      "hours_until": 62.5,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -912,7 +859,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 67.9,
+      "hours_until": 65.5,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
@@ -989,7 +936,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 70.9,
+      "hours_until": 68.5,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,

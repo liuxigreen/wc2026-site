@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 02:03 UTC",
+  "updated_at": "2026-06-14 04:27 UTC",
   "matches": [
     {
       "home": "mexico",
@@ -140,6 +140,10 @@
       "elo": 1767
     },
     {
+      "slug": "scotland",
+      "elo": 1764
+    },
+    {
       "slug": "iran",
       "elo": 1733
     },
@@ -174,10 +178,6 @@
     {
       "slug": "algeria",
       "elo": 1676
-    },
-    {
-      "slug": "egypt",
-      "elo": 1671
     }
   ]
 }
