@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13 17:45 UTC",
+  "updated_at": "2026-06-14 01:53 UTC",
   "matches": [
     {
       "home": "mexico",
@@ -32,6 +32,22 @@
       "away_score": 1,
       "home_elo_change": 0,
       "away_elo_change": 0
+    },
+    {
+      "home": "qatar",
+      "away": "switzerland",
+      "home_score": 1,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
+    },
+    {
+      "home": "brazil",
+      "away": "morocco",
+      "home_score": 1,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
     }
   ],
   "elo_rankings": [
@@ -48,12 +64,12 @@
       "elo": 2040
     },
     {
-      "slug": "brazil",
-      "elo": 1994
-    },
-    {
       "slug": "england",
       "elo": 1982
+    },
+    {
+      "slug": "morocco",
+      "elo": 1959
     },
     {
       "slug": "netherlands",
@@ -72,16 +88,16 @@
       "elo": 1915
     },
     {
+      "slug": "brazil",
+      "elo": 1910
+    },
+    {
       "slug": "colombia",
       "elo": 1884
     },
     {
       "slug": "croatia",
       "elo": 1878
-    },
-    {
-      "slug": "morocco",
-      "elo": 1875
     },
     {
       "slug": "belgium",
@@ -108,10 +124,6 @@
       "elo": 1830
     },
     {
-      "slug": "switzerland",
-      "elo": 1807
-    },
-    {
       "slug": "denmark",
       "elo": 1790
     },
@@ -130,6 +142,10 @@
     {
       "slug": "iran",
       "elo": 1733
+    },
+    {
+      "slug": "switzerland",
+      "elo": 1724
     },
     {
       "slug": "austria",
