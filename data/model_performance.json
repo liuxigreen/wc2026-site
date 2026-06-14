@@ -1,14 +1,14 @@
 {
-  "cumulative_brier": 0.5161,
-  "accuracy": 0.5714,
-  "total_reviewed": 7,
-  "correct_count": 4,
+  "cumulative_brier": 0.5145,
+  "accuracy": 0.625,
+  "total_reviewed": 8,
+  "correct_count": 5,
   "calibration_bins": [
     {
       "bin": "40-60%",
-      "predicted": 0.543,
-      "actual": 0.5,
-      "count": 2
+      "predicted": 0.502,
+      "actual": 0.667,
+      "count": 3
     },
     {
       "bin": "60-80%",
@@ -58,6 +58,11 @@
       "match": 7,
       "brier": 0.6236,
       "label": "海地 vs 苏格兰"
+    },
+    {
+      "match": 8,
+      "brier": 0.7205,
+      "label": "澳大利亚 vs 土耳其"
     }
   ],
   "match_reviews": [
@@ -165,7 +170,22 @@
       "brier": 0.3557,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "澳大利亚 vs 土耳其",
+      "home": "australia",
+      "away": "turkey",
+      "predicted": {
+        "home": 0.42100000000000004,
+        "draw": 0.29600000000000004,
+        "away": 0.28300000000000003
+      },
+      "result": "2-0",
+      "actual_outcome": "主胜",
+      "brier": 0.5029,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-14T03:09:53.872922+00:00"
+  "updated_at": "2026-06-14T06:06:10.722619+00:00"
 }
