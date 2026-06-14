@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 04:49 UTC",
+  "updated_at": "2026-06-14 04:54 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1927→1963 (rest+10 venue-20) vs 1400→1345 (rest+10 venue-7)",
@@ -71,12 +71,18 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T17:00Z",
-      "hours_until": 12.2,
+      "hours_until": 12.1,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "skip",
+        "summary": "碾压局93%，无分析价值。赔率太低不适合单买，可当串关底。",
+        "model_vs_ai": "一致，无需修正",
+        "edge": null
+      }
     },
     {
       "elo_raw": "Elo: 1942→1982 (rest+10 venue-21) vs 1851→1829 (rest+10 venue-20)",
@@ -148,7 +154,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T20:00Z",
-      "hours_until": 15.2,
+      "hours_until": 15.1,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -160,7 +166,15 @@
           "probability": 12.1,
           "confidence": "低"
         }
-      ]
+      ],
+      "ai": {
+        "verdict": "buy",
+        "pick": "平局",
+        "summary": "日本2022连杀德国西班牙，三笘薰+久保建英反击犀利。荷兰中场老化(德容伤缺)。模型主64%偏高，日本实际应有30%+胜率，平局被严重低估。",
+        "model_vs_ai": "AI下调荷兰10%，上调平局至30%+",
+        "edge": "+6%",
+        "confidence": "中"
+      }
     },
     {
       "elo_raw": "Elo: 1706→1686 (rest+10 venue-10) vs 1790→1818 (rest+10 venue+38)",
@@ -232,12 +246,20 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T23:00Z",
-      "hours_until": 18.2,
+      "hours_until": 18.1,
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, Pennsylvania",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "buy",
+        "pick": "平局",
+        "summary": "两队实力极接近(xG 1.32 vs 1.48)，世界杯首轮双方保守怕输。科特迪瓦主场非洲但厄瓜多尔南美韧性足。模型平30%应为35%+。",
+        "model_vs_ai": "AI上调平局5-8%",
+        "edge": "+5-8%",
+        "confidence": "中高"
+      }
     },
     {
       "elo_raw": "Elo: 1640→1581 (rest+10 venue-23) vs 1666→1592 (rest+10 venue-23)",
@@ -309,7 +331,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T02:00Z",
-      "hours_until": 21.2,
+      "hours_until": 21.1,
       "venue": "Estadio BBVA",
       "city": "Guadalupe",
       "is_my_team": false,
@@ -317,8 +339,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "三方概率均衡(41/30/29)，世界杯首轮两队都偏保守。北欧vs北非身体对抗激烈，低比分概率高但缺乏确定性。",
-        "model_vs_ai": "AI与模型基本一致，平局29.7%接近WC首轮均值",
+        "summary": "三方概率均衡(41/30/29)，世界杯首轮两队都偏保守。北欧vs北非风格对冲，低比分概率高但确定性不够。",
+        "model_vs_ai": "基本一致",
         "edge": null
       }
     },
@@ -392,7 +414,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T16:00Z",
-      "hours_until": 35.2,
+      "hours_until": 35.1,
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, Georgia",
       "is_my_team": true,
@@ -450,8 +472,8 @@
       ],
       "ai": {
         "verdict": "skip",
-        "summary": "碾压局(93.6%)，西班牙轮换阵容也远强于佛得角。赔率无价值，适合串关底但单买无意义。",
-        "model_vs_ai": "一致，xG 3.5-0.25准确反映实力差距",
+        "summary": "碾压局(93.6%)，西班牙轮换阵容也远强于佛得角。赔率无价值。",
+        "model_vs_ai": "一致",
         "edge": null
       }
     },
@@ -525,7 +547,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 38.2,
+      "hours_until": 38.1,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "is_my_team": false,
@@ -533,8 +555,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "比利时80%偏高，埃及有萨拉赫+非洲杯经验。但比利时阵容深度仍在，大赛经验丰富。模型可能低估埃及5-8%，但不够确定到反买。",
-        "model_vs_ai": "AI下调比利时约5-8%，埃及对抗能力被低估",
+        "summary": "比利时80%偏高，埃及有萨拉赫+非洲杯经验。但比利时阵容深度和大赛经验仍有优势，不够确定。",
+        "model_vs_ai": "AI下调比利时约5-8%，但仍在推荐线以上",
         "edge": null
       }
     },
@@ -608,7 +630,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 41.2,
+      "hours_until": 41.1,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "is_my_team": false,
@@ -616,8 +638,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "乌拉圭59%合理偏低，努涅斯+巴尔韦德+阿劳霍阵容扎实。沙特2022爆冷已过去4年，核心换代。模型基本准确，无明显edge。",
-        "model_vs_ai": "AI与模型基本一致，乌拉圭阵容更新后实力稳定",
+        "summary": "乌拉圭59%合理偏低，努涅斯+巴尔韦德+阿劳霍阵容扎实。沙特2022爆冷过但整体实力差距明显。",
+        "model_vs_ai": "AI与模型基本一致",
         "edge": null
       }
     },
@@ -691,12 +713,18 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 44.2,
+      "hours_until": 44.1,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "skip",
+        "summary": "伊朗亚洲顶级(主68%)，新西兰大洋洲实力差距大。赔率低无价值。",
+        "model_vs_ai": "一致",
+        "edge": null
+      }
     },
     {
       "elo_raw": "Elo: 2040→2065 (rest+10 venue-10) vs 1830→1852 (rest+10 venue-10)",
@@ -768,7 +796,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 62.2,
+      "hours_until": 62.1,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -787,7 +815,13 @@
           "probability": 14.2,
           "confidence": "低"
         }
-      ]
+      ],
+      "ai": {
+        "verdict": "skip",
+        "summary": "法国主72%合理偏高，塞内加尔非洲冠军有实力。但法国阵容深度太强，不够确定下调。",
+        "model_vs_ai": "基本一致",
+        "edge": null
+      }
     },
     {
       "elo_raw": "Elo: 1530→1487 (rest+10 venue-10) vs 1620→1644 (rest+10 venue-10)",
@@ -859,7 +893,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 65.2,
+      "hours_until": 65.1,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
@@ -936,7 +970,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 68.2,
+      "hours_until": 68.1,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,
@@ -979,7 +1013,13 @@
           "probability": 17.7,
           "confidence": "中"
         }
-      ]
+      ],
+      "ai": {
+        "verdict": "skip",
+        "summary": "阿根廷90%碾压局，梅西最后一届世界杯动力十足。赔率无价值。",
+        "model_vs_ai": "一致",
+        "edge": null
+      }
     }
   ]
 }
