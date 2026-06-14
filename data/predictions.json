@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 04:31 UTC",
+  "updated_at": "2026-06-14 04:35 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1927→1963 (rest+10 venue-20) vs 1400→1345 (rest+10 venue-7)",
@@ -71,7 +71,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T17:00Z",
-      "hours_until": 12.5,
+      "hours_until": 12.4,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false,
@@ -148,7 +148,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T20:00Z",
-      "hours_until": 15.5,
+      "hours_until": 15.4,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -232,7 +232,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-14T23:00Z",
-      "hours_until": 18.5,
+      "hours_until": 18.4,
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, Pennsylvania",
       "is_my_team": false,
@@ -309,7 +309,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T02:00Z",
-      "hours_until": 21.5,
+      "hours_until": 21.4,
       "venue": "Estadio BBVA",
       "city": "Guadalupe",
       "is_my_team": false,
@@ -317,8 +317,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "三方概率接近(41/30/29)，北欧vs北非风格对冲。低比分概率高但确定性不够。",
-        "model_vs_ai": "基本一致",
+        "summary": "三方概率均衡(41/30/29)，世界杯首轮两队都偏保守。北欧vs北非身体对抗激烈，低比分概率高但缺乏确定性。",
+        "model_vs_ai": "AI与模型基本一致，平局29.7%接近WC首轮均值",
         "edge": null
       }
     },
@@ -392,7 +392,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T16:00Z",
-      "hours_until": 35.5,
+      "hours_until": 35.4,
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, Georgia",
       "is_my_team": true,
@@ -450,8 +450,8 @@
       ],
       "ai": {
         "verdict": "skip",
-        "summary": "碾压局，赔率无价值。适合串关底但单买没意义。",
-        "model_vs_ai": "一致",
+        "summary": "碾压局(93.6%)，西班牙轮换阵容也远强于佛得角。赔率无价值，适合串关底但单买无意义。",
+        "model_vs_ai": "一致，xG 3.5-0.25准确反映实力差距",
         "edge": null
       }
     },
@@ -525,7 +525,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 38.5,
+      "hours_until": 38.4,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "is_my_team": false,
@@ -533,8 +533,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "比利时老龄化，埃及有萨拉赫。模型80%偏高，实际70%左右。但世界杯比利时大赛经验丰富，仍有优势。不够确定。",
-        "model_vs_ai": "AI下调比利时10%",
+        "summary": "比利时80%偏高，埃及有萨拉赫+非洲杯经验。但比利时阵容深度仍在，大赛经验丰富。模型可能低估埃及5-8%，但不够确定到反买。",
+        "model_vs_ai": "AI下调比利时约5-8%，埃及对抗能力被低估",
         "edge": null
       }
     },
@@ -608,7 +608,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 41.5,
+      "hours_until": 41.4,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "is_my_team": false,
@@ -616,8 +616,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "沙特2022爆冷赢阿根廷，西亚气候主场优势。乌拉圭苏亚雷斯卡瓦尼退了。模型客胜59%偏高，45-50%更合理。但沙特不稳定，不敢反买。",
-        "model_vs_ai": "AI下调乌拉圭10%",
+        "summary": "乌拉圭59%合理偏低，努涅斯+巴尔韦德+阿劳霍阵容扎实。沙特2022爆冷已过去4年，核心换代。模型基本准确，无明显edge。",
+        "model_vs_ai": "AI与模型基本一致，乌拉圭阵容更新后实力稳定",
         "edge": null
       }
     },
@@ -691,7 +691,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 44.5,
+      "hours_until": 44.4,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
@@ -768,7 +768,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 62.5,
+      "hours_until": 62.4,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -859,7 +859,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 65.5,
+      "hours_until": 65.4,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
@@ -936,7 +936,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 68.5,
+      "hours_until": 68.4,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,
