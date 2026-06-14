@@ -1,7 +1,7 @@
 {
-  "cumulative_brier": 0.3085,
-  "accuracy": 0.75,
-  "total_reviewed": 4,
+  "cumulative_brier": 0.5429,
+  "accuracy": 0.5,
+  "total_reviewed": 6,
   "correct_count": 3,
   "calibration_bins": [
     {
@@ -12,9 +12,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.704,
-      "actual": 1.0,
-      "count": 2
+      "predicted": 0.67,
+      "actual": 0.5,
+      "count": 4
     },
     {
       "bin": "80-100%",
@@ -43,6 +43,16 @@
       "match": 4,
       "brier": 0.3085,
       "label": "美国 vs 巴拉圭"
+    },
+    {
+      "match": 5,
+      "brier": 0.5451,
+      "label": "卡塔尔 vs 瑞士"
+    },
+    {
+      "match": 6,
+      "brier": 0.7635,
+      "label": "巴西 vs 摩洛哥"
     }
   ],
   "match_reviews": [
@@ -58,7 +68,8 @@
       "result": "2-0",
       "actual_outcome": "主胜",
       "brier": 0.0416,
-      "correct": true
+      "correct": true,
+      "predicted_score": null
     },
     {
       "match": "韩国 vs 捷克",
@@ -72,7 +83,8 @@
       "result": "2-1",
       "actual_outcome": "主胜",
       "brier": 0.1616,
-      "correct": true
+      "correct": true,
+      "predicted_score": null
     },
     {
       "match": "加拿大 vs 波黑",
@@ -86,7 +98,8 @@
       "result": "1-1",
       "actual_outcome": "平局",
       "brier": 0.9154,
-      "correct": false
+      "correct": false,
+      "predicted_score": null
     },
     {
       "match": "美国 vs 巴拉圭",
@@ -100,8 +113,39 @@
       "result": "4-1",
       "actual_outcome": "主胜",
       "brier": 0.1155,
-      "correct": true
+      "correct": true,
+      "predicted_score": null
+    },
+    {
+      "match": "卡塔尔 vs 瑞士",
+      "home": "qatar",
+      "away": "switzerland",
+      "predicted": {
+        "home": 0.142,
+        "draw": 0.237,
+        "away": 0.621
+      },
+      "result": "1-1",
+      "actual_outcome": "平局",
+      "brier": 0.988,
+      "correct": false,
+      "predicted_score": "0-2"
+    },
+    {
+      "match": "巴西 vs 摩洛哥",
+      "home": "brazil",
+      "away": "morocco",
+      "predicted": {
+        "home": 0.65,
+        "draw": 0.22699999999999998,
+        "away": 0.12300000000000001
+      },
+      "result": "1-1",
+      "actual_outcome": "平局",
+      "brier": 1.0352,
+      "correct": false,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-13T07:30:00Z"
+  "updated_at": "2026-06-14T00:20:35.571697+00:00"
 }
