@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 04:58 UTC",
+  "updated_at": "2026-06-14 13:46 UTC",
   "matches": [
     {
       "home": "mexico",
@@ -56,12 +56,24 @@
       "away_score": 1,
       "home_elo_change": 0,
       "away_elo_change": 0
+    },
+    {
+      "home": "australia",
+      "away": "turkey",
+      "home_score": 2,
+      "away_score": 0,
+      "home_elo_change": 0,
+      "away_elo_change": 0
     }
   ],
   "elo_rankings": [
     {
       "slug": "spain",
       "elo": 2074
+    },
+    {
+      "slug": "australia",
+      "elo": 2073
     },
     {
       "slug": "argentina",
@@ -140,10 +152,6 @@
       "elo": 1790
     },
     {
-      "slug": "australia",
-      "elo": 1769
-    },
-    {
       "slug": "south-korea",
       "elo": 1767
     },
@@ -172,10 +180,6 @@
       "elo": 1706
     },
     {
-      "slug": "turkey",
-      "elo": 1700
-    },
-    {
       "slug": "canada",
       "elo": 1695
     },
@@ -186,6 +190,10 @@
     {
       "slug": "algeria",
       "elo": 1676
+    },
+    {
+      "slug": "egypt",
+      "elo": 1671
     }
   ]
 }
