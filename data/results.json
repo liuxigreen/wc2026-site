@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14 04:27 UTC",
+  "updated_at": "2026-06-14 04:31 UTC",
   "matches": [
     {
       "home": "mexico",
@@ -45,6 +45,14 @@
       "home": "brazil",
       "away": "morocco",
       "home_score": 1,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
+    },
+    {
+      "home": "haiti",
+      "away": "scotland",
+      "home_score": 0,
       "away_score": 1,
       "home_elo_change": 0,
       "away_elo_change": 0
