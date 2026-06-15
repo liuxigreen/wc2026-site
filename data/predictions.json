@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 16:55 UTC",
+  "updated_at": "2026-06-15 17:58 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1871→1946 (rest+10 venue-10) vs 1671→1659 (rest+10 venue-10)",
@@ -71,7 +71,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 2.1,
+      "hours_until": 1.0,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "is_my_team": false,
@@ -176,7 +176,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 5.1,
+      "hours_until": 4.0,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "is_my_team": false,
@@ -259,7 +259,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 8.1,
+      "hours_until": 7.0,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
@@ -267,7 +267,7 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "伊朗68%没到80%门槛，新西兰太弱但赔率没价值"
+        "summary": "伊朗68%没到门槛，xG 2.11碾压但无市场赔率，没有edge可算。新西兰太弱但赔率没价值，不碰。"
       }
     },
     {
@@ -340,7 +340,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 26.1,
+      "hours_until": 25.0,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -362,7 +362,7 @@
       ],
       "ai": {
         "verdict": "skip",
-        "summary": "法国71%差一点到门槛，塞内加尔防守硬，不值得冒险"
+        "summary": "法国71%差一点到门槛，xG 2.17 vs 0.64压倒性优势，但无市场赔率对比。塞内加尔非洲杯冠军有硬度，不冒险。"
       }
     },
     {
@@ -435,7 +435,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 29.1,
+      "hours_until": 28.0,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
@@ -443,7 +443,7 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "挪威只有48%，实力接近没有明确edge"
+        "summary": "挪威48%不到一半，平局29%也高，最可能比分1-1。伊拉克主场有一定抵抗力，没有明确方向。"
       }
     },
     {
@@ -516,7 +516,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 32.1,
+      "hours_until": 31.0,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,
@@ -631,7 +631,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 35.1,
+      "hours_until": 34.0,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "is_my_team": false,
@@ -708,7 +708,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T17:00Z",
-      "hours_until": 48.1,
+      "hours_until": 47.0,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false,
@@ -785,7 +785,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T20:00Z",
-      "hours_until": 51.1,
+      "hours_until": 50.0,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -869,7 +869,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T23:00Z",
-      "hours_until": 54.1,
+      "hours_until": 53.0,
       "venue": "BMO Field",
       "city": "Toronto",
       "is_my_team": false,
@@ -946,7 +946,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-18T02:00Z",
-      "hours_until": 57.1,
+      "hours_until": 56.0,
       "venue": "Estadio Banorte",
       "city": "Mexico City",
       "is_my_team": false,
