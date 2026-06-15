@@ -1,7 +1,7 @@
 {
-  "cumulative_brier": 0.5397,
-  "accuracy": 0.5833,
-  "total_reviewed": 12,
+  "cumulative_brier": 0.6844,
+  "accuracy": 0.5,
+  "total_reviewed": 14,
   "correct_count": 7,
   "calibration_bins": [
     {
@@ -18,9 +18,9 @@
     },
     {
       "bin": "80-100%",
-      "predicted": 0.886,
-      "actual": 1.0,
-      "count": 2
+      "predicted": 0.877,
+      "actual": 0.5,
+      "count": 4
     }
   ],
   "brier_trend": [
@@ -83,6 +83,16 @@
       "match": 12,
       "brier": 0.5901,
       "label": "瑞典 vs 突尼斯"
+    },
+    {
+      "match": 13,
+      "brier": 1.0286,
+      "label": "西班牙 vs 佛得角"
+    },
+    {
+      "match": 14,
+      "brier": 1.1172,
+      "label": "比利时 vs 埃及"
     }
   ],
   "match_reviews": [
@@ -265,7 +275,37 @@
       "brier": 0.5204,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "西班牙 vs 佛得角",
+      "home": "spain",
+      "away": "cape-verde",
+      "predicted": {
+        "home": 0.9359999999999999,
+        "draw": 0.057999999999999996,
+        "away": 0.006
+      },
+      "result": "0-0",
+      "actual_outcome": "平局",
+      "brier": 1.7635,
+      "correct": false,
+      "predicted_score": "3-0"
+    },
+    {
+      "match": "比利时 vs 埃及",
+      "home": "belgium",
+      "away": "egypt",
+      "predicted": {
+        "home": 0.8,
+        "draw": 0.163,
+        "away": 0.037000000000000005
+      },
+      "result": "1-1",
+      "actual_outcome": "平局",
+      "brier": 1.3419,
+      "correct": false,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-15T04:03:31.184012+00:00"
+  "updated_at": "2026-06-15T21:05:37.085360+00:00"
 }
