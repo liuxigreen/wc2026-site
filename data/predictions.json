@@ -1,133 +1,6 @@
 {
-  "updated_at": "2026-06-15 15:54 UTC",
+  "updated_at": "2026-06-15 16:11 UTC",
   "matches": [
-    {
-      "elo_raw": "Elo: 2074→2118 (rest+10 venue-13) vs 1450→1405 (rest+10 venue-12)",
-      "squad_quality": {
-        "a": 1.18,
-        "b": -1.06
-      },
-      "xg": {
-        "a": "3.5",
-        "b": "0.25"
-      },
-      "money_line": {
-        "win_a": "93.6",
-        "draw": "5.8",
-        "win_b": "0.6"
-      },
-      "half_time": {
-        "win_a": "72.6",
-        "draw": "24.9",
-        "win_b": "2.5"
-      },
-      "spread_raw": "让球      spain -1.5: 81.5% | cape-verde +1.5: 18.5%",
-      "over_under": {
-        "2.5": {
-          "over": "72.0",
-          "under": "28.0"
-        }
-      },
-      "btts": {
-        "yes": "21.9",
-        "no": "78.1"
-      },
-      "clean_sheet_raw": "零封      spain: 77.9%  cape-verde: 3.0%",
-      "top_scores": [
-        [
-          "3-0",
-          "17.0"
-        ],
-        [
-          "4-0",
-          "14.9"
-        ],
-        [
-          "2-0",
-          "14.5"
-        ],
-        [
-          "5-0",
-          "10.4"
-        ],
-        [
-          "1-0",
-          "7.9"
-        ],
-        [
-          "6-0",
-          "6.1"
-        ]
-      ],
-      "elo": {
-        "a": 2118,
-        "b": 1405,
-        "diff": 713
-      },
-      "home": "spain",
-      "away": "cape-verde",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "match_time": "2026-06-15T16:00Z",
-      "hours_until": 0.1,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta, Georgia",
-      "is_my_team": true,
-      "predict_fun": [
-        {
-          "market": "胜负盘",
-          "pick": "主胜 (spain)",
-          "probability": 93.6,
-          "confidence": "高"
-        },
-        {
-          "market": "大小球",
-          "pick": "大2.5",
-          "probability": 72.0,
-          "confidence": "中"
-        },
-        {
-          "market": "双方进球",
-          "pick": "否",
-          "probability": 78.1,
-          "confidence": "高"
-        },
-        {
-          "market": "比分",
-          "pick": "3-0",
-          "probability": 17.0,
-          "confidence": "中"
-        }
-      ],
-      "binance": [
-        {
-          "market": "胜负盘",
-          "pick": "主胜 (spain)",
-          "probability": 93.6,
-          "confidence": "高"
-        },
-        {
-          "market": "大小球",
-          "pick": "大2.5",
-          "probability": 72.0,
-          "confidence": "中"
-        },
-        {
-          "market": "双方进球",
-          "pick": "否",
-          "probability": 78.1,
-          "confidence": "高"
-        },
-        {
-          "market": "比分",
-          "pick": "3-0",
-          "probability": 17.0,
-          "confidence": "中"
-        }
-      ]
-    },
     {
       "elo_raw": "Elo: 1871→1946 (rest+10 venue-10) vs 1671→1659 (rest+10 venue-10)",
       "squad_quality": {
@@ -198,7 +71,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 3.1,
+      "hours_until": 2.8,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "is_my_team": false,
@@ -207,8 +80,8 @@
       "ai": {
         "verdict": "buy",
         "pick": "主胜",
-        "summary": "比利时xG2.38碾压埃及0.42，Elo差1861。市场隐含61.7%严重低估，模型80%合理。",
-        "model_vs_ai": "模型80%与AI判断一致。埃及依赖萨拉赫单点，比利时中场控制力强。",
+        "summary": "直接压比利时胜。xG 2.38碾压埃及0.42，Elo差1861。市场隐含61.7%严重低估，模型80%。埃及依赖萨拉赫单点，比利时中场控制力强。买比利时胜性价比远高过买埃及。",
+        "model_vs_ai": "模型80%与AI判断一致。",
         "edge": "+18.3%",
         "confidence": "高",
         "bets": [
@@ -303,7 +176,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 6.1,
+      "hours_until": 5.8,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "is_my_team": false,
@@ -311,8 +184,8 @@
       "binance": null,
       "ai": {
         "verdict": "skip",
-        "summary": "乌拉圭59.4%领先但未达80%门槛，平局25.8%也偏低。无高置信选项。",
-        "model_vs_ai": "模型合理。沙特2022爆冷阿根廷有前科，乌拉圭老化但仍有实力。",
+        "summary": "乌拉圭客胜60%概率最高，但赔率已充分定价。沙特xG仅0.87，乌拉圭1.93。25%平局率不能忽视，无高置信选项。宁可错过也不乱推。",
+        "model_vs_ai": "模型合理。沙特2022有爆冷前科，乌拉圭老化但仍有实力。",
         "edge": null
       }
     },
@@ -386,7 +259,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 9.1,
+      "hours_until": 8.8,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
@@ -463,7 +336,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 27.1,
+      "hours_until": 26.8,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -554,7 +427,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 30.1,
+      "hours_until": 29.8,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
@@ -631,7 +504,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 33.1,
+      "hours_until": 32.8,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,
@@ -746,7 +619,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 36.1,
+      "hours_until": 35.8,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "is_my_team": false,
@@ -823,7 +696,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T17:00Z",
-      "hours_until": 49.1,
+      "hours_until": 48.8,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false,
@@ -900,7 +773,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T20:00Z",
-      "hours_until": 52.1,
+      "hours_until": 51.8,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -984,7 +857,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T23:00Z",
-      "hours_until": 55.1,
+      "hours_until": 54.8,
       "venue": "BMO Field",
       "city": "Toronto",
       "is_my_team": false,
@@ -1061,7 +934,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-18T02:00Z",
-      "hours_until": 58.1,
+      "hours_until": 57.8,
       "venue": "Estadio Banorte",
       "city": "Mexico City",
       "is_my_team": false,

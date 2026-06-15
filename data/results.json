@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 15:54 UTC",
+  "updated_at": "2026-06-15 16:11 UTC",
   "matches": [
     {
       "home": "canada",
@@ -92,12 +92,12 @@
       "elo": 2074
     },
     {
-      "slug": "argentina",
-      "elo": 2064
+      "slug": "sweden",
+      "elo": 2066
     },
     {
-      "slug": "sweden",
-      "elo": 2062
+      "slug": "argentina",
+      "elo": 2064
     },
     {
       "slug": "france",
