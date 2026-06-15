@@ -1,89 +1,6 @@
 {
-  "updated_at": "2026-06-15 21:03 UTC",
+  "updated_at": "2026-06-15 22:04 UTC",
   "matches": [
-    {
-      "elo_raw": "Elo: 1619→1585 (rest+10 venue-15) vs 1833→1827 (rest+10 venue-9)",
-      "squad_quality": {
-        "a": -0.73,
-        "b": -0.19
-      },
-      "xg": {
-        "a": "0.87",
-        "b": "1.93"
-      },
-      "money_line": {
-        "win_a": "14.3",
-        "draw": "25.5",
-        "win_b": "60.2"
-      },
-      "half_time": {
-        "win_a": "15.2",
-        "draw": "42.4",
-        "win_b": "42.4"
-      },
-      "spread_raw": "让球      saudi-arabia -1.5: 5.2% | uruguay +1.5: 94.8%",
-      "over_under": {
-        "2.5": {
-          "over": "53.2",
-          "under": "46.8"
-        }
-      },
-      "btts": {
-        "yes": "51.9",
-        "no": "48.1"
-      },
-      "clean_sheet_raw": "零封      saudi-arabia: 14.5%  uruguay: 41.7%",
-      "top_scores": [
-        [
-          "1-1",
-          "12.2"
-        ],
-        [
-          "0-2",
-          "11.3"
-        ],
-        [
-          "1-2",
-          "9.9"
-        ],
-        [
-          "0-1",
-          "9.6"
-        ],
-        [
-          "0-0",
-          "8.1"
-        ],
-        [
-          "0-3",
-          "7.3"
-        ]
-      ],
-      "elo": {
-        "a": 1585,
-        "b": 1827,
-        "diff": -242
-      },
-      "home": "saudi-arabia",
-      "away": "uruguay",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "match_time": "2026-06-15T22:00Z",
-      "hours_until": 0.9,
-      "venue": "Hard Rock Stadium",
-      "city": "Miami Gardens, Florida",
-      "is_my_team": false,
-      "predict_fun": null,
-      "binance": null,
-      "ai": {
-        "verdict": "skip",
-        "summary": "乌拉圭客胜60%概率最高，但赔率已充分定价。沙特xG仅0.87，乌拉圭1.93。25%平局率不能忽视，无高置信选项。宁可错过也不乱推。",
-        "model_vs_ai": "模型合理。沙特2022有爆冷前科，乌拉圭老化但仍有实力。",
-        "edge": null
-      }
-    },
     {
       "elo_raw": "Elo: 1733→1757 (rest+10 venue+7) vs 1567→1560 (rest+10 venue+0)",
       "squad_quality": {
@@ -154,15 +71,38 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 3.9,
+      "hours_until": 2.9,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
       "predict_fun": null,
       "binance": null,
       "ai": {
-        "verdict": "skip",
-        "summary": "伊朗68%没到门槛，xG 2.11碾压但无市场赔率，没有edge可算。新西兰太弱但赔率没价值，不碰。"
+        "verdict": "buy",
+        "pick": "主胜",
+        "summary": "直接压伊朗胜。xG 2.11碾压新西兰0.70，Pinnacle赔率1.81隐含55%，模型68%，edge+13%。新西兰FIFA排名90+，伊朗中场控制力强。",
+        "edge": "+13.1%",
+        "confidence": "中",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "伊朗胜",
+            "odds": "1.81",
+            "reason": "模型68.3%vs市场55.2%，edge+13.1%"
+          },
+          {
+            "market": "大小球",
+            "pick": "大2.0",
+            "odds": "1.83",
+            "reason": "xG合计2.81，伊朗进攻火力充足"
+          },
+          {
+            "market": "比分",
+            "pick": "2-0",
+            "odds": "~6.0",
+            "reason": "最可能比分13.4%"
+          }
+        ]
       }
     },
     {
@@ -235,7 +175,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 21.9,
+      "hours_until": 20.9,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -330,7 +270,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 24.9,
+      "hours_until": 23.9,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
@@ -411,7 +351,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 27.9,
+      "hours_until": 26.9,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,
@@ -526,7 +466,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 30.9,
+      "hours_until": 29.9,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "is_my_team": false,
@@ -603,7 +543,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T17:00Z",
-      "hours_until": 43.9,
+      "hours_until": 42.9,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false,
@@ -680,7 +620,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T20:00Z",
-      "hours_until": 46.9,
+      "hours_until": 45.9,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -764,7 +704,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T23:00Z",
-      "hours_until": 49.9,
+      "hours_until": 48.9,
       "venue": "BMO Field",
       "city": "Toronto",
       "is_my_team": false,
@@ -841,7 +781,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-18T02:00Z",
-      "hours_until": 52.9,
+      "hours_until": 51.9,
       "venue": "Estadio Banorte",
       "city": "Mexico City",
       "is_my_team": false,

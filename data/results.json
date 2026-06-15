@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 21:03 UTC",
+  "updated_at": "2026-06-15 22:04 UTC",
   "matches": [
     {
       "home": "canada",
@@ -88,6 +88,14 @@
       "away_score": 0,
       "home_elo_change": 0,
       "away_elo_change": 0
+    },
+    {
+      "home": "belgium",
+      "away": "egypt",
+      "home_score": 1,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
     }
   ],
   "elo_rankings": [
@@ -148,10 +156,6 @@
       "elo": 1878
     },
     {
-      "slug": "belgium",
-      "elo": 1871
-    },
-    {
       "slug": "netherlands",
       "elo": 1866
     },
@@ -176,8 +180,12 @@
       "elo": 1790
     },
     {
+      "slug": "egypt",
+      "elo": 1788
+    },
+    {
       "slug": "spain",
-      "elo": 1787
+      "elo": 1778
     },
     {
       "slug": "scotland",
@@ -188,8 +196,12 @@
       "elo": 1767
     },
     {
+      "slug": "belgium",
+      "elo": 1754
+    },
+    {
       "slug": "cape-verde",
-      "elo": 1737
+      "elo": 1746
     },
     {
       "slug": "iran",
@@ -214,10 +226,6 @@
     {
       "slug": "serbia",
       "elo": 1695
-    },
-    {
-      "slug": "algeria",
-      "elo": 1676
     }
   ]
 }
