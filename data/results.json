@@ -1,22 +1,6 @@
 {
-  "updated_at": "2026-06-14 22:55 UTC",
+  "updated_at": "2026-06-15 13:08 UTC",
   "matches": [
-    {
-      "home": "mexico",
-      "away": "south-africa",
-      "home_score": 2,
-      "away_score": 0,
-      "home_elo_change": 0,
-      "away_elo_change": 0
-    },
-    {
-      "home": "south-korea",
-      "away": "czech-republic",
-      "home_score": 2,
-      "away_score": 1,
-      "home_elo_change": 0,
-      "away_elo_change": 0
-    },
     {
       "home": "canada",
       "away": "bosnia-and-herzegovina",
@@ -72,6 +56,30 @@
       "away_score": 1,
       "home_elo_change": 0,
       "away_elo_change": 0
+    },
+    {
+      "home": "netherlands",
+      "away": "japan",
+      "home_score": 2,
+      "away_score": 2,
+      "home_elo_change": 0,
+      "away_elo_change": 0
+    },
+    {
+      "home": "ivory-coast",
+      "away": "ecuador",
+      "home_score": 1,
+      "away_score": 0,
+      "home_elo_change": 0,
+      "away_elo_change": 0
+    },
+    {
+      "home": "sweden",
+      "away": "tunisia",
+      "home_score": 5,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
     }
   ],
   "elo_rankings": [
@@ -92,6 +100,10 @@
       "elo": 2040
     },
     {
+      "slug": "sweden",
+      "elo": 2030
+    },
+    {
       "slug": "england",
       "elo": 1982
     },
@@ -109,7 +121,7 @@
     },
     {
       "slug": "japan",
-      "elo": 1921
+      "elo": 1927
     },
     {
       "slug": "italy",
@@ -120,6 +132,10 @@
       "elo": 1906
     },
     {
+      "slug": "ivory-coast",
+      "elo": 1887
+    },
+    {
       "slug": "colombia",
       "elo": 1884
     },
@@ -128,12 +144,12 @@
       "elo": 1878
     },
     {
-      "slug": "netherlands",
-      "elo": 1872
-    },
-    {
       "slug": "belgium",
       "elo": 1871
+    },
+    {
+      "slug": "netherlands",
+      "elo": 1866
     },
     {
       "slug": "mexico",
@@ -153,10 +169,6 @@
     },
     {
       "slug": "denmark",
-      "elo": 1790
-    },
-    {
-      "slug": "ecuador",
       "elo": 1790
     },
     {
@@ -182,10 +194,6 @@
     {
       "slug": "poland",
       "elo": 1715
-    },
-    {
-      "slug": "ivory-coast",
-      "elo": 1706
     },
     {
       "slug": "canada",
