@@ -1,5 +1,5 @@
 {
-  "matchesApplied": 1126,
+  "matchesApplied": 1152,
   "ratings": {
     "argentina": 2064,
     "france": 2040,
@@ -21,7 +21,7 @@
     "japan": 1927,
     "senegal": 1830,
     "denmark": 1790,
-    "ecuador": 1790,
+    "ecuador": 1609,
     "australia": 2114,
     "south-korea": 1767,
     "iran": 1733,
@@ -30,8 +30,8 @@
     "serbia": 1695,
     "wales": 1665,
     "ghana": 1630,
-    "tunisia": 1666,
-    "ivory-coast": 1706,
+    "tunisia": 1451,
+    "ivory-coast": 1887,
     "nigeria": 1645,
     "saudi-arabia": 1619,
     "qatar": 1635,
@@ -64,6 +64,6 @@
     "dr-congo": 1530,
     "uzbekistan": 1500,
     "costa-rica": 1550,
-    "sweden": 1640
+    "sweden": 1855
   }
 }

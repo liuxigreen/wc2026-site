@@ -1,14 +1,14 @@
 {
-  "cumulative_brier": 0.5113,
-  "accuracy": 0.6,
-  "total_reviewed": 10,
-  "correct_count": 6,
+  "cumulative_brier": 0.5397,
+  "accuracy": 0.5833,
+  "total_reviewed": 12,
+  "correct_count": 7,
   "calibration_bins": [
     {
       "bin": "40-60%",
-      "predicted": 0.502,
-      "actual": 0.667,
-      "count": 3
+      "predicted": 0.474,
+      "actual": 0.6,
+      "count": 5
     },
     {
       "bin": "60-80%",
@@ -73,6 +73,16 @@
       "match": 10,
       "brier": 0.4639,
       "label": "荷兰 vs 日本"
+    },
+    {
+      "match": 11,
+      "brier": 0.5858,
+      "label": "科特迪瓦 vs 厄瓜多尔"
+    },
+    {
+      "match": 12,
+      "brier": 0.5901,
+      "label": "瑞典 vs 突尼斯"
     }
   ],
   "match_reviews": [
@@ -225,7 +235,37 @@
       "brier": 0.9874,
       "correct": false,
       "predicted_score": "2-0"
+    },
+    {
+      "match": "科特迪瓦 vs 厄瓜多尔",
+      "home": "ivory-coast",
+      "away": "ecuador",
+      "predicted": {
+        "home": 0.256,
+        "draw": 0.292,
+        "away": 0.452
+      },
+      "result": "1-0",
+      "actual_outcome": "主胜",
+      "brier": 0.8431,
+      "correct": false,
+      "predicted_score": "1-1"
+    },
+    {
+      "match": "瑞典 vs 突尼斯",
+      "home": "sweden",
+      "away": "tunisia",
+      "predicted": {
+        "home": 0.41100000000000003,
+        "draw": 0.297,
+        "away": 0.292
+      },
+      "result": "5-1",
+      "actual_outcome": "主胜",
+      "brier": 0.5204,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-14T22:01:00.004883+00:00"
+  "updated_at": "2026-06-15T04:03:31.184012+00:00"
 }
