@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 16:12 UTC",
+  "updated_at": "2026-06-15 16:55 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 1871→1946 (rest+10 venue-10) vs 1671→1659 (rest+10 venue-10)",
@@ -71,7 +71,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T19:00Z",
-      "hours_until": 2.8,
+      "hours_until": 2.1,
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "is_my_team": false,
@@ -176,7 +176,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-15T22:00Z",
-      "hours_until": 5.8,
+      "hours_until": 5.1,
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "is_my_team": false,
@@ -259,12 +259,16 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T01:00Z",
-      "hours_until": 8.8,
+      "hours_until": 8.1,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "skip",
+        "summary": "伊朗68%没到80%门槛，新西兰太弱但赔率没价值"
+      }
     },
     {
       "elo_raw": "Elo: 2040→2065 (rest+10 venue-10) vs 1830→1852 (rest+10 venue-10)",
@@ -336,7 +340,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 26.8,
+      "hours_until": 26.1,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -355,7 +359,11 @@
           "probability": 14.2,
           "confidence": "低"
         }
-      ]
+      ],
+      "ai": {
+        "verdict": "skip",
+        "summary": "法国71%差一点到门槛，塞内加尔防守硬，不值得冒险"
+      }
     },
     {
       "elo_raw": "Elo: 1530→1487 (rest+10 venue-10) vs 1620→1644 (rest+10 venue-10)",
@@ -427,12 +435,16 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 29.8,
+      "hours_until": 29.1,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
       "predict_fun": null,
-      "binance": null
+      "binance": null,
+      "ai": {
+        "verdict": "skip",
+        "summary": "挪威只有48%，实力接近没有明确edge"
+      }
     },
     {
       "elo_raw": "Elo: 2064→2151 (rest+10 venue-8) vs 1676→1661 (rest+10 venue-12)",
@@ -504,7 +516,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 32.8,
+      "hours_until": 32.1,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,
@@ -619,7 +631,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 35.8,
+      "hours_until": 35.1,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "is_my_team": false,
@@ -696,7 +708,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T17:00Z",
-      "hours_until": 48.8,
+      "hours_until": 48.1,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false,
@@ -773,7 +785,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T20:00Z",
-      "hours_until": 51.8,
+      "hours_until": 51.1,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -857,7 +869,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T23:00Z",
-      "hours_until": 54.8,
+      "hours_until": 54.1,
       "venue": "BMO Field",
       "city": "Toronto",
       "is_my_team": false,
@@ -934,7 +946,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-18T02:00Z",
-      "hours_until": 57.8,
+      "hours_until": 57.1,
       "venue": "Estadio Banorte",
       "city": "Mexico City",
       "is_my_team": false,
