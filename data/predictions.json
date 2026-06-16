@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-16 19:27 UTC",
+  "updated_at": "2026-06-16 19:58 UTC",
   "matches": [
     {
       "home": "iraq",
       "away": "norway",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 2.6,
+      "hours_until": 2.0,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -73,12 +73,12 @@
         "draw_odds": 7.2,
         "draw_implied": 13.9,
         "dog_spread": 1.75,
-        "dog_odds": 2.05,
+        "dog_odds": 2.06,
         "fav_spread": -1.75,
         "fav_odds": 1.88,
-        "over_odds": 2.07,
+        "over_odds": 2.04,
         "over_point": 3.0,
-        "under_odds": 1.85
+        "under_odds": 1.87
       },
       "ensemble": {
         "win_a": 13.6,
@@ -115,7 +115,7 @@
           "has_edge": false
         },
         "over": {
-          "market_odds": 2.07,
+          "market_odds": 2.04,
           "point": 3.0
         }
       },
@@ -160,162 +160,10 @@
       }
     },
     {
-      "home": "england",
-      "away": "croatia",
-      "match_time": "2026-06-17",
-      "hours_until": 4.6,
-      "city": "",
-      "venue": "",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "Scheduled",
-      "money_line": {
-        "win_a": "49.2",
-        "draw": "26.7",
-        "win_b": "24.1"
-      },
-      "xg": {
-        "a": "1.66",
-        "b": "1.1"
-      },
-      "elo": {
-        "a": 2044,
-        "b": 1933,
-        "diff": 111
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "12.7"
-        ],
-        [
-          "2-1",
-          "9.6"
-        ],
-        [
-          "1-0",
-          "9.3"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "55.3",
-        "no": "44.7"
-      },
-      "spread": {
-        "england -1.5": "26.9",
-        "croatia +1.5": "73.1"
-      },
-      "half_time": {
-        "win_a": "35.7",
-        "draw": "43.3",
-        "win_b": "21.0"
-      },
-      "squad_quality": {
-        "a": 1.29,
-        "b": 1.13
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-17T20:00:00Z",
-        "away_odds": 5.16,
-        "away_implied": 19.4,
-        "home_odds": 1.74,
-        "home_implied": 57.5,
-        "draw_odds": 3.74,
-        "draw_implied": 26.7,
-        "dog_spread": 0.75,
-        "dog_odds": 1.93,
-        "fav_spread": -0.75,
-        "fav_odds": 1.98,
-        "over_odds": 1.93,
-        "over_point": 2.25,
-        "under_odds": 1.95
-      },
-      "ensemble": {
-        "win_a": 53.7,
-        "draw": 26.0,
-        "win_b": 20.3,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 49.2,
-          "market_odds": 1.74,
-          "market_implied": 57.5,
-          "edge": -8.3,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 26.7,
-          "market_odds": 3.74,
-          "market_implied": 26.7,
-          "edge": -0.0,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 24.1,
-          "market_odds": 5.16,
-          "market_implied": 19.4,
-          "edge": 4.7,
-          "kelly_full": 5.9,
-          "kelly_quarter": 1.5,
-          "has_edge": true
-        },
-        "over": {
-          "market_odds": 1.93,
-          "point": 2.25
-        }
-      },
-      "ai": {
-        "verdict": "skip",
-        "pick": "不推荐",
-        "summary": "英格兰主场但市场已定价，克罗地亚客胜仅+4.7%薄edge",
-        "edge": "+4.7%",
-        "confidence": "低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "客胜",
-            "odds": "~5.16",
-            "reason": "综合20.3%vs市场19.4%，edge仅4.7%太薄"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.25",
-            "odds": "~1.93",
-            "reason": "52.2%vs市场51.8%，几乎无edge"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "~1.81",
-            "reason": "55.3%概率，两队都有进攻能力"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "~7.9",
-            "reason": "最高概率比分12.7%"
-          }
-        ]
-      }
-    },
-    {
       "home": "ghana",
       "away": "panama",
       "match_time": "2026-06-17",
-      "hours_until": 4.6,
+      "hours_until": 4.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -467,7 +315,7 @@
       "home": "argentina",
       "away": "algeria",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 5.6,
+      "hours_until": 5.0,
       "city": "Kansas City, Missouri",
       "venue": "GEHA Field at Arrowhead Stadium",
       "home_score": 0,
@@ -625,7 +473,7 @@
       "home": "austria",
       "away": "jordan",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 8.6,
+      "hours_until": 8.0,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -783,7 +631,7 @@
       "home": "portugal",
       "away": "dr-congo",
       "match_time": "2026-06-17T17:00Z",
-      "hours_until": 21.6,
+      "hours_until": 21.0,
       "city": "Houston, Texas",
       "venue": "NRG Stadium",
       "home_score": 0,
@@ -933,6 +781,158 @@
             "pick": "2-0",
             "odds": "~5.7",
             "reason": "最可能比分17.5%"
+          }
+        ]
+      }
+    },
+    {
+      "home": "england",
+      "away": "croatia",
+      "match_time": "2026-06-17T20:00Z",
+      "hours_until": 24.0,
+      "city": "Arlington, Texas",
+      "venue": "AT&T Stadium",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
+      "money_line": {
+        "win_a": "49.0",
+        "draw": "26.7",
+        "win_b": "24.3"
+      },
+      "xg": {
+        "a": "1.66",
+        "b": "1.11"
+      },
+      "elo": {
+        "a": 2024,
+        "b": 1915,
+        "diff": 109
+      },
+      "top_scores": [
+        [
+          "1-1",
+          "12.7"
+        ],
+        [
+          "2-1",
+          "9.6"
+        ],
+        [
+          "1-0",
+          "9.3"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.2",
+          "under": "47.8"
+        }
+      },
+      "btts": {
+        "yes": "55.3",
+        "no": "44.7"
+      },
+      "spread": {
+        "england -1.5": "26.7",
+        "croatia +1.5": "73.3"
+      },
+      "half_time": {
+        "win_a": "35.6",
+        "draw": "43.3",
+        "win_b": "21.1"
+      },
+      "squad_quality": {
+        "a": 1.29,
+        "b": 1.13
+      },
+      "market_odds": {
+        "source": "pinnacle",
+        "time": "2026-06-17T20:00:00Z",
+        "away_odds": 5.16,
+        "away_implied": 19.4,
+        "home_odds": 1.74,
+        "home_implied": 57.5,
+        "draw_odds": 3.74,
+        "draw_implied": 26.7,
+        "dog_spread": 0.75,
+        "dog_odds": 1.93,
+        "fav_spread": -0.75,
+        "fav_odds": 1.98,
+        "over_odds": 1.93,
+        "over_point": 2.25,
+        "under_odds": 1.95
+      },
+      "ensemble": {
+        "win_a": 53.6,
+        "draw": 26.0,
+        "win_b": 20.4,
+        "source": "ensemble"
+      },
+      "edge": {
+        "home": {
+          "model_pct": 49.0,
+          "market_odds": 1.74,
+          "market_implied": 57.5,
+          "edge": -8.5,
+          "kelly_full": 0,
+          "kelly_quarter": 0,
+          "has_edge": false
+        },
+        "draw": {
+          "model_pct": 26.7,
+          "market_odds": 3.74,
+          "market_implied": 26.7,
+          "edge": -0.0,
+          "kelly_full": 0,
+          "kelly_quarter": 0,
+          "has_edge": false
+        },
+        "away": {
+          "model_pct": 24.3,
+          "market_odds": 5.16,
+          "market_implied": 19.4,
+          "edge": 4.9,
+          "kelly_full": 6.1,
+          "kelly_quarter": 1.5,
+          "has_edge": true
+        },
+        "over": {
+          "market_odds": 1.93,
+          "point": 2.25
+        }
+      },
+      "ai": {
+        "verdict": "skip",
+        "pick": "不推荐",
+        "summary": "英格兰主场但市场已定价，克罗地亚客胜仅+4.7%薄edge",
+        "edge": "+4.7%",
+        "confidence": "低",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "客胜",
+            "odds": "~5.16",
+            "reason": "综合20.3%vs市场19.4%，edge仅4.7%太薄"
+          },
+          {
+            "market": "大小球",
+            "pick": "大2.25",
+            "odds": "~1.93",
+            "reason": "52.2%vs市场51.8%，几乎无edge"
+          },
+          {
+            "market": "BTTS",
+            "pick": "是",
+            "odds": "~1.81",
+            "reason": "55.3%概率，两队都有进攻能力"
+          },
+          {
+            "market": "比分",
+            "pick": "1-1",
+            "odds": "~7.9",
+            "reason": "最高概率比分12.7%"
           }
         ]
       }
