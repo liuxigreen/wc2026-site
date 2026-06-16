@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16 11:51 UTC",
+  "updated_at": "2026-06-16 11:54 UTC",
   "matches": [
     {
       "home": "france",
@@ -122,7 +122,7 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "法国小优但市场已充分定价68%，无明显edge，不碰",
+        "summary": "法国小优但市场已定价68%，ensemble仅63.7%，无edge不碰",
         "edge": "-4.3%",
         "confidence": "中",
         "bets": [
@@ -135,14 +135,14 @@
           {
             "market": "大小球",
             "pick": "跳过",
-            "odds": "~1.85",
-            "reason": "xG 2.76卡在2.5临界值，无明确方向"
+            "odds": "~1.96/2.75",
+            "reason": "xG 2.76卡在2.75临界值，无明确方向"
           },
           {
             "market": "BTTS",
             "pick": "跳过",
             "odds": "~1.85",
-            "reason": "塞内加尔xG 0.93有一定进球能力但不够稳"
+            "reason": "塞内加尔xG 0.93有进球能力但不够稳"
           },
           {
             "market": "比分",
@@ -282,25 +282,25 @@
             "market": "胜负盘",
             "pick": "跳过",
             "odds": "~1.22",
-            "reason": "市场82%但模型仅44%，挪威被严重高估，赔率太低无价值"
+            "reason": "市场82%但模型仅44%，挪威被严重高估，赔率太低"
           },
           {
             "market": "大小球",
             "pick": "跳过",
-            "odds": "~1.92",
-            "reason": "xG 2.76临界，两队实力接近可能闷平"
+            "odds": "~2.08/3.0",
+            "reason": "xG 2.76，大3.0需要3球，不确定性高"
           },
           {
             "market": "BTTS",
             "pick": "跳过",
             "odds": "~2.10",
-            "reason": "伊拉克xG 1.21有进球能力，但不确定性高"
+            "reason": "伊拉克xG 1.21有进球能力，但模型分歧大"
           },
           {
             "market": "比分",
             "pick": "1-2",
             "odds": "~7.5",
-            "reason": "最可能客胜比分但模型分歧大，不碰"
+            "reason": "最可能客胜比分但不确定性太高"
           }
         ]
       }
@@ -422,6 +422,45 @@
           "market_odds": 1.96,
           "point": 2.75
         }
+      },
+      "ai": {
+        "verdict": "buy",
+        "pick": "葡萄牙-1.5",
+        "summary": "压葡萄牙-1.5，xG 2.35碾压0.41，模型57.9% vs 市场53.2%，有edge",
+        "edge": "+4.7%",
+        "confidence": "高",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "葡萄牙主胜",
+            "odds": "~1.28",
+            "reason": "ensemble 76.6% vs 市场78.1%，ML赔率太低无价值"
+          },
+          {
+            "market": "让球盘",
+            "pick": "葡萄牙-1.5",
+            "odds": "~1.88",
+            "reason": "模型57.9% vs 市场53.2%，edge +4.7%，最佳盘口"
+          },
+          {
+            "market": "大小球",
+            "pick": "大2.75",
+            "odds": "~1.96",
+            "reason": "xG 2.76，葡萄牙单队就有2.35，大概率3球+"
+          },
+          {
+            "market": "BTTS",
+            "pick": "否",
+            "odds": "~1.50",
+            "reason": "刚果xG仅0.41，大概率被零封"
+          },
+          {
+            "market": "比分",
+            "pick": "3-0",
+            "odds": "~6.5",
+            "reason": "最可能大胜比分，xG差1.94"
+          }
+        ]
       }
     },
     {
@@ -541,6 +580,39 @@
           "market_odds": 1.94,
           "point": 2.25
         }
+      },
+      "ai": {
+        "verdict": "skip",
+        "pick": "—",
+        "summary": "势均力敌，ensemble英国53.6% vs 市场57.5%，市场overprice英国，但无明确edge",
+        "edge": "-3.9%",
+        "confidence": "中",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "跳过",
+            "odds": "~1.74",
+            "reason": "ensemble 53.6% < 市场57.5%，英国被overprice"
+          },
+          {
+            "market": "大小球",
+            "pick": "跳过",
+            "odds": "~1.94/2.25",
+            "reason": "xG 2.76但市场开2.25低水，已充分定价"
+          },
+          {
+            "market": "BTTS",
+            "pick": "跳过",
+            "odds": "~1.80",
+            "reason": "克罗地亚xG 1.10有进球能力，但赔率不支持"
+          },
+          {
+            "market": "比分",
+            "pick": "1-1",
+            "odds": "~6.5",
+            "reason": "最可能平局比分，但概率仅~12%"
+          }
+        ]
       }
     },
     {
@@ -660,6 +732,39 @@
           "market_odds": 2.06,
           "point": 2.25
         }
+      },
+      "ai": {
+        "verdict": "buy",
+        "pick": "大2.25",
+        "summary": "压大2.25，xG 2.76远高于2.25线，市场低估了这场比赛的进球量",
+        "edge": "+9.5%",
+        "confidence": "高",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "跳过",
+            "odds": "~2.28",
+            "reason": "三方混战，ensemble最高仅41.1%，无明确方向"
+          },
+          {
+            "market": "大小球",
+            "pick": "大2.25",
+            "odds": "~2.06",
+            "reason": "xG 2.76远高于2.25线，模型~58% vs 市场48.5%，edge +9.5%"
+          },
+          {
+            "market": "BTTS",
+            "pick": "跳过",
+            "odds": "~1.85",
+            "reason": "两队xG接近，BTTS概率~50%但赔率不够"
+          },
+          {
+            "market": "比分",
+            "pick": "2-1",
+            "odds": "~9.0",
+            "reason": "最可能比分但三方向分散，不值得单押"
+          }
+        ]
       }
     },
     {
@@ -782,22 +887,28 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "主胜",
-        "summary": "直接压阿根廷，xG 2.29碾压0.47，Elo差490，阿尔及利亚没戏",
-        "edge": "+1.8%",
+        "pick": "阿根廷-1.25",
+        "summary": "压阿根廷-1.25，xG 2.29碾压0.47，Elo差490，模型60%+ vs 市场48%",
+        "edge": "+11.7%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "阿根廷主胜",
             "odds": "~1.47",
-            "reason": "ensemble 69.8%略高于市场68%，xG碾压+490 Elo差"
+            "reason": "ensemble 69.8% vs 市场68%，小edge但赔率低"
+          },
+          {
+            "market": "让球盘",
+            "pick": "阿根廷-1.25",
+            "odds": "~2.07",
+            "reason": "模型~60% vs 市场48.3%，edge +11.7%，最佳盘口"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "~1.85",
-            "reason": "阿根廷单队xG 2.29就够撑大球，阿尔及利亚防线弱"
+            "odds": "~1.97",
+            "reason": "阿根廷单队xG 2.29就够撑大球"
           },
           {
             "market": "BTTS",
@@ -809,7 +920,7 @@
             "market": "比分",
             "pick": "3-0",
             "odds": "~8.0",
-            "reason": "xG差1.82，阿根廷零封+大胜概率最高"
+            "reason": "xG差1.82，阿根廷零封大胜概率最高"
           }
         ]
       }
@@ -935,26 +1046,26 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "奥地利优势明显但市场已定价72.5%，ensemble仅67.7%，overprice了",
-        "edge": "-4.8%",
+        "summary": "奥地利优势明显但市场已定价72.5%，ensemble仅67.6%，overprice了",
+        "edge": "-4.9%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "跳过",
             "odds": "~1.38",
-            "reason": "ensemble 67.7% < 市场72.5%，奥地利被市场高估"
+            "reason": "ensemble 67.6% < 市场72.5%，奥地利被overprice"
           },
           {
             "market": "大小球",
             "pick": "跳过",
-            "odds": "~1.92",
-            "reason": "xG 2.76临界，约旦可能摆大巴降低总进球"
+            "odds": "~1.85/2.5",
+            "reason": "xG 2.76临界，约旦可能摆大巴降低进球"
           },
           {
             "market": "BTTS",
             "pick": "跳过",
-            "odds": "~2.05",
+            "odds": "~2.06",
             "reason": "约旦xG 0.86有微弱进球可能，但不够稳"
           },
           {
@@ -967,5 +1078,46 @@
       }
     }
   ],
-  "parlays": []
+  "parlays": [
+    {
+      "name": "🛡️ 保守串",
+      "target": "2.9x",
+      "picks": [
+        {
+          "match": "argentina-algeria",
+          "pick": "主胜",
+          "odds": "~1.47",
+          "reason": "阿根廷碾压局，最稳"
+        },
+        {
+          "match": "portugal-dr-congo",
+          "pick": "葡萄牙-1.5",
+          "odds": "~1.88",
+          "reason": "xG碾压，让球有edge"
+        }
+      ],
+      "total_odds": "~2.76x",
+      "note": "两场碾压局组合，风险最低"
+    },
+    {
+      "name": "🔥 进攻串",
+      "target": "4.3x",
+      "picks": [
+        {
+          "match": "argentina-algeria",
+          "pick": "阿根廷-1.25",
+          "odds": "~2.07",
+          "reason": "edge最大+11.7%"
+        },
+        {
+          "match": "ghana-panama",
+          "pick": "大2.25",
+          "odds": "~2.06",
+          "reason": "xG 2.76远超2.25线"
+        }
+      ],
+      "total_odds": "~4.26x",
+      "note": "两个edge最大的盘口组合"
+    }
+  ]
 }
