@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-16 09:25 UTC",
+  "updated_at": "2026-06-16 09:54 UTC",
   "matches": [
     {
       "home": "france",
       "away": "senegal",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 9.6,
+      "hours_until": 9.1,
       "city": "East Rutherford, New Jersey",
       "venue": "MetLife Stadium",
       "home_score": 0,
@@ -66,45 +66,51 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-16T19:00:00Z",
-        "home_odds": 1.51,
-        "home_implied": 66.2,
-        "away_odds": 6.68,
-        "away_implied": 15.0,
-        "draw_odds": 4.59,
-        "draw_implied": 21.8,
+        "home_odds": 1.5,
+        "home_implied": 66.7,
+        "away_odds": 6.7,
+        "away_implied": 14.9,
+        "draw_odds": 4.6,
+        "draw_implied": 21.7,
         "fav_spread": -1.0,
         "fav_odds": 1.85,
         "dog_spread": 1.0,
         "dog_odds": 2.09,
         "over_odds": 1.88,
         "over_point": 2.5,
-        "under_odds": 2.02
+        "under_odds": 2.03
+      },
+      "ensemble": {
+        "win_a": 62.5,
+        "draw": 22.1,
+        "win_b": 15.4,
+        "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 57.4,
-          "market_odds": 1.51,
-          "market_implied": 66.2,
-          "edge": -8.8,
+          "market_odds": 1.5,
+          "market_implied": 66.7,
+          "edge": -9.3,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "draw": {
           "model_pct": 24.8,
-          "market_odds": 4.59,
-          "market_implied": 21.8,
-          "edge": 3.0,
+          "market_odds": 4.6,
+          "market_implied": 21.7,
+          "edge": 3.1,
           "kelly_full": 3.9,
           "kelly_quarter": 1.0,
           "has_edge": true
         },
         "away": {
           "model_pct": 17.8,
-          "market_odds": 6.68,
-          "market_implied": 15.0,
-          "edge": 2.8,
-          "kelly_full": 3.3,
+          "market_odds": 6.7,
+          "market_implied": 14.9,
+          "edge": 2.9,
+          "kelly_full": 3.4,
           "kelly_quarter": 0.8,
           "has_edge": true
         },
@@ -148,7 +154,7 @@
       "home": "iraq",
       "away": "norway",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 12.6,
+      "hours_until": 12.1,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -209,50 +215,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-16T22:00:00Z",
-        "home_odds": 14.44,
-        "home_implied": 6.9,
-        "away_odds": 1.21,
-        "away_implied": 82.6,
-        "draw_odds": 7.31,
-        "draw_implied": 13.7,
+        "home_odds": 14.27,
+        "home_implied": 7.0,
+        "away_odds": 1.22,
+        "away_implied": 82.0,
+        "draw_odds": 7.21,
+        "draw_implied": 13.9,
         "dog_spread": 1.75,
-        "dog_odds": 2.07,
+        "dog_odds": 2.05,
         "fav_spread": -1.75,
-        "fav_odds": 1.86,
-        "over_odds": 2.05,
+        "fav_odds": 1.88,
+        "over_odds": 2.09,
         "over_point": 3.0,
-        "under_odds": 1.86
+        "under_odds": 1.83
+      },
+      "ensemble": {
+        "win_a": 13.2,
+        "draw": 17.6,
+        "win_b": 69.2,
+        "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 28.7,
-          "market_odds": 14.44,
-          "market_implied": 6.9,
-          "edge": 21.8,
-          "kelly_full": 23.4,
+          "market_odds": 14.27,
+          "market_implied": 7.0,
+          "edge": 21.7,
+          "kelly_full": 23.3,
           "kelly_quarter": 5.8,
           "has_edge": true
         },
         "draw": {
           "model_pct": 27.4,
-          "market_odds": 7.31,
-          "market_implied": 13.7,
-          "edge": 13.7,
-          "kelly_full": 15.9,
-          "kelly_quarter": 4.0,
+          "market_odds": 7.21,
+          "market_implied": 13.9,
+          "edge": 13.5,
+          "kelly_full": 15.7,
+          "kelly_quarter": 3.9,
           "has_edge": true
         },
         "away": {
           "model_pct": 43.9,
-          "market_odds": 1.21,
-          "market_implied": 82.6,
-          "edge": -38.7,
+          "market_odds": 1.22,
+          "market_implied": 82.0,
+          "edge": -38.1,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 2.05,
+          "market_odds": 2.09,
           "point": 3.0
         }
       },
@@ -300,7 +312,7 @@
       "home": "portugal",
       "away": "dr-congo",
       "match_time": "2026-06-17",
-      "hours_until": 14.6,
+      "hours_until": 14.1,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -374,6 +386,12 @@
         "over_odds": 1.96,
         "over_point": 2.75,
         "under_odds": 1.93
+      },
+      "ensemble": {
+        "win_a": 76.6,
+        "draw": 16.3,
+        "win_b": 7.1,
+        "source": "ensemble"
       },
       "edge": {
         "home": {
@@ -452,7 +470,7 @@
       "home": "england",
       "away": "croatia",
       "match_time": "2026-06-17",
-      "hours_until": 14.6,
+      "hours_until": 14.1,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -526,6 +544,12 @@
         "over_odds": 1.94,
         "over_point": 2.25,
         "under_odds": 1.94
+      },
+      "ensemble": {
+        "win_a": 53.7,
+        "draw": 25.5,
+        "win_b": 20.8,
+        "source": "ensemble"
       },
       "edge": {
         "home": {
@@ -601,7 +625,7 @@
       "home": "ghana",
       "away": "panama",
       "match_time": "2026-06-17",
-      "hours_until": 14.6,
+      "hours_until": 14.1,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -662,50 +686,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-17T23:00:00Z",
-        "home_odds": 2.24,
-        "home_implied": 44.6,
-        "away_odds": 3.41,
-        "away_implied": 29.3,
-        "draw_odds": 3.39,
-        "draw_implied": 29.5,
+        "home_odds": 2.27,
+        "home_implied": 44.1,
+        "away_odds": 3.42,
+        "away_implied": 29.2,
+        "draw_odds": 3.32,
+        "draw_implied": 30.1,
         "fav_spread": -0.25,
-        "fav_odds": 1.93,
+        "fav_odds": 1.95,
         "dog_spread": 0.25,
-        "dog_odds": 1.97,
-        "over_odds": 2.05,
+        "dog_odds": 1.95,
+        "over_odds": 2.07,
         "over_point": 2.25,
-        "under_odds": 1.85
+        "under_odds": 1.83
+      },
+      "ensemble": {
+        "win_a": 41.2,
+        "draw": 28.7,
+        "win_b": 30.0,
+        "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 37.9,
-          "market_odds": 2.24,
-          "market_implied": 44.6,
-          "edge": -6.7,
+          "market_odds": 2.27,
+          "market_implied": 44.1,
+          "edge": -6.2,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "draw": {
           "model_pct": 27.9,
-          "market_odds": 3.39,
-          "market_implied": 29.5,
-          "edge": -1.6,
+          "market_odds": 3.32,
+          "market_implied": 30.1,
+          "edge": -2.2,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "away": {
           "model_pct": 34.3,
-          "market_odds": 3.41,
-          "market_implied": 29.3,
-          "edge": 5.0,
-          "kelly_full": 7.0,
+          "market_odds": 3.42,
+          "market_implied": 29.2,
+          "edge": 5.1,
+          "kelly_full": 7.2,
           "kelly_quarter": 1.8,
           "has_edge": true
         },
         "over": {
-          "market_odds": 2.05,
+          "market_odds": 2.07,
           "point": 2.25
         }
       },
@@ -744,7 +774,7 @@
       "home": "argentina",
       "away": "algeria",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 15.6,
+      "hours_until": 15.1,
       "city": "Kansas City, Missouri",
       "venue": "GEHA Field at Arrowhead Stadium",
       "home_score": 0,
@@ -805,7 +835,7 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-17T01:00:00Z",
-        "away_odds": 8.31,
+        "away_odds": 8.3,
         "away_implied": 12.0,
         "home_odds": 1.43,
         "home_implied": 69.9,
@@ -815,9 +845,15 @@
         "dog_odds": 1.9,
         "fav_spread": -1.25,
         "fav_odds": 2.02,
-        "over_odds": 2.02,
+        "over_odds": 2.01,
         "over_point": 2.5,
-        "under_odds": 1.89
+        "under_odds": 1.9
+      },
+      "ensemble": {
+        "win_a": 70.7,
+        "draw": 19.6,
+        "win_b": 9.8,
+        "source": "ensemble"
       },
       "edge": {
         "home": {
@@ -840,7 +876,7 @@
         },
         "away": {
           "model_pct": 5.4,
-          "market_odds": 8.31,
+          "market_odds": 8.3,
           "market_implied": 12.0,
           "edge": -6.6,
           "kelly_full": 0,
@@ -848,7 +884,7 @@
           "has_edge": false
         },
         "over": {
-          "market_odds": 2.02,
+          "market_odds": 2.01,
           "point": 2.5
         }
       },
@@ -896,7 +932,7 @@
       "home": "austria",
       "away": "jordan",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 18.6,
+      "hours_until": 18.1,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -970,6 +1006,12 @@
         "over_odds": 1.85,
         "over_point": 2.5,
         "under_odds": 2.07
+      },
+      "ensemble": {
+        "win_a": 67.3,
+        "draw": 20.1,
+        "win_b": 12.6,
+        "source": "ensemble"
       },
       "edge": {
         "home": {
