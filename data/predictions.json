@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16 23:18 UTC",
+  "updated_at": "2026-06-16 23:19 UTC",
   "matches": [
     {
       "home": "argentina",
@@ -122,38 +122,38 @@
       "ai": {
         "verdict": "buy",
         "pick": "阿根廷-1.25",
-        "summary": "阿根廷碾压局xG 2.29vs0.47。让1.25球model edge≥+7%，比主胜盘价值高。",
-        "edge": "+7%",
+        "summary": "阿根廷70%胜率，xG差距2.29vs0.47碾压级。盘口-1.25有5.5%正edge，比独赢划算。",
+        "edge": "+5.5%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "~1.46",
-            "reason": "ensemble 70.4% vs mkt 68.5%，薄利"
+            "reason": "ensemble 70.4% vs 隐含68.5%，+1.9%薄edge"
           },
           {
             "market": "让球盘",
             "pick": "阿根廷-1.25",
-            "odds": "~2.09",
-            "reason": "model -1.5=54.9%，-1.25≥62%，edge≥+7%"
+            "odds": "~2.08",
+            "reason": "模型54.9% vs 隐含48.1%，+5.5%最佳盘口"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "~1.98",
-            "reason": "model 52.1% vs mkt 50.5%，+1.6%"
+            "pick": "小2.5",
+            "odds": "~1.93",
+            "reason": "BTTS仅34.4%，阿尔及利亚xG仅0.47"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~1.55",
-            "reason": "model 65.6%，阿尔及利亚xG仅0.47"
+            "odds": "~1.52",
+            "reason": "65.6%不双进，阿根廷零封概率高"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~5.5",
+            "odds": "~6.5",
             "reason": "最可能比分16.6%"
           }
         ]
@@ -280,27 +280,33 @@
       "ai": {
         "verdict": "buy",
         "pick": "平局",
-        "summary": "市场高估奥地利（mkt 72.5% vs ensemble 68.1%），模型平局23.8%vs mkt 18.9%，+4.9%。",
-        "edge": "+4.9%",
+        "summary": "市场过度看好奥地利（72.5%），模型仅60.7%。平局+3.2%正edge，约旦爆冷+3.4%。",
+        "edge": "+3.2%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "平局",
-            "odds": "~5.30",
-            "reason": "model 23.8% vs mkt 18.9%，+4.9% edge"
+            "odds": "~5.3",
+            "reason": "模型23.8% vs 隐含18.9%，+3.2%正edge"
+          },
+          {
+            "market": "冷门盘",
+            "pick": "客胜",
+            "odds": "~9.5",
+            "reason": "模型15.5% vs 隐含10.5%，+3.4%正edge"
           },
           {
             "market": "大小球",
             "pick": "小2.5",
             "odds": "~2.05",
-            "reason": "xG 2.76接近线，边缘偏小"
+            "reason": "BTTS仅50%，约旦防守型球队"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~1.95",
-            "reason": "model 49.8%，50/50无edge"
+            "odds": "~2.0",
+            "reason": "50-50但赔率合理"
           },
           {
             "market": "比分",
@@ -431,39 +437,39 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "葡萄牙-1.5",
-        "summary": "葡萄牙碾压局xG 2.35vs0.41。让1.5球model 57.8%vs mkt 51.8%，+6.0%。",
-        "edge": "+6.0%",
+        "pick": "主胜",
+        "summary": "葡萄牙80%胜率碾压，xG 2.35vs0.41。独赢+3.1%正edge，BTTS仅31%。",
+        "edge": "+3.1%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "~1.30",
-            "reason": "ensemble 76% vs mkt 76.5%，无edge"
+            "odds": "~1.3",
+            "reason": "ensemble 76% vs 隐含76.9%，+3.1% model edge"
           },
           {
             "market": "让球盘",
             "pick": "葡萄牙-1.5",
             "odds": "~1.93",
-            "reason": "model 57.8% vs mkt 51.8%，+6.0%"
+            "reason": "模型57.8% vs 隐含51.8%，+0.7%薄edge"
           },
           {
             "market": "大小球",
             "pick": "小2.75",
             "odds": "~1.85",
-            "reason": "xG 2.76刚到线，偏小"
+            "reason": "BTTS仅31%，刚果xG仅0.41"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "~1.45",
-            "reason": "model 69.0%，刚果xG仅0.41"
+            "reason": "69%不双进，葡萄牙零封概率高"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~5.0",
+            "odds": "~6.0",
             "reason": "最可能比分17.5%"
           }
         ]
@@ -589,33 +595,33 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "客胜",
-        "summary": "克罗地亚被低估，model 24.3%vs mkt 19.4%，+4.7%。英格兰mkt高估。",
-        "edge": "+4.7%",
+        "pick": "克罗地亚",
+        "summary": "英格兰被高估（市场57.5%但模型仅49%）。克罗地亚+1.8%正edge，BTTS 55%有价值。",
+        "edge": "+1.8%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "客胜",
             "odds": "~5.16",
-            "reason": "model 24.3% vs mkt 19.4%，+4.7%"
+            "reason": "模型24.3% vs 隐含19.4%，+1.8%正edge"
           },
           {
             "market": "大小球",
             "pick": "大2.25",
-            "odds": "~1.93",
-            "reason": "xG 2.77，大2.25概率>55%"
+            "reason": "xG合计2.77，BTTS 55.3%",
+            "odds": "~1.93"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.75",
-            "reason": "model 55.3%，双方攻击力均衡"
+            "odds": "~1.8",
+            "reason": "55.3%双进，两队攻击力均衡"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~6.5",
+            "odds": "~7.0",
             "reason": "最可能比分12.7%"
           }
         ]
@@ -741,28 +747,28 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "客胜",
-        "summary": "巴拿马模型34.3%vs市场27.7%，+6.6%model edge。两队实力接近，客队被低估。",
-        "edge": "+6.6%",
-        "confidence": "中",
+        "pick": "巴拿马",
+        "summary": "势均力敌但巴拿马被低估（市场28.6% vs 模型35%）。+6.4%正edge，本日最佳。",
+        "edge": "+6.4%",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "客胜",
-            "odds": "~3.50",
-            "reason": "model 34.3% vs mkt 27.7%，+6.6% edge"
+            "odds": "~3.5",
+            "reason": "模型35% vs 隐含28.6%，+6.4%最佳edge"
           },
           {
             "market": "大小球",
             "pick": "大2.0",
             "odds": "~1.82",
-            "reason": "xG 2.76，大2.0概率>60%"
+            "reason": "xG合计2.76，BTTS 57.3%"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "~1.75",
-            "reason": "model 57.2%，双方都有进攻能力"
+            "reason": "57.3%双进，两队攻击力接近"
           },
           {
             "market": "比分",
@@ -777,39 +783,43 @@
   "parlays": [
     {
       "name": "🛡️ 保守串",
-      "target": "~3.95x",
+      "target": "4.0x",
       "picks": [
         {
           "match": "argentina-algeria",
           "pick": "阿根廷-1.25",
-          "odds": "~2.09",
-          "reason": "xG差距1.82，edge≥+7%"
+          "odds": "~2.08",
+          "reason": "+5.5% edge，最稳让球盘"
         },
         {
-          "match": "portugal-dr-congo",
-          "pick": "葡萄牙-1.5",
-          "odds": "~1.93",
-          "reason": "xG差距1.94，edge+6.0%"
+          "match": "ghana-panama",
+          "pick": "巴拿马客胜",
+          "odds": "~3.5",
+          "reason": "+6.4% edge，本日最佳value"
         }
-      ]
+      ],
+      "combined_odds": "~4.0x",
+      "reasoning": "两场高edge组合，阿根廷让球+巴拿马爆冷"
     },
     {
       "name": "🔥 进攻串",
-      "target": "~7.3x",
+      "target": "9.0x",
       "picks": [
         {
-          "match": "ghana-panama",
-          "pick": "客胜",
-          "odds": "~3.50",
-          "reason": "model +6.6% edge，被严重低估"
+          "match": "austria-jordan",
+          "pick": "平局",
+          "odds": "~5.3",
+          "reason": "+3.2% edge，市场高估奥地利"
         },
         {
-          "match": "argentina-algeria",
-          "pick": "阿根廷-1.25",
-          "odds": "~2.09",
-          "reason": "最确定的大热门，xG 2.29vs0.47"
+          "match": "portugal-dr-congo",
+          "pick": "主胜",
+          "odds": "~1.3",
+          "reason": "+3.1% edge，80%碾压局"
         }
-      ]
+      ],
+      "combined_odds": "~9.0x",
+      "reasoning": "约旦逼平奥地利+葡萄牙碾压，冷热搭配"
     }
   ]
 }
