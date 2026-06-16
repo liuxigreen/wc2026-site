@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-16 16:40 UTC",
+  "updated_at": "2026-06-16 17:09 UTC",
   "matches": [
     {
       "home": "france",
       "away": "senegal",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 2.4,
+      "hours_until": 1.8,
       "city": "East Rutherford, New Jersey",
       "venue": "MetLife Stadium",
       "home_score": 0,
@@ -66,52 +66,52 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-16T19:00:00Z",
-        "home_odds": 1.48,
-        "home_implied": 67.6,
-        "away_odds": 7.5,
-        "away_implied": 13.3,
-        "draw_odds": 4.7,
-        "draw_implied": 21.3,
+        "home_odds": 1.49,
+        "home_implied": 67.1,
+        "away_odds": 7.4,
+        "away_implied": 13.5,
+        "draw_odds": 4.65,
+        "draw_implied": 21.5,
         "fav_spread": -1.25,
-        "fav_odds": 2.08,
+        "fav_odds": 2.1,
         "dog_spread": 1.25,
-        "dog_odds": 1.86,
+        "dog_odds": 1.85,
         "over_odds": 1.98,
         "over_point": 2.75,
         "under_odds": 1.93
       },
       "ensemble": {
-        "win_a": 63.6,
-        "draw": 22.0,
-        "win_b": 14.4,
+        "win_a": 63.3,
+        "draw": 22.2,
+        "win_b": 14.6,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 57.4,
-          "market_odds": 1.48,
-          "market_implied": 67.6,
-          "edge": -10.2,
+          "market_odds": 1.49,
+          "market_implied": 67.1,
+          "edge": -9.7,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "draw": {
           "model_pct": 24.8,
-          "market_odds": 4.7,
-          "market_implied": 21.3,
-          "edge": 3.5,
-          "kelly_full": 4.5,
-          "kelly_quarter": 1.1,
+          "market_odds": 4.65,
+          "market_implied": 21.5,
+          "edge": 3.3,
+          "kelly_full": 4.2,
+          "kelly_quarter": 1.0,
           "has_edge": true
         },
         "away": {
           "model_pct": 17.8,
-          "market_odds": 7.5,
-          "market_implied": 13.3,
-          "edge": 4.5,
-          "kelly_full": 5.2,
-          "kelly_quarter": 1.3,
+          "market_odds": 7.4,
+          "market_implied": 13.5,
+          "edge": 4.3,
+          "kelly_full": 5.0,
+          "kelly_quarter": 1.2,
           "has_edge": true
         },
         "over": {
@@ -157,7 +157,7 @@
       "home": "iraq",
       "away": "norway",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 5.4,
+      "hours_until": 4.8,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -218,12 +218,12 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-16T22:00:00Z",
-        "home_odds": 15.0,
-        "home_implied": 6.7,
+        "home_odds": 14.5,
+        "home_implied": 6.9,
         "away_odds": 1.23,
         "away_implied": 81.3,
-        "draw_odds": 7.2,
-        "draw_implied": 13.9,
+        "draw_odds": 7.25,
+        "draw_implied": 13.8,
         "dog_spread": 1.75,
         "dog_odds": 2.07,
         "fav_spread": -1.75,
@@ -233,27 +233,27 @@
         "under_odds": 1.85
       },
       "ensemble": {
-        "win_a": 13.1,
-        "draw": 17.7,
-        "win_b": 69.2,
+        "win_a": 13.3,
+        "draw": 17.6,
+        "win_b": 69.1,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 28.7,
-          "market_odds": 15.0,
-          "market_implied": 6.7,
-          "edge": 22.0,
-          "kelly_full": 23.6,
+          "market_odds": 14.5,
+          "market_implied": 6.9,
+          "edge": 21.8,
+          "kelly_full": 23.4,
           "kelly_quarter": 5.9,
           "has_edge": true
         },
         "draw": {
           "model_pct": 27.4,
-          "market_odds": 7.2,
-          "market_implied": 13.9,
-          "edge": 13.5,
-          "kelly_full": 15.7,
+          "market_odds": 7.25,
+          "market_implied": 13.8,
+          "edge": 13.6,
+          "kelly_full": 15.8,
           "kelly_quarter": 3.9,
           "has_edge": true
         },
@@ -306,162 +306,10 @@
       }
     },
     {
-      "home": "portugal",
-      "away": "dr-congo",
-      "match_time": "2026-06-17",
-      "hours_until": 7.4,
-      "city": "",
-      "venue": "",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "Scheduled",
-      "money_line": {
-        "win_a": "80.5",
-        "draw": "15.2",
-        "win_b": "4.2"
-      },
-      "xg": {
-        "a": "2.35",
-        "b": "0.41"
-      },
-      "elo": {
-        "a": 2040,
-        "b": 1512,
-        "diff": 528
-      },
-      "top_scores": [
-        [
-          "2-0",
-          "17.5"
-        ],
-        [
-          "1-0",
-          "14.3"
-        ],
-        [
-          "3-0",
-          "13.8"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.1",
-          "under": "47.9"
-        }
-      },
-      "btts": {
-        "yes": "30.9",
-        "no": "69.1"
-      },
-      "spread": {
-        "portugal -1.5": "57.9",
-        "dr-congo +1.5": "42.1"
-      },
-      "half_time": {
-        "win_a": "56.2",
-        "draw": "37.5",
-        "win_b": "6.3"
-      },
-      "squad_quality": {
-        "a": 2.41,
-        "b": -0.69
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-17T17:00:00Z",
-        "away_odds": 11.25,
-        "away_implied": 8.9,
-        "home_odds": 1.29,
-        "home_implied": 77.5,
-        "draw_odds": 5.68,
-        "draw_implied": 17.6,
-        "dog_spread": 1.5,
-        "dog_odds": 2.0,
-        "fav_spread": -1.5,
-        "fav_odds": 1.91,
-        "over_odds": 1.96,
-        "over_point": 2.75,
-        "under_odds": 1.93
-      },
-      "ensemble": {
-        "win_a": 76.3,
-        "draw": 16.4,
-        "win_b": 7.3,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 80.5,
-          "market_odds": 1.29,
-          "market_implied": 77.5,
-          "edge": 3.0,
-          "kelly_full": 13.3,
-          "kelly_quarter": 3.3,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 15.2,
-          "market_odds": 5.68,
-          "market_implied": 17.6,
-          "edge": -2.4,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 4.2,
-          "market_odds": 11.25,
-          "market_implied": 8.9,
-          "edge": -4.7,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.96,
-          "point": 2.75
-        }
-      },
-      "ai": {
-        "verdict": "buy",
-        "pick": "葡萄牙-1.5",
-        "summary": "葡萄牙80%胜率，-1.5盘口model 57.9% vs 市场52.4%，+5.5% spread edge。",
-        "edge": "+5.5%",
-        "confidence": "高",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "~1.29",
-            "reason": "稳赢但赔率太低，edge仅1.2%"
-          },
-          {
-            "market": "大小球",
-            "pick": "小2.75",
-            "odds": "~1.93",
-            "reason": "xG 2.76偏低，刚果难进球，最可能比分2-0"
-          },
-          {
-            "market": "BTTS",
-            "pick": "否",
-            "odds": "~1.47",
-            "reason": "BTTS否69.1%，刚果xG仅0.41"
-          },
-          {
-            "market": "让球",
-            "pick": "葡萄牙-1.5",
-            "odds": "~1.91",
-            "reason": "model 57.9% vs 市场52.4%，+5.5% spread edge"
-          }
-        ]
-      }
-    },
-    {
       "home": "england",
       "away": "croatia",
       "match_time": "2026-06-17",
-      "hours_until": 7.4,
+      "hours_until": 6.8,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -613,7 +461,7 @@
       "home": "ghana",
       "away": "panama",
       "match_time": "2026-06-17",
-      "hours_until": 7.4,
+      "hours_until": 6.8,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -765,7 +613,7 @@
       "home": "argentina",
       "away": "algeria",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 8.4,
+      "hours_until": 7.8,
       "city": "Kansas City, Missouri",
       "venue": "GEHA Field at Arrowhead Stadium",
       "home_score": 0,
@@ -917,7 +765,7 @@
       "home": "austria",
       "away": "jordan",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 11.4,
+      "hours_until": 10.8,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -978,56 +826,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-17T04:00:00Z",
-        "home_odds": 1.38,
-        "home_implied": 72.5,
-        "away_odds": 9.25,
-        "away_implied": 10.8,
-        "draw_odds": 5.25,
-        "draw_implied": 19.0,
-        "fav_spread": -1.25,
-        "fav_odds": 1.87,
-        "dog_spread": 1.25,
-        "dog_odds": 2.07,
-        "over_odds": 1.86,
+        "home_odds": 1.37,
+        "home_implied": 73.0,
+        "away_odds": 9.45,
+        "away_implied": 10.6,
+        "draw_odds": 5.35,
+        "draw_implied": 18.7,
+        "fav_spread": -1.5,
+        "fav_odds": 2.1,
+        "dog_spread": 1.5,
+        "dog_odds": 1.85,
+        "over_odds": 1.85,
         "over_point": 2.5,
-        "under_odds": 2.05
+        "under_odds": 2.06
       },
       "ensemble": {
-        "win_a": 67.9,
-        "draw": 20.1,
-        "win_b": 12.0,
+        "win_a": 68.2,
+        "draw": 19.9,
+        "win_b": 11.9,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 60.7,
-          "market_odds": 1.38,
-          "market_implied": 72.5,
-          "edge": -11.8,
+          "market_odds": 1.37,
+          "market_implied": 73.0,
+          "edge": -12.3,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "draw": {
           "model_pct": 23.8,
-          "market_odds": 5.25,
-          "market_implied": 19.0,
-          "edge": 4.8,
-          "kelly_full": 5.9,
-          "kelly_quarter": 1.5,
+          "market_odds": 5.35,
+          "market_implied": 18.7,
+          "edge": 5.1,
+          "kelly_full": 6.3,
+          "kelly_quarter": 1.6,
           "has_edge": true
         },
         "away": {
           "model_pct": 15.5,
-          "market_odds": 9.25,
-          "market_implied": 10.8,
-          "edge": 4.7,
-          "kelly_full": 5.3,
-          "kelly_quarter": 1.3,
+          "market_odds": 9.45,
+          "market_implied": 10.6,
+          "edge": 4.9,
+          "kelly_full": 5.5,
+          "kelly_quarter": 1.4,
           "has_edge": true
         },
         "over": {
-          "market_odds": 1.86,
+          "market_odds": 1.85,
           "point": 2.5
         }
       },
@@ -1061,6 +909,158 @@
             "pick": "1-1",
             "odds": "~6.5",
             "reason": "最可能比分11.4%"
+          }
+        ]
+      }
+    },
+    {
+      "home": "portugal",
+      "away": "dr-congo",
+      "match_time": "2026-06-17T17:00Z",
+      "hours_until": 23.8,
+      "city": "Houston, Texas",
+      "venue": "NRG Stadium",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
+      "money_line": {
+        "win_a": "80.5",
+        "draw": "15.3",
+        "win_b": "4.3"
+      },
+      "xg": {
+        "a": "2.35",
+        "b": "0.41"
+      },
+      "elo": {
+        "a": 2022,
+        "b": 1495,
+        "diff": 527
+      },
+      "top_scores": [
+        [
+          "2-0",
+          "17.5"
+        ],
+        [
+          "1-0",
+          "14.3"
+        ],
+        [
+          "3-0",
+          "13.7"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.1",
+          "under": "47.9"
+        }
+      },
+      "btts": {
+        "yes": "31.0",
+        "no": "69.0"
+      },
+      "spread": {
+        "portugal -1.5": "57.8",
+        "dr-congo +1.5": "42.2"
+      },
+      "half_time": {
+        "win_a": "56.2",
+        "draw": "37.5",
+        "win_b": "6.3"
+      },
+      "squad_quality": {
+        "a": 2.41,
+        "b": -0.69
+      },
+      "market_odds": {
+        "source": "pinnacle",
+        "time": "2026-06-17T17:00:00Z",
+        "away_odds": 11.25,
+        "away_implied": 8.9,
+        "home_odds": 1.29,
+        "home_implied": 77.5,
+        "draw_odds": 5.68,
+        "draw_implied": 17.6,
+        "dog_spread": 1.5,
+        "dog_odds": 2.0,
+        "fav_spread": -1.5,
+        "fav_odds": 1.91,
+        "over_odds": 1.96,
+        "over_point": 2.75,
+        "under_odds": 1.93
+      },
+      "ensemble": {
+        "win_a": 76.2,
+        "draw": 16.4,
+        "win_b": 7.3,
+        "source": "ensemble"
+      },
+      "edge": {
+        "home": {
+          "model_pct": 80.5,
+          "market_odds": 1.29,
+          "market_implied": 77.5,
+          "edge": 3.0,
+          "kelly_full": 13.3,
+          "kelly_quarter": 3.3,
+          "has_edge": true
+        },
+        "draw": {
+          "model_pct": 15.3,
+          "market_odds": 5.68,
+          "market_implied": 17.6,
+          "edge": -2.3,
+          "kelly_full": 0,
+          "kelly_quarter": 0,
+          "has_edge": false
+        },
+        "away": {
+          "model_pct": 4.3,
+          "market_odds": 11.25,
+          "market_implied": 8.9,
+          "edge": -4.6,
+          "kelly_full": 0,
+          "kelly_quarter": 0,
+          "has_edge": false
+        },
+        "over": {
+          "market_odds": 1.96,
+          "point": 2.75
+        }
+      },
+      "ai": {
+        "verdict": "buy",
+        "pick": "葡萄牙-1.5",
+        "summary": "葡萄牙80%胜率，-1.5盘口model 57.9% vs 市场52.4%，+5.5% spread edge。",
+        "edge": "+5.5%",
+        "confidence": "高",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "主胜",
+            "odds": "~1.29",
+            "reason": "稳赢但赔率太低，edge仅1.2%"
+          },
+          {
+            "market": "大小球",
+            "pick": "小2.75",
+            "odds": "~1.93",
+            "reason": "xG 2.76偏低，刚果难进球，最可能比分2-0"
+          },
+          {
+            "market": "BTTS",
+            "pick": "否",
+            "odds": "~1.47",
+            "reason": "BTTS否69.1%，刚果xG仅0.41"
+          },
+          {
+            "market": "让球",
+            "pick": "葡萄牙-1.5",
+            "odds": "~1.91",
+            "reason": "model 57.9% vs 市场52.4%，+5.5% spread edge"
           }
         ]
       }
