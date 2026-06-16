@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-16 10:55 UTC",
+  "updated_at": "2026-06-16 11:00 UTC",
   "matches": [
     {
       "home": "france",
       "away": "senegal",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 8.2,
+      "hours_until": 8.0,
       "city": "East Rutherford, New Jersey",
       "venue": "MetLife Stadium",
       "home_score": 0,
@@ -73,10 +73,10 @@
         "draw_odds": 4.65,
         "draw_implied": 21.5,
         "fav_spread": -1.25,
-        "fav_odds": 2.11,
+        "fav_odds": 2.07,
         "dog_spread": 1.25,
-        "dog_odds": 1.83,
-        "over_odds": 2.07,
+        "dog_odds": 1.86,
+        "over_odds": 2.06,
         "over_point": 2.75,
         "under_odds": 1.85
       },
@@ -115,7 +115,7 @@
           "has_edge": true
         },
         "over": {
-          "market_odds": 2.07,
+          "market_odds": 2.06,
           "point": 2.75
         }
       },
@@ -157,7 +157,7 @@
       "home": "iraq",
       "away": "norway",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 11.2,
+      "hours_until": 11.0,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -309,7 +309,7 @@
       "home": "portugal",
       "away": "dr-congo",
       "match_time": "2026-06-17",
-      "hours_until": 13.2,
+      "hours_until": 13.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -428,7 +428,7 @@
       "home": "england",
       "away": "croatia",
       "match_time": "2026-06-17",
-      "hours_until": 13.2,
+      "hours_until": 13.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -547,7 +547,7 @@
       "home": "ghana",
       "away": "panama",
       "match_time": "2026-06-17",
-      "hours_until": 13.2,
+      "hours_until": 13.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -618,9 +618,9 @@
         "fav_odds": 1.95,
         "dog_spread": 0.25,
         "dog_odds": 1.95,
-        "over_odds": 2.07,
+        "over_odds": 2.06,
         "over_point": 2.25,
-        "under_odds": 1.83
+        "under_odds": 1.84
       },
       "ensemble": {
         "win_a": 41.2,
@@ -657,7 +657,7 @@
           "has_edge": true
         },
         "over": {
-          "market_odds": 2.07,
+          "market_odds": 2.06,
           "point": 2.25
         }
       }
@@ -666,7 +666,7 @@
       "home": "argentina",
       "away": "algeria",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 14.2,
+      "hours_until": 14.0,
       "city": "Kansas City, Missouri",
       "venue": "GEHA Field at Arrowhead Stadium",
       "home_score": 0,
@@ -727,56 +727,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-17T01:00:00Z",
-        "away_odds": 8.13,
-        "away_implied": 12.3,
-        "home_odds": 1.46,
-        "home_implied": 68.5,
-        "draw_odds": 4.63,
-        "draw_implied": 21.6,
+        "away_odds": 8.07,
+        "away_implied": 12.4,
+        "home_odds": 1.45,
+        "home_implied": 69.0,
+        "draw_odds": 4.67,
+        "draw_implied": 21.4,
         "dog_spread": 1.25,
-        "dog_odds": 1.87,
+        "dog_odds": 1.88,
         "fav_spread": -1.25,
-        "fav_odds": 2.06,
-        "over_odds": 2.02,
+        "fav_odds": 2.05,
+        "over_odds": 1.98,
         "over_point": 2.5,
-        "under_odds": 1.89
+        "under_odds": 1.93
       },
       "ensemble": {
-        "win_a": 70.2,
-        "draw": 19.8,
+        "win_a": 70.3,
+        "draw": 19.6,
         "win_b": 10.1,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 78.1,
-          "market_odds": 1.46,
-          "market_implied": 68.5,
-          "edge": 9.6,
-          "kelly_full": 30.5,
-          "kelly_quarter": 7.6,
+          "market_odds": 1.45,
+          "market_implied": 69.0,
+          "edge": 9.1,
+          "kelly_full": 29.4,
+          "kelly_quarter": 7.4,
           "has_edge": true
         },
         "draw": {
           "model_pct": 16.6,
-          "market_odds": 4.63,
-          "market_implied": 21.6,
-          "edge": -5.0,
+          "market_odds": 4.67,
+          "market_implied": 21.4,
+          "edge": -4.8,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "away": {
           "model_pct": 5.4,
-          "market_odds": 8.13,
-          "market_implied": 12.3,
-          "edge": -6.9,
+          "market_odds": 8.07,
+          "market_implied": 12.4,
+          "edge": -7.0,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 2.02,
+          "market_odds": 1.98,
           "point": 2.5
         }
       },
@@ -818,7 +818,7 @@
       "home": "austria",
       "away": "jordan",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 17.2,
+      "hours_until": 17.0,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
