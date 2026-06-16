@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16 22:11 UTC",
+  "updated_at": "2026-06-16 22:13 UTC",
   "matches": [
     {
       "home": "ghana",
@@ -424,17 +424,17 @@
         }
       },
       "ai": {
-        "verdict": "buy",
-        "pick": "直接压平局",
-        "summary": "奥地利被市场高估（隐含72.5%vs综合68.1%），平局综合20.1%vs隐含18.9%，+6.2%正edge。",
-        "edge": "+6.2%",
-        "confidence": "中",
+        "verdict": "skip",
+        "pick": "⏭️ 不推荐",
+        "summary": "奥地利被市场高估但综合edge太薄。平局ensemble仅20.1%vs隐含18.9%，+1.2%不够。主胜负edge。",
+        "edge": "—",
+        "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "平局",
             "odds": "~5.3",
-            "reason": "综合20.1%vs隐含18.9%，正edge+6.2%"
+            "reason": "综合20.1%vs隐含18.9%，edge仅1.2%太薄"
           },
           {
             "market": "大小球",
@@ -576,11 +576,11 @@
         }
       },
       "ai": {
-        "verdict": "skip",
-        "pick": "⏭️ 不推荐",
-        "summary": "葡萄牙80.5%大热，主胜赔1.30太薄。-1.5概率57.8%但市场也只给1.93，没有足够edge。纯碾压局没有好价格。",
-        "edge": "—",
-        "confidence": "低",
+        "verdict": "buy",
+        "pick": "直接压葡萄牙-1.5",
+        "summary": "葡萄牙碾压局xG 2.35vs0.41，-1.5概率57.8%vs市场隐含51.8%，edge+6%。主胜赔率太薄不追。",
+        "edge": "+6%",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
@@ -592,7 +592,7 @@
             "market": "大小球",
             "pick": "大2.75",
             "odds": "~2.04",
-            "reason": "xG合计2.76，临界值，无明显edge"
+            "reason": "xG合计2.76，临界值，刚果可能被打穿"
           },
           {
             "market": "BTTS",
@@ -765,43 +765,39 @@
   "parlays": [
     {
       "name": "🛡️ 保守串",
-      "target": "3-5x",
+      "target": "4.0x",
       "picks": [
         {
           "match": "argentina-algeria",
-          "pick": "阿根廷-1.25",
+          "pick": "阿根廷-1.5",
           "odds": "~2.08",
-          "reason": "xG差距1.82，-1.5概率54.9%"
+          "reason": "xG 2.29vs0.47，-1.5概率54.9%，edge+6.8%"
         },
         {
-          "match": "ghana-panama",
-          "pick": "大2.25",
-          "odds": "~2.06",
-          "reason": "xG合计2.76，BTTS 57.2%"
+          "match": "portugal-dr-congo",
+          "pick": "葡萄牙-1.5",
+          "odds": "~1.93",
+          "reason": "xG 2.35vs0.41，-1.5概率57.8%，edge+6%"
         }
-      ],
-      "odds": "~4.3x",
-      "reason": "阿根廷碾压+加纳巴拿马进球大战，两个高概率事件组合"
+      ]
     },
     {
       "name": "🔥 进攻串",
-      "target": "8-15x",
+      "target": "7.5x",
       "picks": [
         {
-          "match": "austria-jordan",
-          "pick": "平局",
-          "odds": "~5.3",
-          "reason": "综合20.1%，奥地利被高估"
+          "match": "england-croatia",
+          "pick": "克罗地亚客胜",
+          "odds": "~5.16",
+          "reason": "综合20.4%vs隐含19.4%，edge+4.9%，英格兰被高估"
         },
         {
-          "match": "ghana-panama",
-          "pick": "大2.25",
-          "odds": "~2.06",
-          "reason": "xG合计2.76，BTTS 57.2%"
+          "match": "argentina-algeria",
+          "pick": "阿根廷主胜",
+          "odds": "~1.46",
+          "reason": "综合70.4%，碾压局稳腿"
         }
-      ],
-      "odds": "~10.9x",
-      "reason": "冷门平局+进球大战组合，两个独立事件都有正预期"
+      ]
     }
   ]
 }
