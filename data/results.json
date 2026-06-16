@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16 02:45 UTC",
+  "updated_at": "2026-06-16 05:07 UTC",
   "matches": [
     {
       "home": "qatar",
@@ -196,10 +196,6 @@
       "elo": 1746
     },
     {
-      "slug": "iran",
-      "elo": 1733
-    },
-    {
       "slug": "switzerland",
       "elo": 1724
     },
@@ -218,6 +214,10 @@
     {
       "slug": "serbia",
       "elo": 1695
+    },
+    {
+      "slug": "new-zealand",
+      "elo": 1685
     }
   ]
 }

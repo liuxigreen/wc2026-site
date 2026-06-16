@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16 02:45 UTC",
+  "updated_at": "2026-06-16 05:07 UTC",
   "matches": [
     {
       "elo_raw": "Elo: 2040→2065 (rest+10 venue-10) vs 1830→1852 (rest+10 venue-10)",
@@ -71,7 +71,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 16.2,
+      "hours_until": 13.9,
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "is_my_team": true,
@@ -166,7 +166,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 19.2,
+      "hours_until": 16.9,
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "is_my_team": false,
@@ -247,7 +247,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 22.2,
+      "hours_until": 19.9,
       "venue": "GEHA Field at Arrowhead Stadium",
       "city": "Kansas City, Missouri",
       "is_my_team": true,
@@ -362,7 +362,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 25.2,
+      "hours_until": 22.9,
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "is_my_team": false,
@@ -439,7 +439,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T17:00Z",
-      "hours_until": 38.2,
+      "hours_until": 35.9,
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "is_my_team": false,
@@ -516,7 +516,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T20:00Z",
-      "hours_until": 41.2,
+      "hours_until": 38.9,
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "is_my_team": true,
@@ -600,7 +600,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-17T23:00Z",
-      "hours_until": 44.2,
+      "hours_until": 41.9,
       "venue": "BMO Field",
       "city": "Toronto",
       "is_my_team": false,
@@ -677,7 +677,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-18T02:00Z",
-      "hours_until": 47.2,
+      "hours_until": 44.9,
       "venue": "Estadio Banorte",
       "city": "Mexico City",
       "is_my_team": false,
@@ -754,7 +754,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-18T16:00Z",
-      "hours_until": 61.2,
+      "hours_until": 58.9,
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, Georgia",
       "is_my_team": false,
@@ -831,7 +831,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-18T19:00Z",
-      "hours_until": 64.2,
+      "hours_until": 61.9,
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "is_my_team": false,
@@ -908,7 +908,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-18T22:00Z",
-      "hours_until": 67.2,
+      "hours_until": 64.9,
       "venue": "BC Place",
       "city": "Vancouver",
       "is_my_team": false,
@@ -985,7 +985,7 @@
       "state": "pre",
       "status": "STATUS_SCHEDULED",
       "match_time": "2026-06-19T01:00Z",
-      "hours_until": 70.2,
+      "hours_until": 67.9,
       "venue": "Estadio Akron",
       "city": "Guadalajara",
       "is_my_team": false,
@@ -995,22 +995,23 @@
   ],
   "parlays": [
     {
-      "name": "🔥 双主胜串",
+      "name": "🔥 进攻串",
       "picks": [
         "比利时胜",
-        "伊朗胜"
+        "伊朗胜",
+        "比利时2-0"
       ],
-      "odds": "~2.93",
-      "reason": "两场都是强队主场碾压，edge都>13%"
+      "odds": "~17.6",
+      "reason": "三腿搏高赔，比利时高置信+伊朗强edge+比分补赔率"
     },
     {
-      "name": "🛡️ 稳健串",
+      "name": "🛡️ 保守串",
       "picks": [
         "比利时胜",
         "伊朗大2.0"
       ],
       "odds": "~2.97",
-      "reason": "比利时高置信+伊朗xG合计2.81，大小球更稳"
+      "reason": "两腿稳守，最高置信+xG支撑"
     }
   ]
 }
