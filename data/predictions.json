@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-16 05:53 UTC",
+  "updated_at": "2026-06-16 06:00 UTC",
   "matches": [
     {
       "home": "france",
       "away": "senegal",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 13.1,
+      "hours_until": 13.0,
       "city": "East Rutherford, New Jersey",
       "venue": "MetLife Stadium",
       "home_score": 0,
@@ -113,24 +113,6 @@
           "point": 2.5
         }
       },
-      "predict_fun": [
-        {
-          "market": "比分",
-          "pick": "2-0",
-          "probability": 14.2,
-          "confidence": "低"
-        }
-      ],
-      "binance": [
-        {
-          "market": "比分",
-          "pick": "2-0",
-          "probability": 14.2,
-          "confidence": "低"
-        }
-      ],
-      "xbit": null,
-      "is_my_team": true,
       "ai": {
         "verdict": "skip",
         "summary": "法国71%差一点到门槛，塞内加尔非洲冠军有硬度。观望。"
@@ -140,7 +122,7 @@
       "home": "iraq",
       "away": "norway",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 16.1,
+      "hours_until": 16.0,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -248,10 +230,6 @@
           "point": 3.0
         }
       },
-      "predict_fun": null,
-      "binance": null,
-      "xbit": null,
-      "is_my_team": false,
       "ai": {
         "verdict": "skip",
         "summary": "挪威48.5%不到一半，平局28.7%也高。没有明确方向。"
@@ -261,7 +239,7 @@
       "home": "portugal",
       "away": "dr-congo",
       "match_time": "2026-06-17",
-      "hours_until": 18.1,
+      "hours_until": 18.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -369,10 +347,6 @@
           "point": 2.75
         }
       },
-      "predict_fun": null,
-      "binance": null,
-      "xbit": null,
-      "is_my_team": false,
       "ai": {
         "verdict": "buy",
         "pick": "主胜",
@@ -405,7 +379,7 @@
       "home": "england",
       "away": "croatia",
       "match_time": "2026-06-17",
-      "hours_until": 18.1,
+      "hours_until": 18.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -513,17 +487,6 @@
           "point": 2.25
         }
       },
-      "predict_fun": [
-        {
-          "market": "比分",
-          "pick": "1-1",
-          "probability": 12.6,
-          "confidence": "低"
-        }
-      ],
-      "binance": null,
-      "xbit": null,
-      "is_my_team": true,
       "ai": {
         "verdict": "skip",
         "summary": "英格兰57.7%不够稳，克罗地亚有大赛经验，xG差距小。观望。"
@@ -533,7 +496,7 @@
       "home": "ghana",
       "away": "panama",
       "match_time": "2026-06-17",
-      "hours_until": 18.1,
+      "hours_until": 18.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -641,10 +604,6 @@
           "point": 2.25
         }
       },
-      "predict_fun": null,
-      "binance": null,
-      "xbit": null,
-      "is_my_team": false,
       "ai": {
         "verdict": "skip",
         "summary": "三方概率38/30/32，完全没方向。跳过。"
@@ -654,7 +613,7 @@
       "home": "argentina",
       "away": "algeria",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 19.1,
+      "hours_until": 19.0,
       "city": "Kansas City, Missouri",
       "venue": "GEHA Field at Arrowhead Stadium",
       "home_score": 0,
@@ -762,48 +721,6 @@
           "point": 2.5
         }
       },
-      "predict_fun": [
-        {
-          "market": "胜负盘",
-          "pick": "主胜 (argentina)",
-          "probability": 90.2,
-          "confidence": "高"
-        },
-        {
-          "market": "双方进球",
-          "pick": "否",
-          "probability": 78.4,
-          "confidence": "高"
-        },
-        {
-          "market": "比分",
-          "pick": "2-0",
-          "probability": 17.7,
-          "confidence": "中"
-        }
-      ],
-      "binance": [
-        {
-          "market": "胜负盘",
-          "pick": "主胜 (argentina)",
-          "probability": 90.2,
-          "confidence": "高"
-        },
-        {
-          "market": "双方进球",
-          "pick": "否",
-          "probability": 78.4,
-          "confidence": "高"
-        },
-        {
-          "market": "比分",
-          "pick": "2-0",
-          "probability": 17.7,
-          "confidence": "中"
-        }
-      ],
-      "xbit": null,
-      "is_my_team": true,
       "ai": {
         "verdict": "buy",
         "pick": "主胜",
@@ -836,7 +753,7 @@
       "home": "austria",
       "away": "jordan",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 22.1,
+      "hours_until": 22.0,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -944,10 +861,6 @@
           "point": 2.75
         }
       },
-      "predict_fun": null,
-      "binance": null,
-      "xbit": null,
-      "is_my_team": false,
       "ai": {
         "verdict": "buy",
         "pick": "主胜",
