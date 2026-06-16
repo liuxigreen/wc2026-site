@@ -1,22 +1,6 @@
 {
-  "updated_at": "2026-06-15 22:04 UTC",
+  "updated_at": "2026-06-16 02:45 UTC",
   "matches": [
-    {
-      "home": "canada",
-      "away": "bosnia-and-herzegovina",
-      "home_score": 1,
-      "away_score": 1,
-      "home_elo_change": 0,
-      "away_elo_change": 0
-    },
-    {
-      "home": "usa",
-      "away": "paraguay",
-      "home_score": 4,
-      "away_score": 1,
-      "home_elo_change": 0,
-      "away_elo_change": 0
-    },
     {
       "home": "qatar",
       "away": "switzerland",
@@ -96,6 +80,14 @@
       "away_score": 1,
       "home_elo_change": 0,
       "away_elo_change": 0
+    },
+    {
+      "home": "saudi-arabia",
+      "away": "uruguay",
+      "home_score": 1,
+      "away_score": 1,
+      "home_elo_change": 0,
+      "away_elo_change": 0
     }
   ],
   "elo_rankings": [
@@ -168,20 +160,16 @@
       "elo": 1834
     },
     {
-      "slug": "uruguay",
-      "elo": 1833
-    },
-    {
       "slug": "senegal",
       "elo": 1830
     },
     {
-      "slug": "denmark",
-      "elo": 1790
+      "slug": "egypt",
+      "elo": 1794
     },
     {
-      "slug": "egypt",
-      "elo": 1788
+      "slug": "denmark",
+      "elo": 1790
     },
     {
       "slug": "spain",
@@ -192,12 +180,16 @@
       "elo": 1776
     },
     {
+      "slug": "uruguay",
+      "elo": 1770
+    },
+    {
       "slug": "south-korea",
       "elo": 1767
     },
     {
       "slug": "belgium",
-      "elo": 1754
+      "elo": 1748
     },
     {
       "slug": "cape-verde",
