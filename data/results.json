@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16 21:04 UTC",
+  "updated_at": "2026-06-16 21:10 UTC",
   "matches": [
     {
       "home": "qatar",
@@ -72,6 +72,12 @@
       "away": "new-zealand",
       "home_score": 2,
       "away_score": 2
+    },
+    {
+      "home": "france",
+      "away": "senegal",
+      "home_score": 3,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -89,7 +95,7 @@
     },
     {
       "slug": "france",
-      "elo": 2040
+      "elo": 2053
     },
     {
       "slug": "england",
@@ -145,7 +151,7 @@
     },
     {
       "slug": "senegal",
-      "elo": 1830
+      "elo": 1817
     },
     {
       "slug": "egypt",
