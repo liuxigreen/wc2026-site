@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-16 10:42 UTC",
+  "updated_at": "2026-06-16 10:55 UTC",
   "matches": [
     {
       "home": "france",
       "away": "senegal",
       "match_time": "2026-06-16T19:00Z",
-      "hours_until": 8.3,
+      "hours_until": 8.2,
       "city": "East Rutherford, New Jersey",
       "venue": "MetLife Stadium",
       "home_score": 0,
@@ -122,21 +122,21 @@
       "ai": {
         "verdict": "skip",
         "pick": "不推荐",
-        "summary": "法国62.8%胜率，xG差距不大(1.83-0.93)，赔率没edge，不碰。",
-        "edge": "",
+        "summary": "法国62.8%但市场已定价66.7%，负edge-3.9%，赔率没空间。",
+        "edge": "-3.9%",
         "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "~1.59",
-            "reason": "62.8%胜率，赔率隐含66.7%，负edge"
+            "odds": "~1.50",
+            "reason": "综合62.8%但市场隐含66.7%，负edge"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "~1.85",
-            "reason": "xG合计2.76，略高于2.5线"
+            "reason": "xG合计2.76，刚过2.5线，无edge"
           },
           {
             "market": "BTTS",
@@ -148,7 +148,7 @@
             "market": "比分",
             "pick": "2-1",
             "odds": "~9.0",
-            "reason": "最可能比分，法国小胜"
+            "reason": "法国小胜最可能比分"
           }
         ]
       }
@@ -157,7 +157,7 @@
       "home": "iraq",
       "away": "norway",
       "match_time": "2026-06-16T22:00Z",
-      "hours_until": 11.3,
+      "hours_until": 11.2,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -274,27 +274,27 @@
       "ai": {
         "verdict": "skip",
         "pick": "不推荐",
-        "summary": "模型44% vs 市场82%，分歧巨大。综合69%但不确定性太高，观望。",
-        "edge": "",
+        "summary": "模型44% vs 市场82%，分歧巨大。综合69%但赔率1.22没价值。",
+        "edge": "-12.7%",
         "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "客胜",
-            "odds": "~1.45",
-            "reason": "综合69.3%但模型只给44%，分歧太大"
+            "odds": "~1.22",
+            "reason": "综合69.3%但市场隐含82%，严重负edge"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "~1.90",
-            "reason": "xG合计2.76，两队都有进球能力"
+            "odds": "~1.85",
+            "reason": "xG合计2.76，两队都有进攻能力"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "~1.80",
-            "reason": "伊拉克xG 1.21，主场不会白板"
+            "reason": "伊拉克xG 1.21，主场能破门"
           },
           {
             "market": "比分",
@@ -309,7 +309,7 @@
       "home": "portugal",
       "away": "dr-congo",
       "match_time": "2026-06-17",
-      "hours_until": 13.3,
+      "hours_until": 13.2,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -422,52 +422,13 @@
           "market_odds": 1.96,
           "point": 2.75
         }
-      },
-      "ai": {
-        "verdict": "buy",
-        "pick": "葡萄牙-1.5",
-        "summary": "直接压葡萄牙让1.5！80.5%胜率xG 2.35对0.41，刚果金根本没法看。让球盘比胜负盘值太多。",
-        "edge": "+4.7%",
-        "confidence": "高",
-        "bets": [
-          {
-            "market": "让球盘",
-            "pick": "葡萄牙-1.5",
-            "odds": "1.88",
-            "reason": "模型57.9% vs 盘口53.2%，正edge且最可能比分2-0(17.5%)覆盖让球"
-          },
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "1.28",
-            "reason": "模型80.5% vs 盘口78.1%，edge仅2.4%，赔率太低不值得单买"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.75",
-            "odds": "1.96",
-            "reason": "xG合计2.76，over 52.1%，临界值没明显edge"
-          },
-          {
-            "market": "BTTS",
-            "pick": "否",
-            "odds": "~1.50",
-            "reason": "BTTS仅30.9%，刚果金xG 0.41很难进球"
-          },
-          {
-            "market": "比分",
-            "pick": "2-0",
-            "odds": "~6.5",
-            "reason": "最可能比分17.5%，其次是3-0(13.8%)"
-          }
-        ]
       }
     },
     {
       "home": "england",
       "away": "croatia",
       "match_time": "2026-06-17",
-      "hours_until": 13.3,
+      "hours_until": 13.2,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -580,49 +541,13 @@
           "market_odds": 1.94,
           "point": 2.25
         }
-      },
-      "ai": {
-        "verdict": "skip",
-        "summary": "英格兰49.2%连一半都不到，市场给57.5%反而高估了。克罗地亚大赛经验丰富，这场没方向。",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "1.74",
-            "reason": "模型49.2% vs 盘口57.5%，负edge -8.3%，英格兰被高估"
-          },
-          {
-            "market": "胜负盘",
-            "pick": "客胜",
-            "odds": "4.97",
-            "reason": "模型24.1% vs 盘口20.1%，edge +4.0%，接近但不到5%门槛"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.25",
-            "odds": "1.94",
-            "reason": "xG合计2.76，over 52.2%，但两队都可能保守"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "~1.75",
-            "reason": "BTTS 55.3%，英格兰和克罗地亚都有进球能力"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "~6.5",
-            "reason": "最可能比分12.7%，两队实力接近容易胶着"
-          }
-        ]
       }
     },
     {
       "home": "ghana",
       "away": "panama",
       "match_time": "2026-06-17",
-      "hours_until": 13.3,
+      "hours_until": 13.2,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -735,43 +660,13 @@
           "market_odds": 2.07,
           "point": 2.25
         }
-      },
-      "ai": {
-        "verdict": "skip",
-        "summary": "三方概率38/28/34，完全没方向。两队实力接近，什么结果都不意外。",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "客胜",
-            "odds": "3.41",
-            "reason": "模型34.3% vs 盘口29.3%，edge +5.0%刚到门槛但方差大"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.25",
-            "odds": "2.05",
-            "reason": "xG合计2.76，over 52.2%，但两队进攻效率一般"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "~1.70",
-            "reason": "BTTS 57.2%，这是最合理的盘口，两队都能进"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "~6.5",
-            "reason": "最可能比分13.2%，势均力敌的比赛"
-          }
-        ]
       }
     },
     {
       "home": "argentina",
       "away": "algeria",
       "match_time": "2026-06-17T01:00Z",
-      "hours_until": 14.3,
+      "hours_until": 14.2,
       "city": "Kansas City, Missouri",
       "venue": "GEHA Field at Arrowhead Stadium",
       "home_score": 0,
@@ -887,27 +782,21 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "阿根廷-1.5",
-        "summary": "直接压阿根廷让1.5。xG 2.29 vs 0.47碾压，Elo差490，阿尔及利亚毫无还手之力。",
-        "edge": "+5.2%",
-        "confidence": "高",
+        "pick": "主胜",
+        "summary": "直接压阿根廷。xG 2.29 vs 0.47碾压，Elo差490，阿尔及利亚没戏。",
+        "edge": "+1.7%",
+        "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "~1.43",
-            "reason": "70.2%胜率，但赔率偏紧edge小"
-          },
-          {
-            "market": "让球盘",
-            "pick": "阿根廷-1.5",
-            "odds": "~2.20",
-            "reason": "xG差距1.82，让1.5是更好选择"
+            "odds": "~1.46",
+            "reason": "综合70.2%，市场68.5%，正edge+1.7%"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "~1.75",
+            "odds": "~1.80",
             "reason": "阿根廷xG 2.29，独进3球概率高"
           },
           {
@@ -919,8 +808,8 @@
           {
             "market": "比分",
             "pick": "3-0",
-            "odds": "~7.0",
-            "reason": "最可能比分，阿根廷大胜"
+            "odds": "~6.5",
+            "reason": "最可能大胜比分，概率~15%"
           }
         ]
       }
@@ -929,7 +818,7 @@
       "home": "austria",
       "away": "jordan",
       "match_time": "2026-06-17T04:00Z",
-      "hours_until": 17.3,
+      "hours_until": 17.2,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -1046,21 +935,21 @@
       "ai": {
         "verdict": "buy",
         "pick": "主胜",
-        "summary": "奥地利67.7%胜率，xG 1.9-0.86优势明显，主场稳吃约旦。",
-        "edge": "+3.8%",
+        "summary": "奥地利67.7%胜率，xG 1.9-0.86，主场稳吃约旦。",
+        "edge": "+2.6%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "~1.48",
-            "reason": "综合67.7%，市场72.5%，有正edge"
+            "odds": "~1.47",
+            "reason": "综合67.7%，市场72.5%，正edge+2.6%"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "~1.85",
-            "reason": "xG合计2.76，跨过2.5线"
+            "odds": "~1.82",
+            "reason": "xG合计2.76，刚过2.5线，无明显edge"
           },
           {
             "market": "BTTS",
@@ -1071,7 +960,7 @@
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~7.5",
+            "odds": "~6.5",
             "reason": "最可能比分，奥地利零封"
           }
         ]
@@ -1081,36 +970,36 @@
   "parlays": [
     {
       "name": "🛡️ 保守串",
-      "target": "3.15x",
+      "target": "2.14x",
       "picks": [
         {
           "match": "argentina-algeria",
-          "pick": "大2.5",
-          "odds": "~1.75",
-          "reason": "阿根廷xG 2.29"
+          "pick": "主胜",
+          "odds": "~1.46",
+          "reason": "xG碾压+Elo差490"
         },
         {
           "match": "austria-jordan",
-          "pick": "BTTS否",
-          "odds": "~1.80",
-          "reason": "约旦xG 0.86"
+          "pick": "主胜",
+          "odds": "~1.47",
+          "reason": "xG优势+主场"
         }
       ]
     },
     {
       "name": "🔥 进攻串",
-      "target": "10.4x",
+      "target": "9.5x",
       "picks": [
         {
           "match": "argentina-algeria",
           "pick": "3-0",
-          "odds": "~7.0",
+          "odds": "~6.5",
           "reason": "最可能大胜比分"
         },
         {
           "match": "austria-jordan",
           "pick": "主胜",
-          "odds": "~1.48",
+          "odds": "~1.47",
           "reason": "稳胆搭配"
         }
       ]
