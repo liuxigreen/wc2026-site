@@ -1,24 +1,6 @@
 {
-  "updated_at": "2026-06-16 23:50 UTC",
+  "updated_at": "2026-06-17 00:22 UTC",
   "matches": [
-    {
-      "home": "qatar",
-      "away": "switzerland",
-      "home_score": 1,
-      "away_score": 1
-    },
-    {
-      "home": "brazil",
-      "away": "morocco",
-      "home_score": 1,
-      "away_score": 1
-    },
-    {
-      "home": "haiti",
-      "away": "scotland",
-      "home_score": 0,
-      "away_score": 1
-    },
     {
       "home": "australia",
       "away": "turkey",
@@ -78,6 +60,12 @@
       "away": "senegal",
       "home_score": 3,
       "away_score": 1
+    },
+    {
+      "home": "iraq",
+      "away": "norway",
+      "home_score": 1,
+      "away_score": 4
     }
   ],
   "elo_rankings": [
