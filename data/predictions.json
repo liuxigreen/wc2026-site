@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-17 09:29 UTC",
+  "updated_at": "2026-06-17 10:09 UTC",
   "matches": [
     {
       "home": "portugal",
       "away": "dr-congo",
       "match_time": "2026-06-17T17:00Z",
-      "hours_until": 7.7,
+      "hours_until": 6.8,
       "city": "Houston, Texas",
       "venue": "NRG Stadium",
       "home_score": 0,
@@ -66,24 +66,24 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-17T17:00:00Z",
-        "away_odds": 11.5,
-        "away_implied": 8.7,
+        "away_odds": 12.0,
+        "away_implied": 8.3,
         "home_odds": 1.31,
         "home_implied": 76.3,
-        "draw_odds": 5.7,
-        "draw_implied": 17.5,
+        "draw_odds": 5.75,
+        "draw_implied": 17.4,
         "dog_spread": 1.5,
-        "dog_odds": 2.02,
+        "dog_odds": 2.01,
         "fav_spread": -1.5,
-        "fav_odds": 1.91,
-        "over_odds": 2.07,
-        "over_point": 2.75,
-        "under_odds": 1.85
+        "fav_odds": 1.92,
+        "over_odds": 1.85,
+        "over_point": 2.5,
+        "under_odds": 2.07
       },
       "ensemble": {
-        "win_a": 76.2,
+        "win_a": 76.5,
         "draw": 16.5,
-        "win_b": 7.3,
+        "win_b": 7.0,
         "source": "ensemble"
       },
       "edge": {
@@ -98,25 +98,25 @@
         },
         "draw": {
           "model_pct": 15.3,
-          "market_odds": 5.7,
-          "market_implied": 17.5,
-          "edge": -2.2,
+          "market_odds": 5.75,
+          "market_implied": 17.4,
+          "edge": -2.1,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "away": {
           "model_pct": 4.3,
-          "market_odds": 11.5,
-          "market_implied": 8.7,
-          "edge": -4.4,
+          "market_odds": 12.0,
+          "market_implied": 8.3,
+          "edge": -4.0,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 2.07,
-          "point": 2.75
+          "market_odds": 1.85,
+          "point": 2.5
         }
       },
       "ai": {
@@ -163,7 +163,7 @@
       "home": "england",
       "away": "croatia",
       "match_time": "2026-06-17T20:00Z",
-      "hours_until": 10.7,
+      "hours_until": 9.8,
       "city": "Arlington, Texas",
       "venue": "AT&T Stadium",
       "home_score": 0,
@@ -224,16 +224,16 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-17T20:00:00Z",
-        "away_odds": 5.33,
-        "away_implied": 18.8,
+        "away_odds": 5.35,
+        "away_implied": 18.7,
         "home_odds": 1.74,
         "home_implied": 57.5,
         "draw_odds": 3.81,
         "draw_implied": 26.2,
         "dog_spread": 0.75,
-        "dog_odds": 1.95,
+        "dog_odds": 1.96,
         "fav_spread": -0.75,
-        "fav_odds": 1.97,
+        "fav_odds": 1.96,
         "over_odds": 1.91,
         "over_point": 2.25,
         "under_odds": 2.0
@@ -241,7 +241,7 @@
       "ensemble": {
         "win_a": 54.0,
         "draw": 25.9,
-        "win_b": 20.1,
+        "win_b": 20.0,
         "source": "ensemble"
       },
       "edge": {
@@ -265,10 +265,10 @@
         },
         "away": {
           "model_pct": 24.3,
-          "market_odds": 5.33,
-          "market_implied": 18.8,
-          "edge": 5.5,
-          "kelly_full": 6.8,
+          "market_odds": 5.35,
+          "market_implied": 18.7,
+          "edge": 5.6,
+          "kelly_full": 6.9,
           "kelly_quarter": 1.7,
           "has_edge": true
         },
@@ -315,7 +315,7 @@
       "home": "ghana",
       "away": "panama",
       "match_time": "2026-06-17T23:00Z",
-      "hours_until": 13.7,
+      "hours_until": 12.8,
       "city": "Toronto",
       "venue": "BMO Field",
       "home_score": 0,
@@ -378,8 +378,8 @@
         "time": "2026-06-17T23:00:00Z",
         "home_odds": 2.41,
         "home_implied": 41.5,
-        "away_odds": 3.33,
-        "away_implied": 30.0,
+        "away_odds": 3.32,
+        "away_implied": 30.1,
         "draw_odds": 3.26,
         "draw_implied": 30.7,
         "fav_spread": -0.25,
@@ -391,9 +391,9 @@
         "under_odds": 1.81
       },
       "ensemble": {
-        "win_a": 39.6,
+        "win_a": 39.5,
         "draw": 29.4,
-        "win_b": 31.0,
+        "win_b": 31.1,
         "source": "ensemble"
       },
       "edge": {
@@ -417,11 +417,11 @@
         },
         "away": {
           "model_pct": 35.0,
-          "market_odds": 3.33,
-          "market_implied": 30.0,
-          "edge": 5.0,
-          "kelly_full": 7.1,
-          "kelly_quarter": 1.8,
+          "market_odds": 3.32,
+          "market_implied": 30.1,
+          "edge": 4.9,
+          "kelly_full": 7.0,
+          "kelly_quarter": 1.7,
           "has_edge": true
         },
         "over": {
@@ -467,7 +467,7 @@
       "home": "czech-republic",
       "away": "south-africa",
       "match_time": "2026-06-18",
-      "hours_until": 14.7,
+      "hours_until": 13.8,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -580,46 +580,13 @@
           "market_odds": 1.83,
           "point": 2.25
         }
-      },
-      "ai": {
-        "verdict": "buy",
-        "pick": "南非客胜",
-        "summary": "南非被市场忽视，模型edge+2.8%，赔率4.67有投机价值",
-        "edge": "+2.8%",
-        "confidence": "中低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "南非客胜",
-            "odds": "~4.67",
-            "reason": "模型24.2% vs 隐含21.4%，edge+2.8%"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.25",
-            "odds": "~1.83",
-            "reason": "模型O2.5=52.2%，2.25线宽松"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "xG合计2.76，BTTS概率55.3%"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最可能比分12.7%概率"
-          }
-        ]
       }
     },
     {
       "home": "switzerland",
       "away": "bosnia-and-herzegovina",
       "match_time": "2026-06-18",
-      "hours_until": 14.7,
+      "hours_until": 13.8,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -679,46 +646,13 @@
       },
       "market_odds": null,
       "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "skip",
-        "pick": "无市场赔率",
-        "summary": "无Pinnacle赔率数据，无法计算edge，跳过",
-        "edge": "N/A",
-        "confidence": "N/A",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "N/A",
-            "reason": "模型56.8%但无市场赔率"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "模型O2.5=52.2%"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "模型BTTS概率52.3%"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最可能比分11.9%概率"
-          }
-        ]
-      }
+      "edge": {}
     },
     {
       "home": "canada",
       "away": "qatar",
       "match_time": "2026-06-18",
-      "hours_until": 14.7,
+      "hours_until": 13.8,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -831,46 +765,13 @@
           "market_odds": 1.99,
           "point": 2.75
         }
-      },
-      "ai": {
-        "verdict": "buy",
-        "pick": "卡塔尔客胜",
-        "summary": "市场严重高估加拿大（隐含77.5%），模型仅43%。卡塔尔+平局都有巨大edge",
-        "edge": "+5.8%",
-        "confidence": "中",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "卡塔尔客胜",
-            "odds": "~11.26",
-            "reason": "ensemble14.7% vs 隐含8.9%，edge+5.8%"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.75",
-            "odds": "~1.99",
-            "reason": "模型O2.5=52.2%，xG合计2.76"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "模型BTTS概率56.7%"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最可能比分13.1%概率"
-          }
-        ]
       }
     },
     {
       "home": "uzbekistan",
       "away": "colombia",
       "match_time": "2026-06-18T02:00Z",
-      "hours_until": 16.7,
+      "hours_until": 15.8,
       "city": "Mexico City",
       "venue": "Estadio Banorte",
       "home_score": 0,
