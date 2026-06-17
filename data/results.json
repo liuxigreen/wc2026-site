@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17 02:31 UTC",
+  "updated_at": "2026-06-17 03:06 UTC",
   "matches": [
     {
       "home": "australia",
@@ -66,6 +66,12 @@
       "away": "norway",
       "home_score": 1,
       "away_score": 4
+    },
+    {
+      "home": "argentina",
+      "away": "algeria",
+      "home_score": 3,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
@@ -74,12 +80,12 @@
       "elo": 2114
     },
     {
-      "slug": "sweden",
-      "elo": 2066
+      "slug": "argentina",
+      "elo": 2070
     },
     {
-      "slug": "argentina",
-      "elo": 2064
+      "slug": "sweden",
+      "elo": 2066
     },
     {
       "slug": "france",

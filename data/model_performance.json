@@ -1,14 +1,20 @@
 {
-  "cumulative_brier": 0.3735,
+  "cumulative_brier": 0.2751,
   "accuracy": 1.0,
-  "total_reviewed": 2,
-  "correct_count": 2,
+  "total_reviewed": 3,
+  "correct_count": 3,
   "calibration_bins": [
     {
       "bin": "40-60%",
       "predicted": 0.506,
       "actual": 1.0,
       "count": 2
+    },
+    {
+      "bin": "60-80%",
+      "predicted": 0.781,
+      "actual": 1.0,
+      "count": 1
     }
   ],
   "brier_trend": [
@@ -21,6 +27,11 @@
       "match": 2,
       "brier": 0.3735,
       "label": "伊拉克 vs 挪威"
+    },
+    {
+      "match": 3,
+      "brier": 0.2751,
+      "label": "阿根廷 vs 阿尔及利亚"
     }
   ],
   "match_reviews": [
@@ -53,7 +64,22 @@
       "brier": 0.4722,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "阿根廷 vs 阿尔及利亚",
+      "home": "argentina",
+      "away": "algeria",
+      "predicted": {
+        "home": 0.7809999999999999,
+        "draw": 0.166,
+        "away": 0.054000000000000006
+      },
+      "result": "3-0",
+      "actual_outcome": "主胜",
+      "brier": 0.0784,
+      "correct": true,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-17T00:08:18.800197+00:00"
+  "updated_at": "2026-06-17T03:06:03.804594+00:00"
 }
