@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.2751,
+  "cumulative_brier": 0.2651,
   "accuracy": 1.0,
-  "total_reviewed": 3,
-  "correct_count": 3,
+  "total_reviewed": 4,
+  "correct_count": 4,
   "calibration_bins": [
     {
       "bin": "40-60%",
@@ -12,9 +12,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.781,
+      "predicted": 0.694,
       "actual": 1.0,
-      "count": 1
+      "count": 2
     }
   ],
   "brier_trend": [
@@ -32,6 +32,11 @@
       "match": 3,
       "brier": 0.2751,
       "label": "阿根廷 vs 阿尔及利亚"
+    },
+    {
+      "match": 4,
+      "brier": 0.2651,
+      "label": "奥地利 vs 约旦"
     }
   ],
   "match_reviews": [
@@ -79,7 +84,22 @@
       "brier": 0.0784,
       "correct": true,
       "predicted_score": "2-0"
+    },
+    {
+      "match": "奥地利 vs 约旦",
+      "home": "austria",
+      "away": "jordan",
+      "predicted": {
+        "home": 0.607,
+        "draw": 0.23800000000000002,
+        "away": 0.155
+      },
+      "result": "3-1",
+      "actual_outcome": "主胜",
+      "brier": 0.2351,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-17T03:06:03.804594+00:00"
+  "updated_at": "2026-06-17T06:22:32.665778+00:00"
 }

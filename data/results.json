@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17 05:54 UTC",
+  "updated_at": "2026-06-17 06:30 UTC",
   "matches": [
     {
       "home": "australia",
@@ -72,6 +72,12 @@
       "away": "algeria",
       "home_score": 3,
       "away_score": 0
+    },
+    {
+      "home": "austria",
+      "away": "jordan",
+      "home_score": 3,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -180,12 +186,12 @@
       "elo": 1746
     },
     {
-      "slug": "switzerland",
-      "elo": 1724
+      "slug": "austria",
+      "elo": 1734
     },
     {
-      "slug": "austria",
-      "elo": 1720
+      "slug": "switzerland",
+      "elo": 1724
     },
     {
       "slug": "poland",
