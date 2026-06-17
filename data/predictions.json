@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17 08:53 UTC",
+  "updated_at": "2026-06-17 08:56 UTC",
   "matches": [
     {
       "home": "portugal",
@@ -122,21 +122,21 @@
       "ai": {
         "verdict": "buy",
         "pick": "葡萄牙-1.5",
-        "summary": "盘口有+5.7%edge，葡萄牙碾压局，xG差1.94，最可能比分2-0（17.5%）",
-        "edge": "+5.7%",
+        "summary": "盘口有+6%edge，葡萄牙碾压局，xG差1.94，最可能比分2-0（17.5%）",
+        "edge": "+6.0%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "葡萄牙-1.5",
-            "odds": "~1.92",
-            "reason": "模型57.8% vs 隐含52.1%，edge+5.7%"
+            "odds": "~1.93",
+            "reason": "模型57.8% vs 隐含51.8%，edge+6.0%"
           },
           {
             "market": "大小球",
-            "pick": "大2.75",
-            "odds": "~2.05",
-            "reason": "xG合计2.76，大2.5模型52.2%"
+            "pick": "大2.5",
+            "odds": "~1.85",
+            "reason": "xG合计2.76，大2.5模型52.1%"
           },
           {
             "market": "BTTS",
@@ -274,15 +274,15 @@
       "ai": {
         "verdict": "buy",
         "pick": "克罗地亚客胜",
-        "summary": "市场低估克罗地亚，模型edge+5.2%，客胜赔率5.24有价值",
-        "edge": "+5.2%",
+        "summary": "市场高估英格兰（隐含57.5%），模型仅49%。克罗地亚客胜edge+5.5%，赔率5.33有价值",
+        "edge": "+5.5%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "克罗地亚客胜",
-            "odds": "~5.24",
-            "reason": "模型24.3% vs 隐含19.1%，edge+5.2%"
+            "odds": "~5.33",
+            "reason": "模型24.3% vs 隐含18.8%，edge+5.5%"
           },
           {
             "market": "大小球",
@@ -294,7 +294,7 @@
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "两队xG合计2.77，BTTS概率55.3%"
+            "reason": "双方xG合计2.77，BTTS概率55.3%"
           },
           {
             "market": "比分",
@@ -426,15 +426,15 @@
       "ai": {
         "verdict": "buy",
         "pick": "巴拿马客胜",
-        "summary": "五五开战，巴拿马被低估，模型edge+4.8%，赔率3.31合理",
-        "edge": "+4.8%",
+        "summary": "五五开战，巴拿马被低估，模型edge+5.0%，赔率3.33合理",
+        "edge": "+5.0%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "巴拿马客胜",
-            "odds": "~3.31",
-            "reason": "模型35% vs 隐含30.2%，edge+4.8%"
+            "odds": "~3.33",
+            "reason": "模型35% vs 隐含30.0%，edge+5.0%"
           },
           {
             "market": "大小球",
@@ -979,11 +979,11 @@
         }
       },
       "ai": {
-        "verdict": "buy",
-        "pick": "平局",
-        "summary": "哥伦比亚大概率赢但赔率太低（1.39），平局4.95有model edge+2.2%",
+        "verdict": "skip",
+        "pick": "无明显价值",
+        "summary": "哥伦比亚大概率赢但赔率太低（1.39），平局+2.2%edge不够强，跳过",
         "edge": "+2.2%",
-        "confidence": "中低",
+        "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
@@ -1016,37 +1016,39 @@
   "parlays": [
     {
       "name": "🛡️ 保守串",
-      "target": "~6.4x",
+      "target": "3-5x",
+      "odds": "6.43x",
       "picks": [
         {
           "match": "portugal-dr-congo",
           "pick": "葡萄牙-1.5",
-          "odds": "~1.92",
-          "reason": "最强edge+5.7%，57.8%概率"
+          "odds": "~1.93",
+          "reason": "最强edge+6%，碾压局"
         },
         {
           "match": "ghana-panama",
           "pick": "巴拿马客胜",
-          "odds": "~3.31",
-          "reason": "edge+4.8%，35%概率"
+          "odds": "~3.33",
+          "reason": "edge+5%，五五开战有价值"
         }
       ]
     },
     {
       "name": "🔥 进攻串",
-      "target": "~59x",
+      "target": "8-15x",
+      "odds": "10.29x",
       "picks": [
+        {
+          "match": "portugal-dr-congo",
+          "pick": "葡萄牙-1.5",
+          "odds": "~1.93",
+          "reason": "最强edge+6%，稳胆"
+        },
         {
           "match": "england-croatia",
           "pick": "克罗地亚客胜",
-          "odds": "~5.24",
-          "reason": "edge+5.2%，被市场低估"
-        },
-        {
-          "match": "canada-qatar",
-          "pick": "卡塔尔客胜",
-          "odds": "~11.26",
-          "reason": "ensemble edge+5.8%，市场严重高估加拿大"
+          "odds": "~5.33",
+          "reason": "edge+5.5%，市场低估克罗地亚"
         }
       ]
     }
