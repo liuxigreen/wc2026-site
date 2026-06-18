@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 03:47 UTC",
+  "updated_at": "2026-06-18 04:10 UTC",
   "matches": [
     {
       "home": "spain",
@@ -66,6 +66,12 @@
       "away": "panama",
       "home_score": 1,
       "away_score": 0
+    },
+    {
+      "home": "uzbekistan",
+      "away": "colombia",
+      "home_score": 1,
+      "away_score": 3
     }
   ],
   "elo_rankings": [
@@ -114,12 +120,12 @@
       "elo": 1906
     },
     {
-      "slug": "ivory-coast",
-      "elo": 1887
+      "slug": "colombia",
+      "elo": 1896
     },
     {
-      "slug": "colombia",
-      "elo": 1884
+      "slug": "ivory-coast",
+      "elo": 1887
     },
     {
       "slug": "netherlands",
