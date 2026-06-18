@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-18 22:46 UTC",
+  "updated_at": "2026-06-18 23:19 UTC",
   "matches": [
     {
       "home": "mexico",
       "away": "south-korea",
       "match_time": "2026-06-19T01:00Z",
-      "hours_until": 2.2,
+      "hours_until": 1.7,
       "city": "Guadalajara",
       "venue": "Estadio Akron",
       "home_score": 0,
@@ -66,34 +66,34 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-19T01:00:00Z",
-        "home_odds": 2.08,
-        "home_implied": 48.1,
-        "away_odds": 4.13,
-        "away_implied": 24.2,
+        "home_odds": 2.05,
+        "home_implied": 48.8,
+        "away_odds": 4.25,
+        "away_implied": 23.5,
         "draw_odds": 3.33,
         "draw_implied": 30.0,
         "fav_spread": -0.5,
-        "fav_odds": 2.09,
+        "fav_odds": 2.06,
         "dog_spread": 0.5,
-        "dog_odds": 1.85,
-        "over_odds": 1.91,
+        "dog_odds": 1.88,
+        "over_odds": 1.92,
         "over_point": 2.25,
-        "under_odds": 2.0
+        "under_odds": 1.99
       },
       "ensemble": {
-        "win_a": 49.2,
+        "win_a": 49.7,
         "draw": 28.2,
-        "win_b": 22.6,
+        "win_b": 22.1,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 54.5,
-          "market_odds": 2.08,
-          "market_implied": 48.1,
-          "edge": 6.4,
-          "kelly_full": 12.4,
-          "kelly_quarter": 3.1,
+          "market_odds": 2.05,
+          "market_implied": 48.8,
+          "edge": 5.7,
+          "kelly_full": 11.2,
+          "kelly_quarter": 2.8,
           "has_edge": true
         },
         "draw": {
@@ -107,15 +107,15 @@
         },
         "away": {
           "model_pct": 20.0,
-          "market_odds": 4.13,
-          "market_implied": 24.2,
-          "edge": -4.2,
+          "market_odds": 4.25,
+          "market_implied": 23.5,
+          "edge": -3.5,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 1.91,
+          "market_odds": 1.92,
           "point": 2.25
         }
       },
@@ -157,7 +157,7 @@
       "home": "usa",
       "away": "australia",
       "match_time": "2026-06-19T19:00Z",
-      "hours_until": 20.2,
+      "hours_until": 19.7,
       "city": "Seattle, Washington",
       "venue": "Lumen Field",
       "home_score": 0,
@@ -309,7 +309,7 @@
       "home": "scotland",
       "away": "morocco",
       "match_time": "2026-06-19T22:00Z",
-      "hours_until": 23.2,
+      "hours_until": 22.7,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -372,39 +372,39 @@
         "time": "2026-06-19T22:00:00Z",
         "away_odds": 1.75,
         "away_implied": 57.1,
-        "home_odds": 5.23,
-        "home_implied": 19.1,
-        "draw_odds": 3.64,
-        "draw_implied": 27.5,
+        "home_odds": 5.25,
+        "home_implied": 19.0,
+        "draw_odds": 3.65,
+        "draw_implied": 27.4,
         "fav_spread": -0.75,
-        "fav_odds": 2.02,
+        "fav_odds": 2.01,
         "dog_spread": 0.75,
         "dog_odds": 1.89,
-        "over_odds": 2.05,
+        "over_odds": 2.04,
         "over_point": 2.25,
         "under_odds": 1.85
       },
       "ensemble": {
-        "win_a": 21.0,
+        "win_a": 20.9,
         "draw": 26.7,
-        "win_b": 52.3,
+        "win_b": 52.4,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 27.2,
-          "market_odds": 5.23,
-          "market_implied": 19.1,
-          "edge": 8.1,
-          "kelly_full": 10.0,
+          "market_odds": 5.25,
+          "market_implied": 19.0,
+          "edge": 8.2,
+          "kelly_full": 10.1,
           "kelly_quarter": 2.5,
           "has_edge": true
         },
         "draw": {
           "model_pct": 27.2,
-          "market_odds": 3.64,
-          "market_implied": 27.5,
-          "edge": -0.3,
+          "market_odds": 3.65,
+          "market_implied": 27.4,
+          "edge": -0.2,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
@@ -419,7 +419,7 @@
           "has_edge": false
         },
         "over": {
-          "market_odds": 2.05,
+          "market_odds": 2.04,
           "point": 2.25
         }
       },
