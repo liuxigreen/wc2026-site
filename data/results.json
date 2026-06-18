@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 17:54 UTC",
+  "updated_at": "2026-06-18 18:27 UTC",
   "matches": [
     {
       "home": "spain",
@@ -72,6 +72,12 @@
       "away": "colombia",
       "home_score": 1,
       "away_score": 3
+    },
+    {
+      "home": "czech-republic",
+      "away": "south-africa",
+      "home_score": 1,
+      "away_score": 1
     }
   ],
   "elo_rankings": [

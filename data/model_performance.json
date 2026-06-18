@@ -1,7 +1,7 @@
 {
-  "cumulative_brier": 0.4505,
-  "accuracy": 0.875,
-  "total_reviewed": 8,
+  "cumulative_brier": 0.492,
+  "accuracy": 0.7778,
+  "total_reviewed": 9,
   "correct_count": 7,
   "calibration_bins": [
     {
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.501,
-      "actual": 1.0,
-      "count": 3
+      "predicted": 0.494,
+      "actual": 0.75,
+      "count": 4
     },
     {
       "bin": "60-80%",
@@ -69,6 +69,11 @@
       "match": 8,
       "brier": 0.6358,
       "label": "乌兹别克斯坦 vs 哥伦比亚"
+    },
+    {
+      "match": 9,
+      "brier": 0.5,
+      "label": "捷克 vs 南非"
     }
   ],
   "match_reviews": [
@@ -191,7 +196,22 @@
       "brier": 0.1895,
       "correct": true,
       "predicted_score": "0-2"
+    },
+    {
+      "match": "捷克 vs 南非",
+      "home": "czech-republic",
+      "away": "south-africa",
+      "predicted": {
+        "home": 0.475,
+        "draw": 0.27,
+        "away": 0.256
+      },
+      "result": "1-1",
+      "actual_outcome": "平局",
+      "brier": 0.8241,
+      "correct": false,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-18T04:10:06.720580+00:00"
+  "updated_at": "2026-06-18T18:07:59.915403+00:00"
 }
