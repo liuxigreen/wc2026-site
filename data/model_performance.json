@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.492,
-  "accuracy": 0.7778,
-  "total_reviewed": 9,
-  "correct_count": 7,
+  "cumulative_brier": 0.471,
+  "accuracy": 0.8,
+  "total_reviewed": 10,
+  "correct_count": 8,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.494,
-      "actual": 0.75,
-      "count": 4
+      "predicted": 0.509,
+      "actual": 0.8,
+      "count": 5
     },
     {
       "bin": "60-80%",
@@ -74,6 +74,11 @@
       "match": 9,
       "brier": 0.5,
       "label": "捷克 vs 南非"
+    },
+    {
+      "match": 10,
+      "brier": 0.4729,
+      "label": "瑞士 vs 波黑"
     }
   ],
   "match_reviews": [
@@ -211,7 +216,22 @@
       "brier": 0.8241,
       "correct": false,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "瑞士 vs 波黑",
+      "home": "switzerland",
+      "away": "bosnia-and-herzegovina",
+      "predicted": {
+        "home": 0.568,
+        "draw": 0.25,
+        "away": 0.182
+      },
+      "result": "4-1",
+      "actual_outcome": "主胜",
+      "brier": 0.2822,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-18T18:07:59.915403+00:00"
+  "updated_at": "2026-06-18T21:03:19.541199+00:00"
 }

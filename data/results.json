@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 20:00 UTC",
+  "updated_at": "2026-06-18 21:07 UTC",
   "matches": [
     {
       "home": "spain",
@@ -77,6 +77,12 @@
       "home": "czech-republic",
       "away": "south-africa",
       "home_score": 1,
+      "away_score": 1
+    },
+    {
+      "home": "switzerland",
+      "away": "bosnia-and-herzegovina",
+      "home_score": 4,
       "away_score": 1
     }
   ],
@@ -182,16 +188,16 @@
       "elo": 1748
     },
     {
+      "slug": "switzerland",
+      "elo": 1747
+    },
+    {
       "slug": "cape-verde",
       "elo": 1746
     },
     {
       "slug": "austria",
       "elo": 1734
-    },
-    {
-      "slug": "switzerland",
-      "elo": 1724
     },
     {
       "slug": "poland",

@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-18 20:06 UTC",
+  "updated_at": "2026-06-18 21:07 UTC",
   "matches": [
     {
       "home": "canada",
       "away": "qatar",
       "match_time": "2026-06-18T22:00Z",
-      "hours_until": 2.0,
+      "hours_until": 0.9,
       "city": "Vancouver",
       "venue": "BC Place",
       "home_score": 0,
@@ -66,43 +66,43 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-18T22:00:00Z",
-        "home_odds": 1.32,
-        "home_implied": 75.8,
+        "home_odds": 1.31,
+        "home_implied": 76.3,
         "away_odds": 11.25,
         "away_implied": 8.9,
-        "draw_odds": 5.7,
-        "draw_implied": 17.5,
+        "draw_odds": 5.95,
+        "draw_implied": 16.8,
         "fav_spread": -1.5,
-        "fav_odds": 1.91,
+        "fav_odds": 1.88,
         "dog_spread": 1.5,
-        "dog_odds": 2.02,
-        "over_odds": 1.93,
+        "dog_odds": 2.05,
+        "over_odds": 1.89,
         "over_point": 2.75,
-        "under_odds": 1.98
+        "under_odds": 2.02
       },
       "ensemble": {
-        "win_a": 66.1,
-        "draw": 20.0,
+        "win_a": 66.6,
+        "draw": 19.6,
         "win_b": 13.8,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 46.9,
-          "market_odds": 1.32,
-          "market_implied": 75.8,
-          "edge": -28.9,
+          "market_odds": 1.31,
+          "market_implied": 76.3,
+          "edge": -29.4,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "draw": {
           "model_pct": 27.0,
-          "market_odds": 5.7,
-          "market_implied": 17.5,
-          "edge": 9.5,
-          "kelly_full": 11.5,
-          "kelly_quarter": 2.9,
+          "market_odds": 5.95,
+          "market_implied": 16.8,
+          "edge": 10.2,
+          "kelly_full": 12.3,
+          "kelly_quarter": 3.1,
           "has_edge": true
         },
         "away": {
@@ -115,7 +115,7 @@
           "has_edge": true
         },
         "over": {
-          "market_odds": 1.93,
+          "market_odds": 1.89,
           "point": 2.75
         }
       },
@@ -157,7 +157,7 @@
       "home": "scotland",
       "away": "morocco",
       "match_time": "2026-06-19",
-      "hours_until": 4.0,
+      "hours_until": 2.9,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -218,8 +218,8 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-19T22:00:00Z",
-        "away_odds": 1.76,
-        "away_implied": 56.8,
+        "away_odds": 1.75,
+        "away_implied": 57.1,
         "home_odds": 5.22,
         "home_implied": 19.2,
         "draw_odds": 3.64,
@@ -227,15 +227,15 @@
         "fav_spread": -0.75,
         "fav_odds": 2.02,
         "dog_spread": 0.75,
-        "dog_odds": 1.88,
+        "dog_odds": 1.89,
         "over_odds": 2.05,
         "over_point": 2.25,
         "under_odds": 1.85
       },
       "ensemble": {
-        "win_a": 21.1,
-        "draw": 26.8,
-        "win_b": 52.2,
+        "win_a": 21.0,
+        "draw": 26.7,
+        "win_b": 52.3,
         "source": "ensemble"
       },
       "edge": {
@@ -259,9 +259,9 @@
         },
         "away": {
           "model_pct": 45.6,
-          "market_odds": 1.76,
-          "market_implied": 56.8,
-          "edge": -11.2,
+          "market_odds": 1.75,
+          "market_implied": 57.1,
+          "edge": -11.5,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
@@ -309,7 +309,7 @@
       "home": "mexico",
       "away": "south-korea",
       "match_time": "2026-06-19T01:00Z",
-      "hours_until": 5.0,
+      "hours_until": 3.9,
       "city": "Guadalajara",
       "venue": "Estadio Akron",
       "home_score": 0,
@@ -370,56 +370,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-19T01:00:00Z",
-        "home_odds": 2.13,
-        "home_implied": 46.9,
-        "away_odds": 4.06,
-        "away_implied": 24.6,
-        "draw_odds": 3.27,
-        "draw_implied": 30.6,
+        "home_odds": 2.1,
+        "home_implied": 47.6,
+        "away_odds": 4.13,
+        "away_implied": 24.2,
+        "draw_odds": 3.29,
+        "draw_implied": 30.4,
         "fav_spread": -0.5,
-        "fav_odds": 2.13,
+        "fav_odds": 2.1,
         "dog_spread": 0.5,
-        "dog_odds": 1.83,
-        "over_odds": 1.99,
+        "dog_odds": 1.85,
+        "over_odds": 1.98,
         "over_point": 2.25,
-        "under_odds": 1.92
+        "under_odds": 1.93
       },
       "ensemble": {
-        "win_a": 48.5,
-        "draw": 28.7,
-        "win_b": 22.9,
+        "win_a": 48.9,
+        "draw": 28.5,
+        "win_b": 22.6,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 54.5,
-          "market_odds": 2.13,
-          "market_implied": 46.9,
-          "edge": 7.6,
-          "kelly_full": 14.2,
-          "kelly_quarter": 3.6,
+          "market_odds": 2.1,
+          "market_implied": 47.6,
+          "edge": 6.9,
+          "kelly_full": 13.1,
+          "kelly_quarter": 3.3,
           "has_edge": true
         },
         "draw": {
           "model_pct": 25.6,
-          "market_odds": 3.27,
-          "market_implied": 30.6,
-          "edge": -5.0,
+          "market_odds": 3.29,
+          "market_implied": 30.4,
+          "edge": -4.8,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "away": {
           "model_pct": 20.0,
-          "market_odds": 4.06,
-          "market_implied": 24.6,
-          "edge": -4.6,
+          "market_odds": 4.13,
+          "market_implied": 24.2,
+          "edge": -4.2,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 1.99,
+          "market_odds": 1.98,
           "point": 2.25
         }
       },
@@ -461,7 +461,7 @@
       "home": "usa",
       "away": "australia",
       "match_time": "2026-06-19T19:00Z",
-      "hours_until": 23.0,
+      "hours_until": 21.9,
       "city": "Seattle, Washington",
       "venue": "Lumen Field",
       "home_score": 0,
