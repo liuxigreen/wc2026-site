@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 00:26 UTC",
+  "updated_at": "2026-06-18 02:11 UTC",
   "matches": [
     {
       "home": "spain",
@@ -60,6 +60,12 @@
       "away": "croatia",
       "home_score": 4,
       "away_score": 2
+    },
+    {
+      "home": "ghana",
+      "away": "panama",
+      "home_score": 1,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
