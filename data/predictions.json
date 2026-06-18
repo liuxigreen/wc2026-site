@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-18 12:14 UTC",
+  "updated_at": "2026-06-18 12:45 UTC",
   "matches": [
     {
       "home": "czech-republic",
       "away": "south-africa",
       "match_time": "2026-06-18T16:00Z",
-      "hours_until": 3.8,
+      "hours_until": 3.2,
       "city": "Atlanta, Georgia",
       "venue": "Mercedes-Benz Stadium",
       "home_score": 0,
@@ -68,21 +68,21 @@
         "time": "2026-06-18T16:00:00Z",
         "home_odds": 1.85,
         "home_implied": 54.1,
-        "away_odds": 4.77,
-        "away_implied": 21.0,
-        "draw_odds": 3.63,
-        "draw_implied": 27.5,
+        "away_odds": 4.75,
+        "away_implied": 21.1,
+        "draw_odds": 3.65,
+        "draw_implied": 27.4,
         "fav_spread": -0.5,
         "fav_odds": 1.85,
         "dog_spread": 0.5,
         "dog_odds": 2.08,
-        "over_odds": 1.94,
+        "over_odds": 1.93,
         "over_point": 2.25,
-        "under_odds": 1.96
+        "under_odds": 1.98
       },
       "ensemble": {
         "win_a": 51.2,
-        "draw": 26.9,
+        "draw": 26.8,
         "win_b": 22.0,
         "source": "ensemble"
       },
@@ -98,24 +98,24 @@
         },
         "draw": {
           "model_pct": 27.0,
-          "market_odds": 3.63,
-          "market_implied": 27.5,
-          "edge": -0.5,
+          "market_odds": 3.65,
+          "market_implied": 27.4,
+          "edge": -0.4,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "away": {
           "model_pct": 25.6,
-          "market_odds": 4.77,
-          "market_implied": 21.0,
-          "edge": 4.6,
-          "kelly_full": 5.9,
-          "kelly_quarter": 1.5,
+          "market_odds": 4.75,
+          "market_implied": 21.1,
+          "edge": 4.5,
+          "kelly_full": 5.8,
+          "kelly_quarter": 1.4,
           "has_edge": true
         },
         "over": {
-          "market_odds": 1.94,
+          "market_odds": 1.93,
           "point": 2.25
         }
       },
@@ -157,7 +157,7 @@
       "home": "switzerland",
       "away": "bosnia-and-herzegovina",
       "match_time": "2026-06-18T19:00Z",
-      "hours_until": 6.8,
+      "hours_until": 6.2,
       "city": "Inglewood, California",
       "venue": "SoFi Stadium",
       "home_score": 0,
@@ -256,7 +256,7 @@
       "home": "canada",
       "away": "qatar",
       "match_time": "2026-06-18T22:00Z",
-      "hours_until": 9.8,
+      "hours_until": 9.2,
       "city": "Vancouver",
       "venue": "BC Place",
       "home_score": 0,
@@ -326,10 +326,10 @@
         "fav_spread": -1.5,
         "fav_odds": 1.91,
         "dog_spread": 1.5,
-        "dog_odds": 2.02,
-        "over_odds": 1.89,
+        "dog_odds": 2.01,
+        "over_odds": 1.9,
         "over_point": 2.75,
-        "under_odds": 2.02
+        "under_odds": 2.0
       },
       "ensemble": {
         "win_a": 67.0,
@@ -366,7 +366,7 @@
           "has_edge": true
         },
         "over": {
-          "market_odds": 1.89,
+          "market_odds": 1.9,
           "point": 2.75
         }
       },
@@ -408,7 +408,7 @@
       "home": "usa",
       "away": "australia",
       "match_time": "2026-06-19",
-      "hours_until": 11.8,
+      "hours_until": 11.2,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -560,7 +560,7 @@
       "home": "scotland",
       "away": "morocco",
       "match_time": "2026-06-19",
-      "hours_until": 11.8,
+      "hours_until": 11.2,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -621,50 +621,50 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-19T22:00:00Z",
-        "away_odds": 1.72,
-        "away_implied": 58.1,
-        "home_odds": 5.41,
-        "home_implied": 18.5,
-        "draw_odds": 3.7,
+        "away_odds": 1.71,
+        "away_implied": 58.5,
+        "home_odds": 5.43,
+        "home_implied": 18.4,
+        "draw_odds": 3.71,
         "draw_implied": 27.0,
         "fav_spread": -0.75,
-        "fav_odds": 1.97,
+        "fav_odds": 1.96,
         "dog_spread": 0.75,
-        "dog_odds": 1.93,
+        "dog_odds": 1.94,
         "over_odds": 2.03,
         "over_point": 2.25,
-        "under_odds": 1.86
+        "under_odds": 1.87
       },
       "ensemble": {
-        "win_a": 20.6,
-        "draw": 26.4,
-        "win_b": 53.0,
+        "win_a": 20.5,
+        "draw": 26.3,
+        "win_b": 53.2,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 27.2,
-          "market_odds": 5.41,
-          "market_implied": 18.5,
-          "edge": 8.7,
-          "kelly_full": 10.7,
+          "market_odds": 5.43,
+          "market_implied": 18.4,
+          "edge": 8.8,
+          "kelly_full": 10.8,
           "kelly_quarter": 2.7,
           "has_edge": true
         },
         "draw": {
           "model_pct": 27.2,
-          "market_odds": 3.7,
+          "market_odds": 3.71,
           "market_implied": 27.0,
           "edge": 0.2,
-          "kelly_full": 0.2,
+          "kelly_full": 0.3,
           "kelly_quarter": 0.1,
           "has_edge": false
         },
         "away": {
           "model_pct": 45.6,
-          "market_odds": 1.72,
-          "market_implied": 58.1,
-          "edge": -12.5,
+          "market_odds": 1.71,
+          "market_implied": 58.5,
+          "edge": -12.9,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
@@ -712,7 +712,7 @@
       "home": "mexico",
       "away": "south-korea",
       "match_time": "2026-06-19T01:00Z",
-      "hours_until": 12.8,
+      "hours_until": 12.2,
       "city": "Guadalajara",
       "venue": "Estadio Akron",
       "home_score": 0,
@@ -777,15 +777,15 @@
         "home_implied": 47.4,
         "away_odds": 3.99,
         "away_implied": 25.1,
-        "draw_odds": 3.35,
+        "draw_odds": 3.34,
         "draw_implied": 29.9,
         "fav_spread": -0.5,
         "fav_odds": 2.11,
         "dog_spread": 0.5,
         "dog_odds": 1.83,
-        "over_odds": 2.01,
+        "over_odds": 2.02,
         "over_point": 2.25,
-        "under_odds": 1.9
+        "under_odds": 1.89
       },
       "ensemble": {
         "win_a": 48.7,
@@ -805,7 +805,7 @@
         },
         "draw": {
           "model_pct": 25.6,
-          "market_odds": 3.35,
+          "market_odds": 3.34,
           "market_implied": 29.9,
           "edge": -4.3,
           "kelly_full": 0,
@@ -822,7 +822,7 @@
           "has_edge": false
         },
         "over": {
-          "market_odds": 2.01,
+          "market_odds": 2.02,
           "point": 2.25
         }
       },
