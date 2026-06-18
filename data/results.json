@@ -1,36 +1,6 @@
 {
-  "updated_at": "2026-06-17 16:54 UTC",
+  "updated_at": "2026-06-18 00:21 UTC",
   "matches": [
-    {
-      "home": "australia",
-      "away": "turkey",
-      "home_score": 2,
-      "away_score": 0
-    },
-    {
-      "home": "germany",
-      "away": "curacao",
-      "home_score": 7,
-      "away_score": 1
-    },
-    {
-      "home": "netherlands",
-      "away": "japan",
-      "home_score": 2,
-      "away_score": 2
-    },
-    {
-      "home": "ivory-coast",
-      "away": "ecuador",
-      "home_score": 1,
-      "away_score": 0
-    },
-    {
-      "home": "sweden",
-      "away": "tunisia",
-      "home_score": 5,
-      "away_score": 1
-    },
     {
       "home": "spain",
       "away": "cape-verde",
@@ -78,6 +48,18 @@
       "away": "jordan",
       "home_score": 3,
       "away_score": 1
+    },
+    {
+      "home": "portugal",
+      "away": "dr-congo",
+      "home_score": 1,
+      "away_score": 1
+    },
+    {
+      "home": "england",
+      "away": "croatia",
+      "home_score": 4,
+      "away_score": 2
     }
   ],
   "elo_rankings": [
@@ -99,7 +81,7 @@
     },
     {
       "slug": "england",
-      "elo": 1982
+      "elo": 2004
     },
     {
       "slug": "germany",
@@ -110,16 +92,16 @@
       "elo": 1963
     },
     {
-      "slug": "portugal",
-      "elo": 1934
-    },
-    {
       "slug": "japan",
       "elo": 1927
     },
     {
       "slug": "italy",
       "elo": 1915
+    },
+    {
+      "slug": "portugal",
+      "elo": 1910
     },
     {
       "slug": "brazil",
@@ -134,16 +116,16 @@
       "elo": 1884
     },
     {
-      "slug": "croatia",
-      "elo": 1878
-    },
-    {
       "slug": "netherlands",
       "elo": 1866
     },
     {
       "slug": "mexico",
       "elo": 1857
+    },
+    {
+      "slug": "croatia",
+      "elo": 1856
     },
     {
       "slug": "usa",
