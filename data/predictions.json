@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 16:46 UTC",
+  "updated_at": "2026-06-18 16:48 UTC",
   "matches": [
     {
       "home": "switzerland",
@@ -69,7 +69,7 @@
       "ai": {
         "verdict": "skip",
         "pick": "无市场数据",
-        "summary": "无Pinnacle赔率，无法计算综合edge。模型瑞士56.8%主胜，Elo差206但无市场参考",
+        "summary": "无Pinnacle赔率，无法计算edge。模型瑞士56.8%，Elo+206，但没赔率不买",
         "edge": "N/A",
         "confidence": "N/A",
         "bets": [
@@ -77,11 +77,11 @@
             "market": "胜负盘",
             "pick": "瑞士主胜",
             "odds": "N/A",
-            "reason": "模型56.8%，Elo+206，但无赔率"
+            "reason": "模型56.8%，Elo+206，无赔率"
           },
           {
             "market": "大小球",
-            "pick": "大2.25",
+            "pick": "大2.5",
             "odds": "N/A",
             "reason": "模型O2.5 52.2%，无市场线"
           },
@@ -93,9 +93,9 @@
           },
           {
             "market": "比分",
-            "pick": "1-0",
+            "pick": "1-1",
             "odds": "N/A",
-            "reason": "最可能比分，瑞士xG 1.82"
+            "reason": "最可能比分11.9%，双方xG差不大"
           }
         ]
       }
@@ -220,34 +220,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "卡塔尔客胜",
-        "summary": "加拿大被严重高估（市场76.3% vs 综合66.5%）。平局+2.6%、客胜+5.0%综合edge。大2.75有+10.1%edge",
+        "pick": "卡塔尔客胜 + 小2.75",
+        "summary": "加拿大被严重高估（市场75.8% vs 综合66.3%）。卡塔尔客胜+5.0%综合edge，模型26%支持。小2.75有+10.2%edge",
         "edge": "+5.0%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "卡塔尔客胜",
-            "odds": "~11.75",
-            "reason": "综合13.5% vs 市场8.5%，+5.0%edge"
+            "odds": "~11.65",
+            "reason": "综合13.6% vs 市场8.6%，+5.0%edge"
           },
           {
             "market": "大小球",
-            "pick": "大2.75",
+            "pick": "小2.75",
             "odds": "~1.95",
-            "reason": "估计41.2%过半+市场51.3%，+10.1%edge"
+            "reason": "模型58.9% vs 市场48.7%，+10.2%edge"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.80",
-            "reason": "模型55.9%，双方都有进攻能力"
+            "odds": "~1.83",
+            "reason": "模型55.9%，双方有进攻能力"
           },
           {
             "market": "比分",
-            "pick": "1-0",
+            "pick": "1-1",
             "odds": "~6.5",
-            "reason": "最可能比分，加拿大xG 1.61"
+            "reason": "最可能比分12.9%，xG差不大"
           }
         ]
       }
@@ -372,8 +372,8 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "澳大利亚客胜",
-        "summary": "市场完全误判！澳大利亚Elo高出235，模型50.1%客胜，市场仅19.0%，综合edge+8.6%",
+        "pick": "直接压澳大利亚客胜",
+        "summary": "澳大利亚被严重低估！综合27.6% vs 市场19.0%，+8.6%edge，模型50.1%强力支持。市场把美国当大热，实际澳洲更强",
         "edge": "+8.6%",
         "confidence": "高",
         "bets": [
@@ -381,7 +381,7 @@
             "market": "胜负盘",
             "pick": "澳大利亚客胜",
             "odds": "~5.26",
-            "reason": "综合27.6% vs 市场19.0%，+8.6%强edge"
+            "reason": "综合27.6% vs 市场19.0%，+8.6%大edge"
           },
           {
             "market": "大小球",
@@ -392,14 +392,14 @@
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.82",
+            "odds": "~1.83",
             "reason": "模型55.0%，双方都能进球"
           },
           {
             "market": "比分",
-            "pick": "1-1",
-            "odds": "~6.5",
-            "reason": "最可能比分，实力接近"
+            "pick": "1-2",
+            "odds": "~10.0",
+            "reason": "第二可能比分9.6%，澳洲赢球场景"
           }
         ]
       }
@@ -524,34 +524,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "苏格兰主胜",
-        "summary": "市场过度定价摩洛哥（58.5% vs 综合53.2%）。苏格兰主胜+2.1%综合edge，模型+8.8%支持",
-        "edge": "+2.1%",
-        "confidence": "中",
+        "pick": "大2.25",
+        "summary": "大小球是主菜！模型O2.25约64.3% vs 市场48.8%，+15.5%巨edge。苏格兰主胜也有+1.8%薄edge",
+        "edge": "+15.5%",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "苏格兰主胜",
-            "odds": "~5.43",
-            "reason": "综合20.5% vs 市场18.4%，+2.1%edge"
+            "odds": "~5.19",
+            "reason": "综合21.1% vs 市场19.3%，+1.8%薄edge"
           },
           {
             "market": "大小球",
             "pick": "大2.25",
-            "odds": "~2.03",
-            "reason": "估计63.9% vs 市场49.3%，+14.6%edge"
+            "odds": "~2.05",
+            "reason": "模型估64.3% vs 市场48.8%，+15.5%巨edge"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.78",
-            "reason": "模型56.2%，+12.9%综合edge"
+            "odds": "~1.83",
+            "reason": "模型56.2%，双方xG都不低"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "~6.5",
-            "reason": "最可能比分，双方xG接近"
+            "reason": "最可能比分13.0%，势均力敌"
           }
         ]
       }
@@ -676,34 +676,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "墨西哥主胜",
-        "summary": "综合edge仅+1.2%但模型+6.7%强支持。大2.25有+14.8%edge，BTTS+10.0%",
-        "edge": "+1.2%",
-        "confidence": "中",
+        "pick": "大2.25",
+        "summary": "和苏格兰-摩洛哥同逻辑！模型O2.25约64.3% vs 市场48.3%，+15.9%巨edge。墨西哥主胜+1.3%薄edge也有",
+        "edge": "+15.9%",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "墨西哥主胜",
-            "odds": "~2.09",
-            "reason": "综合49.0% vs 市场47.8%，+1.2%edge，模型+6.7%"
+            "odds": "~2.1",
+            "reason": "综合48.9% vs 市场47.6%，+1.3%薄edge"
           },
           {
             "market": "大小球",
             "pick": "大2.25",
-            "odds": "~2.02",
-            "reason": "估计64.3% vs 市场49.5%，+14.8%edge"
+            "odds": "~2.07",
+            "reason": "模型估64.3% vs 市场48.3%，+15.9%巨edge"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.88",
-            "reason": "模型53.3%，+10.0%综合edge"
+            "odds": "~1.83",
+            "reason": "模型53.3%，韩国有反击能力"
           },
           {
             "market": "比分",
             "pick": "2-1",
             "odds": "~9.0",
-            "reason": "最可能比分，墨西哥xG优势"
+            "reason": "第二可能比分，墨西哥xG 1.77"
           }
         ]
       }
@@ -711,38 +711,38 @@
   ],
   "parlays": [
     {
-      "name": "🛡️ 保守串",
-      "target": "11x",
+      "name": "🛡️ 保守串 (目标4.2x)",
+      "target": "4.2x",
       "picks": [
         {
-          "match": "usa-australia",
-          "pick": "澳大利亚客胜",
-          "odds": "~5.26",
-          "reason": "综合edge+8.6%，Elo碾压"
+          "match": "scotland-morocco",
+          "pick": "大2.25",
+          "odds": "~2.05",
+          "reason": "模型64.3% vs 市场48.8%，+15.5%edge"
         },
         {
           "match": "mexico-south-korea",
-          "pick": "墨西哥主胜",
-          "odds": "~2.09",
-          "reason": "综合edge+1.2%，模型+6.7%支持"
+          "pick": "大2.25",
+          "odds": "~2.07",
+          "reason": "模型64.3% vs 市场48.3%，+15.9%edge"
         }
       ]
     },
     {
-      "name": "🔥 进攻串",
-      "target": "28.5x",
+      "name": "🔥 进攻串 (目标10.8x)",
+      "target": "10.8x",
       "picks": [
         {
           "match": "usa-australia",
           "pick": "澳大利亚客胜",
           "odds": "~5.26",
-          "reason": "综合edge+8.6%，市场严重误判"
+          "reason": "综合27.6% vs 市场19.0%，+8.6%大edge"
         },
         {
           "match": "scotland-morocco",
-          "pick": "苏格兰主胜",
-          "odds": "~5.43",
-          "reason": "综合edge+2.1%，模型+8.8%支持"
+          "pick": "大2.25",
+          "odds": "~2.05",
+          "reason": "模型64.3% vs 市场48.8%，+15.5%edge"
         }
       ]
     }
