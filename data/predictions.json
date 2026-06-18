@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 10:37 UTC",
+  "updated_at": "2026-06-18 10:41 UTC",
   "matches": [
     {
       "home": "czech-republic",
@@ -120,35 +120,35 @@
         }
       },
       "ai": {
-        "verdict": "buy",
-        "pick": "大2.25",
-        "summary": "模型xG 2.76，大2.25综合概率62% vs 市场52.6%，edge +4.6%",
-        "edge": "+4.6%",
-        "confidence": "中",
+        "verdict": "skip",
+        "pick": "无明显edge",
+        "summary": "综合概率无正edge，南非客场+0.9%微弱edge但不值得冒险",
+        "edge": "+0.9%",
+        "confidence": "低",
         "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "客胜",
+            "odds": "~4.69",
+            "reason": "综合22.2% vs 隐含21.3%，edge仅+0.9%"
+          },
           {
             "market": "大小球",
             "pick": "大2.25",
             "odds": "~1.90",
-            "reason": "xG 2.76，综合概率62% vs 市场隐含52.6%，edge +4.6%"
-          },
-          {
-            "market": "胜负盘",
-            "pick": "南非客胜",
-            "odds": "~4.72",
-            "reason": "综合概率22.1% vs 市场21.2%，edge +0.9%，薄利"
+            "reason": "模型2.5线52.2%，调整到2.25约64%"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.80",
-            "reason": "模型55.7%进球双方，最可能比分1-1"
+            "odds": "~1.85",
+            "reason": "模型55.7%，两队xG均>1.1"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~7.8",
-            "reason": "最可能比分12.8%，市场赔率偏高"
+            "odds": "~6.5",
+            "reason": "最高概率比分12.8%"
           }
         ]
       }
@@ -219,35 +219,35 @@
       "ensemble": null,
       "edge": {},
       "ai": {
-        "verdict": "skip",
-        "pick": "无市场赔率",
-        "summary": "无Pinnacle赔率，无法计算edge，跳过",
-        "edge": "N/A",
-        "confidence": "N/A",
+        "verdict": "buy",
+        "pick": "瑞士-1.5",
+        "summary": "206 Elo差距，瑞士xG 1.82 vs 波黑0.94，-1.5盘33.3%概率有价值",
+        "edge": "N/A（无市场赔率）",
+        "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "瑞士主胜",
-            "odds": "N/A",
-            "reason": "模型56.8%，Elo差距206，但无市场赔率无法算edge"
+            "pick": "主胜",
+            "odds": "~1.55",
+            "reason": "模型56.8%，206 Elo差距碾压"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "xG 1.82-0.94，总xG 2.76，无市场赔率"
+            "pick": "大2.25",
+            "odds": "~1.90",
+            "reason": "模型2.5线52.2%，调整到2.25约64%"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "N/A",
-            "reason": "模型52.3%，两队进攻能力接近"
+            "odds": "~1.90",
+            "reason": "模型52.3%，波黑有能力进1球"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "N/A",
-            "reason": "最可能比分10.4%，瑞士主场强势"
+            "odds": "~7.0",
+            "reason": "最可能比分10.4%"
           }
         ]
       }
@@ -372,34 +372,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "小2.75",
-        "summary": "市场高估加拿大，模型仅47%胜率。小2.75综合概率80% vs 市场51%，edge +9.1%",
-        "edge": "+9.1%",
-        "confidence": "高",
+        "pick": "平局",
+        "summary": "综合概率平局+2.7%edge，模型+9.9%，卡塔尔+5.2%ensemble edge也值得考虑",
+        "edge": "+2.7%",
+        "confidence": "中",
         "bets": [
           {
-            "market": "大小球",
-            "pick": "小2.75",
-            "odds": "~1.96",
-            "reason": "综合概率80.2% vs 市场隐含51.0%，edge +9.1%，最强盘口"
+            "market": "胜负盘",
+            "pick": "平局",
+            "odds": "~5.85",
+            "reason": "综合19.8% vs 隐含17.1%，edge+2.7%"
           },
           {
-            "market": "胜负盘",
-            "pick": "卡塔尔客胜",
-            "odds": "~12.5",
-            "reason": "综合概率13.2% vs 市场8.0%，edge +5.2%，冷门价值"
+            "market": "大小球",
+            "pick": "大2.75",
+            "odds": "~1.93",
+            "reason": "模型2.5线52.2%，市场2.75线"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.80",
-            "reason": "模型55.9%，卡塔尔有进攻能力"
+            "odds": "~1.85",
+            "reason": "模型55.9%，两队xG>1.1"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~7.7",
-            "reason": "最可能比分12.9%，平局概率高"
+            "odds": "~7.0",
+            "reason": "最高概率比分12.9%"
           }
         ]
       }
@@ -524,34 +524,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "澳大利亚客胜",
-        "summary": "模型澳队50%胜率，市场仅19%，综合概率27.6%，edge +8.6%",
+        "pick": "客胜",
+        "summary": "澳大利亚综合27.6% vs 隐含19.0%，edge+8.6%，澳大利亚Elo 2079远超美国1844",
         "edge": "+8.6%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "澳大利亚客胜",
+            "pick": "客胜",
             "odds": "~5.27",
-            "reason": "综合概率27.6% vs 市场19.0%，edge +8.6%，高赔率高价值"
+            "reason": "综合27.6% vs 隐含19.0%，edge+8.6%"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "~1.99",
-            "reason": "模型52.2% vs 市场50.5%，edge薄但可买"
+            "odds": "~1.93",
+            "reason": "模型52.2%，两队都有进攻能力"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.82",
-            "reason": "模型55.0%，两队都有进球能力"
+            "odds": "~1.85",
+            "reason": "模型55.0%，美国主场有进攻"
           },
           {
             "market": "比分",
             "pick": "1-2",
-            "odds": "~10.4",
-            "reason": "第二可能比分9.6%，澳大利亚逆转剧本"
+            "odds": "~10.0",
+            "reason": "第二可能比分9.6%"
           }
         ]
       }
@@ -676,34 +676,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "苏格兰主胜",
-        "summary": "综合概率20.6% vs 市场18.5%，edge +2.1%，高赔率有投机价值",
-        "edge": "+2.1%",
-        "confidence": "低",
+        "pick": "主胜",
+        "summary": "模型27.2% vs 隐含18.5%，edge+8.7%，苏格兰主场+178 Elo差距不算大",
+        "edge": "+8.7%（模型edge）",
+        "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "苏格兰主胜",
+            "pick": "主胜",
             "odds": "~5.41",
-            "reason": "综合概率20.6% vs 市场18.5%，edge +2.1%，高赔率"
+            "reason": "模型27.2% vs 隐含18.5%，edge+8.7%"
           },
           {
             "market": "大小球",
             "pick": "大2.25",
-            "odds": "~2.03",
-            "reason": "xG 2.76，综合概率约62% vs 市场49.3%，可买"
+            "odds": "~1.90",
+            "reason": "模型2.5线52.2%，调整到2.25约64%"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.78",
-            "reason": "模型56.2%，两队都有进攻火力"
+            "odds": "~1.80",
+            "reason": "模型56.2%，两队都能进球"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~7.7",
-            "reason": "最可能比分13.0%，势均力敌"
+            "odds": "~6.5",
+            "reason": "最高概率比分13.0%"
           }
         ]
       }
@@ -828,34 +828,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "墨西哥主胜",
-        "summary": "综合概率48.9% vs 市场47.8%，edge +1.1%，薄利但可买",
-        "edge": "+1.1%",
-        "confidence": "低",
+        "pick": "主胜",
+        "summary": "综合48.6% vs 隐含47.2%，edge+1.4%，模型支持54.5%，177 Elo差距",
+        "edge": "+1.4%",
+        "confidence": "中低",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "墨西哥主胜",
-            "odds": "~2.09",
-            "reason": "综合概率48.9% vs 市场47.8%，edge +1.1%"
+            "pick": "主胜",
+            "odds": "~2.12",
+            "reason": "综合48.6% vs 隐含47.2%，edge+1.4%"
           },
           {
             "market": "大小球",
             "pick": "大2.25",
-            "odds": "~2.04",
-            "reason": "xG 2.76，综合概率约62%，高于市场隐含"
+            "odds": "~1.90",
+            "reason": "模型2.5线52.2%，调整到2.25约64%"
           },
           {
             "market": "BTTS",
-            "pick": "否",
-            "odds": "~1.88",
-            "reason": "模型46.7%不进球双方，墨西哥防守强"
+            "pick": "是",
+            "odds": "~1.90",
+            "reason": "模型53.3%，韩国能进1球"
           },
           {
             "market": "比分",
-            "pick": "2-0",
-            "odds": "~9.9",
-            "reason": "第三可能比分9.9%，墨西哥主场零封"
+            "pick": "1-1",
+            "odds": "~6.5",
+            "reason": "最高概率比分12.2%"
           }
         ]
       }
@@ -863,38 +863,40 @@
   ],
   "parlays": [
     {
-      "name": "🛡️ 保守串 (target 10.3x)",
-      "target": "~10.3x",
+      "name": "🛡️ 保守串",
+      "target": "3-5x",
+      "odds": "~3.96x",
       "picks": [
         {
-          "match": "canada-qatar",
-          "pick": "小2.75",
-          "odds": "~1.96",
-          "reason": "edge +9.1%，最强盘口"
+          "match": "switzerland-bosnia-and-herzegovina",
+          "pick": "瑞士-1.5",
+          "odds": "~1.87",
+          "reason": "206 Elo碾压，-1.5盘33.3%"
         },
         {
-          "match": "usa-australia",
-          "pick": "澳大利亚客胜",
-          "odds": "~5.27",
-          "reason": "edge +8.6%，模型vs市场巨大差距"
+          "match": "mexico-south-korea",
+          "pick": "主胜",
+          "odds": "~2.12",
+          "reason": "综合+1.4% edge，模型54.5%支持"
         }
       ]
     },
     {
-      "name": "🔥 进攻串 (target 10.0x)",
-      "target": "~10.0x",
+      "name": "🔥 进攻串",
+      "target": "31x",
+      "odds": "~30.8x",
       "picks": [
         {
           "match": "usa-australia",
-          "pick": "澳大利亚客胜",
+          "pick": "客胜",
           "odds": "~5.27",
-          "reason": "edge +8.6%，冷门价值"
+          "reason": "综合+8.6% edge，Elo 2079碾压"
         },
         {
-          "match": "czech-republic-south-africa",
-          "pick": "大2.25",
-          "odds": "~1.90",
-          "reason": "edge +4.6%，xG支撑"
+          "match": "canada-qatar",
+          "pick": "平局",
+          "odds": "~5.85",
+          "reason": "综合+2.7% edge，模型+9.9%"
         }
       ]
     }
