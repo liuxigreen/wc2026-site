@@ -1,241 +1,43 @@
 {
-  "updated_at": "2026-06-19 22:04 UTC",
+  "updated_at": "2026-06-19 23:06 UTC",
   "matches": [
     {
-      "home": "brazil",
-      "away": "haiti",
-      "match_time": "2026-06-20T00:30Z",
-      "hours_until": 2.5,
-      "city": "Philadelphia, Pennsylvania",
-      "venue": "Lincoln Financial Field",
+      "home": "scotland",
+      "away": "morocco",
+      "match_time": "2026-06-19T22:00Z",
+      "hours_until": -1.0,
+      "city": "Foxborough, Massachusetts",
+      "venue": "Gillette Stadium",
       "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
+      "away_score": 1,
+      "state": "in",
+      "status": "STATUS_HALFTIME",
       "money_line": {
-        "win_a": "86.9",
-        "draw": "11.2",
-        "win_b": "1.9"
+        "win_a": "27.2",
+        "draw": "27.2",
+        "win_b": "45.6"
       },
       "xg": {
-        "a": "2.57",
-        "b": "0.25"
+        "a": "1.18",
+        "b": "1.58"
       },
       "elo": {
-        "a": 1942,
-        "b": 1284,
-        "diff": 658
-      },
-      "top_scores": [
-        [
-          "2-0",
-          "19.7"
-        ],
-        [
-          "3-0",
-          "16.9"
-        ],
-        [
-          "1-0",
-          "14.9"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "53.5",
-          "under": "46.5"
-        }
-      },
-      "btts": {
-        "yes": "20.8",
-        "no": "79.2"
-      },
-      "spread": {
-        "brazil -1.5": "66.5",
-        "haiti +1.5": "33.5"
-      },
-      "half_time": {
-        "win_a": "61.9",
-        "draw": "34.6",
-        "win_b": "3.6"
-      },
-      "squad_quality": {
-        "a": 0.78,
-        "b": -1.17
-      },
-      "market_odds": null,
-      "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "buy",
-        "pick": "巴西-1.5",
-        "summary": "碾压局，Elo差658，xG 2.57 vs 0.25。模型86.9%胜率，66.5%让1.5球。无市场赔率，纯模型edge。",
-        "edge": "（模型edge）",
-        "confidence": "高",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "N/A",
-            "reason": "模型86.9%，Elo差658，碾压"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "xG合计2.82，大2.5概率53.5%"
-          },
-          {
-            "market": "BTTS",
-            "pick": "否",
-            "odds": "N/A",
-            "reason": "海地xG仅0.25，大概率零封"
-          },
-          {
-            "market": "比分",
-            "pick": "3-0",
-            "odds": "N/A",
-            "reason": "最可能比分16.9%，其次2-0(19.7%)"
-          }
-        ]
-      }
-    },
-    {
-      "home": "turkey",
-      "away": "paraguay",
-      "match_time": "2026-06-20T03:00Z",
-      "hours_until": 5.0,
-      "city": "Santa Clara, California",
-      "venue": "Levi's Stadium",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "26.3",
-        "draw": "27.1",
-        "win_b": "46.6"
-      },
-      "xg": {
-        "a": "1.16",
-        "b": "1.6"
-      },
-      "elo": {
-        "a": 1383,
-        "b": 1573,
-        "diff": -190
+        "a": 1780,
+        "b": 1958,
+        "diff": -178
       },
       "top_scores": [
         [
           "1-1",
-          "12.9"
+          "13.0"
         ],
         [
           "1-2",
-          "9.4"
+          "9.3"
         ],
         [
           "0-1",
-          "9.0"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "56.0",
-        "no": "44.0"
-      },
-      "spread": {
-        "turkey -1.5": "11.0",
-        "paraguay +1.5": "89.0"
-      },
-      "half_time": {
-        "win_a": "22.4",
-        "draw": "43.5",
-        "win_b": "34.2"
-      },
-      "squad_quality": {
-        "a": 0.71,
-        "b": -1.13
-      },
-      "market_odds": null,
-      "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "skip",
-        "pick": "—",
-        "summary": "巴拉圭模型46.6%客胜但Elo差仅190，无市场赔率确认，不值得冒险。",
-        "edge": "N/A",
-        "confidence": "低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "客胜",
-            "odds": "N/A",
-            "reason": "模型46.6%，Elo差190，但无赔率验证"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "xG合计2.76，大2.5概率52.2%"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "BTTS概率56%，双方都有进球能力"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最可能比分12.9%，平局概率高27.1%"
-          }
-        ]
-      }
-    },
-    {
-      "home": "netherlands",
-      "away": "sweden",
-      "match_time": "2026-06-20T17:00Z",
-      "hours_until": 19.0,
-      "city": "Houston, Texas",
-      "venue": "NRG Stadium",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "32.5",
-        "draw": "27.8",
-        "win_b": "39.7"
-      },
-      "xg": {
-        "a": "1.3",
-        "b": "1.46"
-      },
-      "elo": {
-        "a": 1908,
-        "b": 2011,
-        "diff": -103
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "13.2"
-        ],
-        [
-          "1-2",
           "8.8"
-        ],
-        [
-          "0-1",
-          "8.0"
         ]
       ],
       "over_under": {
@@ -245,154 +47,55 @@
         }
       },
       "btts": {
-        "yes": "57.1",
-        "no": "42.9"
+        "yes": "56.2",
+        "no": "43.8"
       },
       "spread": {
-        "netherlands -1.5": "14.8",
-        "sweden +1.5": "85.2"
+        "scotland -1.5": "11.5",
+        "morocco +1.5": "88.5"
       },
       "half_time": {
-        "win_a": "26.0",
-        "draw": "43.8",
-        "win_b": "30.2"
+        "win_a": "22.9",
+        "draw": "43.5",
+        "win_b": "33.6"
       },
       "squad_quality": {
-        "a": 1.27,
-        "b": -1.14
+        "a": 0.16,
+        "b": -0.12
       },
       "market_odds": null,
       "ensemble": null,
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "—",
-        "summary": "瑞典模型39.7%客胜略占优，但Elo差仅103，纯模型判断不可靠。",
+        "pick": "⏭️ 不推荐",
+        "summary": "比赛已在进行（半场0-1），无市场赔率，不建议追盘。",
         "edge": "N/A",
-        "confidence": "低",
+        "confidence": "N/A",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "客胜",
+            "pick": "摩洛哥胜",
             "odds": "N/A",
-            "reason": "模型39.7%，瑞典Elo更高，但优势不大"
+            "reason": "模型45.6%领先，已1-0，但无赔率无法计算edge"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，大2.5概率52.2%"
+            "reason": "模型52.2%，已进1球还需2球，半场后难度增大"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "BTTS概率57.1%，攻防均衡"
+            "reason": "模型56.2%，苏格兰落后会进攻，有机会"
           },
           {
             "market": "比分",
-            "pick": "1-1",
+            "pick": "1-2",
             "odds": "N/A",
-            "reason": "最可能比分13.2%，势均力敌"
-          }
-        ]
-      }
-    },
-    {
-      "home": "germany",
-      "away": "ivory-coast",
-      "match_time": "2026-06-20T20:00Z",
-      "hours_until": 22.0,
-      "city": "Toronto",
-      "venue": "BMO Field",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "51.9",
-        "draw": "26.2",
-        "win_b": "22.0"
-      },
-      "xg": {
-        "a": "1.71",
-        "b": "1.05"
-      },
-      "elo": {
-        "a": 2011,
-        "b": 1867,
-        "diff": 144
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "12.5"
-        ],
-        [
-          "2-1",
-          "9.7"
-        ],
-        [
-          "1-0",
-          "9.7"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "54.4",
-        "no": "45.6"
-      },
-      "spread": {
-        "germany -1.5": "29.0",
-        "ivory-coast +1.5": "71.0"
-      },
-      "half_time": {
-        "win_a": "37.3",
-        "draw": "43.1",
-        "win_b": "19.7"
-      },
-      "squad_quality": {
-        "a": 1.14,
-        "b": -0.5
-      },
-      "market_odds": null,
-      "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "skip",
-        "pick": "—",
-        "summary": "德国51.9%胜率但Elo差仅144，无市场赔率，不够强的信号。",
-        "edge": "N/A",
-        "confidence": "低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "N/A",
-            "reason": "模型51.9%，Elo差144，优势有限"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "xG合计2.76，大2.5概率52.2%"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "BTTS概率54.4%，科特迪瓦有进球能力"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最可能比分12.5%，平局概率26.2%"
+            "reason": "最可能比分9.3%，摩洛哥小胜"
           }
         ]
       }
