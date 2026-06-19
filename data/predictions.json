@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 13:46 UTC",
+  "updated_at": "2026-06-19 13:48 UTC",
   "matches": [
     {
       "home": "usa",
@@ -68,8 +68,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "N/A",
-        "summary": "澳大利亚模型46%占优，但无市场赔率无法确认edge，Elo差185不算大",
+        "pick": "—",
+        "summary": "势均力敌，模型无明确方向，无市场赔率无法算edge",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -77,19 +77,19 @@
             "market": "胜负盘",
             "pick": "客胜",
             "odds": "N/A",
-            "reason": "澳大利亚46.1%模型占优，但无赔率验证"
+            "reason": "澳大利亚Elo高185，模型46.1%但无赔率验证"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.77，O2.5=52.2%略偏大"
+            "reason": "模型52.2%接近平手，无明显方向"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "BTTS=56.1%，双方都有进攻能力"
+            "reason": "模型56.1%，两队都有进攻能力"
           },
           {
             "market": "比分",
@@ -167,8 +167,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "N/A",
-        "summary": "摩洛哥模型45.6%占优，Elo差185，无市场赔率无法确认",
+        "pick": "—",
+        "summary": "摩洛哥Elo高178但差距不够大，无市场赔率跳过",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -176,19 +176,19 @@
             "market": "胜负盘",
             "pick": "客胜",
             "odds": "N/A",
-            "reason": "摩洛哥45.6%模型占优，Elo1958vs1780"
+            "reason": "摩洛哥Elo 1958，模型45.6%但无赔率"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，O2.5=52.2%"
+            "reason": "模型52.2%，接近平手"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "BTTS=56.2%"
+            "reason": "模型56.2%"
           },
           {
             "market": "比分",
@@ -266,8 +266,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "N/A",
-        "summary": "瑞典模型39.5%小优，Elo差101，接近对决无市场赔率不碰",
+        "pick": "—",
+        "summary": "瑞典Elo略高但差距不大，模型无明确信号",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -275,19 +275,19 @@
             "market": "胜负盘",
             "pick": "客胜",
             "odds": "N/A",
-            "reason": "瑞典39.5%模型小优，Elo2028vs1927"
+            "reason": "瑞典Elo 2028，模型39.5%微弱领先"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.77，O2.5=52.2%"
+            "reason": "模型52.2%，接近平手"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "BTTS=57.1%，双方攻击力均衡"
+            "reason": "模型57.1%，两队攻击力均衡"
           },
           {
             "market": "比分",
@@ -365,8 +365,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "N/A",
-        "summary": "德国模型51.9%占优但不到60%，Elo差144中等，无赔率不碰",
+        "pick": "—",
+        "summary": "德国Elo高144但仅51.9%胜率，无市场赔率跳过",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -374,19 +374,19 @@
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "N/A",
-            "reason": "德国51.9%模型占优，Elo2021vs1877"
+            "reason": "德国Elo 2021，模型51.9%微弱领先"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，O2.5=52.2%"
+            "reason": "模型52.2%，xG合计2.76"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "BTTS=54.4%，科特迪瓦有进攻力"
+            "reason": "模型54.4%，科特迪瓦有进球能力"
           },
           {
             "market": "比分",
@@ -465,33 +465,33 @@
       "ai": {
         "verdict": "buy",
         "pick": "巴西-1.5",
-        "summary": "巴西碾压局，模型86.9%Elo差658，xG差距2.32，买巴西-1.5",
+        "summary": "直接压巴西-1.5，Elo差658碾压局，模型66.3%覆盖盘口，xG差2.32",
         "edge": "（模型edge）",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "N/A",
-            "reason": "模型86.9%，Elo差658碾压"
+            "odds": "~1.12",
+            "reason": "模型87%但赔率太低，不值得"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "巴西xG 2.57单独就超2.5，O2.5=53.5%"
+            "odds": "~1.85",
+            "reason": "xG合计2.82，模型53.5%看好大球"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "N/A",
-            "reason": "海地xG仅0.25，BTTS否=79.2%"
+            "odds": "~1.30",
+            "reason": "海地xG仅0.25，几乎不可能进球"
           },
           {
             "market": "比分",
             "pick": "3-0",
-            "odds": "N/A",
-            "reason": "最可能比分16.9%，巴西零封概率高"
+            "odds": "~6.0",
+            "reason": "最可能大胜比分16.9%，其次2-0(19.7%)"
           }
         ]
       }
@@ -563,8 +563,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "N/A",
-        "summary": "巴拉圭模型46.6%占优，土耳其Elo仅1383，无赔率不碰",
+        "pick": "—",
+        "summary": "巴拉圭Elo高190但仅46.6%胜率，模型不支持大注",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -572,19 +572,19 @@
             "market": "胜负盘",
             "pick": "客胜",
             "odds": "N/A",
-            "reason": "巴拉圭46.6%模型占优，Elo1573vs1383"
+            "reason": "巴拉圭Elo 1573，模型46.6%微弱领先"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，O2.5=52.2%"
+            "reason": "模型52.2%，接近平手"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "BTTS=56.0%"
+            "reason": "模型56.0%"
           },
           {
             "market": "比分",
