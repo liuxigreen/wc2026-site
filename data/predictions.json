@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 04:07 UTC",
+  "updated_at": "2026-06-19 04:08 UTC",
   "matches": [
     {
       "home": "usa",
@@ -69,33 +69,33 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "澳大利亚模型46.1%稍占优，但无市场赔率确认，不冒险",
+        "summary": "澳大利亚模型46.1%，Elo差185，无市场赔率验证。模型不够强，跳过。",
         "edge": "N/A",
-        "confidence": "—",
+        "confidence": "N/A",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "客胜",
+            "pick": "澳大利亚胜",
             "odds": "N/A",
-            "reason": "澳大利亚46.1%模型略优，无赔率无法算edge"
+            "reason": "模型46.1%但无赔率，edge不明"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "模型52.2%，接近50/50，无明确方向"
+            "reason": "xG 2.77，略高于2.5线"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "模型56.1% BTTS Yes，xG双方都>1"
+            "reason": "模型56.1% BTTS是"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "xG 1.17 vs 1.6，最可能平局比分"
+            "reason": "最可能比分12.9%"
           }
         ]
       }
@@ -168,33 +168,33 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "摩洛哥模型45.6%，与美国-澳洲结构类似，无赔率不碰",
+        "summary": "摩洛哥模型45.1%，Elo差178，无市场赔率。接近局，跳过。",
         "edge": "N/A",
-        "confidence": "—",
+        "confidence": "N/A",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "客胜",
+            "pick": "摩洛哥胜",
             "odds": "N/A",
-            "reason": "摩洛哥45.6%模型略优，无赔率确认"
+            "reason": "模型45.6%，Elo差178"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "模型52.2%，接近50/50"
+            "reason": "xG 2.76，略高于2.5线"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "模型56.2% BTTS Yes，双方xG都>1"
+            "reason": "模型56.2% BTTS是"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "xG 1.18 vs 1.58，最可能平局比分"
+            "reason": "最可能比分13.0%"
           }
         ]
       }
@@ -267,33 +267,33 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "瑞典模型39.5%略优，荷兰也不弱，接近50/50无赔率不碰",
+        "summary": "瑞典模型39.5%，Elo差101，无市场赔率。势均力敌，跳过。",
         "edge": "N/A",
-        "confidence": "—",
+        "confidence": "N/A",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "客胜",
+            "pick": "瑞典胜",
             "odds": "N/A",
-            "reason": "瑞典39.5%最高但差距不大，无赔率"
+            "reason": "模型39.5%，Elo差101"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "模型52.2%，xG差小"
+            "reason": "xG 2.77，略高于2.5线"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "模型57.1% BTTS Yes，双方攻击力都不错"
+            "reason": "模型57.1% BTTS是"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "xG 1.31 vs 1.46，最接近的对决"
+            "reason": "最可能比分13.2%"
           }
         ]
       }
@@ -366,33 +366,33 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "德国模型51.9%，Elo差144但xG差仅0.66，不够强信号",
+        "summary": "德国模型51.9%，Elo差144，无市场赔率。不够强，跳过。",
         "edge": "N/A",
-        "confidence": "—",
+        "confidence": "N/A",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "主胜",
+            "pick": "德国胜",
             "odds": "N/A",
-            "reason": "德国51.9%，Elo 2021 vs 1877，但仅52%太接近"
+            "reason": "模型51.9%，Elo差144"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "模型52.2%，xG 1.71+1.05=2.76"
+            "reason": "xG 2.76，略高于2.5线"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "模型54.4% BTTS Yes，科特迪瓦xG 1.05不低"
+            "reason": "模型54.4% BTTS是"
           },
           {
             "market": "比分",
-            "pick": "2-1",
+            "pick": "1-1",
             "odds": "N/A",
-            "reason": "德国xG优势不大，1球小胜最可能"
+            "reason": "最可能比分12.5%"
           }
         ]
       }
@@ -464,34 +464,34 @@
       "edge": {},
       "ai": {
         "verdict": "buy",
-        "pick": "直接压巴西",
-        "summary": "巴西86.9%碾压局，Elo差658，xG 2.57 vs 0.25，无悬念",
+        "pick": "巴西-1.5",
+        "summary": "巴西碾压局，模型86.9%，Elo差658，xG 2.57 vs 0.25。无市场赔率，纯模型edge。",
         "edge": "（模型edge）",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "主胜",
+            "pick": "巴西-1.5",
             "odds": "N/A",
-            "reason": "巴西86.9%，Elo差658，碾压"
+            "reason": "模型86.9%，Elo差658，碾压"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "巴西xG 2.57，大概率单独破2.5"
+            "reason": "xG 2.57 vs 0.25，总计2.82"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "N/A",
-            "reason": "海地xG 0.25，模型79.2% BTTS No"
+            "reason": "海地xG仅0.25，79.2%概率不进球"
           },
           {
             "market": "比分",
             "pick": "3-0",
             "odds": "N/A",
-            "reason": "xG差2.32，巴西大概率3球+零封"
+            "reason": "最可能比分16.9%，其次2-0(19.7%)"
           }
         ]
       }
@@ -564,33 +564,33 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "巴拉圭模型46.6%略优，但与美国/苏格兰结构类似，无赔率不碰",
+        "summary": "巴拉圭模型46.6%，Elo差190，无市场赔率。接近局，跳过。",
         "edge": "N/A",
-        "confidence": "—",
+        "confidence": "N/A",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "客胜",
+            "pick": "巴拉圭胜",
             "odds": "N/A",
-            "reason": "巴拉圭46.6%模型略优，Elo 1573>1383"
+            "reason": "模型46.6%，Elo差190"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "模型52.2%，xG差小"
+            "reason": "xG 2.76，略高于2.5线"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "模型56.0% BTTS Yes"
+            "reason": "模型56.0% BTTS是"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "xG 1.16 vs 1.60，最可能平局"
+            "reason": "最可能比分12.9%"
           }
         ]
       }
