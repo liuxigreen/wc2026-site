@@ -1,110 +1,11 @@
 {
-  "updated_at": "2026-06-19 18:44 UTC",
+  "updated_at": "2026-06-19 19:49 UTC",
   "matches": [
-    {
-      "home": "usa",
-      "away": "australia",
-      "match_time": "2026-06-19T19:00Z",
-      "hours_until": 0.3,
-      "city": "Seattle, Washington",
-      "venue": "Lumen Field",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "26.7",
-        "draw": "27.2",
-        "win_b": "46.1"
-      },
-      "xg": {
-        "a": "1.17",
-        "b": "1.6"
-      },
-      "elo": {
-        "a": 1884,
-        "b": 2069,
-        "diff": -185
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "12.9"
-        ],
-        [
-          "1-2",
-          "9.4"
-        ],
-        [
-          "0-1",
-          "8.9"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "56.1",
-        "no": "43.9"
-      },
-      "spread": {
-        "usa -1.5": "11.2",
-        "australia +1.5": "88.8"
-      },
-      "half_time": {
-        "win_a": "22.6",
-        "draw": "43.5",
-        "win_b": "33.9"
-      },
-      "squad_quality": {
-        "a": 0.0,
-        "b": -1.09
-      },
-      "market_odds": null,
-      "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "skip",
-        "pick": "无市场赔率，无法计算edge",
-        "summary": "模型澳大利亚最高46.1%但<60%，无市场赔率验证，不推荐",
-        "edge": "N/A",
-        "confidence": "低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "澳大利亚不败",
-            "odds": "N/A",
-            "reason": "模型46.1%最高但不够强"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "模型O2.5=52.2%，接近均衡"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "模型BTTS=56.1%"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最可能比分12.9%"
-          }
-        ]
-      }
-    },
     {
       "home": "scotland",
       "away": "morocco",
       "match_time": "2026-06-19T22:00Z",
-      "hours_until": 3.3,
+      "hours_until": 2.2,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -203,7 +104,7 @@
       "home": "germany",
       "away": "ivory-coast",
       "match_time": "2026-06-20",
-      "hours_until": 5.3,
+      "hours_until": 4.2,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -302,7 +203,7 @@
       "home": "brazil",
       "away": "haiti",
       "match_time": "2026-06-20T00:30Z",
-      "hours_until": 5.8,
+      "hours_until": 4.7,
       "city": "Philadelphia, Pennsylvania",
       "venue": "Lincoln Financial Field",
       "home_score": 0,
@@ -401,7 +302,7 @@
       "home": "turkey",
       "away": "paraguay",
       "match_time": "2026-06-20T03:00Z",
-      "hours_until": 8.3,
+      "hours_until": 7.2,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -500,7 +401,7 @@
       "home": "netherlands",
       "away": "sweden",
       "match_time": "2026-06-20T17:00Z",
-      "hours_until": 22.3,
+      "hours_until": 21.2,
       "city": "Houston, Texas",
       "venue": "NRG Stadium",
       "home_score": 0,
