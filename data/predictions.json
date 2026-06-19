@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-19 19:50 UTC",
+  "updated_at": "2026-06-19 20:12 UTC",
   "matches": [
     {
       "home": "scotland",
       "away": "morocco",
       "match_time": "2026-06-19T22:00Z",
-      "hours_until": 2.2,
+      "hours_until": 1.8,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -101,109 +101,10 @@
       }
     },
     {
-      "home": "germany",
-      "away": "ivory-coast",
-      "match_time": "2026-06-20",
-      "hours_until": 4.2,
-      "city": "",
-      "venue": "",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "Scheduled",
-      "money_line": {
-        "win_a": "51.9",
-        "draw": "26.2",
-        "win_b": "22.0"
-      },
-      "xg": {
-        "a": "1.71",
-        "b": "1.05"
-      },
-      "elo": {
-        "a": 2021,
-        "b": 1877,
-        "diff": 144
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "12.5"
-        ],
-        [
-          "2-1",
-          "9.7"
-        ],
-        [
-          "1-0",
-          "9.7"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "54.4",
-        "no": "45.6"
-      },
-      "spread": {
-        "germany -1.5": "29.0",
-        "ivory-coast +1.5": "71.0"
-      },
-      "half_time": {
-        "win_a": "37.3",
-        "draw": "43.1",
-        "win_b": "19.7"
-      },
-      "squad_quality": {
-        "a": 1.14,
-        "b": -0.5
-      },
-      "market_odds": null,
-      "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "skip",
-        "pick": "—",
-        "summary": "德国51.9%主场优势不足60%，无赔率无法判断edge",
-        "edge": "N/A",
-        "confidence": "低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "N/A",
-            "reason": "模型51.9%，Elo差144，主场优势一般"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "模型52.2%，xG合计2.76"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "模型54.4%，科特迪瓦有反击能力"
-          },
-          {
-            "market": "比分",
-            "pick": "2-1",
-            "odds": "N/A",
-            "reason": "德国小胜最可能比分"
-          }
-        ]
-      }
-    },
-    {
       "home": "brazil",
       "away": "haiti",
       "match_time": "2026-06-20T00:30Z",
-      "hours_until": 4.7,
+      "hours_until": 4.3,
       "city": "Philadelphia, Pennsylvania",
       "venue": "Lincoln Financial Field",
       "home_score": 0,
@@ -308,7 +209,7 @@
       "home": "turkey",
       "away": "paraguay",
       "match_time": "2026-06-20T03:00Z",
-      "hours_until": 7.2,
+      "hours_until": 6.8,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -407,7 +308,7 @@
       "home": "netherlands",
       "away": "sweden",
       "match_time": "2026-06-20T17:00Z",
-      "hours_until": 21.2,
+      "hours_until": 20.8,
       "city": "Houston, Texas",
       "venue": "NRG Stadium",
       "home_score": 0,
@@ -498,6 +399,105 @@
             "pick": "1-1",
             "odds": "N/A",
             "reason": "势均力敌最可能平局"
+          }
+        ]
+      }
+    },
+    {
+      "home": "germany",
+      "away": "ivory-coast",
+      "match_time": "2026-06-20T20:00Z",
+      "hours_until": 23.8,
+      "city": "Toronto",
+      "venue": "BMO Field",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
+      "money_line": {
+        "win_a": "51.9",
+        "draw": "26.2",
+        "win_b": "22.0"
+      },
+      "xg": {
+        "a": "1.71",
+        "b": "1.05"
+      },
+      "elo": {
+        "a": 2011,
+        "b": 1867,
+        "diff": 144
+      },
+      "top_scores": [
+        [
+          "1-1",
+          "12.5"
+        ],
+        [
+          "2-1",
+          "9.7"
+        ],
+        [
+          "1-0",
+          "9.7"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.2",
+          "under": "47.8"
+        }
+      },
+      "btts": {
+        "yes": "54.4",
+        "no": "45.6"
+      },
+      "spread": {
+        "germany -1.5": "29.0",
+        "ivory-coast +1.5": "71.0"
+      },
+      "half_time": {
+        "win_a": "37.3",
+        "draw": "43.1",
+        "win_b": "19.7"
+      },
+      "squad_quality": {
+        "a": 1.14,
+        "b": -0.5
+      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {},
+      "ai": {
+        "verdict": "skip",
+        "pick": "—",
+        "summary": "德国51.9%主场优势不足60%，无赔率无法判断edge",
+        "edge": "N/A",
+        "confidence": "低",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "主胜",
+            "odds": "N/A",
+            "reason": "模型51.9%，Elo差144，主场优势一般"
+          },
+          {
+            "market": "大小球",
+            "pick": "大2.5",
+            "odds": "N/A",
+            "reason": "模型52.2%，xG合计2.76"
+          },
+          {
+            "market": "BTTS",
+            "pick": "是",
+            "odds": "N/A",
+            "reason": "模型54.4%，科特迪瓦有反击能力"
+          },
+          {
+            "market": "比分",
+            "pick": "2-1",
+            "odds": "N/A",
+            "reason": "德国小胜最可能比分"
           }
         ]
       }
