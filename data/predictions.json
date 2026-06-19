@@ -1,110 +1,11 @@
 {
-  "updated_at": "2026-06-19 00:57 UTC",
+  "updated_at": "2026-06-19 01:29 UTC",
   "matches": [
-    {
-      "home": "mexico",
-      "away": "south-korea",
-      "match_time": "2026-06-19T01:00Z",
-      "hours_until": 0.1,
-      "city": "Guadalajara",
-      "venue": "Estadio Akron",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "54.5",
-        "draw": "25.6",
-        "win_b": "20.0"
-      },
-      "xg": {
-        "a": "1.77",
-        "b": "0.99"
-      },
-      "elo": {
-        "a": 1930,
-        "b": 1753,
-        "diff": 177
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "12.2"
-        ],
-        [
-          "1-0",
-          "10.1"
-        ],
-        [
-          "2-0",
-          "9.9"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "53.3",
-        "no": "46.7"
-      },
-      "spread": {
-        "mexico -1.5": "31.3",
-        "south-korea +1.5": "68.7"
-      },
-      "half_time": {
-        "win_a": "38.8",
-        "draw": "42.8",
-        "win_b": "18.4"
-      },
-      "squad_quality": {
-        "a": 0.32,
-        "b": 0.23
-      },
-      "market_odds": null,
-      "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "skip",
-        "pick": "—",
-        "summary": "墨西哥54.5%胜率，Elo差177，势均力敌无市场赔率验证",
-        "edge": "N/A",
-        "confidence": "—",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "N/A",
-            "reason": "模型54.5%，Elo差177，不够强"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "模型52.2%，接近五五开"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "双方xG均>0.9，53.3%"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最可能比分12.2%"
-          }
-        ]
-      }
-    },
     {
       "home": "usa",
       "away": "australia",
       "match_time": "2026-06-19T19:00Z",
-      "hours_until": 18.1,
+      "hours_until": 17.5,
       "city": "Seattle, Washington",
       "venue": "Lumen Field",
       "home_score": 0,
@@ -203,7 +104,7 @@
       "home": "scotland",
       "away": "morocco",
       "match_time": "2026-06-19T22:00Z",
-      "hours_until": 21.1,
+      "hours_until": 20.5,
       "city": "Foxborough, Massachusetts",
       "venue": "Gillette Stadium",
       "home_score": 0,
@@ -302,7 +203,7 @@
       "home": "turkey",
       "away": "paraguay",
       "match_time": "2026-06-20",
-      "hours_until": 23.1,
+      "hours_until": 22.5,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -401,7 +302,7 @@
       "home": "netherlands",
       "away": "sweden",
       "match_time": "2026-06-20",
-      "hours_until": 23.1,
+      "hours_until": 22.5,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -500,7 +401,7 @@
       "home": "germany",
       "away": "ivory-coast",
       "match_time": "2026-06-20",
-      "hours_until": 23.1,
+      "hours_until": 22.5,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -599,7 +500,7 @@
       "home": "brazil",
       "away": "haiti",
       "match_time": "2026-06-20T00:30Z",
-      "hours_until": 23.6,
+      "hours_until": 23.0,
       "city": "Philadelphia, Pennsylvania",
       "venue": "Lincoln Financial Field",
       "home_score": 0,
