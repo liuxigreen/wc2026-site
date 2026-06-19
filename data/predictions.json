@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 22:03 UTC",
+  "updated_at": "2026-06-19 22:04 UTC",
   "matches": [
     {
       "home": "brazil",
@@ -69,7 +69,7 @@
       "ai": {
         "verdict": "buy",
         "pick": "巴西-1.5",
-        "summary": "巴西86.9%碾压局，Elo差658，xG差距2.32，-1.5盘66.5%概率",
+        "summary": "碾压局，Elo差658，xG 2.57 vs 0.25。模型86.9%胜率，66.5%让1.5球。无市场赔率，纯模型edge。",
         "edge": "（模型edge）",
         "confidence": "高",
         "bets": [
@@ -83,19 +83,19 @@
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "巴西xG 2.57单独就够，大2.5概率53.5%"
+            "reason": "xG合计2.82，大2.5概率53.5%"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "N/A",
-            "reason": "海地xG仅0.25，BTTS仅20.8%"
+            "reason": "海地xG仅0.25，大概率零封"
           },
           {
             "market": "比分",
             "pick": "3-0",
             "odds": "N/A",
-            "reason": "最可能比分之一16.9%，巴西碾压局"
+            "reason": "最可能比分16.9%，其次2-0(19.7%)"
           }
         ]
       }
@@ -168,7 +168,7 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "巴拉圭略占优但差距不大，无市场赔率无法确认edge",
+        "summary": "巴拉圭模型46.6%客胜但Elo差仅190，无市场赔率确认，不值得冒险。",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -176,25 +176,25 @@
             "market": "胜负盘",
             "pick": "客胜",
             "odds": "N/A",
-            "reason": "模型46.6%最高但不到50%"
+            "reason": "模型46.6%，Elo差190，但无赔率验证"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG 2.76，略高于2.5线"
+            "reason": "xG合计2.76，大2.5概率52.2%"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "双方xG均>1，BTTS 56.0%"
+            "reason": "BTTS概率56%，双方都有进球能力"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "最可能比分12.9%"
+            "reason": "最可能比分12.9%，平局概率高27.1%"
           }
         ]
       }
@@ -267,7 +267,7 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "三方混战，瑞典略占优但无市场赔率确认",
+        "summary": "瑞典模型39.7%客胜略占优，但Elo差仅103，纯模型判断不可靠。",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -275,25 +275,25 @@
             "market": "胜负盘",
             "pick": "客胜",
             "odds": "N/A",
-            "reason": "模型39.7%最高，Elo差-103"
+            "reason": "模型39.7%，瑞典Elo更高，但优势不大"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG 2.76，BTTS 57.1%"
+            "reason": "xG合计2.76，大2.5概率52.2%"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "双方xG均>1.2，BTTS 57.1%"
+            "reason": "BTTS概率57.1%，攻防均衡"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "最可能比分13.2%，三方混战平局概率高"
+            "reason": "最可能比分13.2%，势均力敌"
           }
         ]
       }
@@ -366,7 +366,7 @@
       "ai": {
         "verdict": "skip",
         "pick": "—",
-        "summary": "德国51.9%略占优势，但不到60%无法确认，无市场赔率",
+        "summary": "德国51.9%胜率但Elo差仅144，无市场赔率，不够强的信号。",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -374,25 +374,25 @@
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "N/A",
-            "reason": "模型51.9%，Elo差144，微弱优势"
+            "reason": "模型51.9%，Elo差144，优势有限"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG 2.76，BTTS 54.4%"
+            "reason": "xG合计2.76，大2.5概率52.2%"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "科特迪瓦xG 1.05有进攻能力"
+            "reason": "BTTS概率54.4%，科特迪瓦有进球能力"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "最可能比分12.5%，势均力敌"
+            "reason": "最可能比分12.5%，平局概率26.2%"
           }
         ]
       }
