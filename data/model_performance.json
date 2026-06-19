@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.4666,
-  "accuracy": 0.8182,
-  "total_reviewed": 11,
-  "correct_count": 9,
+  "cumulative_brier": 0.4538,
+  "accuracy": 0.8333,
+  "total_reviewed": 12,
+  "correct_count": 10,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.502,
-      "actual": 0.833,
-      "count": 6
+      "predicted": 0.509,
+      "actual": 0.857,
+      "count": 7
     },
     {
       "bin": "60-80%",
@@ -84,6 +84,11 @@
       "match": 11,
       "brier": 0.4296,
       "label": "加拿大 vs 卡塔尔"
+    },
+    {
+      "match": 12,
+      "brier": 0.4604,
+      "label": "墨西哥 vs 韩国"
     }
   ],
   "match_reviews": [
@@ -251,7 +256,22 @@
       "brier": 0.4225,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "墨西哥 vs 韩国",
+      "home": "mexico",
+      "away": "south-korea",
+      "predicted": {
+        "home": 0.545,
+        "draw": 0.256,
+        "away": 0.2
+      },
+      "result": "1-0",
+      "actual_outcome": "主胜",
+      "brier": 0.3126,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-19T00:09:25.805532+00:00"
+  "updated_at": "2026-06-19T03:02:51.849232+00:00"
 }

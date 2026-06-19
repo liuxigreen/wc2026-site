@@ -1,43 +1,43 @@
 {
-  "updated_at": "2026-06-19 02:32 UTC",
+  "updated_at": "2026-06-19 03:03 UTC",
   "matches": [
     {
-      "home": "mexico",
-      "away": "south-korea",
-      "match_time": "2026-06-19T01:00Z",
-      "hours_until": -1.5,
-      "city": "Guadalajara",
-      "venue": "Estadio Akron",
-      "home_score": 1,
+      "home": "usa",
+      "away": "australia",
+      "match_time": "2026-06-19T19:00Z",
+      "hours_until": 15.9,
+      "city": "Seattle, Washington",
+      "venue": "Lumen Field",
+      "home_score": 0,
       "away_score": 0,
-      "state": "in",
-      "status": "STATUS_SECOND_HALF",
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
       "money_line": {
-        "win_a": "54.5",
-        "draw": "25.6",
-        "win_b": "20.0"
+        "win_a": "26.7",
+        "draw": "27.2",
+        "win_b": "46.1"
       },
       "xg": {
-        "a": "1.77",
-        "b": "0.99"
+        "a": "1.17",
+        "b": "1.6"
       },
       "elo": {
-        "a": 1930,
-        "b": 1753,
-        "diff": 177
+        "a": 1884,
+        "b": 2069,
+        "diff": -185
       },
       "top_scores": [
         [
           "1-1",
-          "12.2"
+          "12.9"
         ],
         [
-          "1-0",
-          "10.1"
+          "1-2",
+          "9.4"
         ],
         [
-          "2-0",
-          "9.9"
+          "0-1",
+          "8.9"
         ]
       ],
       "over_under": {
@@ -47,21 +47,351 @@
         }
       },
       "btts": {
-        "yes": "53.3",
-        "no": "46.7"
+        "yes": "56.1",
+        "no": "43.9"
       },
       "spread": {
-        "mexico -1.5": "31.3",
-        "south-korea +1.5": "68.7"
+        "usa -1.5": "11.2",
+        "australia +1.5": "88.8"
       },
       "half_time": {
-        "win_a": "38.8",
-        "draw": "42.8",
-        "win_b": "18.4"
+        "win_a": "22.6",
+        "draw": "43.5",
+        "win_b": "33.9"
       },
       "squad_quality": {
-        "a": 0.32,
-        "b": 0.23
+        "a": 0.0,
+        "b": -1.09
+      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {}
+    },
+    {
+      "home": "scotland",
+      "away": "morocco",
+      "match_time": "2026-06-19T22:00Z",
+      "hours_until": 18.9,
+      "city": "Foxborough, Massachusetts",
+      "venue": "Gillette Stadium",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
+      "money_line": {
+        "win_a": "27.2",
+        "draw": "27.2",
+        "win_b": "45.6"
+      },
+      "xg": {
+        "a": "1.18",
+        "b": "1.58"
+      },
+      "elo": {
+        "a": 1780,
+        "b": 1958,
+        "diff": -178
+      },
+      "top_scores": [
+        [
+          "1-1",
+          "13.0"
+        ],
+        [
+          "1-2",
+          "9.3"
+        ],
+        [
+          "0-1",
+          "8.8"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.2",
+          "under": "47.8"
+        }
+      },
+      "btts": {
+        "yes": "56.2",
+        "no": "43.8"
+      },
+      "spread": {
+        "scotland -1.5": "11.5",
+        "morocco +1.5": "88.5"
+      },
+      "half_time": {
+        "win_a": "22.9",
+        "draw": "43.5",
+        "win_b": "33.6"
+      },
+      "squad_quality": {
+        "a": 0.16,
+        "b": -0.12
+      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {}
+    },
+    {
+      "home": "netherlands",
+      "away": "sweden",
+      "match_time": "2026-06-20",
+      "hours_until": 20.9,
+      "city": "",
+      "venue": "",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "Scheduled",
+      "money_line": {
+        "win_a": "32.7",
+        "draw": "27.8",
+        "win_b": "39.5"
+      },
+      "xg": {
+        "a": "1.31",
+        "b": "1.46"
+      },
+      "elo": {
+        "a": 1927,
+        "b": 2028,
+        "diff": -101
+      },
+      "top_scores": [
+        [
+          "1-1",
+          "13.2"
+        ],
+        [
+          "1-2",
+          "8.7"
+        ],
+        [
+          "0-1",
+          "8.0"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.2",
+          "under": "47.8"
+        }
+      },
+      "btts": {
+        "yes": "57.1",
+        "no": "42.9"
+      },
+      "spread": {
+        "netherlands -1.5": "14.9",
+        "sweden +1.5": "85.1"
+      },
+      "half_time": {
+        "win_a": "26.1",
+        "draw": "43.8",
+        "win_b": "30.1"
+      },
+      "squad_quality": {
+        "a": 1.27,
+        "b": -1.14
+      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {}
+    },
+    {
+      "home": "germany",
+      "away": "ivory-coast",
+      "match_time": "2026-06-20",
+      "hours_until": 20.9,
+      "city": "",
+      "venue": "",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "Scheduled",
+      "money_line": {
+        "win_a": "51.9",
+        "draw": "26.2",
+        "win_b": "22.0"
+      },
+      "xg": {
+        "a": "1.71",
+        "b": "1.05"
+      },
+      "elo": {
+        "a": 2021,
+        "b": 1877,
+        "diff": 144
+      },
+      "top_scores": [
+        [
+          "1-1",
+          "12.5"
+        ],
+        [
+          "2-1",
+          "9.7"
+        ],
+        [
+          "1-0",
+          "9.7"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.2",
+          "under": "47.8"
+        }
+      },
+      "btts": {
+        "yes": "54.4",
+        "no": "45.6"
+      },
+      "spread": {
+        "germany -1.5": "29.0",
+        "ivory-coast +1.5": "71.0"
+      },
+      "half_time": {
+        "win_a": "37.3",
+        "draw": "43.1",
+        "win_b": "19.7"
+      },
+      "squad_quality": {
+        "a": 1.14,
+        "b": -0.5
+      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {}
+    },
+    {
+      "home": "brazil",
+      "away": "haiti",
+      "match_time": "2026-06-20T00:30Z",
+      "hours_until": 21.4,
+      "city": "Philadelphia, Pennsylvania",
+      "venue": "Lincoln Financial Field",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
+      "money_line": {
+        "win_a": "86.9",
+        "draw": "11.2",
+        "win_b": "1.9"
+      },
+      "xg": {
+        "a": "2.57",
+        "b": "0.25"
+      },
+      "elo": {
+        "a": 1942,
+        "b": 1284,
+        "diff": 658
+      },
+      "top_scores": [
+        [
+          "2-0",
+          "19.7"
+        ],
+        [
+          "3-0",
+          "16.9"
+        ],
+        [
+          "1-0",
+          "14.9"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "53.5",
+          "under": "46.5"
+        }
+      },
+      "btts": {
+        "yes": "20.8",
+        "no": "79.2"
+      },
+      "spread": {
+        "brazil -1.5": "66.5",
+        "haiti +1.5": "33.5"
+      },
+      "half_time": {
+        "win_a": "61.9",
+        "draw": "34.6",
+        "win_b": "3.6"
+      },
+      "squad_quality": {
+        "a": 0.78,
+        "b": -1.17
+      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {}
+    },
+    {
+      "home": "turkey",
+      "away": "paraguay",
+      "match_time": "2026-06-20T03:00Z",
+      "hours_until": 23.9,
+      "city": "Santa Clara, California",
+      "venue": "Levi's Stadium",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
+      "money_line": {
+        "win_a": "26.3",
+        "draw": "27.1",
+        "win_b": "46.6"
+      },
+      "xg": {
+        "a": "1.16",
+        "b": "1.6"
+      },
+      "elo": {
+        "a": 1383,
+        "b": 1573,
+        "diff": -190
+      },
+      "top_scores": [
+        [
+          "1-1",
+          "12.9"
+        ],
+        [
+          "1-2",
+          "9.4"
+        ],
+        [
+          "0-1",
+          "9.0"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.2",
+          "under": "47.8"
+        }
+      },
+      "btts": {
+        "yes": "56.0",
+        "no": "44.0"
+      },
+      "spread": {
+        "turkey -1.5": "11.0",
+        "paraguay +1.5": "89.0"
+      },
+      "half_time": {
+        "win_a": "22.4",
+        "draw": "43.5",
+        "win_b": "34.2"
+      },
+      "squad_quality": {
+        "a": 0.71,
+        "b": -1.13
       },
       "market_odds": null,
       "ensemble": null,

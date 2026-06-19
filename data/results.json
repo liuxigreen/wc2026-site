@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 02:31 UTC",
+  "updated_at": "2026-06-19 03:03 UTC",
   "matches": [
     {
       "home": "france",
@@ -66,6 +66,12 @@
       "away": "qatar",
       "home_score": 6,
       "away_score": 0
+    },
+    {
+      "home": "mexico",
+      "away": "south-korea",
+      "home_score": 1,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
@@ -122,12 +128,12 @@
       "elo": 1887
     },
     {
-      "slug": "netherlands",
-      "elo": 1866
+      "slug": "mexico",
+      "elo": 1872
     },
     {
-      "slug": "mexico",
-      "elo": 1857
+      "slug": "netherlands",
+      "elo": 1866
     },
     {
       "slug": "croatia",
@@ -163,7 +169,7 @@
     },
     {
       "slug": "south-korea",
-      "elo": 1767
+      "elo": 1752
     },
     {
       "slug": "belgium",
