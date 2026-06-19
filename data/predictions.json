@@ -1,110 +1,11 @@
 {
-  "updated_at": "2026-06-19 20:23 UTC",
+  "updated_at": "2026-06-19 22:03 UTC",
   "matches": [
-    {
-      "home": "scotland",
-      "away": "morocco",
-      "match_time": "2026-06-19T22:00Z",
-      "hours_until": 1.8,
-      "city": "Foxborough, Massachusetts",
-      "venue": "Gillette Stadium",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "27.2",
-        "draw": "27.2",
-        "win_b": "45.6"
-      },
-      "xg": {
-        "a": "1.18",
-        "b": "1.58"
-      },
-      "elo": {
-        "a": 1780,
-        "b": 1958,
-        "diff": -178
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "13.0"
-        ],
-        [
-          "1-2",
-          "9.3"
-        ],
-        [
-          "0-1",
-          "8.8"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "56.2",
-        "no": "43.8"
-      },
-      "spread": {
-        "scotland -1.5": "11.5",
-        "morocco +1.5": "88.5"
-      },
-      "half_time": {
-        "win_a": "22.9",
-        "draw": "43.5",
-        "win_b": "33.6"
-      },
-      "squad_quality": {
-        "a": 0.16,
-        "b": -0.12
-      },
-      "market_odds": null,
-      "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "skip",
-        "pick": "—",
-        "summary": "摩洛哥略占优但差距不大，无市场赔率无法确认edge",
-        "edge": "N/A",
-        "confidence": "低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "客胜",
-            "odds": "N/A",
-            "reason": "模型45.6%最高但不到50%"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "xG 2.76，略高于2.5线"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "双方xG均>1，BTTS 56.2%"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最可能比分13.0%"
-          }
-        ]
-      }
-    },
     {
       "home": "brazil",
       "away": "haiti",
       "match_time": "2026-06-20T00:30Z",
-      "hours_until": 4.3,
+      "hours_until": 2.5,
       "city": "Philadelphia, Pennsylvania",
       "venue": "Lincoln Financial Field",
       "home_score": 0,
@@ -203,7 +104,7 @@
       "home": "turkey",
       "away": "paraguay",
       "match_time": "2026-06-20T03:00Z",
-      "hours_until": 6.8,
+      "hours_until": 5.0,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -302,7 +203,7 @@
       "home": "netherlands",
       "away": "sweden",
       "match_time": "2026-06-20T17:00Z",
-      "hours_until": 20.8,
+      "hours_until": 19.0,
       "city": "Houston, Texas",
       "venue": "NRG Stadium",
       "home_score": 0,
@@ -401,7 +302,7 @@
       "home": "germany",
       "away": "ivory-coast",
       "match_time": "2026-06-20T20:00Z",
-      "hours_until": 23.8,
+      "hours_until": 22.0,
       "city": "Toronto",
       "venue": "BMO Field",
       "home_score": 0,

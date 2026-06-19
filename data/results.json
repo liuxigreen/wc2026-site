@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 20:12 UTC",
+  "updated_at": "2026-06-19 22:03 UTC",
   "matches": [
     {
       "home": "france",
@@ -72,13 +72,15 @@
       "away": "south-korea",
       "home_score": 1,
       "away_score": 0
+    },
+    {
+      "home": "usa",
+      "away": "australia",
+      "home_score": 2,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
-    {
-      "slug": "australia",
-      "elo": 2114
-    },
     {
       "slug": "argentina",
       "elo": 2070
@@ -90,6 +92,10 @@
     {
       "slug": "france",
       "elo": 2053
+    },
+    {
+      "slug": "australia",
+      "elo": 2051
     },
     {
       "slug": "england",
@@ -120,6 +126,10 @@
       "elo": 1906
     },
     {
+      "slug": "usa",
+      "elo": 1897
+    },
+    {
       "slug": "colombia",
       "elo": 1896
     },
@@ -138,10 +148,6 @@
     {
       "slug": "croatia",
       "elo": 1856
-    },
-    {
-      "slug": "usa",
-      "elo": 1834
     },
     {
       "slug": "senegal",
