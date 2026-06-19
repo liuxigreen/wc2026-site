@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.471,
-  "accuracy": 0.8,
-  "total_reviewed": 10,
-  "correct_count": 8,
+  "cumulative_brier": 0.4666,
+  "accuracy": 0.8182,
+  "total_reviewed": 11,
+  "correct_count": 9,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.509,
-      "actual": 0.8,
-      "count": 5
+      "predicted": 0.502,
+      "actual": 0.833,
+      "count": 6
     },
     {
       "bin": "60-80%",
@@ -79,6 +79,11 @@
       "match": 10,
       "brier": 0.4729,
       "label": "瑞士 vs 波黑"
+    },
+    {
+      "match": 11,
+      "brier": 0.4296,
+      "label": "加拿大 vs 卡塔尔"
     }
   ],
   "match_reviews": [
@@ -231,7 +236,22 @@
       "brier": 0.2822,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "加拿大 vs 卡塔尔",
+      "home": "canada",
+      "away": "qatar",
+      "predicted": {
+        "home": 0.469,
+        "draw": 0.27,
+        "away": 0.26
+      },
+      "result": "6-0",
+      "actual_outcome": "主胜",
+      "brier": 0.4225,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-18T21:03:19.541199+00:00"
+  "updated_at": "2026-06-19T00:09:25.805532+00:00"
 }

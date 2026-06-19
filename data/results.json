@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19 00:01 UTC",
+  "updated_at": "2026-06-19 00:24 UTC",
   "matches": [
     {
       "home": "france",
@@ -60,6 +60,12 @@
       "away": "bosnia-and-herzegovina",
       "home_score": 4,
       "away_score": 1
+    },
+    {
+      "home": "canada",
+      "away": "qatar",
+      "home_score": 6,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
@@ -176,12 +182,12 @@
       "elo": 1734
     },
     {
-      "slug": "poland",
-      "elo": 1715
+      "slug": "canada",
+      "elo": 1732
     },
     {
-      "slug": "canada",
-      "elo": 1695
+      "slug": "poland",
+      "elo": 1715
     },
     {
       "slug": "serbia",
