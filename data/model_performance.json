@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5187,
-  "accuracy": 0.6562,
-  "total_reviewed": 32,
-  "correct_count": 21,
+  "cumulative_brier": 0.5103,
+  "accuracy": 0.6667,
+  "total_reviewed": 33,
+  "correct_count": 22,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -18,9 +18,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.688,
-      "actual": 0.75,
-      "count": 8
+      "predicted": 0.679,
+      "actual": 0.778,
+      "count": 9
     },
     {
       "bin": "80-100%",
@@ -189,6 +189,11 @@
       "match": 32,
       "brier": 0.3967,
       "label": "土耳其 vs 巴拉圭"
+    },
+    {
+      "match": 33,
+      "brier": 0.3634,
+      "label": "荷兰 vs 瑞典"
     }
   ],
   "match_reviews": [
@@ -671,7 +676,22 @@
       "brier": 0.8414,
       "correct": false,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "荷兰 vs 瑞典",
+      "home": "netherlands",
+      "away": "sweden",
+      "predicted": {
+        "home": 0.602,
+        "draw": 0.24,
+        "away": 0.158
+      },
+      "result": "5-1",
+      "actual_outcome": "主胜",
+      "brier": 0.241,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-20T10:51:19.074328+00:00"
+  "updated_at": "2026-06-20T19:47:06.719641+00:00"
 }

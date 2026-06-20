@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 18:45 UTC",
+  "updated_at": "2026-06-20 19:47 UTC",
   "matches": [
     {
       "home": "austria",
@@ -78,6 +78,12 @@
       "away": "paraguay",
       "home_score": 0,
       "away_score": 1
+    },
+    {
+      "home": "netherlands",
+      "away": "sweden",
+      "home_score": 5,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -103,7 +109,7 @@
     },
     {
       "slug": "netherlands",
-      "elo": 1930
+      "elo": 1952
     },
     {
       "slug": "germany",
@@ -162,10 +168,6 @@
       "elo": 1790
     },
     {
-      "slug": "sweden",
-      "elo": 1779
-    },
-    {
       "slug": "norway",
       "elo": 1771
     },
@@ -180,6 +182,10 @@
     {
       "slug": "austria",
       "elo": 1762
+    },
+    {
+      "slug": "sweden",
+      "elo": 1757
     },
     {
       "slug": "south-korea",
