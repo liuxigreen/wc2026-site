@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 03:52 UTC",
+  "updated_at": "2026-06-20 03:56 UTC",
   "matches": [
     {
       "home": "austria",
@@ -80,36 +80,28 @@
       "elo": 2070
     },
     {
-      "slug": "sweden",
-      "elo": 2066
-    },
-    {
       "slug": "france",
       "elo": 2053
+    },
+    {
+      "slug": "spain",
+      "elo": 2048
     },
     {
       "slug": "england",
       "elo": 2004
     },
     {
-      "slug": "australia",
-      "elo": 2001
+      "slug": "brazil",
+      "elo": 1983
     },
     {
-      "slug": "morocco",
-      "elo": 1982
+      "slug": "netherlands",
+      "elo": 1930
     },
     {
       "slug": "germany",
-      "elo": 1965
-    },
-    {
-      "slug": "usa",
-      "elo": 1947
-    },
-    {
-      "slug": "japan",
-      "elo": 1927
+      "elo": 1930
     },
     {
       "slug": "italy",
@@ -117,79 +109,91 @@
     },
     {
       "slug": "portugal",
-      "elo": 1910
+      "elo": 1909
     },
     {
-      "slug": "brazil",
-      "elo": 1908
+      "slug": "morocco",
+      "elo": 1904
     },
     {
       "slug": "colombia",
       "elo": 1896
     },
     {
-      "slug": "ivory-coast",
-      "elo": 1887
-    },
-    {
-      "slug": "mexico",
-      "elo": 1872
-    },
-    {
-      "slug": "netherlands",
-      "elo": 1866
+      "slug": "japan",
+      "elo": 1863
     },
     {
       "slug": "croatia",
       "elo": 1856
     },
     {
+      "slug": "mexico",
+      "elo": 1856
+    },
+    {
+      "slug": "belgium",
+      "elo": 1853
+    },
+    {
+      "slug": "usa",
+      "elo": 1847
+    },
+    {
+      "slug": "uruguay",
+      "elo": 1823
+    },
+    {
       "slug": "senegal",
       "elo": 1817
     },
     {
-      "slug": "egypt",
-      "elo": 1794
+      "slug": "switzerland",
+      "elo": 1809
     },
     {
       "slug": "denmark",
       "elo": 1790
     },
     {
-      "slug": "spain",
-      "elo": 1778
+      "slug": "sweden",
+      "elo": 1779
     },
     {
-      "slug": "uruguay",
-      "elo": 1770
+      "slug": "norway",
+      "elo": 1771
     },
     {
-      "slug": "scotland",
-      "elo": 1757
+      "slug": "australia",
+      "elo": 1768
     },
     {
-      "slug": "south-korea",
-      "elo": 1752
-    },
-    {
-      "slug": "belgium",
-      "elo": 1748
-    },
-    {
-      "slug": "switzerland",
-      "elo": 1747
-    },
-    {
-      "slug": "cape-verde",
-      "elo": 1746
+      "slug": "ecuador",
+      "elo": 1762
     },
     {
       "slug": "austria",
-      "elo": 1734
+      "elo": 1762
+    },
+    {
+      "slug": "south-korea",
+      "elo": 1739
     },
     {
       "slug": "canada",
-      "elo": 1732
+      "elo": 1735
+    },
+    {
+      "slug": "ivory-coast",
+      "elo": 1734
+    },
+    {
+      "slug": "turkey",
+      "elo": 1720
+    },
+    {
+      "slug": "iran",
+      "elo": 1716
     },
     {
       "slug": "poland",
@@ -198,10 +202,6 @@
     {
       "slug": "serbia",
       "elo": 1695
-    },
-    {
-      "slug": "new-zealand",
-      "elo": 1685
     }
   ]
 }
