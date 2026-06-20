@@ -1,24 +1,6 @@
 {
-  "updated_at": "2026-06-19 23:02 UTC",
+  "updated_at": "2026-06-20 00:12 UTC",
   "matches": [
-    {
-      "home": "france",
-      "away": "senegal",
-      "home_score": 3,
-      "away_score": 1
-    },
-    {
-      "home": "iraq",
-      "away": "norway",
-      "home_score": 1,
-      "away_score": 4
-    },
-    {
-      "home": "argentina",
-      "away": "algeria",
-      "home_score": 3,
-      "away_score": 0
-    },
     {
       "home": "austria",
       "away": "jordan",
@@ -78,6 +60,12 @@
       "away": "australia",
       "home_score": 2,
       "away_score": 0
+    },
+    {
+      "home": "scotland",
+      "away": "morocco",
+      "home_score": 0,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -102,12 +90,12 @@
       "elo": 2004
     },
     {
-      "slug": "germany",
-      "elo": 1965
+      "slug": "morocco",
+      "elo": 1982
     },
     {
-      "slug": "morocco",
-      "elo": 1963
+      "slug": "germany",
+      "elo": 1965
     },
     {
       "slug": "japan",
@@ -166,12 +154,12 @@
       "elo": 1778
     },
     {
-      "slug": "scotland",
-      "elo": 1776
-    },
-    {
       "slug": "uruguay",
       "elo": 1770
+    },
+    {
+      "slug": "scotland",
+      "elo": 1757
     },
     {
       "slug": "south-korea",

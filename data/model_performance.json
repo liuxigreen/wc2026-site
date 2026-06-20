@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.4822,
-  "accuracy": 0.7692,
-  "total_reviewed": 13,
-  "correct_count": 10,
+  "cumulative_brier": 0.4795,
+  "accuracy": 0.7857,
+  "total_reviewed": 14,
+  "correct_count": 11,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.503,
-      "actual": 0.75,
-      "count": 8
+      "predicted": 0.497,
+      "actual": 0.778,
+      "count": 9
     },
     {
       "bin": "60-80%",
@@ -94,6 +94,11 @@
       "match": 13,
       "brier": 0.4603,
       "label": "美国 vs 澳大利亚"
+    },
+    {
+      "match": 14,
+      "brier": 0.5007,
+      "label": "苏格兰 vs 摩洛哥"
     }
   ],
   "match_reviews": [
@@ -291,7 +296,22 @@
       "brier": 0.8238,
       "correct": false,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "苏格兰 vs 摩洛哥",
+      "home": "scotland",
+      "away": "morocco",
+      "predicted": {
+        "home": 0.272,
+        "draw": 0.272,
+        "away": 0.456
+      },
+      "result": "0-1",
+      "actual_outcome": "客胜",
+      "brier": 0.4439,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-19T21:36:58.330817+00:00"
+  "updated_at": "2026-06-20T00:10:32.891101+00:00"
 }
