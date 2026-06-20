@@ -1,163 +1,11 @@
 {
-  "updated_at": "2026-06-20 19:50 UTC",
+  "updated_at": "2026-06-20 20:22 UTC",
   "matches": [
-    {
-      "home": "germany",
-      "away": "ivory-coast",
-      "match_time": "2026-06-20T20:00Z",
-      "hours_until": 0.2,
-      "city": "Toronto",
-      "venue": "BMO Field",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "61.3",
-        "draw": "23.7",
-        "win_b": "15.1"
-      },
-      "xg": {
-        "a": "1.91",
-        "b": "0.85"
-      },
-      "elo": {
-        "a": 1976,
-        "b": 1714,
-        "diff": 262
-      },
-      "top_scores": [
-        [
-          "2-0",
-          "11.5"
-        ],
-        [
-          "1-1",
-          "11.3"
-        ],
-        [
-          "1-0",
-          "11.0"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.1",
-          "under": "47.9"
-        }
-      },
-      "btts": {
-        "yes": "49.9",
-        "no": "50.1"
-      },
-      "spread": {
-        "germany -1.5": "37.4",
-        "ivory-coast +1.5": "62.6"
-      },
-      "half_time": {
-        "win_a": "43.0",
-        "draw": "41.9",
-        "win_b": "15.1"
-      },
-      "squad_quality": {
-        "a": 1.14,
-        "b": -0.5
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-20T20:00:00Z",
-        "home_odds": 1.45,
-        "home_implied": 69.0,
-        "away_odds": 7.5,
-        "away_implied": 13.3,
-        "draw_odds": 5.0,
-        "draw_implied": 20.0,
-        "fav_spread": -1.25,
-        "fav_odds": 2.09,
-        "dog_spread": 1.25,
-        "dog_odds": 1.85,
-        "over_odds": 1.97,
-        "over_point": 3.0,
-        "under_odds": 1.93
-      },
-      "ensemble": {
-        "win_a": 65.6,
-        "draw": 20.8,
-        "win_b": 13.6,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 61.3,
-          "market_odds": 1.45,
-          "market_implied": 69.0,
-          "edge": -7.7,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 23.7,
-          "market_odds": 5.0,
-          "market_implied": 20.0,
-          "edge": 3.7,
-          "kelly_full": 4.6,
-          "kelly_quarter": 1.2,
-          "has_edge": true
-        },
-        "away": {
-          "model_pct": 15.1,
-          "market_odds": 7.5,
-          "market_implied": 13.3,
-          "edge": 1.8,
-          "kelly_full": 2.0,
-          "kelly_quarter": 0.5,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.97,
-          "point": 3.0
-        }
-      },
-      "ai": {
-        "verdict": "buy",
-        "pick": "小3.0",
-        "summary": "模型U3.0=70%，市场隐含52%，edge +18%。xG 2.76，高线必走小。",
-        "edge": "+18.3%",
-        "confidence": "高",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "平局",
-            "odds": "~5.0",
-            "reason": "模型平局23.7%，市场20%，微弱正edge"
-          },
-          {
-            "market": "大小球",
-            "pick": "小3.0",
-            "odds": "~1.93",
-            "reason": "模型U3.0=70%，市场隐含52%，+18%"
-          },
-          {
-            "market": "BTTS",
-            "pick": "否",
-            "odds": "~2.0",
-            "reason": "BTTS No 50.1%，接近中性"
-          },
-          {
-            "market": "比分",
-            "pick": "2-0",
-            "odds": "~6.5",
-            "reason": "最可能比分11.5%"
-          }
-        ]
-      }
-    },
     {
       "home": "ecuador",
       "away": "curacao",
       "match_time": "2026-06-21T00:00Z",
-      "hours_until": 4.2,
+      "hours_until": 3.6,
       "city": "Kansas City, Missouri",
       "venue": "GEHA Field at Arrowhead Stadium",
       "home_score": 0,
@@ -256,7 +104,7 @@
       "home": "uruguay",
       "away": "cape-verde",
       "match_time": "2026-06-21",
-      "hours_until": 4.2,
+      "hours_until": 3.6,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -408,7 +256,7 @@
       "home": "tunisia",
       "away": "japan",
       "match_time": "2026-06-21T04:00Z",
-      "hours_until": 8.2,
+      "hours_until": 7.6,
       "city": "Guadalupe",
       "venue": "Estadio BBVA",
       "home_score": 0,
@@ -469,50 +317,50 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-21T04:00:00Z",
-        "away_odds": 1.52,
-        "away_implied": 65.8,
-        "home_odds": 7.7,
-        "home_implied": 13.0,
-        "draw_odds": 4.3,
-        "draw_implied": 23.3,
+        "away_odds": 1.48,
+        "away_implied": 67.6,
+        "home_odds": 8.0,
+        "home_implied": 12.5,
+        "draw_odds": 4.5,
+        "draw_implied": 22.2,
         "fav_spread": -1.0,
-        "fav_odds": 1.88,
+        "fav_odds": 1.84,
         "dog_spread": 1.0,
-        "dog_odds": 2.06,
+        "dog_odds": 2.11,
         "over_odds": 1.85,
         "over_point": 2.25,
-        "under_odds": 2.06
+        "under_odds": 2.07
       },
       "ensemble": {
-        "win_a": 15.1,
-        "draw": 23.7,
-        "win_b": 61.2,
+        "win_a": 14.8,
+        "draw": 22.9,
+        "win_b": 62.3,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 20.8,
-          "market_odds": 7.7,
-          "market_implied": 13.0,
-          "edge": 7.8,
-          "kelly_full": 9.0,
-          "kelly_quarter": 2.2,
+          "market_odds": 8.0,
+          "market_implied": 12.5,
+          "edge": 8.3,
+          "kelly_full": 9.5,
+          "kelly_quarter": 2.4,
           "has_edge": true
         },
         "draw": {
           "model_pct": 25.8,
-          "market_odds": 4.3,
-          "market_implied": 23.3,
-          "edge": 2.5,
-          "kelly_full": 3.3,
-          "kelly_quarter": 0.8,
+          "market_odds": 4.5,
+          "market_implied": 22.2,
+          "edge": 3.6,
+          "kelly_full": 4.6,
+          "kelly_quarter": 1.2,
           "has_edge": true
         },
         "away": {
           "model_pct": 53.3,
-          "market_odds": 1.52,
-          "market_implied": 65.8,
-          "edge": -12.5,
+          "market_odds": 1.48,
+          "market_implied": 67.6,
+          "edge": -14.3,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
@@ -560,7 +408,7 @@
       "home": "spain",
       "away": "saudi-arabia",
       "match_time": "2026-06-21T16:00Z",
-      "hours_until": 20.2,
+      "hours_until": 19.6,
       "city": "Atlanta, Georgia",
       "venue": "Mercedes-Benz Stadium",
       "home_score": 0,
@@ -712,7 +560,7 @@
       "home": "belgium",
       "away": "iran",
       "match_time": "2026-06-21T19:00Z",
-      "hours_until": 23.2,
+      "hours_until": 22.6,
       "city": "Inglewood, California",
       "venue": "SoFi Stadium",
       "home_score": 0,
