@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 01:42 UTC",
+  "updated_at": "2026-06-20 02:48 UTC",
   "matches": [
     {
       "home": "austria",
@@ -66,6 +66,12 @@
       "away": "morocco",
       "home_score": 0,
       "away_score": 1
+    },
+    {
+      "home": "brazil",
+      "away": "haiti",
+      "home_score": 3,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
@@ -111,7 +117,7 @@
     },
     {
       "slug": "brazil",
-      "elo": 1906
+      "elo": 1908
     },
     {
       "slug": "usa",
