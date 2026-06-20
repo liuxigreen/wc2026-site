@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 21:22 UTC",
+  "updated_at": "2026-06-20 21:24 UTC",
   "matches": [
     {
       "home": "ecuador",
@@ -711,38 +711,38 @@
   ],
   "parlays": [
     {
-      "name": "🛡️ 保守串 (target 3.6x)",
-      "odds": "3.63",
+      "name": "🛡️ 保守串 (target 3.9x)",
+      "odds": "3.87",
       "picks": [
         {
-          "match": "germany-ivory-coast",
-          "pick": "小3.0",
-          "odds": "~1.93",
-          "reason": "U3.0 +18% edge"
+          "match": "uruguay-cape-verde",
+          "pick": "大2.25",
+          "odds": "~2.06",
+          "reason": "O2.25 +15.6% edge，xG 2.76"
         },
         {
           "match": "spain-saudi-arabia",
           "pick": "小3.25",
           "odds": "~1.88",
-          "reason": "U3.25 +28% edge"
+          "reason": "U3.25 +28% edge，高线必走小"
         }
       ]
     },
     {
-      "name": "🔥 进攻串 (target 9.4x)",
-      "odds": "9.4",
+      "name": "🔥 进攻串 (target 9.3x)",
+      "odds": "9.27",
       "picks": [
         {
-          "match": "germany-ivory-coast",
-          "pick": "平局",
-          "odds": "~5.0",
-          "reason": "模型平局23.7%，+3.7%"
+          "match": "uruguay-cape-verde",
+          "pick": "大2.25",
+          "odds": "~2.06",
+          "reason": "O2.25 +15.6% edge"
         },
         {
-          "match": "spain-saudi-arabia",
-          "pick": "小3.25",
-          "odds": "~1.88",
-          "reason": "U3.25 +28% edge"
+          "match": "tunisia-japan",
+          "pick": "平局",
+          "odds": "~4.50",
+          "reason": "模型25.8%vs市场22.2%，+3.6% edge"
         }
       ]
     }
