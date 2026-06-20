@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 21:55 UTC",
+  "updated_at": "2026-06-20 22:33 UTC",
   "matches": [
     {
       "home": "austria",
@@ -84,6 +84,12 @@
       "away": "sweden",
       "home_score": 5,
       "away_score": 1
+    },
+    {
+      "home": "germany",
+      "away": "ivory-coast",
+      "home_score": 2,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -113,7 +119,7 @@
     },
     {
       "slug": "germany",
-      "elo": 1930
+      "elo": 1940
     },
     {
       "slug": "italy",
@@ -197,7 +203,7 @@
     },
     {
       "slug": "ivory-coast",
-      "elo": 1734
+      "elo": 1724
     },
     {
       "slug": "iran",

@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5103,
-  "accuracy": 0.6667,
-  "total_reviewed": 33,
-  "correct_count": 22,
+  "cumulative_brier": 0.502,
+  "accuracy": 0.6765,
+  "total_reviewed": 34,
+  "correct_count": 23,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -18,9 +18,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.679,
-      "actual": 0.778,
-      "count": 9
+      "predicted": 0.672,
+      "actual": 0.8,
+      "count": 10
     },
     {
       "bin": "80-100%",
@@ -194,6 +194,11 @@
       "match": 33,
       "brier": 0.3634,
       "label": "荷兰 vs 瑞典"
+    },
+    {
+      "match": 34,
+      "brier": 0.3372,
+      "label": "德国 vs 科特迪瓦"
     }
   ],
   "match_reviews": [
@@ -691,7 +696,22 @@
       "brier": 0.241,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "德国 vs 科特迪瓦",
+      "home": "germany",
+      "away": "ivory-coast",
+      "predicted": {
+        "home": 0.613,
+        "draw": 0.237,
+        "away": 0.151
+      },
+      "result": "2-1",
+      "actual_outcome": "主胜",
+      "brier": 0.2287,
+      "correct": true,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-20T19:47:06.719641+00:00"
+  "updated_at": "2026-06-20T22:33:11.182934+00:00"
 }
