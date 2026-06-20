@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 07:19 UTC",
+  "updated_at": "2026-06-20 07:22 UTC",
   "matches": [
     {
       "home": "netherlands",
@@ -122,33 +122,33 @@
       "ai": {
         "verdict": "buy",
         "pick": "小3.0",
-        "summary": "市场线3.0高于模型2.5，Poisson估under 3.0≈70%，市场隐含54.6%，edge+15.4%",
-        "edge": "+15.4%",
+        "summary": "模型xG 2.76 vs 市场线3.0，Under +18.2% edge。荷兰进攻效率一般，瑞典防守不差。",
+        "edge": "+18.2%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "1.71",
-            "reason": "ensemble 57.7%，市场58.5%，无edge，不推荐"
+            "odds": "~1.71",
+            "reason": "ensemble 57.7%，市场定价精准无edge"
           },
           {
             "market": "大小球",
             "pick": "小3.0",
-            "odds": "1.83",
-            "reason": "模型under≈70% vs 市场54.6%，+15.4%edge"
+            "odds": "~1.83",
+            "reason": "xG 2.76，市场线3.0偏高，Under +18.2%"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~1.98",
-            "reason": "BTTS 50.5/49.5，接近平手，无edge"
+            "odds": "~1.95",
+            "reason": "BTTS 50.5/49.5，无明显edge"
           },
           {
             "market": "比分",
-            "pick": "2-1",
-            "odds": "~8.0",
-            "reason": "xG 1.89+0.87，最可能比分之一"
+            "pick": "2-0",
+            "odds": "~7.5",
+            "reason": "最可能比分11.3%，搭配Under逻辑"
           }
         ]
       }
@@ -274,33 +274,33 @@
       "ai": {
         "verdict": "buy",
         "pick": "小3.0",
-        "summary": "市场线3.0，模型under≈70.1% vs 市场51.0%，+19.1%edge",
-        "edge": "+19.1%",
+        "summary": "xG 2.76 vs 市场线3.0，Under +18.9% edge。科特迪瓦防守能力被低估。",
+        "edge": "+18.9%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "平局",
-            "odds": "4.74",
-            "reason": "ensemble 21.4% vs 市场21.1%，+0.3%edge，薄"
+            "pick": "主胜",
+            "odds": "~1.53",
+            "reason": "ensemble 62.7%，市场已充分定价"
           },
           {
             "market": "大小球",
             "pick": "小3.0",
-            "odds": "1.96",
-            "reason": "模型under≈70.1% vs 市场51.0%，+19.1%edge"
+            "odds": "~1.96",
+            "reason": "xG 2.76 vs 线3.0，Under +18.9%"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~2.0",
-            "reason": "BTTS 49.9/50.1，接近平手"
+            "odds": "~1.96",
+            "reason": "BTTS 49.9/50.1，接近均势"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~7.5",
-            "reason": "xG 1.91+0.85，德国低比分胜最可能"
+            "odds": "~7.0",
+            "reason": "最可能比分11.5%，符合Under逻辑"
           }
         ]
       }
@@ -371,35 +371,35 @@
       "ensemble": null,
       "edge": {},
       "ai": {
-        "verdict": "skip",
-        "pick": "无市场赔率",
-        "summary": "无Pinnacle赔率，模型77.8%但<80%阈值，无法计算edge，跳过",
-        "edge": "N/A",
-        "confidence": "N/A",
+        "verdict": "buy",
+        "pick": "主胜（模型edge）",
+        "summary": "无市场赔率，但模型77.8%Elo差486，碾压局。仅参考模型信号。",
+        "edge": "（模型edge）",
+        "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "N/A",
-            "reason": "模型77.8%，Elo差486，碾压局但无赔率"
+            "reason": "模型77.8%，Elo差486，无悬念"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG 2.29+0.48=2.77，略高于2.5线"
+            "reason": "xG 2.76，大概率3球+"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "N/A",
-            "reason": "BTTS 34.7/65.3，库拉索xG仅0.48"
+            "reason": "库拉索xG仅0.48，难进球"
           },
           {
             "market": "比分",
             "pick": "2-0",
             "odds": "N/A",
-            "reason": "最可能比分，厄瓜多尔xG 2.29"
+            "reason": "最可能比分16.5%"
           }
         ]
       }
@@ -525,33 +525,33 @@
       "ai": {
         "verdict": "buy",
         "pick": "小3.25",
-        "summary": "西班牙1.09严重overpriced，market线3.25高于模型，under+7.2%edge；平局也有+7.2%",
-        "edge": "+7.2%",
-        "confidence": "中",
+        "summary": "xG 2.76 vs 市场线3.25，Under +14.6% edge。西班牙控球但不一定大比分。",
+        "edge": "+14.6%",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "平局",
-            "odds": "10.82",
-            "reason": "ensemble 11.0% vs 市场9.2%，+7.2%edge，长赔率高回报"
+            "pick": "主胜",
+            "odds": "~1.09",
+            "reason": "ensemble 84.9%，赔率太低无价值"
           },
           {
             "market": "大小球",
             "pick": "小3.25",
-            "odds": "1.97",
-            "reason": "模型under≈70% vs 市场50.8%，+7.2%edge"
+            "odds": "~1.97",
+            "reason": "xG 2.76 vs 线3.25，Under +14.6%"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~1.52",
-            "reason": "BTTS 34.0/66.0，沙特xG仅0.46"
+            "odds": "~1.50",
+            "reason": "沙特xG仅0.46，大概率不进球"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~6.0",
-            "reason": "xG 2.3+0.46，西班牙低比分胜最可能"
+            "odds": "~5.5",
+            "reason": "最可能比分16.7%，符合Under逻辑"
           }
         ]
       }
@@ -676,34 +676,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "客胜",
-        "summary": "比利时1.43严重overpriced（-13%），伊朗+5.2%edge，平局+4.0%，反买有价值",
-        "edge": "+5.2%",
-        "confidence": "中",
+        "pick": "小3.0",
+        "summary": "xG 2.76 vs 线3.0，Under +21.4%最大edge。伊朗客场防守有料，比利时进攻没那么猛。",
+        "edge": "+21.4%",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "客胜",
-            "odds": "7.68",
-            "reason": "ensemble 14.2% vs 市场13.0%，+5.2%edge"
+            "odds": "~7.68",
+            "reason": "ensemble 14.2% vs 隐含13.0%，+5.2% edge"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "1.84",
-            "reason": "模型52.2% vs 市场54.3%，-2.1%edge，不推荐"
+            "pick": "小3.0",
+            "odds": "~2.06",
+            "reason": "xG 2.76 vs 线3.0，Under +21.4%最强edge"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.91",
-            "reason": "BTTS 52.3/47.7，双方xG都不低"
+            "odds": "~1.85",
+            "reason": "BTTS 52.3%，伊朗能进1球"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~7.0",
-            "reason": "xG 1.82+0.94，接近局最可能平局比分"
+            "odds": "~7.5",
+            "reason": "最可能比分11.9%，配合Under+客胜逻辑"
           }
         ]
       }
@@ -827,35 +827,35 @@
         }
       },
       "ai": {
-        "verdict": "buy",
-        "pick": "大2.25",
-        "summary": "市场线2.25远低于模型2.5，over 2.25≈74.2% vs 市场49.8%，+24.4%超级edge",
-        "edge": "+24.4%",
-        "confidence": "高",
+        "verdict": "skip",
+        "pick": "—",
+        "summary": "所有盘口edge接近0，市场定价准确。无明确价值。",
+        "edge": "-3.7%",
+        "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "1.42",
-            "reason": "ensemble 67.4% vs 市场70.4%，-3%edge，不推荐"
+            "odds": "~1.42",
+            "reason": "ensemble 67.4% vs 隐含70.4%，edge -3%"
           },
           {
             "market": "大小球",
             "pick": "大2.25",
-            "odds": "2.01",
-            "reason": "模型over≈74.2% vs 市场49.8%，+24.4%edge"
+            "odds": "~2.01",
+            "reason": "xG 2.76，市场线2.25偏低但edge微弱"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "1.86",
-            "reason": "BTTS 46.1/53.9，佛得角xG仅0.73"
+            "odds": "~1.85",
+            "reason": "佛得角xG 0.73，大概率不进球"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~5.5",
-            "reason": "xG 2.03+0.73，乌拉圭最可能比分"
+            "odds": "~7.0",
+            "reason": "最可能比分13.0%"
           }
         ]
       }
@@ -979,35 +979,35 @@
         }
       },
       "ai": {
-        "verdict": "buy",
-        "pick": "大2.25",
-        "summary": "市场线2.25，over 2.25≈64.3% vs 市场53.2%，+11.1%edge",
-        "edge": "+11.1%",
-        "confidence": "高",
+        "verdict": "skip",
+        "pick": "—",
+        "summary": "日本胜ensemble 58.3% vs 市场62.1%，edge -3.8%。大小球无明显差值。",
+        "edge": "-3.8%",
+        "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "客胜",
-            "odds": "1.61",
-            "reason": "ensemble 58.3% vs 市场62.1%，-3.8%edge，不推荐"
+            "odds": "~1.61",
+            "reason": "ensemble 58.3% vs 隐含62.1%，edge -3.8%"
           },
           {
             "market": "大小球",
             "pick": "大2.25",
-            "odds": "1.88",
-            "reason": "模型over≈64.3% vs 市场53.2%，+11.1%edge"
+            "odds": "~1.88",
+            "reason": "xG 2.76，线2.25偏低但edge不明确"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.86",
-            "reason": "BTTS 53.8/46.2，突尼斯xG 1.02能进"
+            "odds": "~1.80",
+            "reason": "BTTS 53.8%，突尼斯主场能进"
           },
           {
             "market": "比分",
-            "pick": "1-2",
-            "odds": "~8.5",
-            "reason": "xG 1.02+1.74，日本小胜最可能"
+            "pick": "1-1",
+            "odds": "~6.5",
+            "reason": "最可能比分12.3%"
           }
         ]
       }
@@ -1016,39 +1016,37 @@
   "parlays": [
     {
       "name": "🛡️ 保守串",
-      "target": "3.8x",
-      "odds": "3.78",
+      "target": "3.6x",
       "picks": [
         {
-          "match": "uruguay-cape-verde",
-          "pick": "大2.25",
-          "odds": "~2.01",
-          "reason": "+24.4%edge，模型74.2%"
+          "match": "netherlands-sweden",
+          "pick": "小3.0",
+          "odds": "~1.83",
+          "reason": "Under +18.2%"
         },
         {
-          "match": "tunisia-japan",
-          "pick": "大2.25",
-          "odds": "~1.88",
-          "reason": "+11.1%edge，模型64.3%"
+          "match": "germany-ivory-coast",
+          "pick": "小3.0",
+          "odds": "~1.96",
+          "reason": "Under +18.9%"
         }
       ]
     },
     {
       "name": "🔥 进攻串",
-      "target": "8.7x",
-      "odds": "8.73",
+      "target": "15.1x",
       "picks": [
         {
           "match": "belgium-iran",
-          "pick": "平局",
-          "odds": "~4.77",
-          "reason": "+4.0%ensemble edge，比利时overpriced"
+          "pick": "客胜",
+          "odds": "~7.68",
+          "reason": "伊朗+5.2% edge"
         },
         {
-          "match": "netherlands-sweden",
+          "match": "germany-ivory-coast",
           "pick": "小3.0",
-          "odds": "~1.83",
-          "reason": "+15.4%edge，Poisson模型支撑"
+          "odds": "~1.96",
+          "reason": "Under +18.9%"
         }
       ]
     }
