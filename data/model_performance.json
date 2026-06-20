@@ -31,570 +31,647 @@
   ],
   "brier_trend": [
     {
+      "match": 1,
+      "brier": 0.1339,
+      "label": "墨西哥 vs 南非"
+    },
+    {
+      "match": 2,
+      "brier": 0.2217,
+      "label": "韩国 vs 捷克"
+    },
+    {
+      "match": 3,
+      "brier": 0.46,
+      "label": "加拿大 vs 波黑"
+    },
+    {
       "match": 4,
-      "brier": 0.4115
+      "brier": 0.4115,
+      "label": "美国 vs 巴拉圭"
     },
     {
       "match": 5,
-      "brier": 0.5956
+      "brier": 0.5956,
+      "label": "卡塔尔 vs 瑞士"
     },
     {
       "match": 6,
-      "brier": 0.7283
+      "brier": 0.7283,
+      "label": "巴西 vs 摩洛哥"
     },
     {
       "match": 7,
-      "brier": 0.5914
+      "brier": 0.5914,
+      "label": "海地 vs 苏格兰"
     },
     {
       "match": 8,
-      "brier": 0.6526
+      "brier": 0.6526,
+      "label": "澳大利亚 vs 土耳其"
     },
     {
       "match": 9,
-      "brier": 0.442
+      "brier": 0.442,
+      "label": "德国 vs 库拉索"
     },
     {
       "match": 10,
-      "brier": 0.4447
+      "brier": 0.4447,
+      "label": "荷兰 vs 日本"
     },
     {
       "match": 11,
-      "brier": 0.4914
+      "brier": 0.4914,
+      "label": "科特迪瓦 vs 厄瓜多尔"
     },
     {
       "match": 12,
-      "brier": 0.4467
+      "brier": 0.4467,
+      "label": "瑞典 vs 突尼斯"
     },
     {
       "match": 13,
-      "brier": 0.8158
+      "brier": 0.8158,
+      "label": "西班牙 vs 佛得角"
     },
     {
       "match": 14,
-      "brier": 0.8452
+      "brier": 0.8452,
+      "label": "比利时 vs 埃及"
     },
     {
       "match": 15,
-      "brier": 0.9094
+      "brier": 0.9094,
+      "label": "沙特 vs 乌拉圭"
     },
     {
       "match": 16,
-      "brier": 1.0445
+      "brier": 1.0445,
+      "label": "伊朗 vs 新西兰"
     },
     {
       "match": 17,
-      "brier": 0.731
+      "brier": 0.731,
+      "label": "法国 vs 塞内加尔"
     },
     {
       "match": 18,
-      "brier": 0.5388
+      "brier": 0.5388,
+      "label": "伊拉克 vs 挪威"
     },
     {
       "match": 19,
-      "brier": 0.3494
+      "brier": 0.3494,
+      "label": "阿根廷 vs 阿尔及利亚"
     },
     {
       "match": 20,
-      "brier": 0.1786
+      "brier": 0.1786,
+      "label": "奥地利 vs 约旦"
     },
     {
       "match": 21,
-      "brier": 0.4507
+      "brier": 0.4507,
+      "label": "葡萄牙 vs 刚果金"
     },
     {
       "match": 22,
-      "brier": 0.4849
+      "brier": 0.4849,
+      "label": "英格兰 vs 克罗地亚"
     },
     {
       "match": 23,
-      "brier": 0.5982
+      "brier": 0.5982,
+      "label": "加纳 vs 巴拿马"
     },
     {
       "match": 24,
-      "brier": 0.5936
+      "brier": 0.5936,
+      "label": "乌兹别克斯坦 vs 哥伦比亚"
     },
     {
       "match": 25,
-      "brier": 0.4647
+      "brier": 0.4647,
+      "label": "捷克 vs 南非"
     },
     {
       "match": 26,
-      "brier": 0.4253
+      "brier": 0.4253,
+      "label": "瑞士 vs 波黑"
     },
     {
       "match": 27,
-      "brier": 0.3741
+      "brier": 0.3741,
+      "label": "加拿大 vs 卡塔尔"
     },
     {
       "match": 28,
-      "brier": 0.4252
+      "brier": 0.4252,
+      "label": "墨西哥 vs 韩国"
     },
     {
       "match": 29,
-      "brier": 0.313
+      "brier": 0.313,
+      "label": "美国 vs 澳大利亚"
     },
     {
       "match": 30,
-      "brier": 0.3517
+      "brier": 0.3517,
+      "label": "苏格兰 vs 摩洛哥"
     },
     {
       "match": 31,
-      "brier": 0.2802
+      "brier": 0.2802,
+      "label": "巴西 vs 海地"
     },
     {
       "match": 32,
-      "brier": 0.3967
+      "brier": 0.3967,
+      "label": "土耳其 vs 巴拉圭"
     }
   ],
   "match_reviews": [
     {
+      "match": "墨西哥 vs 南非",
       "home": "mexico",
       "away": "south-africa",
-      "home_score": 2,
-      "away_score": 0,
       "predicted": {
         "home": 0.708,
         "draw": 0.201,
         "away": 0.091
       },
+      "result": "2-0",
       "actual_outcome": "主胜",
       "brier": 0.1339,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "韩国 vs 捷克",
       "home": "south-korea",
       "away": "czech-republic",
-      "home_score": 2,
-      "away_score": 1,
       "predicted": {
         "home": 0.547,
         "draw": 0.255,
         "away": 0.198
       },
+      "result": "2-1",
       "actual_outcome": "主胜",
       "brier": 0.3094,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "加拿大 vs 波黑",
       "home": "canada",
       "away": "bosnia-and-herzegovina",
-      "home_score": 1,
-      "away_score": 1,
       "predicted": {
         "home": 0.582,
         "draw": 0.246,
         "away": 0.172
       },
+      "result": "1-1",
       "actual_outcome": "平局",
       "brier": 0.9368,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "美国 vs 巴拉圭",
       "home": "usa",
       "away": "paraguay",
-      "home_score": 4,
-      "away_score": 1,
       "predicted": {
         "home": 0.581,
         "draw": 0.246,
         "away": 0.173
       },
+      "result": "4-1",
       "actual_outcome": "主胜",
       "brier": 0.266,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "卡塔尔 vs 瑞士",
       "home": "qatar",
       "away": "switzerland",
-      "home_score": 1,
-      "away_score": 1,
       "predicted": {
         "home": 0.214,
         "draw": 0.26,
         "away": 0.526
       },
+      "result": "1-1",
       "actual_outcome": "平局",
       "brier": 0.8701,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "巴西 vs 摩洛哥",
       "home": "brazil",
       "away": "morocco",
-      "home_score": 1,
-      "away_score": 1,
       "predicted": {
         "home": 0.495,
         "draw": 0.266,
         "away": 0.238
       },
+      "result": "1-1",
       "actual_outcome": "平局",
       "brier": 0.8404,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "海地 vs 苏格兰",
       "home": "haiti",
       "away": "scotland",
-      "home_score": 0,
-      "away_score": 1,
       "predicted": {
         "home": 0.242,
         "draw": 0.267,
         "away": 0.491
       },
+      "result": "0-1",
       "actual_outcome": "客胜",
       "brier": 0.3889,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "澳大利亚 vs 土耳其",
       "home": "australia",
       "away": "turkey",
-      "home_score": 2,
-      "away_score": 0,
       "predicted": {
         "home": 0.417,
         "draw": 0.277,
         "away": 0.307
       },
+      "result": "2-0",
       "actual_outcome": "主胜",
       "brier": 0.5109,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "德国 vs 库拉索",
       "home": "germany",
       "away": "curacao",
-      "home_score": 7,
-      "away_score": 1,
       "predicted": {
         "home": 0.874,
         "draw": 0.108,
         "away": 0.018
       },
+      "result": "7-1",
       "actual_outcome": "主胜",
       "brier": 0.0279,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "荷兰 vs 日本",
       "home": "netherlands",
       "away": "japan",
-      "home_score": 2,
-      "away_score": 2,
       "predicted": {
         "home": 0.507,
         "draw": 0.264,
         "away": 0.229
       },
+      "result": "2-2",
       "actual_outcome": "平局",
       "brier": 0.8512,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "科特迪瓦 vs 厄瓜多尔",
       "home": "ivory-coast",
       "away": "ecuador",
-      "home_score": 1,
-      "away_score": 0,
       "predicted": {
         "home": 0.382,
         "draw": 0.279,
         "away": 0.34
       },
+      "result": "1-0",
       "actual_outcome": "主胜",
       "brier": 0.5754,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "瑞典 vs 突尼斯",
       "home": "sweden",
       "away": "tunisia",
-      "home_score": 5,
-      "away_score": 1,
       "predicted": {
         "home": 0.53,
         "draw": 0.259,
         "away": 0.211
       },
+      "result": "5-1",
       "actual_outcome": "主胜",
       "brier": 0.3325,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "西班牙 vs 佛得角",
       "home": "spain",
       "away": "cape-verde",
-      "home_score": 0,
-      "away_score": 0,
       "predicted": {
         "home": 0.856,
         "draw": 0.122,
         "away": 0.022
       },
+      "result": "0-0",
       "actual_outcome": "平局",
       "brier": 1.5041,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "比利时 vs 埃及",
       "home": "belgium",
       "away": "egypt",
-      "home_score": 1,
-      "away_score": 1,
       "predicted": {
         "home": 0.604,
         "draw": 0.239,
         "away": 0.157
       },
+      "result": "1-1",
       "actual_outcome": "平局",
       "brier": 0.9686,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "沙特 vs 乌拉圭",
       "home": "saudi-arabia",
       "away": "uruguay",
-      "home_score": 1,
-      "away_score": 1,
       "predicted": {
         "home": 0.246,
         "draw": 0.268,
         "away": 0.486
       },
+      "result": "1-1",
       "actual_outcome": "平局",
       "brier": 0.8325,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "伊朗 vs 新西兰",
       "home": "iran",
       "away": "new-zealand",
-      "home_score": 2,
-      "away_score": 2,
       "predicted": {
         "home": 0.528,
         "draw": 0.259,
         "away": 0.212
       },
+      "result": "2-2",
       "actual_outcome": "平局",
       "brier": 0.8728,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "法国 vs 塞内加尔",
       "home": "france",
       "away": "senegal",
-      "home_score": 3,
-      "away_score": 1,
       "predicted": {
         "home": 0.594,
         "draw": 0.242,
         "away": 0.163
       },
+      "result": "3-1",
       "actual_outcome": "主胜",
       "brier": 0.25,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "伊拉克 vs 挪威",
       "home": "iraq",
       "away": "norway",
-      "home_score": 1,
-      "away_score": 4,
       "predicted": {
         "home": 0.133,
         "draw": 0.228,
         "away": 0.639
       },
+      "result": "1-4",
       "actual_outcome": "客胜",
       "brier": 0.2,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "阿根廷 vs 阿尔及利亚",
       "home": "argentina",
       "away": "algeria",
-      "home_score": 3,
-      "away_score": 0,
       "predicted": {
         "home": 0.786,
         "draw": 0.163,
         "away": 0.051
       },
+      "result": "3-0",
       "actual_outcome": "主胜",
       "brier": 0.075,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "奥地利 vs 约旦",
       "home": "austria",
       "away": "jordan",
-      "home_score": 3,
-      "away_score": 1,
       "predicted": {
         "home": 0.649,
         "draw": 0.224,
         "away": 0.127
       },
+      "result": "3-1",
       "actual_outcome": "主胜",
       "brier": 0.1895,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "葡萄牙 vs 刚果金",
       "home": "portugal",
       "away": "dr-congo",
-      "home_score": 1,
-      "away_score": 1,
       "predicted": {
         "home": 0.793,
         "draw": 0.159,
         "away": 0.048
       },
+      "result": "1-1",
       "actual_outcome": "平局",
       "brier": 1.3384,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "英格兰 vs 克罗地亚",
       "home": "england",
       "away": "croatia",
-      "home_score": 4,
-      "away_score": 2,
       "predicted": {
         "home": 0.527,
         "draw": 0.26,
         "away": 0.213
       },
+      "result": "4-2",
       "actual_outcome": "主胜",
       "brier": 0.3367,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "加纳 vs 巴拿马",
       "home": "ghana",
       "away": "panama",
-      "home_score": 1,
-      "away_score": 0,
       "predicted": {
         "home": 0.407,
         "draw": 0.277,
         "away": 0.316
       },
+      "result": "1-0",
       "actual_outcome": "主胜",
       "brier": 0.5282,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "乌兹别克斯坦 vs 哥伦比亚",
       "home": "uzbekistan",
       "away": "colombia",
-      "home_score": 1,
-      "away_score": 3,
       "predicted": {
         "home": 0.115,
         "draw": 0.217,
         "away": 0.667
       },
+      "result": "1-3",
       "actual_outcome": "客胜",
       "brier": 0.1712,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "捷克 vs 南非",
       "home": "czech-republic",
       "away": "south-africa",
-      "home_score": 1,
-      "away_score": 1,
       "predicted": {
         "home": 0.473,
         "draw": 0.27,
         "away": 0.257
       },
+      "result": "1-1",
       "actual_outcome": "平局",
       "brier": 0.8227,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     },
     {
+      "match": "瑞士 vs 波黑",
       "home": "switzerland",
       "away": "bosnia-and-herzegovina",
-      "home_score": 4,
-      "away_score": 1,
       "predicted": {
         "home": 0.659,
         "draw": 0.22,
         "away": 0.12
       },
+      "result": "4-1",
       "actual_outcome": "主胜",
       "brier": 0.1791,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "加拿大 vs 卡塔尔",
       "home": "canada",
       "away": "qatar",
-      "home_score": 6,
-      "away_score": 0,
       "predicted": {
         "home": 0.537,
         "draw": 0.258,
         "away": 0.206
       },
+      "result": "6-0",
       "actual_outcome": "主胜",
       "brier": 0.3234,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "墨西哥 vs 韩国",
       "home": "mexico",
       "away": "south-korea",
-      "home_score": 1,
-      "away_score": 0,
       "predicted": {
         "home": 0.5,
         "draw": 0.265,
         "away": 0.235
       },
+      "result": "1-0",
       "actual_outcome": "主胜",
       "brier": 0.3754,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "美国 vs 澳大利亚",
       "home": "usa",
       "away": "australia",
-      "home_score": 2,
-      "away_score": 0,
       "predicted": {
         "home": 0.501,
         "draw": 0.265,
         "away": 0.234
       },
+      "result": "2-0",
       "actual_outcome": "主胜",
       "brier": 0.374,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "苏格兰 vs 摩洛哥",
       "home": "scotland",
       "away": "morocco",
-      "home_score": 0,
-      "away_score": 1,
       "predicted": {
         "home": 0.212,
         "draw": 0.259,
         "away": 0.529
       },
+      "result": "0-1",
       "actual_outcome": "客胜",
       "brier": 0.3339,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "巴西 vs 海地",
       "home": "brazil",
       "away": "haiti",
-      "home_score": 3,
-      "away_score": 0,
       "predicted": {
         "home": 0.853,
         "draw": 0.124,
         "away": 0.023
       },
+      "result": "3-0",
       "actual_outcome": "主胜",
       "brier": 0.0375,
-      "correct": true
+      "correct": true,
+      "predicted_score": "1-1"
     },
     {
+      "match": "土耳其 vs 巴拉圭",
       "home": "turkey",
       "away": "paraguay",
-      "home_score": 0,
-      "away_score": 1,
       "predicted": {
         "home": 0.47,
         "draw": 0.27,
         "away": 0.26
       },
+      "result": "0-1",
       "actual_outcome": "客胜",
       "brier": 0.8414,
-      "correct": false
+      "correct": false,
+      "predicted_score": "1-1"
     }
-  ]
+  ],
+  "updated_at": "2026-06-20T10:51:19.074328+00:00"
 }
