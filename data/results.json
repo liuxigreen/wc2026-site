@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 04:13 UTC",
+  "updated_at": "2026-06-20 05:28 UTC",
   "matches": [
     {
       "home": "austria",
@@ -72,6 +72,12 @@
       "away": "haiti",
       "home_score": 3,
       "away_score": 0
+    },
+    {
+      "home": "turkey",
+      "away": "paraguay",
+      "home_score": 0,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -188,10 +194,6 @@
       "elo": 1734
     },
     {
-      "slug": "turkey",
-      "elo": 1720
-    },
-    {
       "slug": "iran",
       "elo": 1716
     },
@@ -202,6 +204,10 @@
     {
       "slug": "serbia",
       "elo": 1695
+    },
+    {
+      "slug": "egypt",
+      "elo": 1689
     }
   ]
 }
