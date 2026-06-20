@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 02:48 UTC",
+  "updated_at": "2026-06-20 03:52 UTC",
   "matches": [
     {
       "home": "austria",
@@ -88,12 +88,12 @@
       "elo": 2053
     },
     {
-      "slug": "australia",
-      "elo": 2051
-    },
-    {
       "slug": "england",
       "elo": 2004
+    },
+    {
+      "slug": "australia",
+      "elo": 2001
     },
     {
       "slug": "morocco",
@@ -102,6 +102,10 @@
     {
       "slug": "germany",
       "elo": 1965
+    },
+    {
+      "slug": "usa",
+      "elo": 1947
     },
     {
       "slug": "japan",
@@ -118,10 +122,6 @@
     {
       "slug": "brazil",
       "elo": 1908
-    },
-    {
-      "slug": "usa",
-      "elo": 1897
     },
     {
       "slug": "colombia",

@@ -1,110 +1,11 @@
 {
-  "updated_at": "2026-06-20 02:49 UTC",
+  "updated_at": "2026-06-20 03:52 UTC",
   "matches": [
-    {
-      "home": "turkey",
-      "away": "paraguay",
-      "match_time": "2026-06-20T03:00Z",
-      "hours_until": 0.2,
-      "city": "Santa Clara, California",
-      "venue": "Levi's Stadium",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "26.3",
-        "draw": "27.1",
-        "win_b": "46.6"
-      },
-      "xg": {
-        "a": "1.16",
-        "b": "1.6"
-      },
-      "elo": {
-        "a": 1383,
-        "b": 1573,
-        "diff": -190
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "12.9"
-        ],
-        [
-          "1-2",
-          "9.4"
-        ],
-        [
-          "0-1",
-          "9.0"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "56.0",
-        "no": "44.0"
-      },
-      "spread": {
-        "turkey -1.5": "11.0",
-        "paraguay +1.5": "89.0"
-      },
-      "half_time": {
-        "win_a": "22.4",
-        "draw": "43.5",
-        "win_b": "34.2"
-      },
-      "squad_quality": {
-        "a": 0.71,
-        "b": -1.13
-      },
-      "market_odds": null,
-      "ensemble": null,
-      "edge": {},
-      "ai": {
-        "verdict": "skip",
-        "pick": "—",
-        "summary": "无市场赔率，模型无明确强势方（巴拉圭46.6%最高），跳过",
-        "edge": "N/A",
-        "confidence": "低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "客胜",
-            "odds": "N/A",
-            "reason": "巴拉圭46.6%略占优，但无赔率无法判断edge"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "N/A",
-            "reason": "模型52.2%略微倾向大球"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "BTTS 56%，双方xG均衡"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "N/A",
-            "reason": "最高概率比分12.9%"
-          }
-        ]
-      }
-    },
     {
       "home": "netherlands",
       "away": "sweden",
       "match_time": "2026-06-20T17:00Z",
-      "hours_until": 14.2,
+      "hours_until": 13.1,
       "city": "Houston, Texas",
       "venue": "NRG Stadium",
       "home_score": 0,
@@ -203,7 +104,7 @@
       "home": "germany",
       "away": "ivory-coast",
       "match_time": "2026-06-20T20:00Z",
-      "hours_until": 17.2,
+      "hours_until": 16.1,
       "city": "Toronto",
       "venue": "BMO Field",
       "home_score": 0,
@@ -302,7 +203,7 @@
       "home": "ecuador",
       "away": "curacao",
       "match_time": "2026-06-21T00:00Z",
-      "hours_until": 21.2,
+      "hours_until": 20.1,
       "city": "Kansas City, Missouri",
       "venue": "GEHA Field at Arrowhead Stadium",
       "home_score": 0,
@@ -401,7 +302,7 @@
       "home": "tunisia",
       "away": "japan",
       "match_time": "2026-06-21",
-      "hours_until": 21.2,
+      "hours_until": 20.1,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -500,7 +401,7 @@
       "home": "spain",
       "away": "saudi-arabia",
       "match_time": "2026-06-21",
-      "hours_until": 21.2,
+      "hours_until": 20.1,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -599,7 +500,7 @@
       "home": "belgium",
       "away": "iran",
       "match_time": "2026-06-21",
-      "hours_until": 21.2,
+      "hours_until": 20.1,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -698,7 +599,7 @@
       "home": "uruguay",
       "away": "cape-verde",
       "match_time": "2026-06-21",
-      "hours_until": 21.2,
+      "hours_until": 20.1,
       "city": "",
       "venue": "",
       "home_score": 0,
