@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 06:02 UTC",
+  "updated_at": "2026-06-20 06:10 UTC",
   "matches": [
     {
       "home": "netherlands",
@@ -120,35 +120,35 @@
         }
       },
       "ai": {
-        "verdict": "skip",
-        "pick": "跳过",
-        "summary": "模型看好netherlands但无赔率确认，不碰",
-        "edge": "N/A",
-        "confidence": "低",
+        "verdict": "buy",
+        "pick": "小3.0",
+        "summary": "xG合计2.76，模型70%概率3球以下，市场隐含54.6%，edge +15.4%",
+        "edge": "+15.4%（模型edge）",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "跳过",
-            "odds": "N/A",
-            "reason": "模型60.2%偏高但无赔率确认，不冒险"
+            "odds": "~1.71",
+            "reason": "ensemble 57.7% vs 隐含58.5%，edge仅-0.8%"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "~1.9",
-            "reason": "xG合计2.8，大球概率52.1%"
+            "pick": "小3.0",
+            "odds": "~1.83",
+            "reason": "模型70%概率小球，市场隐含54.6%，+15.4%edge"
           },
           {
             "market": "BTTS",
             "pick": "跳过",
-            "odds": "N/A",
-            "reason": "BTTS接近50/50（50.5%/49.5%）"
+            "odds": "~1.9",
+            "reason": "BTTS 50.5/49.5接近50-50，无edge"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "~8.7",
-            "reason": "最可能比分11.5%"
+            "reason": "最可能比分11.5%概率"
           }
         ]
       }
@@ -272,35 +272,35 @@
         }
       },
       "ai": {
-        "verdict": "skip",
-        "pick": "跳过",
-        "summary": "模型看好germany但无赔率确认，不碰",
-        "edge": "N/A",
-        "confidence": "低",
+        "verdict": "buy",
+        "pick": "小3.0",
+        "summary": "xG合计2.76，模型70%概率小球，市场隐含51.5%，+18.4%edge",
+        "edge": "+18.4%（模型edge）",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "跳过",
-            "odds": "N/A",
-            "reason": "模型61.3%偏高但无赔率确认，不冒险"
+            "odds": "~1.55",
+            "reason": "ensemble 62.1% vs 隐含64.5%，edge -2.4%"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "~1.9",
-            "reason": "xG合计2.8，大球概率52.1%"
+            "pick": "小3.0",
+            "odds": "~1.94",
+            "reason": "模型70%概率小球，市场隐含51.5%，+18.4%edge"
           },
           {
             "market": "BTTS",
             "pick": "跳过",
-            "odds": "N/A",
-            "reason": "BTTS接近50/50（49.9%/50.1%）"
+            "odds": "~2.0",
+            "reason": "BTTS 49.9/50.1接近50-50"
           },
           {
             "market": "比分",
             "pick": "2-0",
             "odds": "~8.7",
-            "reason": "最可能比分11.5%"
+            "reason": "最可能比分11.5%概率"
           }
         ]
       }
@@ -371,35 +371,35 @@
       "ensemble": null,
       "edge": {},
       "ai": {
-        "verdict": "buy",
-        "pick": "ecuador -1.5",
-        "summary": "直接压ecuador，Elo差486，xG 2.29:0.48，碾压局",
-        "edge": "（模型edge，无市场赔率）",
-        "confidence": "中",
+        "verdict": "skip",
+        "pick": "跳过",
+        "summary": "无市场赔率，模型77.8%但未达80%阈值，不碰",
+        "edge": "N/A",
+        "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "ecuador -1.5",
-            "odds": "~2.0",
-            "reason": "模型77.8%，-1.5概率54.7%，碾压局"
+            "pick": "跳过",
+            "odds": "N/A",
+            "reason": "无市场赔率，模型77.8%未达80%"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "~1.9",
-            "reason": "xG合计2.8，大球概率52.1%"
+            "pick": "跳过",
+            "odds": "N/A",
+            "reason": "无市场赔率，无法计算edge"
           },
           {
             "market": "BTTS",
-            "pick": "否",
-            "odds": "~1.7",
-            "reason": "弱队xG低，BTTS否概率65.3%"
+            "pick": "跳过",
+            "odds": "N/A",
+            "reason": "BTTS yes 34.7%，大概率不双进"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~6.1",
-            "reason": "最可能比分16.5%"
+            "odds": "N/A",
+            "reason": "最可能比分16.5%，无赔率"
           }
         ]
       }
@@ -524,34 +524,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "spain -1.5",
-        "summary": "直接压spain，Elo差495，xG 2.3:0.46，碾压局",
-        "edge": "（模型edge，无市场赔率）",
-        "confidence": "中",
+        "pick": "小3.25",
+        "summary": "西班牙碾压局但盘口2.5太高，模型81%概率小球，市场隐含48.3%，+32.9%edge",
+        "edge": "+32.9%（模型edge）",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "spain -1.5",
-            "odds": "~2.0",
-            "reason": "模型78.4%，-1.5概率55.3%，碾压局"
+            "pick": "跳过",
+            "odds": "~1.09",
+            "reason": "ensemble 84.9% vs 隐含91.7%，edge -6.8%，赔率太低"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "~1.9",
-            "reason": "xG合计2.8，大球概率52.1%"
+            "pick": "小3.25",
+            "odds": "~1.97",
+            "reason": "模型81%小球，市场隐含48.3%，+32.9%edge"
           },
           {
             "market": "BTTS",
-            "pick": "否",
-            "odds": "~1.7",
-            "reason": "弱队xG低，BTTS否概率66.0%"
+            "pick": "跳过",
+            "odds": "~2.9",
+            "reason": "BTTS yes仅34%，大概率西班牙零封"
           },
           {
             "market": "比分",
             "pick": "2-0",
             "odds": "~6.0",
-            "reason": "最可能比分16.7%"
+            "reason": "最可能比分16.7%，模型支持低比分胜利"
           }
         ]
       }
@@ -675,35 +675,35 @@
         }
       },
       "ai": {
-        "verdict": "skip",
-        "pick": "跳过",
-        "summary": "势均力敌，无赔率不冒险",
-        "edge": "N/A",
-        "confidence": "低",
+        "verdict": "buy",
+        "pick": "平局",
+        "summary": "ensemble看好伊朗有抵抗力，平局概率25% vs 市场21%，+4%edge",
+        "edge": "+4.0%",
+        "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "跳过",
-            "odds": "N/A",
-            "reason": "模型56.9%接近，无赔率不碰"
+            "pick": "平局",
+            "odds": "~4.77",
+            "reason": "ensemble 25% vs 隐含21%，+4%edge"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "~1.9",
-            "reason": "xG合计2.8，大球概率52.2%"
+            "odds": "~1.84",
+            "reason": "模型52.2% vs 隐含54.3%，接近平手"
           },
           {
             "market": "BTTS",
-            "pick": "跳过",
-            "odds": "N/A",
-            "reason": "BTTS接近50/50（52.3%/47.7%）"
+            "pick": "是",
+            "odds": "~1.9",
+            "reason": "BTTS yes 52.3%略高于50%，微弱edge"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~8.4",
-            "reason": "最可能比分11.9%"
+            "odds": "~8.0",
+            "reason": "最可能比分11.9%概率"
           }
         ]
       }
@@ -827,35 +827,35 @@
         }
       },
       "ai": {
-        "verdict": "skip",
-        "pick": "跳过",
-        "summary": "模型看好uruguay但无赔率确认，不碰",
-        "edge": "N/A",
-        "confidence": "低",
+        "verdict": "buy",
+        "pick": "大2.25",
+        "summary": "xG合计2.76，模型64%概率3球以上，市场隐含49.8%，+14.5%edge",
+        "edge": "+14.5%（模型edge）",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "跳过",
-            "odds": "N/A",
-            "reason": "模型66.7%偏高但无赔率确认，不冒险"
+            "odds": "~1.42",
+            "reason": "ensemble 67.4% vs 隐含70.4%，edge -3%"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "~1.9",
-            "reason": "xG合计2.8，大球概率52.1%"
+            "pick": "大2.25",
+            "odds": "~2.01",
+            "reason": "模型64%大球，市场隐含49.8%，+14.5%edge"
           },
           {
             "market": "BTTS",
             "pick": "跳过",
-            "odds": "N/A",
-            "reason": "BTTS接近50/50（46.1%/53.9%）"
+            "odds": "~2.2",
+            "reason": "BTTS yes 46.1%，不双进概率更高"
           },
           {
             "market": "比分",
             "pick": "2-0",
             "odds": "~7.7",
-            "reason": "最可能比分13.0%"
+            "reason": "最可能比分13.0%概率"
           }
         ]
       }
@@ -979,35 +979,35 @@
         }
       },
       "ai": {
-        "verdict": "skip",
-        "pick": "跳过",
-        "summary": "模型看好japan但无赔率确认，不碰",
-        "edge": "N/A",
-        "confidence": "低",
+        "verdict": "buy",
+        "pick": "大2.25",
+        "summary": "日本客场作战但xG 1.74占优，模型64%大球，市场隐含51.6%，+12.7%edge",
+        "edge": "+12.7%（模型edge）",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "跳过",
-            "odds": "N/A",
-            "reason": "模型客胜53.3%但无赔率，不冒险"
+            "odds": "~1.61",
+            "reason": "ensemble 58.3% vs 隐含62.1%，edge -3.8%"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "~1.9",
-            "reason": "xG合计2.8，大球概率52.2%"
+            "pick": "大2.25",
+            "odds": "~1.88",
+            "reason": "模型64%大球，市场隐含51.6%，+12.7%edge"
           },
           {
             "market": "BTTS",
-            "pick": "跳过",
-            "odds": "N/A",
-            "reason": "BTTS接近50/50（53.8%/46.2%）"
+            "pick": "是",
+            "odds": "~1.9",
+            "reason": "BTTS yes 53.8%，略高于50%，微弱edge"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~8.1",
-            "reason": "最可能比分12.3%"
+            "odds": "~8.0",
+            "reason": "最可能比分12.3%概率"
           }
         ]
       }
@@ -1016,37 +1016,37 @@
   "parlays": [
     {
       "name": "🛡️ 保守串",
-      "target": "4.0x",
+      "target": "3.6x",
       "picks": [
         {
-          "match": "ecuador-curacao",
-          "pick": "厄瓜多尔-1.5",
-          "odds": "~2.0",
-          "reason": "486 Elo差，碾压"
+          "match": "netherlands-sweden",
+          "pick": "小3.0",
+          "odds": "~1.83",
+          "reason": "xG 2.76，模型70%小球，+15.4%edge"
         },
         {
-          "match": "spain-saudi-arabia",
-          "pick": "西班牙-1.5",
-          "odds": "~2.0",
-          "reason": "495 Elo差，碾压"
+          "match": "germany-ivory-coast",
+          "pick": "小3.0",
+          "odds": "~1.94",
+          "reason": "xG 2.76，模型70%小球，+18.4%edge"
         }
       ]
     },
     {
       "name": "🔥 进攻串",
-      "target": "15.8x",
+      "target": "3.8x",
       "picks": [
         {
-          "match": "ecuador-curacao",
-          "pick": "厄瓜多尔-1.5",
-          "odds": "~2.0",
-          "reason": "xG差1.81，-1.5概率54.7%"
+          "match": "tunisia-japan",
+          "pick": "大2.25",
+          "odds": "~1.88",
+          "reason": "模型64%大球，日本xG 1.74驱动，+12.7%edge"
         },
         {
-          "match": "spain-saudi-arabia",
-          "pick": "比分3-0",
-          "odds": "~7.9",
-          "reason": "最可能比分12.8%，碾压局大概率大胜"
+          "match": "uruguay-cape-verde",
+          "pick": "大2.25",
+          "odds": "~2.01",
+          "reason": "模型64%大球，乌拉圭xG 2.03主导，+14.5%edge"
         }
       ]
     }
