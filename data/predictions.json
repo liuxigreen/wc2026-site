@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-21 01:23 UTC",
+  "updated_at": "2026-06-21 01:54 UTC",
   "matches": [
     {
       "home": "tunisia",
       "away": "japan",
       "match_time": "2026-06-21T04:00Z",
-      "hours_until": 2.7,
+      "hours_until": 2.1,
       "city": "Guadalupe",
       "venue": "Estadio BBVA",
       "home_score": 0,
@@ -76,9 +76,9 @@
         "fav_odds": 1.83,
         "dog_spread": 1.0,
         "dog_odds": 2.13,
-        "over_odds": 1.86,
+        "over_odds": 1.85,
         "over_point": 2.25,
-        "under_odds": 2.05
+        "under_odds": 2.07
       },
       "ensemble": {
         "win_a": 14.7,
@@ -115,7 +115,7 @@
           "has_edge": false
         },
         "over": {
-          "market_odds": 1.86,
+          "market_odds": 1.85,
           "point": 2.25
         }
       },
@@ -157,7 +157,7 @@
       "home": "spain",
       "away": "saudi-arabia",
       "match_time": "2026-06-21T16:00Z",
-      "hours_until": 14.7,
+      "hours_until": 14.1,
       "city": "Atlanta, Georgia",
       "venue": "Mercedes-Benz Stadium",
       "home_score": 0,
@@ -218,8 +218,8 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-21T16:00:00Z",
-        "away_odds": 24.69,
-        "away_implied": 4.1,
+        "away_odds": 24.7,
+        "away_implied": 4.0,
         "home_odds": 1.09,
         "home_implied": 91.7,
         "draw_odds": 10.53,
@@ -235,7 +235,7 @@
       "ensemble": {
         "win_a": 84.6,
         "draw": 11.2,
-        "win_b": 4.3,
+        "win_b": 4.2,
         "source": "ensemble"
       },
       "edge": {
@@ -259,9 +259,9 @@
         },
         "away": {
           "model_pct": 5.2,
-          "market_odds": 24.69,
-          "market_implied": 4.1,
-          "edge": 1.1,
+          "market_odds": 24.7,
+          "market_implied": 4.0,
+          "edge": 1.2,
           "kelly_full": 1.2,
           "kelly_quarter": 0.3,
           "has_edge": false
@@ -309,7 +309,7 @@
       "home": "belgium",
       "away": "iran",
       "match_time": "2026-06-21T19:00Z",
-      "hours_until": 17.7,
+      "hours_until": 17.1,
       "city": "Inglewood, California",
       "venue": "SoFi Stadium",
       "home_score": 0,
@@ -461,7 +461,7 @@
       "home": "uruguay",
       "away": "cape-verde",
       "match_time": "2026-06-21T22:00Z",
-      "hours_until": 20.7,
+      "hours_until": 20.1,
       "city": "Miami Gardens, Florida",
       "venue": "Hard Rock Stadium",
       "home_score": 0,
@@ -613,7 +613,7 @@
       "home": "argentina",
       "away": "austria",
       "match_time": "2026-06-22",
-      "hours_until": 22.7,
+      "hours_until": 22.1,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -765,7 +765,7 @@
       "home": "france",
       "away": "iraq",
       "match_time": "2026-06-22",
-      "hours_until": 22.7,
+      "hours_until": 22.1,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -917,7 +917,7 @@
       "home": "new-zealand",
       "away": "egypt",
       "match_time": "2026-06-22T01:00Z",
-      "hours_until": 23.7,
+      "hours_until": 23.1,
       "city": "Vancouver",
       "venue": "BC Place",
       "home_score": 0,
