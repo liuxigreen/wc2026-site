@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5194,
-  "accuracy": 0.6667,
-  "total_reviewed": 36,
-  "correct_count": 24,
+  "cumulative_brier": 0.5074,
+  "accuracy": 0.6757,
+  "total_reviewed": 37,
+  "correct_count": 25,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -18,9 +18,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.682,
-      "actual": 0.727,
-      "count": 11
+      "predicted": 0.69,
+      "actual": 0.75,
+      "count": 12
     },
     {
       "bin": "80-100%",
@@ -209,6 +209,11 @@
       "match": 36,
       "brier": 0.525,
       "label": "突尼斯 vs 日本"
+    },
+    {
+      "match": 37,
+      "brier": 0.4839,
+      "label": "西班牙 vs 沙特"
     }
   ],
   "match_reviews": [
@@ -751,7 +756,22 @@
       "brier": 0.3279,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "西班牙 vs 沙特",
+      "home": "spain",
+      "away": "saudi-arabia",
+      "predicted": {
+        "home": 0.7829999999999999,
+        "draw": 0.16399999999999998,
+        "away": 0.052000000000000005
+      },
+      "result": "4-0",
+      "actual_outcome": "主胜",
+      "brier": 0.0767,
+      "correct": true,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-21T06:03:43.578097+00:00"
+  "updated_at": "2026-06-21T19:08:53.819418+00:00"
 }
