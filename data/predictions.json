@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21 15:33 UTC",
+  "updated_at": "2026-06-21 16:04 UTC",
   "matches": [
     {
       "home": "spain",
@@ -168,7 +168,7 @@
       "ai": {
         "verdict": "skip",
         "pick": "⏭️ 不推荐",
-        "summary": "比利时仅55.5%胜率，伊朗有反击能力（xG 0.97），无市场赔率无法确认edge。",
+        "summary": "比利时仅55.5%，伊朗xG 0.97有反击能力，无市场赔率无法确认edge。",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -267,7 +267,7 @@
       "ai": {
         "verdict": "skip",
         "pick": "⏭️ 不推荐",
-        "summary": "乌拉圭67.2%但无市场赔率确认，佛得角xG 0.72有一定防守能力。",
+        "summary": "乌拉圭67.2%但无市场赔率确认，佛得角xG 0.72有一定防守。",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -564,7 +564,7 @@
       "ai": {
         "verdict": "skip",
         "pick": "⏭️ 不推荐",
-        "summary": "埃及仅39.4%微弱优势，新西兰主场Elo 1577不弱，接近比赛无明显edge。",
+        "summary": "埃及仅39.4%微弱优势，新西兰主场Elo 1577不弱，无明显edge。",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
