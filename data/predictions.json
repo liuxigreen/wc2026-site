@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21 22:25 UTC",
+  "updated_at": "2026-06-21 22:28 UTC",
   "matches": [
     {
       "home": "new-zealand",
@@ -118,6 +118,39 @@
           "market_odds": 2.08,
           "point": 2.5
         }
+      },
+      "ai": {
+        "verdict": "buy",
+        "pick": "新西兰胜",
+        "summary": "直接压新西兰。ensemble 20.9% vs 赔率隐含16.3%，edge +4.6%，6.15高赔被低估。",
+        "edge": "+4.6%",
+        "confidence": "中",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "新西兰胜",
+            "odds": "6.15",
+            "reason": "ensemble 20.9% vs 隐含16.3%，edge +4.6%"
+          },
+          {
+            "market": "大小球",
+            "pick": "大2.5",
+            "odds": "2.08",
+            "reason": "模型52.2% vs 隐含48.1%，微弱edge +4.1%"
+          },
+          {
+            "market": "BTTS",
+            "pick": "是",
+            "odds": "N/A",
+            "reason": "模型57.1%，双方xG接近，无市场赔率"
+          },
+          {
+            "market": "比分",
+            "pick": "1-1",
+            "odds": "N/A",
+            "reason": "最可能比分11.9%"
+          }
+        ]
       }
     },
     {
@@ -237,6 +270,39 @@
           "market_odds": 1.95,
           "point": 2.5
         }
+      },
+      "ai": {
+        "verdict": "buy",
+        "pick": "阿根廷-1.0",
+        "summary": "直接压阿根廷-1.0。模型估算赢1+球概率60-65%，市场隐含52.4%，edge约+10%。",
+        "edge": "+10%",
+        "confidence": "高",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "阿根廷-1.0",
+            "odds": "1.91",
+            "reason": "模型赢2+球45.2%，加赢1球≈60-65%，隐含52.4%，edge +10%"
+          },
+          {
+            "market": "大小球",
+            "pick": "大2.5",
+            "odds": "1.95",
+            "reason": "模型52.1% vs 隐含51.3%，基本无edge"
+          },
+          {
+            "market": "BTTS",
+            "pick": "否",
+            "odds": "N/A",
+            "reason": "模型55.9%否，奥地利xG仅0.68，无市场赔率"
+          },
+          {
+            "market": "比分",
+            "pick": "2-0",
+            "odds": "N/A",
+            "reason": "最可能比分，阿根廷xG 2.08"
+          }
+        ]
       }
     },
     {
@@ -356,8 +422,82 @@
           "market_odds": 1.92,
           "point": 3.5
         }
+      },
+      "ai": {
+        "verdict": "buy",
+        "pick": "小3.5",
+        "summary": "直接压小3.5。xG总计2.88，P(U3.5)≈67.5% vs 市场隐含51.8%，edge +15.7%。法国赢但不会大屠杀。",
+        "edge": "+15.7%",
+        "confidence": "高",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "法国胜",
+            "odds": "1.07",
+            "reason": "ensemble 88.5%但赔率隐含93.5%，负edge -5%，不买"
+          },
+          {
+            "market": "大小球",
+            "pick": "小3.5",
+            "odds": "1.93",
+            "reason": "xG=2.88，P(U3.5)≈67.5% vs 隐含51.8%，edge +15.7%"
+          },
+          {
+            "market": "BTTS",
+            "pick": "否",
+            "odds": "N/A",
+            "reason": "模型79.1%否，伊拉克xG仅0.25，无市场赔率"
+          },
+          {
+            "market": "比分",
+            "pick": "2-0",
+            "odds": "N/A",
+            "reason": "最可能比分，法国xG 2.63但伊拉克难进球"
+          }
+        ]
       }
     }
   ],
-  "parlays": []
+  "parlays": [
+    {
+      "name": "🛡️ 保守串",
+      "target": "3.5x",
+      "reason": "两场高edge低赔组合，稳定盈利",
+      "picks": [
+        {
+          "match": "argentina-austria",
+          "pick": "阿根廷-1.0",
+          "odds": "~1.91",
+          "reason": "edge +10%，最稳盘口"
+        },
+        {
+          "match": "france-iraq",
+          "pick": "小3.5",
+          "odds": "~1.93",
+          "reason": "edge +15.7%，xG支撑强"
+        }
+      ],
+      "combined_odds": "3.69x"
+    },
+    {
+      "name": "🔥 进攻串",
+      "target": "11.9x",
+      "reason": "高赔冷门+高edge组合，追求高回报",
+      "picks": [
+        {
+          "match": "new-zealand-egypt",
+          "pick": "新西兰胜",
+          "odds": "~6.15",
+          "reason": "ensemble +4.6% edge，被市场低估"
+        },
+        {
+          "match": "france-iraq",
+          "pick": "小3.5",
+          "odds": "~1.93",
+          "reason": "edge +15.7%，xG支撑强"
+        }
+      ],
+      "combined_odds": "11.89x"
+    }
+  ]
 }
