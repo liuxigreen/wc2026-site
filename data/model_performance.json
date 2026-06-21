@@ -1,7 +1,7 @@
 {
-  "cumulative_brier": 0.5074,
-  "accuracy": 0.6757,
-  "total_reviewed": 37,
+  "cumulative_brier": 0.5178,
+  "accuracy": 0.6579,
+  "total_reviewed": 38,
   "correct_count": 25,
   "calibration_bins": [
     {
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.512,
-      "actual": 0.619,
-      "count": 21
+      "predicted": 0.514,
+      "actual": 0.591,
+      "count": 22
     },
     {
       "bin": "60-80%",
@@ -214,6 +214,11 @@
       "match": 37,
       "brier": 0.4839,
       "label": "西班牙 vs 沙特"
+    },
+    {
+      "match": 38,
+      "brier": 0.6524,
+      "label": "比利时 vs 伊朗"
     }
   ],
   "match_reviews": [
@@ -771,7 +776,22 @@
       "brier": 0.0767,
       "correct": true,
       "predicted_score": "2-0"
+    },
+    {
+      "match": "比利时 vs 伊朗",
+      "home": "belgium",
+      "away": "iran",
+      "predicted": {
+        "home": 0.555,
+        "draw": 0.253,
+        "away": 0.192
+      },
+      "result": "0-0",
+      "actual_outcome": "平局",
+      "brier": 0.9029,
+      "correct": false,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-21T19:08:53.819418+00:00"
+  "updated_at": "2026-06-21T22:08:43.503900+00:00"
 }

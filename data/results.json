@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21 21:02 UTC",
+  "updated_at": "2026-06-21 22:23 UTC",
   "matches": [
     {
       "home": "czech-republic",
@@ -78,6 +78,12 @@
       "away": "saudi-arabia",
       "home_score": 4,
       "away_score": 0
+    },
+    {
+      "home": "belgium",
+      "away": "iran",
+      "home_score": 0,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
@@ -138,12 +144,12 @@
       "elo": 1856
     },
     {
-      "slug": "belgium",
-      "elo": 1853
-    },
-    {
       "slug": "usa",
       "elo": 1847
+    },
+    {
+      "slug": "belgium",
+      "elo": 1838
     },
     {
       "slug": "uruguay",
@@ -190,12 +196,12 @@
       "elo": 1735
     },
     {
-      "slug": "ivory-coast",
-      "elo": 1724
+      "slug": "iran",
+      "elo": 1731
     },
     {
-      "slug": "iran",
-      "elo": 1716
+      "slug": "ivory-coast",
+      "elo": 1724
     },
     {
       "slug": "poland",

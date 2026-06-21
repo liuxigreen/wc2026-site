@@ -1,67 +1,67 @@
 {
-  "updated_at": "2026-06-21 21:23 UTC",
+  "updated_at": "2026-06-21 22:25 UTC",
   "matches": [
     {
-      "home": "belgium",
-      "away": "iran",
-      "match_time": "2026-06-21T19:00Z",
-      "hours_until": -2.0,
-      "city": "Inglewood, California",
-      "venue": "SoFi Stadium",
+      "home": "uruguay",
+      "away": "cape-verde",
+      "match_time": "2026-06-21T22:00Z",
+      "hours_until": -0.4,
+      "city": "Miami Gardens, Florida",
+      "venue": "Hard Rock Stadium",
       "home_score": 0,
       "away_score": 0,
       "state": "in",
-      "status": "STATUS_SECOND_HALF",
+      "status": "STATUS_IN_PROGRESS",
       "money_line": {
-        "win_a": "55.5",
-        "draw": "25.3",
-        "win_b": "19.2"
+        "win_a": "67.2",
+        "draw": "21.6",
+        "win_b": "11.3"
       },
       "xg": {
-        "a": "1.79",
-        "b": "0.97"
+        "a": "2.04",
+        "b": "0.72"
       },
       "elo": {
-        "a": 1928,
-        "b": 1738,
-        "diff": 190
+        "a": 1817,
+        "b": 1478,
+        "diff": 339
       },
       "top_scores": [
         [
-          "1-1",
-          "12.1"
+          "2-0",
+          "13.1"
         ],
         [
           "1-0",
-          "10.2"
+          "11.9"
         ],
         [
-          "2-0",
-          "10.1"
+          "1-1",
+          "10.3"
         ]
       ],
       "over_under": {
         "2.5": {
-          "over": "52.2",
-          "under": "47.8"
+          "over": "52.1",
+          "under": "47.9"
         }
       },
       "btts": {
-        "yes": "52.9",
-        "no": "47.1"
+        "yes": "45.7",
+        "no": "54.3"
       },
       "spread": {
-        "belgium -1.5": "32.2",
-        "iran +1.5": "67.8"
+        "uruguay -1.5": "43.1",
+        "cape-verde +1.5": "56.9"
       },
       "half_time": {
-        "win_a": "39.4",
-        "draw": "42.7",
-        "win_b": "17.9"
+        "win_a": "46.7",
+        "draw": "40.9",
+        "win_b": "12.4"
       },
       "squad_quality": {
-        "a": 1.87,
-        "b": 0.18
+        "a": -0.19,
+        "b": -1.06
       },
       "market_odds": null,
       "ensemble": null,
