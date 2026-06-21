@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21 13:18 UTC",
+  "updated_at": "2026-06-21 13:52 UTC",
   "matches": [
     {
       "home": "spain",
@@ -69,7 +69,7 @@
       "ai": {
         "verdict": "buy",
         "pick": "西班牙-1.5",
-        "summary": "直接压西班牙-1.5。xG 2.3-0.46碾压，Elo差494，沙特基本没进球能力。",
+        "summary": "Elo差494，xG 2.3 vs 0.46，西班牙碾压局。让1.5球模型55.3%，比胜负盘更有价值。",
         "edge": "（模型edge）",
         "confidence": "高",
         "bets": [
@@ -77,25 +77,25 @@
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "N/A",
-            "reason": "模型78.3%，Elo差494，碾压局"
+            "reason": "模型78.3%，Elo差494，沙特毫无机会"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，略高于2.5线"
+            "reason": "xG 2.76，模型52.1%略偏大球"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "N/A",
-            "reason": "沙特xG仅0.46，BTTS No 65.9%"
+            "reason": "沙特xG仅0.46，很难进球"
           },
           {
             "market": "比分",
             "pick": "2-0",
             "odds": "N/A",
-            "reason": "最可能比分16.7%，西班牙零封概率高"
+            "reason": "最可能比分，西班牙零封概率高"
           }
         ]
       }
@@ -167,8 +167,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "不推荐",
-        "summary": "比利时55.5%太接近，无市场赔率无法确认edge。伊朗有反击能力。",
+        "pick": "—",
+        "summary": "比利时仅55.5%，Elo差190，伊朗不弱。无市场赔率无法确认edge。",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -176,25 +176,25 @@
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "N/A",
-            "reason": "模型55.5%勉强看好，但无市场赔率确认"
+            "reason": "模型55.5%勉强偏比利时，但无市场验证"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，略高于2.5线"
+            "reason": "xG 2.76，模型52.2%略偏大球"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "伊朗xG 0.97有进球能力，BTTS 52.9%"
+            "reason": "伊朗xG 0.97有能力进球，模型52.9%"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "最可能比分12.1%，接近局常见比分"
+            "reason": "势均力敌，平局概率25.3%最高"
           }
         ]
       }
@@ -266,8 +266,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "不推荐",
-        "summary": "乌拉圭67.2%中等偏强，但无市场赔率，-1.5仅43.1%不够稳。",
+        "pick": "—",
+        "summary": "乌拉圭67.2%，Elo差339，但无市场赔率无法确认edge。模型中等偏强。",
         "edge": "N/A",
         "confidence": "中",
         "bets": [
@@ -275,25 +275,25 @@
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "N/A",
-            "reason": "模型67.2%，Elo差339"
+            "reason": "模型67.2%，Elo差339，乌拉圭优势明显"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，略高于2.5线"
+            "reason": "xG 2.76，模型52.1%略偏大球"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "N/A",
-            "reason": "佛得角xG仅0.72，BTTS No 54.3%"
+            "reason": "佛得角xG仅0.72，模型54.3%"
           },
           {
             "market": "比分",
             "pick": "2-0",
             "odds": "N/A",
-            "reason": "最可能比分13.1%，乌拉圭零封"
+            "reason": "最可能比分，乌拉圭零封概率高"
           }
         ]
       }
@@ -365,8 +365,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "不推荐",
-        "summary": "阿根廷69%中等偏强，奥地利不是弱旅，无赔率无法判断。",
+        "pick": "—",
+        "summary": "阿根廷69%，Elo差362，但无市场赔率。模型中等偏强，不够确定。",
         "edge": "N/A",
         "confidence": "中",
         "bets": [
@@ -374,25 +374,25 @@
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "N/A",
-            "reason": "模型69%，Elo差362，阿根廷主场强势"
+            "reason": "模型69%，Elo差362，阿根廷主场优势"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，略高于2.5线"
+            "reason": "xG 2.76，模型52.1%略偏大球"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "N/A",
-            "reason": "奥地利xG仅0.68，BTTS No 55.8%"
+            "reason": "奥地利xG仅0.68，模型55.8%"
           },
           {
             "market": "比分",
             "pick": "2-0",
             "odds": "N/A",
-            "reason": "最可能比分13.6%，阿根廷零封概率高"
+            "reason": "最可能比分，阿根廷零封概率高"
           }
         ]
       }
@@ -465,7 +465,7 @@
       "ai": {
         "verdict": "buy",
         "pick": "法国-1.5",
-        "summary": "直接压法国-1.5。87.5%碾压，xG 2.63-0.25，伊拉克基本没戏。",
+        "summary": "Elo差692碾压级，xG 2.63 vs 0.25。法国87.5%，让1.5球67.6%，最有价值盘口。",
         "edge": "（模型edge）",
         "confidence": "高",
         "bets": [
@@ -473,25 +473,25 @@
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "N/A",
-            "reason": "模型87.5%，Elo差692，绝对碾压"
+            "reason": "模型87.5%，Elo差692，碾压"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.88，高于2.5线"
+            "reason": "xG 2.88，模型54.8%偏大球"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "N/A",
-            "reason": "伊拉克xG仅0.25，BTTS No 79.1%"
+            "reason": "伊拉克xG仅0.25，几乎不可能进球"
           },
           {
             "market": "比分",
             "pick": "3-0",
             "odds": "N/A",
-            "reason": "最可能比分17.0%，法国大胜零封"
+            "reason": "法国大概率零封，xG支持3球"
           }
         ]
       }
@@ -563,8 +563,8 @@
       "edge": {},
       "ai": {
         "verdict": "skip",
-        "pick": "不推荐",
-        "summary": "埃及仅39.4%微弱领先，接近局无赔率不碰。",
+        "pick": "—",
+        "summary": "埃及仅39.4%，xG差距极小（1.31 vs 1.45）。无市场赔率，接近的比赛不碰。",
         "edge": "N/A",
         "confidence": "低",
         "bets": [
@@ -572,66 +572,29 @@
             "market": "胜负盘",
             "pick": "客胜",
             "odds": "N/A",
-            "reason": "埃及39.4%微弱优势，Elo高100"
+            "reason": "模型39.4%埃及，但差距太小"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "N/A",
-            "reason": "xG合计2.76，略高于2.5线"
+            "reason": "xG 2.76，模型52.2%略偏大球"
           },
           {
             "market": "BTTS",
             "pick": "是",
             "odds": "N/A",
-            "reason": "两队xG都>1.3，BTTS Yes 57.1%"
+            "reason": "双方xG均衡，模型57.1%"
           },
           {
             "market": "比分",
             "pick": "1-1",
             "odds": "N/A",
-            "reason": "最可能比分13.2%，接近局常见"
+            "reason": "最可能比分，平局概率27.8%最高"
           }
         ]
       }
     }
   ],
-  "parlays": [
-    {
-      "name": "🛡️ 保守串",
-      "target": "目标3x",
-      "picks": [
-        {
-          "match": "spain-saudi-arabia",
-          "pick": "BTTS否",
-          "odds": "~1.52",
-          "reason": "沙特xG 0.46，零封概率65.9%"
-        },
-        {
-          "match": "france-iraq",
-          "pick": "BTTS否",
-          "odds": "~1.26",
-          "reason": "伊拉克xG 0.25，零封概率79.1%"
-        }
-      ]
-    },
-    {
-      "name": "🔥 进攻串",
-      "target": "目标3x",
-      "picks": [
-        {
-          "match": "spain-saudi-arabia",
-          "pick": "西班牙-1.5",
-          "odds": "~1.81",
-          "reason": "xG差1.84，-1.5概率55.3%"
-        },
-        {
-          "match": "france-iraq",
-          "pick": "法国-1.5",
-          "odds": "~1.48",
-          "reason": "xG差2.38，-1.5概率67.6%"
-        }
-      ]
-    }
-  ]
+  "parlays": []
 }
