@@ -1,7 +1,7 @@
 {
-  "cumulative_brier": 0.502,
-  "accuracy": 0.6765,
-  "total_reviewed": 34,
+  "cumulative_brier": 0.5248,
+  "accuracy": 0.6571,
+  "total_reviewed": 35,
   "correct_count": 23,
   "calibration_bins": [
     {
@@ -18,9 +18,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.672,
-      "actual": 0.8,
-      "count": 10
+      "predicted": 0.682,
+      "actual": 0.727,
+      "count": 11
     },
     {
       "bin": "80-100%",
@@ -199,6 +199,11 @@
       "match": 34,
       "brier": 0.3372,
       "label": "德国 vs 科特迪瓦"
+    },
+    {
+      "match": 35,
+      "brier": 0.6533,
+      "label": "厄瓜多尔 vs 库拉索"
     }
   ],
   "match_reviews": [
@@ -711,7 +716,22 @@
       "brier": 0.2287,
       "correct": true,
       "predicted_score": "2-0"
+    },
+    {
+      "match": "厄瓜多尔 vs 库拉索",
+      "home": "ecuador",
+      "away": "curacao",
+      "predicted": {
+        "home": 0.778,
+        "draw": 0.16699999999999998,
+        "away": 0.055
+      },
+      "result": "0-0",
+      "actual_outcome": "平局",
+      "brier": 1.3022,
+      "correct": false,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-20T22:33:11.182934+00:00"
+  "updated_at": "2026-06-21T03:01:36.955239+00:00"
 }

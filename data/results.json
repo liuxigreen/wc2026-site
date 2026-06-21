@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21 01:54 UTC",
+  "updated_at": "2026-06-21 03:01 UTC",
   "matches": [
     {
       "home": "czech-republic",
@@ -60,6 +60,12 @@
       "away": "ivory-coast",
       "home_score": 2,
       "away_score": 1
+    },
+    {
+      "home": "ecuador",
+      "away": "curacao",
+      "home_score": 0,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
@@ -152,10 +158,6 @@
       "elo": 1768
     },
     {
-      "slug": "ecuador",
-      "elo": 1762
-    },
-    {
       "slug": "austria",
       "elo": 1762
     },
@@ -166,6 +168,10 @@
     {
       "slug": "south-korea",
       "elo": 1739
+    },
+    {
+      "slug": "ecuador",
+      "elo": 1738
     },
     {
       "slug": "canada",
