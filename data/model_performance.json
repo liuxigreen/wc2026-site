@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5248,
-  "accuracy": 0.6571,
-  "total_reviewed": 35,
-  "correct_count": 23,
+  "cumulative_brier": 0.5194,
+  "accuracy": 0.6667,
+  "total_reviewed": 36,
+  "correct_count": 24,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.511,
-      "actual": 0.6,
-      "count": 20
+      "predicted": 0.512,
+      "actual": 0.619,
+      "count": 21
     },
     {
       "bin": "60-80%",
@@ -204,6 +204,11 @@
       "match": 35,
       "brier": 0.6533,
       "label": "厄瓜多尔 vs 库拉索"
+    },
+    {
+      "match": 36,
+      "brier": 0.525,
+      "label": "突尼斯 vs 日本"
     }
   ],
   "match_reviews": [
@@ -731,7 +736,22 @@
       "brier": 1.3022,
       "correct": false,
       "predicted_score": "2-0"
+    },
+    {
+      "match": "突尼斯 vs 日本",
+      "home": "tunisia",
+      "away": "japan",
+      "predicted": {
+        "home": 0.20800000000000002,
+        "draw": 0.258,
+        "away": 0.5329999999999999
+      },
+      "result": "0-4",
+      "actual_outcome": "客胜",
+      "brier": 0.3279,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-21T03:01:36.955239+00:00"
+  "updated_at": "2026-06-21T06:03:43.578097+00:00"
 }

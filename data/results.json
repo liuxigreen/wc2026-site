@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21 05:25 UTC",
+  "updated_at": "2026-06-21 06:03 UTC",
   "matches": [
     {
       "home": "czech-republic",
@@ -66,6 +66,12 @@
       "away": "curacao",
       "home_score": 0,
       "away_score": 0
+    },
+    {
+      "home": "tunisia",
+      "away": "japan",
+      "home_score": 0,
+      "away_score": 4
     }
   ],
   "elo_rankings": [
@@ -115,7 +121,7 @@
     },
     {
       "slug": "japan",
-      "elo": 1863
+      "elo": 1893
     },
     {
       "slug": "croatia",

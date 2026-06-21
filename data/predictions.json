@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-21 05:25 UTC",
+  "updated_at": "2026-06-21 06:03 UTC",
   "matches": [
     {
       "home": "spain",
       "away": "saudi-arabia",
       "match_time": "2026-06-21T16:00Z",
-      "hours_until": 10.6,
+      "hours_until": 9.9,
       "city": "Atlanta, Georgia",
       "venue": "Mercedes-Benz Stadium",
       "home_score": 0,
@@ -63,92 +63,39 @@
         "a": 1.18,
         "b": -0.73
       },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-21T16:00:00Z",
-        "away_odds": 24.15,
-        "away_implied": 4.1,
-        "home_odds": 1.09,
-        "home_implied": 91.7,
-        "draw_odds": 10.63,
-        "draw_implied": 9.4,
-        "dog_spread": 2.5,
-        "dog_odds": 1.89,
-        "fav_spread": -2.5,
-        "fav_odds": 1.96,
-        "over_odds": 1.85,
-        "over_point": 3.25,
-        "under_odds": 2.01
-      },
-      "ensemble": {
-        "win_a": 84.6,
-        "draw": 11.1,
-        "win_b": 4.3,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 78.3,
-          "market_odds": 1.09,
-          "market_implied": 91.7,
-          "edge": -13.4,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 16.4,
-          "market_odds": 10.63,
-          "market_implied": 9.4,
-          "edge": 7.0,
-          "kelly_full": 7.7,
-          "kelly_quarter": 1.9,
-          "has_edge": true
-        },
-        "away": {
-          "model_pct": 5.2,
-          "market_odds": 24.15,
-          "market_implied": 4.1,
-          "edge": 1.1,
-          "kelly_full": 1.1,
-          "kelly_quarter": 0.3,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.85,
-          "point": 3.25
-        }
-      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {},
       "ai": {
         "verdict": "buy",
-        "pick": "小3.25",
-        "summary": "西班牙碾压局但赔率已锁死，大小球有大edge。总xG仅2.76，模型78%进球≤3，市场只给53%。",
-        "edge": "+27.5%（模型edge）",
+        "pick": "小3.5",
+        "summary": "西班牙碾压局但盘口3.5太高，Poisson模型小3.5概率70%，市场仅52%，edge +18%",
+        "edge": "+18.9%（模型edge）",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "1.09",
-            "reason": "赔率太低无价值，-7.1%负edge"
+            "pick": "平局",
+            "odds": "10.63",
+            "reason": "ensemble 11.1% vs 市场9.4%，+1.7% edge"
           },
           {
             "market": "大小球",
-            "pick": "小3.25",
-            "odds": "1.98",
-            "reason": "xG仅2.76，模型78%≤3球，市场隐含53%，强edge"
+            "pick": "小3.5",
+            "odds": "~1.92",
+            "reason": "Poisson P(4+)=30%，市场隐含48%，edge +18%"
           },
           {
             "market": "BTTS",
             "pick": "否",
             "odds": "N/A",
-            "reason": "沙特xG仅0.46，BTTS概率34%，大概率零封"
+            "reason": "模型65.9%，沙特xG仅0.46"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~6.5",
-            "reason": "最可能比分，西班牙进攻效率高但沙特防守不差"
+            "odds": "~6.0",
+            "reason": "最可能比分16.7%"
           }
         ]
       }
@@ -157,7 +104,7 @@
       "home": "belgium",
       "away": "iran",
       "match_time": "2026-06-21T19:00Z",
-      "hours_until": 13.6,
+      "hours_until": 12.9,
       "city": "Inglewood, California",
       "venue": "SoFi Stadium",
       "home_score": 0,
@@ -215,92 +162,39 @@
         "a": 1.87,
         "b": 0.18
       },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-21T19:00:00Z",
-        "home_odds": 1.44,
-        "home_implied": 69.4,
-        "away_odds": 7.58,
-        "away_implied": 13.2,
-        "draw_odds": 4.68,
-        "draw_implied": 21.4,
-        "fav_spread": -1.25,
-        "fav_odds": 2.05,
-        "dog_spread": 1.25,
-        "dog_odds": 1.86,
-        "over_odds": 1.84,
-        "over_point": 2.5,
-        "under_odds": 2.06
-      },
-      "ensemble": {
-        "win_a": 63.5,
-        "draw": 22.0,
-        "win_b": 14.6,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 55.5,
-          "market_odds": 1.44,
-          "market_implied": 69.4,
-          "edge": -13.9,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 25.3,
-          "market_odds": 4.68,
-          "market_implied": 21.4,
-          "edge": 3.9,
-          "kelly_full": 5.0,
-          "kelly_quarter": 1.3,
-          "has_edge": true
-        },
-        "away": {
-          "model_pct": 19.2,
-          "market_odds": 7.58,
-          "market_implied": 13.2,
-          "edge": 6.0,
-          "kelly_full": 6.9,
-          "kelly_quarter": 1.7,
-          "has_edge": true
-        },
-        "over": {
-          "market_odds": 1.84,
-          "point": 2.5
-        }
-      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {},
       "ai": {
-        "verdict": "skip",
-        "pick": "跳过",
-        "summary": "比利时被市场高估，伊朗有微弱edge但不够。所有盘口edge极小，不值得冒险。",
-        "edge": "+1.4%（伊朗客胜）",
-        "confidence": "低",
+        "verdict": "buy",
+        "pick": "伊朗+1.25",
+        "summary": "伊朗被严重低估，ensemble让球+1.25 edge +14%，客胜也有+1.4% edge",
+        "edge": "+14.0%",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "客胜",
-            "odds": "7.63",
-            "reason": "伊朗ensemble 14.5% vs 市场13.1%，+1.4%微弱edge"
+            "odds": "7.58",
+            "reason": "模型19.2% vs 市场13.2%，+6.0% edge"
           },
           {
             "market": "大小球",
-            "pick": "大2.5",
-            "odds": "1.83",
-            "reason": "xG 2.76，模型52.2%，无edge"
+            "pick": "小2.5",
+            "odds": "2.06",
+            "reason": "ensemble 47.8% vs 市场48.5%，+0.7% edge"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "N/A",
-            "reason": "模型52.9%，接近五五开，无明显价值"
+            "odds": "1.83",
+            "reason": "模型52.9% vs 市场51.1%，+1.8% edge"
           },
           {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "~5.5",
-            "reason": "最可能平局比分，但edge不足"
+            "market": "让球",
+            "pick": "伊朗+1.25",
+            "odds": "1.86",
+            "reason": "模型67.8% vs 市场53.8%，+14.0% edge"
           }
         ]
       }
@@ -309,7 +203,7 @@
       "home": "uruguay",
       "away": "cape-verde",
       "match_time": "2026-06-21T22:00Z",
-      "hours_until": 16.6,
+      "hours_until": 15.9,
       "city": "Miami Gardens, Florida",
       "venue": "Hard Rock Stadium",
       "home_score": 0,
@@ -367,92 +261,39 @@
         "a": -0.19,
         "b": -1.06
       },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-21T22:00:00Z",
-        "away_odds": 8.57,
-        "away_implied": 11.7,
-        "home_odds": 1.46,
-        "home_implied": 68.5,
-        "draw_odds": 4.25,
-        "draw_implied": 23.5,
-        "dog_spread": 1.0,
-        "dog_odds": 2.05,
-        "fav_spread": -1.0,
-        "fav_odds": 1.86,
-        "over_odds": 2.05,
-        "over_point": 2.25,
-        "under_odds": 1.84
-      },
-      "ensemble": {
-        "win_a": 66.4,
-        "draw": 22.3,
-        "win_b": 11.3,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 67.2,
-          "market_odds": 1.46,
-          "market_implied": 68.5,
-          "edge": -1.3,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 21.6,
-          "market_odds": 4.25,
-          "market_implied": 23.5,
-          "edge": -1.9,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 11.3,
-          "market_odds": 8.57,
-          "market_implied": 11.7,
-          "edge": -0.4,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 2.05,
-          "point": 2.25
-        }
-      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {},
       "ai": {
         "verdict": "buy",
         "pick": "小2.25",
-        "summary": "佛得角进攻极弱xG仅0.72，总xG 2.76但市场开低线2.25。模型78%≤2球，大edge。",
-        "edge": "+23.4%（模型edge）",
-        "confidence": "高",
+        "summary": "两队xG合计2.76，市场线2.25偏低，Poisson模型小2.25概率58%，市场仅49%",
+        "edge": "+6.6%（模型edge）",
+        "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "1.47",
-            "reason": "乌拉圭稳赢但-2.0%负edge，无价值"
+            "odds": "1.46",
+            "reason": "ensemble 66.4% vs 市场68.5%，-2.1% edge，不推荐"
           },
           {
             "market": "大小球",
             "pick": "小2.25",
-            "odds": "1.83",
-            "reason": "xG 2.76但佛得角0.72拖累，模型78%≤2球，市场隐含54.6%"
+            "odds": "1.84",
+            "reason": "Poisson P(≤2)+0.5×P(3)=58%，市场隐含49%，+6.6%"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "N/A",
-            "reason": "佛得角xG仅0.72，BTTS概率45.7%，大概率乌拉圭零封"
+            "odds": "1.84",
+            "reason": "模型54.3% vs 市场51.6%，+2.7% edge"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~6.0",
-            "reason": "最可能比分，乌拉圭控制比赛但不会大比分"
+            "odds": "~7.5",
+            "reason": "最可能比分13.1%"
           }
         ]
       }
@@ -461,7 +302,7 @@
       "home": "argentina",
       "away": "austria",
       "match_time": "2026-06-22",
-      "hours_until": 18.6,
+      "hours_until": 17.9,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -519,92 +360,39 @@
         "a": 2.12,
         "b": 0.77
       },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-22T17:00:00Z",
-        "home_odds": 1.57,
-        "home_implied": 63.7,
-        "away_odds": 6.52,
-        "away_implied": 15.3,
-        "draw_odds": 4.0,
-        "draw_implied": 25.0,
-        "fav_spread": -1.0,
-        "fav_odds": 2.0,
-        "dog_spread": 1.0,
-        "dog_odds": 1.91,
-        "over_odds": 1.98,
-        "over_point": 2.5,
-        "under_odds": 1.91
-      },
-      "ensemble": {
-        "win_a": 63.5,
-        "draw": 23.1,
-        "win_b": 13.4,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 69.0,
-          "market_odds": 1.57,
-          "market_implied": 63.7,
-          "edge": 5.3,
-          "kelly_full": 14.6,
-          "kelly_quarter": 3.7,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 20.8,
-          "market_odds": 4.0,
-          "market_implied": 25.0,
-          "edge": -4.2,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 10.2,
-          "market_odds": 6.52,
-          "market_implied": 15.3,
-          "edge": -5.1,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.98,
-          "point": 2.5
-        }
-      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {},
       "ai": {
-        "verdict": "buy",
-        "pick": "阿根廷-1.0",
-        "summary": "阿根廷模型69% vs 市场隐含63.7%，+5.3%正edge。让1球@2.0是本场最佳盘口。",
-        "edge": "+8.3%",
-        "confidence": "中高",
+        "verdict": "skip",
+        "pick": "奥地利+1.0",
+        "summary": "各盘口edge均<3%，ensemble无明显价值，奥地利+1.0仅有+2.7%模型edge",
+        "edge": "+2.7%（模型edge）",
+        "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "1.57",
-            "reason": "ensemble 63.5% vs 市场63.7%，-0.2%无edge"
-          },
-          {
-            "market": "让球盘",
-            "pick": "阿根廷-1.0",
-            "odds": "2.0",
-            "reason": "模型让1球58.3% vs 市场隐含50%，+8.3%正edge"
+            "reason": "ensemble 63.5% vs 市场63.7%，-0.2% edge"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
             "odds": "1.98",
-            "reason": "xG 2.76，模型52.1%，无edge"
+            "reason": "模型52.1% vs 市场50.5%，+1.6% edge"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "N/A",
-            "reason": "奥地利xG仅0.68，BTTS概率44.2%，但市场可能也这么看"
+            "odds": "1.72",
+            "reason": "模型55.8% vs 市场52.5%，+3.3% edge"
+          },
+          {
+            "market": "让球",
+            "pick": "奥地利+1.0",
+            "odds": "1.91",
+            "reason": "模型55.1% vs 市场52.4%，+2.7% edge"
           }
         ]
       }
@@ -613,7 +401,7 @@
       "home": "france",
       "away": "iraq",
       "match_time": "2026-06-22",
-      "hours_until": 18.6,
+      "hours_until": 17.9,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -671,92 +459,39 @@
         "a": 0.62,
         "b": -1.06
       },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-22T21:00:00Z",
-        "home_odds": 1.07,
-        "home_implied": 93.5,
-        "away_odds": 30.26,
-        "away_implied": 3.3,
-        "draw_odds": 11.89,
-        "draw_implied": 8.4,
-        "fav_spread": -2.75,
-        "fav_odds": 1.98,
-        "dog_spread": 2.75,
-        "dog_odds": 1.88,
-        "over_odds": 1.93,
-        "over_point": 3.5,
-        "under_odds": 1.92
-      },
-      "ensemble": {
-        "win_a": 88.5,
-        "draw": 8.8,
-        "win_b": 2.7,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 87.5,
-          "market_odds": 1.07,
-          "market_implied": 93.5,
-          "edge": -6.0,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 10.7,
-          "market_odds": 11.89,
-          "market_implied": 8.4,
-          "edge": 2.3,
-          "kelly_full": 2.5,
-          "kelly_quarter": 0.6,
-          "has_edge": true
-        },
-        "away": {
-          "model_pct": 1.8,
-          "market_odds": 30.26,
-          "market_implied": 3.3,
-          "edge": -1.5,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.93,
-          "point": 3.5
-        }
-      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {},
       "ai": {
         "verdict": "buy",
-        "pick": "小3.5",
-        "summary": "法国碾压但赔率1.07无价值。总xG仅2.88，模型66.5%≤3球，市场只给52%，大edge。",
-        "edge": "+14.4%（模型edge）",
-        "confidence": "高",
+        "pick": "伊拉克+2.75",
+        "summary": "法国必胜但盘口-2.75太深，Poisson模型伊拉克+2.75概率56%，市场仅50%",
+        "edge": "+6.7%（模型edge）",
+        "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "1.07",
-            "reason": "赔率太低，-5.0%负edge"
+            "reason": "ensemble 88.5% vs 市场93.5%，-5.0% edge"
           },
           {
             "market": "大小球",
             "pick": "小3.5",
-            "odds": "1.92",
-            "reason": "xG仅2.88（伊拉克0.25），模型66.5%≤3球，市场隐含52.1%"
+            "odds": "~2.07",
+            "reason": "Poisson P(4+)=31%，市场隐含48%，edge +17%"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "N/A",
-            "reason": "伊拉克xG仅0.25，BTTS概率20.9%，几乎不可能"
+            "odds": "~1.25",
+            "reason": "模型79.1%，伊拉克xG仅0.25"
           },
           {
-            "market": "比分",
-            "pick": "3-0",
-            "odds": "~5.0",
-            "reason": "最可能比分，法国高效但不会大屠杀"
+            "market": "让球",
+            "pick": "伊拉克+2.75",
+            "odds": "1.88",
+            "reason": "Poisson模型56% vs 市场50.5%，+6.7% edge"
           }
         ]
       }
@@ -765,7 +500,7 @@
       "home": "new-zealand",
       "away": "egypt",
       "match_time": "2026-06-22T01:00Z",
-      "hours_until": 19.6,
+      "hours_until": 18.9,
       "city": "Vancouver",
       "venue": "BC Place",
       "home_score": 0,
@@ -823,92 +558,39 @@
         "a": -0.42,
         "b": -0.3
       },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-22T01:00:00Z",
-        "away_odds": 1.61,
-        "away_implied": 62.1,
-        "home_odds": 5.46,
-        "home_implied": 18.3,
-        "draw_odds": 4.29,
-        "draw_implied": 23.3,
-        "fav_spread": -1.0,
-        "fav_odds": 2.11,
-        "dog_spread": 1.0,
-        "dog_odds": 1.81,
-        "over_odds": 1.85,
-        "over_point": 2.25,
-        "under_odds": 2.04
-      },
-      "ensemble": {
-        "win_a": 22.1,
-        "draw": 24.0,
-        "win_b": 53.9,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 32.8,
-          "market_odds": 5.46,
-          "market_implied": 18.3,
-          "edge": 14.5,
-          "kelly_full": 17.7,
-          "kelly_quarter": 4.4,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 27.8,
-          "market_odds": 4.29,
-          "market_implied": 23.3,
-          "edge": 4.5,
-          "kelly_full": 5.9,
-          "kelly_quarter": 1.5,
-          "has_edge": true
-        },
-        "away": {
-          "model_pct": 39.4,
-          "market_odds": 1.61,
-          "market_implied": 62.1,
-          "edge": -22.7,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.85,
-          "point": 2.25
-        }
-      },
+      "market_odds": null,
+      "ensemble": null,
+      "edge": {},
       "ai": {
         "verdict": "buy",
-        "pick": "新西兰独赢",
-        "summary": "市场严重低估新西兰！模型32.8% vs 市场隐含18.3%，+14.5%大edge。埃及被高估。",
-        "edge": "+14.5%",
-        "confidence": "中高",
+        "pick": "主胜",
+        "summary": "新西兰被严重低估，ensemble 22.1% vs 市场仅18.3%，+3.8% edge，模型+14.5%",
+        "edge": "+3.8%",
+        "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
             "odds": "5.46",
-            "reason": "模型32.8% vs 市场18.3%，+14.5%大edge，值得搏"
+            "reason": "ensemble 22.1% vs 市场18.3%，+3.8% edge"
           },
           {
             "market": "大小球",
-            "pick": "大2.25",
+            "pick": "大2.5",
             "odds": "1.85",
-            "reason": "xG 2.76，模型52.2%，市场隐含54.1%，微弱负edge"
+            "reason": "模型52.2% vs 市场48.8%，+3.4% edge"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "N/A",
-            "reason": "模型57.1%，两队都有进攻能力"
+            "odds": "1.75",
+            "reason": "模型57.1% vs 市场54.1%，+3.0% edge"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~5.0",
-            "reason": "最可能比分，接近比赛"
+            "odds": "~7.5",
+            "reason": "最可能比分13.2%"
           }
         ]
       }
@@ -917,39 +599,37 @@
   "parlays": [
     {
       "name": "🛡️ 保守串",
-      "target": "3.8x",
-      "reason": "两场强模型edge的大球小球，稳健组合",
+      "target": "10.1x",
       "picks": [
         {
-          "match": "spain-saudi-arabia",
-          "pick": "小3.25",
-          "odds": "1.98",
-          "reason": "xG 2.76，模型78%≤3球"
+          "match": "new-zealand-egypt",
+          "pick": "主胜",
+          "odds": "~5.46",
+          "reason": "ensemble +3.8% edge，高价值低概率"
         },
         {
-          "match": "france-iraq",
-          "pick": "小3.5",
-          "odds": "1.92",
-          "reason": "xG 2.88，模型66.5%≤3球"
+          "match": "belgium-iran",
+          "pick": "伊朗+1.25",
+          "odds": "~1.86",
+          "reason": "ensemble +14.0% edge，最强信号"
         }
       ]
     },
     {
       "name": "🔥 进攻串",
-      "target": "10.9x",
-      "reason": "阿根廷稳赢+新西兰大冷门，高赔率高edge",
+      "target": "21.6x",
       "picks": [
         {
-          "match": "argentina-austria",
-          "pick": "阿根廷-1.0",
-          "odds": "2.0",
-          "reason": "模型58.3%，+8.3%正edge"
+          "match": "belgium-iran",
+          "pick": "伊朗+1.25",
+          "odds": "~1.86",
+          "reason": "ensemble +14.0% edge，最强信号"
         },
         {
-          "match": "new-zealand-egypt",
-          "pick": "主胜",
-          "odds": "5.46",
-          "reason": "模型32.8%，+14.5%大edge"
+          "match": "spain-saudi-arabia",
+          "pick": "平局",
+          "odds": "~10.63",
+          "reason": "模型16.4% vs 市场9.4%，+7.0% model edge"
         }
       ]
     }
