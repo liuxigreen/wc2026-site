@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22 00:02 UTC",
+  "updated_at": "2026-06-22 00:08 UTC",
   "matches": [
     {
       "home": "new-zealand",
@@ -1055,40 +1055,40 @@
   ],
   "parlays": [
     {
-      "name": "🛡️ 保守串",
-      "target": "3.77x",
-      "odds": "3.77",
+      "name": "🛡️ 保守串 (目标3.8x)",
+      "type": "conservative",
+      "target": "3.8x",
       "picks": [
         {
           "match": "argentina-austria",
-          "pick": "阿根廷-1.0",
-          "odds": "~1.93",
-          "reason": "Elo差365，model edge +4.3%，高信心"
+          "pick": "大2.5",
+          "odds": "~2.04",
+          "reason": "xG 2.76，模型52.1% vs 隐含49.0%，+3.1%edge"
         },
         {
-          "match": "france-iraq",
-          "pick": "小3.5",
-          "odds": "~1.95",
-          "reason": "xG 2.88，P(U3.5)≈67.5%，edge +16.1%"
+          "match": "jordan-algeria",
+          "pick": "BTTS是",
+          "odds": "~1.87",
+          "reason": "模型56.3%，两队都有进球能力，+3.7%edge"
         }
       ]
     },
     {
-      "name": "🔥 进攻串",
-      "target": "12.19x",
-      "odds": "12.19",
+      "name": "🔥 进攻串 (目标12.3x)",
+      "type": "aggressive",
+      "target": "12.3x",
       "picks": [
         {
-          "match": "new-zealand-egypt",
-          "pick": "新西兰胜",
-          "odds": "~6.25",
-          "reason": "ensemble 20.6% vs 隐含16.0%，edge +4.6%，高赔被低估"
+          "match": "jordan-algeria",
+          "pick": "主胜",
+          "odds": "~6.03",
+          "reason": "ensemble +2.8%，模型+11.0%，市场低估约旦"
         },
         {
-          "match": "france-iraq",
-          "pick": "小3.5",
-          "odds": "~1.95",
-          "reason": "xG 2.88，edge +16.1%，最稳搭配"
+          "match": "argentina-austria",
+          "pick": "大2.5",
+          "odds": "~2.04",
+          "reason": "xG 2.76，模型52.1% vs 隐含49.0%，+3.1%edge"
         }
       ]
     }
