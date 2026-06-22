@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22 00:02 UTC",
+  "updated_at": "2026-06-22 00:28 UTC",
   "matches": [
     {
       "home": "usa",
@@ -60,6 +60,12 @@
       "away": "iran",
       "home_score": 0,
       "away_score": 0
+    },
+    {
+      "home": "uruguay",
+      "away": "cape-verde",
+      "home_score": 2,
+      "away_score": 2
     }
   ],
   "elo_rankings": [
@@ -128,16 +134,16 @@
       "elo": 1838
     },
     {
-      "slug": "uruguay",
-      "elo": 1823
-    },
-    {
       "slug": "senegal",
       "elo": 1817
     },
     {
       "slug": "switzerland",
       "elo": 1809
+    },
+    {
+      "slug": "uruguay",
+      "elo": 1801
     },
     {
       "slug": "denmark",

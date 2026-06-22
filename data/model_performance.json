@@ -1,7 +1,7 @@
 {
-  "cumulative_brier": 0.5178,
-  "accuracy": 0.6579,
-  "total_reviewed": 38,
+  "cumulative_brier": 0.5322,
+  "accuracy": 0.641,
+  "total_reviewed": 39,
   "correct_count": 25,
   "calibration_bins": [
     {
@@ -18,9 +18,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.69,
-      "actual": 0.75,
-      "count": 12
+      "predicted": 0.689,
+      "actual": 0.692,
+      "count": 13
     },
     {
       "bin": "80-100%",
@@ -219,6 +219,11 @@
       "match": 38,
       "brier": 0.6524,
       "label": "比利时 vs 伊朗"
+    },
+    {
+      "match": 39,
+      "brier": 0.5966,
+      "label": "乌拉圭 vs 佛得角"
     }
   ],
   "match_reviews": [
@@ -791,7 +796,22 @@
       "brier": 0.9029,
       "correct": false,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "乌拉圭 vs 佛得角",
+      "home": "uruguay",
+      "away": "cape-verde",
+      "predicted": {
+        "home": 0.672,
+        "draw": 0.21600000000000003,
+        "away": 0.113
+      },
+      "result": "2-2",
+      "actual_outcome": "平局",
+      "brier": 1.079,
+      "correct": false,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-21T22:08:43.503900+00:00"
+  "updated_at": "2026-06-22T00:28:56.203089+00:00"
 }
