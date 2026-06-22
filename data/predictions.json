@@ -1,163 +1,11 @@
 {
-  "updated_at": "2026-06-22 14:57 UTC",
+  "updated_at": "2026-06-22 18:59 UTC",
   "matches": [
-    {
-      "home": "argentina",
-      "away": "austria",
-      "match_time": "2026-06-22T17:00Z",
-      "hours_until": 2.0,
-      "city": "Arlington, Texas",
-      "venue": "AT&T Stadium",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "STATUS_SCHEDULED",
-      "money_line": {
-        "win_a": "69.2",
-        "draw": "20.7",
-        "win_b": "10.1"
-      },
-      "xg": {
-        "a": "2.08",
-        "b": "0.68"
-      },
-      "elo": {
-        "a": 2148,
-        "b": 1783,
-        "diff": 365
-      },
-      "top_scores": [
-        [
-          "2-0",
-          "13.7"
-        ],
-        [
-          "1-0",
-          "12.3"
-        ],
-        [
-          "1-1",
-          "9.8"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.1",
-          "under": "47.9"
-        }
-      },
-      "btts": {
-        "yes": "44.1",
-        "no": "55.9"
-      },
-      "spread": {
-        "argentina -1.5": "45.2",
-        "austria +1.5": "54.8"
-      },
-      "half_time": {
-        "win_a": "48.1",
-        "draw": "40.5",
-        "win_b": "11.5"
-      },
-      "squad_quality": {
-        "a": 2.12,
-        "b": 0.77
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-22T17:00:00Z",
-        "home_odds": 1.47,
-        "home_implied": 68.0,
-        "away_odds": 8.25,
-        "away_implied": 12.1,
-        "draw_odds": 4.6,
-        "draw_implied": 21.7,
-        "fav_spread": -1.0,
-        "fav_odds": 1.81,
-        "dog_spread": 1.0,
-        "dog_odds": 2.16,
-        "over_odds": 2.04,
-        "over_point": 2.5,
-        "under_odds": 1.87
-      },
-      "ensemble": {
-        "win_a": 67.5,
-        "draw": 21.1,
-        "win_b": 11.4,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 69.2,
-          "market_odds": 1.47,
-          "market_implied": 68.0,
-          "edge": 1.2,
-          "kelly_full": 3.7,
-          "kelly_quarter": 0.9,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 20.7,
-          "market_odds": 4.6,
-          "market_implied": 21.7,
-          "edge": -1.0,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 10.1,
-          "market_odds": 8.25,
-          "market_implied": 12.1,
-          "edge": -2.0,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 2.04,
-          "point": 2.5
-        }
-      },
-      "ai": {
-        "verdict": "skip",
-        "pick": "无明确edge",
-        "summary": "阿根廷65%胜率，但市场定价合理，所有盘口edge均<2%",
-        "edge": "N/A",
-        "confidence": "低",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "阿根廷胜",
-            "odds": "1.51",
-            "reason": "ensemble 65.4% vs 市场66.2%，无edge"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "1.98",
-            "reason": "模型52.1% vs 市场50.5%，+1.6%太薄"
-          },
-          {
-            "market": "BTTS",
-            "pick": "否",
-            "odds": "N/A",
-            "reason": "模型55.9%不双方进球，奥地利xG仅0.68"
-          },
-          {
-            "market": "比分",
-            "pick": "2-0",
-            "odds": "5.88",
-            "reason": "最可能比分13.7%，但edge不足"
-          }
-        ]
-      }
-    },
     {
       "home": "france",
       "away": "iraq",
       "match_time": "2026-06-22T21:00Z",
-      "hours_until": 6.0,
+      "hours_until": 2.0,
       "city": "Philadelphia, Pennsylvania",
       "venue": "Lincoln Financial Field",
       "home_score": 0,
@@ -218,32 +66,32 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-22T21:00:00Z",
-        "home_odds": 1.1,
-        "home_implied": 90.9,
-        "away_odds": 31.0,
-        "away_implied": 3.2,
+        "home_odds": 1.11,
+        "home_implied": 90.1,
+        "away_odds": 28.0,
+        "away_implied": 3.6,
         "draw_odds": 12.0,
         "draw_implied": 8.3,
         "fav_spread": -2.75,
         "fav_odds": 1.99,
         "dog_spread": 2.75,
         "dog_odds": 1.92,
-        "over_odds": 1.85,
+        "over_odds": 1.87,
         "over_point": 3.5,
-        "under_odds": 2.04
+        "under_odds": 2.03
       },
       "ensemble": {
-        "win_a": 88.4,
+        "win_a": 88.1,
         "draw": 8.9,
-        "win_b": 2.7,
+        "win_b": 3.0,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 87.5,
-          "market_odds": 1.1,
-          "market_implied": 90.9,
-          "edge": -3.4,
+          "market_odds": 1.11,
+          "market_implied": 90.1,
+          "edge": -2.6,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
@@ -259,15 +107,15 @@
         },
         "away": {
           "model_pct": 1.8,
-          "market_odds": 31.0,
-          "market_implied": 3.2,
-          "edge": -1.4,
+          "market_odds": 28.0,
+          "market_implied": 3.6,
+          "edge": -1.8,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 1.85,
+          "market_odds": 1.87,
           "point": 3.5
         }
       },
@@ -309,7 +157,7 @@
       "home": "norway",
       "away": "senegal",
       "match_time": "2026-06-23T00:00Z",
-      "hours_until": 9.0,
+      "hours_until": 5.0,
       "city": "East Rutherford, New Jersey",
       "venue": "MetLife Stadium",
       "home_score": 0,
@@ -370,56 +218,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-23T00:00:00Z",
-        "home_odds": 2.25,
-        "home_implied": 44.4,
-        "away_odds": 3.41,
-        "away_implied": 29.3,
-        "draw_odds": 3.5,
-        "draw_implied": 28.6,
+        "home_odds": 2.37,
+        "home_implied": 42.2,
+        "away_odds": 3.24,
+        "away_implied": 30.9,
+        "draw_odds": 3.43,
+        "draw_implied": 29.2,
         "fav_spread": -0.25,
-        "fav_odds": 1.94,
+        "fav_odds": 2.04,
         "dog_spread": 0.25,
-        "dog_odds": 1.98,
-        "over_odds": 1.93,
+        "dog_odds": 1.9,
+        "over_odds": 1.99,
         "over_point": 2.5,
-        "under_odds": 1.97
+        "under_odds": 1.91
       },
       "ensemble": {
-        "win_a": 41.5,
-        "draw": 27.9,
-        "win_b": 30.6,
+        "win_a": 40.0,
+        "draw": 28.4,
+        "win_b": 31.7,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 36.9,
-          "market_odds": 2.25,
-          "market_implied": 44.4,
-          "edge": -7.5,
+          "market_odds": 2.37,
+          "market_implied": 42.2,
+          "edge": -5.3,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "draw": {
           "model_pct": 27.9,
-          "market_odds": 3.5,
-          "market_implied": 28.6,
-          "edge": -0.7,
+          "market_odds": 3.43,
+          "market_implied": 29.2,
+          "edge": -1.3,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "away": {
           "model_pct": 35.2,
-          "market_odds": 3.41,
-          "market_implied": 29.3,
-          "edge": 5.9,
-          "kelly_full": 8.3,
-          "kelly_quarter": 2.1,
+          "market_odds": 3.24,
+          "market_implied": 30.9,
+          "edge": 4.3,
+          "kelly_full": 6.3,
+          "kelly_quarter": 1.6,
           "has_edge": true
         },
         "over": {
-          "market_odds": 1.93,
+          "market_odds": 1.99,
           "point": 2.5
         }
       },
@@ -458,162 +306,10 @@
       }
     },
     {
-      "home": "portugal",
-      "away": "uzbekistan",
-      "match_time": "2026-06-23",
-      "hours_until": 9.0,
-      "city": "",
-      "venue": "",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "Scheduled",
-      "money_line": {
-        "win_a": "81.2",
-        "draw": "14.8",
-        "win_b": "3.9"
-      },
-      "xg": {
-        "a": "2.37",
-        "b": "0.39"
-      },
-      "elo": {
-        "a": 2015,
-        "b": 1477,
-        "diff": 538
-      },
-      "top_scores": [
-        [
-          "2-0",
-          "17.8"
-        ],
-        [
-          "1-0",
-          "14.4"
-        ],
-        [
-          "3-0",
-          "14.1"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.1",
-          "under": "47.9"
-        }
-      },
-      "btts": {
-        "yes": "29.9",
-        "no": "70.1"
-      },
-      "spread": {
-        "portugal -1.5": "58.7",
-        "uzbekistan +1.5": "41.3"
-      },
-      "half_time": {
-        "win_a": "56.8",
-        "draw": "37.2",
-        "win_b": "6.0"
-      },
-      "squad_quality": {
-        "a": 2.41,
-        "b": -0.48
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-23T17:00:00Z",
-        "home_odds": 1.19,
-        "home_implied": 84.0,
-        "away_odds": 17.2,
-        "away_implied": 5.8,
-        "draw_odds": 7.45,
-        "draw_implied": 13.4,
-        "fav_spread": -2.0,
-        "fav_odds": 2.05,
-        "dog_spread": 2.0,
-        "dog_odds": 1.86,
-        "over_odds": 2.03,
-        "over_point": 3.0,
-        "under_odds": 1.86
-      },
-      "ensemble": {
-        "win_a": 81.4,
-        "draw": 13.5,
-        "win_b": 5.1,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 81.2,
-          "market_odds": 1.19,
-          "market_implied": 84.0,
-          "edge": -2.8,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "draw": {
-          "model_pct": 14.8,
-          "market_odds": 7.45,
-          "market_implied": 13.4,
-          "edge": 1.4,
-          "kelly_full": 1.6,
-          "kelly_quarter": 0.4,
-          "has_edge": false
-        },
-        "away": {
-          "model_pct": 3.9,
-          "market_odds": 17.2,
-          "market_implied": 5.8,
-          "edge": -1.9,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 2.03,
-          "point": 3.0
-        }
-      },
-      "ai": {
-        "verdict": "buy",
-        "pick": "小3.0",
-        "summary": "葡萄牙碾压但乌兹别克防守型，模型under 3.0概率70.1% vs 市场53.5%，+16.6% edge",
-        "edge": "+16.6%",
-        "confidence": "高",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "葡萄牙胜",
-            "odds": "1.2",
-            "reason": "81%胜率，赔率低不单买"
-          },
-          {
-            "market": "大小球",
-            "pick": "小3.0",
-            "odds": "1.87",
-            "reason": "模型70.1% vs 市场53.5%，+16.6% edge，核心投注"
-          },
-          {
-            "market": "BTTS",
-            "pick": "否",
-            "odds": "N/A",
-            "reason": "模型70.1%不双方进球，乌兹别克xG仅0.39"
-          },
-          {
-            "market": "比分",
-            "pick": "2-0",
-            "odds": "5.62",
-            "reason": "最可能比分17.8%，葡萄牙稳控节奏"
-          }
-        ]
-      }
-    },
-    {
       "home": "england",
       "away": "ghana",
       "match_time": "2026-06-23",
-      "hours_until": 9.0,
+      "hours_until": 5.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -676,14 +372,14 @@
         "time": "2026-06-23T20:00:00Z",
         "home_odds": 1.23,
         "home_implied": 81.3,
-        "away_odds": 13.69,
+        "away_odds": 13.76,
         "away_implied": 7.3,
-        "draw_odds": 6.6,
-        "draw_implied": 15.2,
+        "draw_odds": 6.63,
+        "draw_implied": 15.1,
         "fav_spread": -1.75,
-        "fav_odds": 1.88,
+        "fav_odds": 1.87,
         "dog_spread": 1.75,
-        "dog_odds": 2.04,
+        "dog_odds": 2.05,
         "over_odds": 1.83,
         "over_point": 2.75,
         "under_odds": 2.07
@@ -706,16 +402,16 @@
         },
         "draw": {
           "model_pct": 17.4,
-          "market_odds": 6.6,
-          "market_implied": 15.2,
-          "edge": 2.2,
-          "kelly_full": 2.6,
+          "market_odds": 6.63,
+          "market_implied": 15.1,
+          "edge": 2.3,
+          "kelly_full": 2.7,
           "kelly_quarter": 0.7,
           "has_edge": true
         },
         "away": {
           "model_pct": 6.2,
-          "market_odds": 13.69,
+          "market_odds": 13.76,
           "market_implied": 7.3,
           "edge": -1.1,
           "kelly_full": 0,
@@ -765,7 +461,7 @@
       "home": "panama",
       "away": "croatia",
       "match_time": "2026-06-23",
-      "hours_until": 9.0,
+      "hours_until": 5.0,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -826,56 +522,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-23T23:00:00Z",
-        "away_odds": 1.55,
-        "away_implied": 64.5,
-        "home_odds": 6.71,
+        "away_odds": 1.54,
+        "away_implied": 64.9,
+        "home_odds": 6.73,
         "home_implied": 14.9,
-        "draw_odds": 4.14,
-        "draw_implied": 24.2,
+        "draw_odds": 4.16,
+        "draw_implied": 24.0,
         "fav_spread": -1.0,
-        "fav_odds": 1.89,
+        "fav_odds": 1.88,
         "dog_spread": 1.0,
-        "dog_odds": 2.02,
-        "over_odds": 1.87,
+        "dog_odds": 2.03,
+        "over_odds": 1.86,
         "over_point": 2.5,
-        "under_odds": 2.02
+        "under_odds": 2.03
       },
       "ensemble": {
         "win_a": 15.6,
-        "draw": 23.9,
-        "win_b": 60.6,
+        "draw": 23.7,
+        "win_b": 60.7,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 18.5,
-          "market_odds": 6.71,
+          "market_odds": 6.73,
           "market_implied": 14.9,
           "edge": 3.6,
-          "kelly_full": 4.2,
+          "kelly_full": 4.3,
           "kelly_quarter": 1.1,
           "has_edge": true
         },
         "draw": {
           "model_pct": 25.1,
-          "market_odds": 4.14,
-          "market_implied": 24.2,
-          "edge": 0.9,
-          "kelly_full": 1.2,
+          "market_odds": 4.16,
+          "market_implied": 24.0,
+          "edge": 1.1,
+          "kelly_full": 1.4,
           "kelly_quarter": 0.3,
           "has_edge": false
         },
         "away": {
           "model_pct": 56.5,
-          "market_odds": 1.55,
-          "market_implied": 64.5,
-          "edge": -8.0,
+          "market_odds": 1.54,
+          "market_implied": 64.9,
+          "edge": -8.4,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 1.87,
+          "market_odds": 1.86,
           "point": 2.5
         }
       },
@@ -917,7 +613,7 @@
       "home": "jordan",
       "away": "algeria",
       "match_time": "2026-06-23T03:00Z",
-      "hours_until": 12.0,
+      "hours_until": 8.0,
       "city": "Santa Clara, California",
       "venue": "Levi's Stadium",
       "home_score": 0,
@@ -978,14 +674,14 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-23T03:00:00Z",
-        "away_odds": 1.54,
-        "away_implied": 64.9,
-        "home_odds": 6.7,
-        "home_implied": 14.9,
-        "draw_odds": 4.5,
-        "draw_implied": 22.2,
+        "away_odds": 1.56,
+        "away_implied": 64.1,
+        "home_odds": 6.65,
+        "home_implied": 15.0,
+        "draw_odds": 4.4,
+        "draw_implied": 22.7,
         "fav_spread": -1.0,
-        "fav_odds": 1.9,
+        "fav_odds": 1.91,
         "dog_spread": 1.0,
         "dog_odds": 2.03,
         "over_odds": 1.97,
@@ -994,34 +690,34 @@
       },
       "ensemble": {
         "win_a": 18.5,
-        "draw": 23.4,
-        "win_b": 58.1,
+        "draw": 23.8,
+        "win_b": 57.7,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 27.6,
-          "market_odds": 6.7,
-          "market_implied": 14.9,
-          "edge": 12.7,
-          "kelly_full": 14.9,
+          "market_odds": 6.65,
+          "market_implied": 15.0,
+          "edge": 12.6,
+          "kelly_full": 14.8,
           "kelly_quarter": 3.7,
           "has_edge": true
         },
         "draw": {
           "model_pct": 27.3,
-          "market_odds": 4.5,
-          "market_implied": 22.2,
-          "edge": 5.1,
-          "kelly_full": 6.5,
-          "kelly_quarter": 1.6,
+          "market_odds": 4.4,
+          "market_implied": 22.7,
+          "edge": 4.6,
+          "kelly_full": 5.9,
+          "kelly_quarter": 1.5,
           "has_edge": true
         },
         "away": {
           "model_pct": 45.1,
-          "market_odds": 1.54,
-          "market_implied": 64.9,
-          "edge": -19.8,
+          "market_odds": 1.56,
+          "market_implied": 64.1,
+          "edge": -19.0,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
@@ -1061,6 +757,158 @@
             "pick": "1-1",
             "odds": "7.69",
             "reason": "最可能比分13%，势均力敌的平局"
+          }
+        ]
+      }
+    },
+    {
+      "home": "portugal",
+      "away": "uzbekistan",
+      "match_time": "2026-06-23T17:00Z",
+      "hours_until": 22.0,
+      "city": "Houston, Texas",
+      "venue": "NRG Stadium",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
+      "money_line": {
+        "win_a": "81.1",
+        "draw": "14.9",
+        "win_b": "4.0"
+      },
+      "xg": {
+        "a": "2.37",
+        "b": "0.39"
+      },
+      "elo": {
+        "a": 1997,
+        "b": 1460,
+        "diff": 537
+      },
+      "top_scores": [
+        [
+          "2-0",
+          "17.8"
+        ],
+        [
+          "1-0",
+          "14.4"
+        ],
+        [
+          "3-0",
+          "14.0"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.1",
+          "under": "47.9"
+        }
+      },
+      "btts": {
+        "yes": "30.0",
+        "no": "70.0"
+      },
+      "spread": {
+        "portugal -1.5": "58.6",
+        "uzbekistan +1.5": "41.4"
+      },
+      "half_time": {
+        "win_a": "56.7",
+        "draw": "37.3",
+        "win_b": "6.0"
+      },
+      "squad_quality": {
+        "a": 2.41,
+        "b": -0.48
+      },
+      "market_odds": {
+        "source": "pinnacle",
+        "time": "2026-06-23T17:00:00Z",
+        "home_odds": 1.18,
+        "home_implied": 84.7,
+        "away_odds": 17.75,
+        "away_implied": 5.6,
+        "draw_odds": 7.7,
+        "draw_implied": 13.0,
+        "fav_spread": -2.0,
+        "fav_odds": 1.99,
+        "dog_spread": 2.0,
+        "dog_odds": 1.92,
+        "over_odds": 1.96,
+        "over_point": 3.0,
+        "under_odds": 1.93
+      },
+      "ensemble": {
+        "win_a": 81.7,
+        "draw": 13.3,
+        "win_b": 5.0,
+        "source": "ensemble"
+      },
+      "edge": {
+        "home": {
+          "model_pct": 81.1,
+          "market_odds": 1.18,
+          "market_implied": 84.7,
+          "edge": -3.6,
+          "kelly_full": 0,
+          "kelly_quarter": 0,
+          "has_edge": false
+        },
+        "draw": {
+          "model_pct": 14.9,
+          "market_odds": 7.7,
+          "market_implied": 13.0,
+          "edge": 1.9,
+          "kelly_full": 2.2,
+          "kelly_quarter": 0.5,
+          "has_edge": false
+        },
+        "away": {
+          "model_pct": 4.0,
+          "market_odds": 17.75,
+          "market_implied": 5.6,
+          "edge": -1.6,
+          "kelly_full": 0,
+          "kelly_quarter": 0,
+          "has_edge": false
+        },
+        "over": {
+          "market_odds": 1.96,
+          "point": 3.0
+        }
+      },
+      "ai": {
+        "verdict": "buy",
+        "pick": "小3.0",
+        "summary": "葡萄牙碾压但乌兹别克防守型，模型under 3.0概率70.1% vs 市场53.5%，+16.6% edge",
+        "edge": "+16.6%",
+        "confidence": "高",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "葡萄牙胜",
+            "odds": "1.2",
+            "reason": "81%胜率，赔率低不单买"
+          },
+          {
+            "market": "大小球",
+            "pick": "小3.0",
+            "odds": "1.87",
+            "reason": "模型70.1% vs 市场53.5%，+16.6% edge，核心投注"
+          },
+          {
+            "market": "BTTS",
+            "pick": "否",
+            "odds": "N/A",
+            "reason": "模型70.1%不双方进球，乌兹别克xG仅0.39"
+          },
+          {
+            "market": "比分",
+            "pick": "2-0",
+            "odds": "5.62",
+            "reason": "最可能比分17.8%，葡萄牙稳控节奏"
           }
         ]
       }
