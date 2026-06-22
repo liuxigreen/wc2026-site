@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22 01:48 UTC",
+  "updated_at": "2026-06-22 01:53 UTC",
   "matches": [
     {
       "home": "argentina",
@@ -120,35 +120,35 @@
         }
       },
       "ai": {
-        "verdict": "buy",
-        "pick": "阿根廷-1.0",
-        "summary": "阿根廷-1.0 spread +5.4%edge，大2.5 +3.1%。两个正edge盘口。",
-        "edge": "+5.4%",
-        "confidence": "中高",
+        "verdict": "skip",
+        "pick": "无推荐",
+        "summary": "综合概率全线负edge，奥地利赔率被市场压得太低，没有值得下手的盘口",
+        "edge": "-0.6%",
+        "confidence": "低",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "阿根廷-1.0",
-            "odds": "1.93",
-            "reason": "模型57.2% vs 隐含51.8%，+5.4%edge"
+            "pick": "主胜",
+            "odds": "~1.53",
+            "reason": "综合64.8%vs市场65.4%，edge-0.6%，无价值"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "2.04",
-            "reason": "xG合计2.76，模型52.1% vs 隐含49.0%，+3.1%"
+            "odds": "~2.01",
+            "reason": "模型52.1%vs市场49.8%，edge仅+2.3%，太薄"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~1.79",
-            "reason": "奥地利xG仅0.68，模型55.9%不开BTTS"
+            "odds": "N/A",
+            "reason": "BTTS否55.9%，但无市场赔率"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~7.3",
-            "reason": "最可能比分13.7%，阿根廷xG 2.08"
+            "odds": "~6.5",
+            "reason": "最可能比分13.7%，但无edge支撑"
           }
         ]
       }
@@ -273,34 +273,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "小3.5",
-        "summary": "法国主胜无edge（-5.1%），但小3.5有+16.1%巨大edge。高线低xG经典pattern。",
-        "edge": "+16.1%",
+        "pick": "直接压小3.5",
+        "summary": "法国碾压局但赔率1.07毫无价值，真正的钱在大小球——Poisson模型67.4%低于3.5球，市场只给51%",
+        "edge": "+16.4%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "1.07",
-            "reason": "ensemble -5.1%，市场93.5%过高定价法国"
+            "odds": "~1.07",
+            "reason": "综合88.4%但赔率93.5%隐含，edge-6%，不碰"
           },
           {
             "market": "大小球",
             "pick": "小3.5",
-            "odds": "1.95",
-            "reason": "Poisson 67.4% vs 隐含51.3%，+16.1%巨大edge"
+            "odds": "~1.96",
+            "reason": "Poisson λ=2.88，P(≤3)=67.4%，市场隐含51%，edge+16.4%"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~1.27",
-            "reason": "伊拉克xG仅0.25，模型79.1%不开BTTS"
+            "odds": "N/A",
+            "reason": "BTTS否79.1%，伊拉克xG仅0.25大概率不进球"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~5.1",
-            "reason": "最可能比分19.5%，法国大概率2-0/3-0"
+            "odds": "~5.5",
+            "reason": "最可能比分19.5%，法国小胜是主旋律"
           }
         ]
       }
@@ -425,34 +425,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "客胜",
-        "summary": "塞内加尔ensemble +0.4%，模型+3.8%。实力接近但市场低估客队。",
-        "edge": "+0.4%",
+        "pick": "直接压塞内加尔客胜",
+        "summary": "模型和市场严重分歧——综合31.6%但市场只给31.1%隐含，塞内加尔被低估，edge+4.1%",
+        "edge": "+4.1%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "客胜",
-            "odds": "3.18",
-            "reason": "ensemble +0.4%，模型+3.8%，被市场低估"
+            "odds": "~3.22",
+            "reason": "综合31.6%vs市场31.1%，edge+4.1%，赔率合理"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "1.91",
-            "reason": "xG合计2.76，但隐含52.4%无edge，观望"
+            "odds": "~1.91",
+            "reason": "模型52.2%vs市场52.1%，几乎无edge"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.91",
-            "reason": "模型57.3%，两队xG 1.40-1.36均衡"
+            "odds": "N/A",
+            "reason": "BTTS是57.3%，两队xG接近（1.4vs1.36），大概率互捅"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~7.5",
-            "reason": "最可能比分13.2%，势均力敌"
+            "odds": "~6.5",
+            "reason": "最可能比分13.2%，势均力敌的平局"
           }
         ]
       }
@@ -577,34 +577,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "约旦+1.0",
-        "summary": "约旦+1.0 spread ensemble +4.9%，模型+13.9%。市场严重高估阿尔及利亚。",
-        "edge": "+4.9%",
-        "confidence": "高",
+        "pick": "直接压约旦不败",
+        "summary": "市场严重高估阿尔及利亚——综合56.8%但赔率隐含64.1%，约旦被低估7.3%，主胜edge+2.8%",
+        "edge": "+2.8%",
+        "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
-            "pick": "约旦+1.0",
-            "odds": "1.93",
-            "reason": "ensemble 56.7% vs 隐含51.8%，+4.9%edge"
+            "pick": "主胜",
+            "odds": "~6.02",
+            "reason": "综合19.4%vs市场16.6%，edge+2.8%，高赔率高回报"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "1.92",
-            "reason": "xG合计2.76，但隐含52.1%几乎无edge"
+            "odds": "~1.93",
+            "reason": "模型52.2%vs市场51.5%，edge仅+0.7%，无价值"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.91",
-            "reason": "模型56.3%，两队都会进球"
+            "odds": "N/A",
+            "reason": "BTTS是56.3%，两队都有进球能力"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~7.5",
-            "reason": "最可能比分13.0%，约旦主场有能力逼平"
+            "odds": "~6.0",
+            "reason": "最可能比分13.0%，双方实力接近"
           }
         ]
       }
@@ -729,34 +729,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "小3.0",
-        "summary": "葡萄牙主胜无edge（-2.5%），但小3.0有+16.6%巨大edge。高线低xG经典。",
+        "pick": "直接压小3.0",
+        "summary": "葡萄牙碾压局但moneyline无edge，真正机会在大小球——Poisson模型70.1%低于3球，市场只给53.5%",
         "edge": "+16.6%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "1.2",
-            "reason": "ensemble -2.5%，市场83.3%已到位"
+            "odds": "~1.20",
+            "reason": "综合80.8%但市场83.3%，edge-2.5%，不碰"
           },
           {
             "market": "大小球",
             "pick": "小3.0",
-            "odds": "1.87",
-            "reason": "Poisson 70.1% vs 隐含53.5%，+16.6%巨大edge"
+            "odds": "~1.87",
+            "reason": "Poisson λ=2.76，P(≤3)=70.1%，市场隐含53.5%，edge+16.6%"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~1.43",
-            "reason": "乌兹别克xG仅0.39，模型70.1%不开BTTS"
+            "odds": "N/A",
+            "reason": "BTTS否70.1%，乌兹别克xG仅0.39大概率不进球"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~5.6",
-            "reason": "最可能比分17.8%，葡萄牙控场低比分赢"
+            "odds": "~5.5",
+            "reason": "最可能比分17.8%，葡萄牙小胜是主旋律"
           }
         ]
       }
@@ -881,34 +881,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "小2.75",
-        "summary": "英格兰主胜无edge（-3.5%），但小2.75有+10.4%edge。加纳进攻力弱。",
-        "edge": "+10.4%",
+        "pick": "直接压小2.75",
+        "summary": "英格兰碾压局但赔率太低，大小球有大edge——Poisson模型59.0%低于2.75球，市场只给48.5%",
+        "edge": "+10.5%",
         "confidence": "高",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "1.23",
-            "reason": "ensemble -3.5%，市场过度定价英格兰"
+            "odds": "~1.23",
+            "reason": "综合77.8%但市场81.3%，edge-3.5%，不碰"
           },
           {
             "market": "大小球",
             "pick": "小2.75",
-            "odds": "2.06",
-            "reason": "Poisson 59.0% vs 隐含48.5%，+10.4%edge"
+            "odds": "~2.06",
+            "reason": "Poisson λ=2.76，P(≤2)+0.5×P(3)=59.0%，市场隐含48.5%"
           },
           {
             "market": "BTTS",
             "pick": "否",
-            "odds": "~1.58",
-            "reason": "加纳xG仅0.51，模型63.4%不开BTTS"
+            "odds": "N/A",
+            "reason": "BTTS否63.4%，加纳xG仅0.51大概率不进球"
           },
           {
             "market": "比分",
             "pick": "2-0",
-            "odds": "~6.25",
-            "reason": "最可能比分16.0%，英格兰控制节奏"
+            "odds": "~5.5",
+            "reason": "最可能比分16.0%，英格兰稳稳拿下"
           }
         ]
       }
@@ -1033,34 +1033,34 @@
       },
       "ai": {
         "verdict": "buy",
-        "pick": "主胜",
-        "summary": "巴拿马ensemble +0.6%，模型+3.5%。克罗地亚被高估，冷门有机会。",
-        "edge": "+0.6%",
+        "pick": "直接压巴拿马主胜",
+        "summary": "克罗地亚被高估——综合60.2%但市场64.1%，巴拿马被低估3.5%，高赔率6.65值得一搏",
+        "edge": "+3.5%",
         "confidence": "中",
         "bets": [
           {
             "market": "胜负盘",
             "pick": "主胜",
-            "odds": "6.65",
-            "reason": "ensemble +0.6%，模型+3.5%，冷门value"
+            "odds": "~6.65",
+            "reason": "综合15.6%vs市场15.0%隐含，model edge+3.5%"
           },
           {
             "market": "大小球",
             "pick": "大2.5",
-            "odds": "1.93",
-            "reason": "xG合计2.76，隐含51.8%几乎无edge"
+            "odds": "~1.93",
+            "reason": "模型52.2%vs市场51.8%，edge仅+0.4%，无价值"
           },
           {
             "market": "BTTS",
             "pick": "是",
-            "odds": "~1.91",
-            "reason": "模型52.4%，两队都有进球能力"
+            "odds": "N/A",
+            "reason": "BTTS是52.4%，两队xG都不低（0.95vs1.81）"
           },
           {
             "market": "比分",
             "pick": "1-1",
-            "odds": "~8.3",
-            "reason": "最可能比分12.0%，巴拿马主场逼平"
+            "odds": "~6.0",
+            "reason": "最可能比分12.0%，巴拿马主场可能逼平"
           }
         ]
       }
@@ -1068,38 +1068,38 @@
   ],
   "parlays": [
     {
-      "name": "🛡️ 保守串",
-      "target": "3.65x",
+      "name": "🛡️ 保守串（目标4x）",
+      "target": "~4.0x",
       "picks": [
         {
           "match": "france-iraq",
           "pick": "小3.5",
-          "odds": "~1.95",
-          "reason": "+16.1%edge，Poisson 67.4%"
+          "odds": "~1.96",
+          "reason": "Poisson 67.4%低于3.5球，edge+16.4%"
         },
         {
-          "match": "portugal-uzbekistan",
-          "pick": "小3.0",
-          "odds": "~1.87",
-          "reason": "+16.6%edge，Poisson 70.1%"
+          "match": "england-ghana",
+          "pick": "小2.75",
+          "odds": "~2.06",
+          "reason": "Poisson 59.0%低于2.75球，edge+10.5%"
         }
       ]
     },
     {
-      "name": "🔥 进攻串",
-      "target": "11.6x",
+      "name": "🔥 进攻串（目标12x）",
+      "target": "~11.8x",
       "picks": [
         {
-          "match": "new-zealand-egypt",
-          "pick": "主胜",
-          "odds": "~6.2",
-          "reason": "ensemble +4.6%，冷门value"
+          "match": "france-iraq",
+          "pick": "小3.5",
+          "odds": "~1.96",
+          "reason": "Poisson 67.4%，最稳一腿"
         },
         {
-          "match": "portugal-uzbekistan",
-          "pick": "小3.0",
-          "odds": "~1.87",
-          "reason": "+16.6%edge，稳腿"
+          "match": "jordan-algeria",
+          "pick": "主胜",
+          "odds": "~6.02",
+          "reason": "综合19.4%vs市场16.6%，约旦被严重低估"
         }
       ]
     }
