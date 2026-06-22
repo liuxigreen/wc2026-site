@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-22 02:24 UTC",
+  "updated_at": "2026-06-22 03:30 UTC",
   "matches": [
     {
       "home": "argentina",
       "away": "austria",
       "match_time": "2026-06-22T17:00Z",
-      "hours_until": 14.6,
+      "hours_until": 13.5,
       "city": "Arlington, Texas",
       "venue": "AT&T Stadium",
       "home_score": 0,
@@ -66,56 +66,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-22T17:00:00Z",
-        "home_odds": 1.53,
-        "home_implied": 65.4,
-        "away_odds": 7.16,
-        "away_implied": 14.0,
-        "draw_odds": 4.1,
-        "draw_implied": 24.4,
+        "home_odds": 1.51,
+        "home_implied": 66.2,
+        "away_odds": 7.34,
+        "away_implied": 13.6,
+        "draw_odds": 4.18,
+        "draw_implied": 23.9,
         "fav_spread": -1.0,
-        "fav_odds": 1.91,
+        "fav_odds": 1.87,
         "dog_spread": 1.0,
-        "dog_odds": 2.0,
-        "over_odds": 2.01,
+        "dog_odds": 2.05,
+        "over_odds": 1.98,
         "over_point": 2.5,
-        "under_odds": 1.88
+        "under_odds": 1.9
       },
       "ensemble": {
-        "win_a": 64.8,
-        "draw": 22.7,
-        "win_b": 12.5,
+        "win_a": 65.4,
+        "draw": 22.4,
+        "win_b": 12.2,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 69.2,
-          "market_odds": 1.53,
-          "market_implied": 65.4,
-          "edge": 3.8,
-          "kelly_full": 11.1,
-          "kelly_quarter": 2.8,
+          "market_odds": 1.51,
+          "market_implied": 66.2,
+          "edge": 3.0,
+          "kelly_full": 8.8,
+          "kelly_quarter": 2.2,
           "has_edge": true
         },
         "draw": {
           "model_pct": 20.7,
-          "market_odds": 4.1,
-          "market_implied": 24.4,
-          "edge": -3.7,
+          "market_odds": 4.18,
+          "market_implied": 23.9,
+          "edge": -3.2,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "away": {
           "model_pct": 10.1,
-          "market_odds": 7.16,
-          "market_implied": 14.0,
-          "edge": -3.9,
+          "market_odds": 7.34,
+          "market_implied": 13.6,
+          "edge": -3.5,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 2.01,
+          "market_odds": 1.98,
           "point": 2.5
         }
       },
@@ -157,7 +157,7 @@
       "home": "france",
       "away": "iraq",
       "match_time": "2026-06-22T21:00Z",
-      "hours_until": 18.6,
+      "hours_until": 17.5,
       "city": "Philadelphia, Pennsylvania",
       "venue": "Lincoln Financial Field",
       "home_score": 0,
@@ -218,57 +218,57 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-22T21:00:00Z",
-        "home_odds": 1.07,
-        "home_implied": 93.5,
-        "away_odds": 29.73,
-        "away_implied": 3.4,
-        "draw_odds": 11.84,
-        "draw_implied": 8.4,
+        "home_odds": 1.06,
+        "home_implied": 94.3,
+        "away_odds": 33.44,
+        "away_implied": 3.0,
+        "draw_odds": 12.85,
+        "draw_implied": 7.8,
         "fav_spread": -2.75,
-        "fav_odds": 1.96,
+        "fav_odds": 1.85,
         "dog_spread": 2.75,
-        "dog_odds": 1.89,
-        "over_odds": 1.89,
-        "over_point": 3.5,
-        "under_odds": 1.96
+        "dog_odds": 2.01,
+        "over_odds": 2.03,
+        "over_point": 3.75,
+        "under_odds": 1.83
       },
       "ensemble": {
-        "win_a": 88.4,
-        "draw": 8.8,
-        "win_b": 2.8,
+        "win_a": 89.1,
+        "draw": 8.4,
+        "win_b": 2.5,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 87.5,
-          "market_odds": 1.07,
-          "market_implied": 93.5,
-          "edge": -6.0,
+          "market_odds": 1.06,
+          "market_implied": 94.3,
+          "edge": -6.8,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "draw": {
           "model_pct": 10.7,
-          "market_odds": 11.84,
-          "market_implied": 8.4,
-          "edge": 2.3,
-          "kelly_full": 2.5,
-          "kelly_quarter": 0.6,
+          "market_odds": 12.85,
+          "market_implied": 7.8,
+          "edge": 2.9,
+          "kelly_full": 3.2,
+          "kelly_quarter": 0.8,
           "has_edge": true
         },
         "away": {
           "model_pct": 1.8,
-          "market_odds": 29.73,
-          "market_implied": 3.4,
-          "edge": -1.6,
+          "market_odds": 33.44,
+          "market_implied": 3.0,
+          "edge": -1.2,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 1.89,
-          "point": 3.5
+          "market_odds": 2.03,
+          "point": 3.75
         }
       },
       "ai": {
@@ -309,7 +309,7 @@
       "home": "norway",
       "away": "senegal",
       "match_time": "2026-06-23T00:00Z",
-      "hours_until": 21.6,
+      "hours_until": 20.5,
       "city": "East Rutherford, New Jersey",
       "venue": "MetLife Stadium",
       "home_score": 0,
@@ -372,22 +372,22 @@
         "time": "2026-06-23T00:00:00Z",
         "home_odds": 2.25,
         "home_implied": 44.4,
-        "away_odds": 3.22,
-        "away_implied": 31.1,
+        "away_odds": 3.21,
+        "away_implied": 31.2,
         "draw_odds": 3.61,
         "draw_implied": 27.7,
         "fav_spread": -0.25,
-        "fav_odds": 1.95,
+        "fav_odds": 1.96,
         "dog_spread": 0.25,
-        "dog_odds": 1.95,
+        "dog_odds": 1.94,
         "over_odds": 1.92,
         "over_point": 2.5,
         "under_odds": 1.97
       },
       "ensemble": {
         "win_a": 41.2,
-        "draw": 27.2,
-        "win_b": 31.6,
+        "draw": 27.1,
+        "win_b": 31.7,
         "source": "ensemble"
       },
       "edge": {
@@ -411,10 +411,10 @@
         },
         "away": {
           "model_pct": 35.2,
-          "market_odds": 3.22,
-          "market_implied": 31.1,
-          "edge": 4.1,
-          "kelly_full": 6.0,
+          "market_odds": 3.21,
+          "market_implied": 31.2,
+          "edge": 4.0,
+          "kelly_full": 5.9,
           "kelly_quarter": 1.5,
           "has_edge": true
         },
@@ -458,162 +458,10 @@
       }
     },
     {
-      "home": "jordan",
-      "away": "algeria",
-      "match_time": "2026-06-23",
-      "hours_until": 21.6,
-      "city": "",
-      "venue": "",
-      "home_score": 0,
-      "away_score": 0,
-      "state": "pre",
-      "status": "Scheduled",
-      "money_line": {
-        "win_a": "27.6",
-        "draw": "27.3",
-        "win_b": "45.1"
-      },
-      "xg": {
-        "a": "1.19",
-        "b": "1.57"
-      },
-      "elo": {
-        "a": 1495,
-        "b": 1667,
-        "diff": -172
-      },
-      "top_scores": [
-        [
-          "1-1",
-          "13.0"
-        ],
-        [
-          "1-2",
-          "9.3"
-        ],
-        [
-          "0-1",
-          "8.8"
-        ]
-      ],
-      "over_under": {
-        "2.5": {
-          "over": "52.2",
-          "under": "47.8"
-        }
-      },
-      "btts": {
-        "yes": "56.3",
-        "no": "43.7"
-      },
-      "spread": {
-        "jordan -1.5": "11.7",
-        "algeria +1.5": "88.3"
-      },
-      "half_time": {
-        "win_a": "23.1",
-        "draw": "43.6",
-        "win_b": "33.3"
-      },
-      "squad_quality": {
-        "a": -0.46,
-        "b": -0.34
-      },
-      "market_odds": {
-        "source": "pinnacle",
-        "time": "2026-06-23T03:00:00Z",
-        "away_odds": 1.56,
-        "away_implied": 64.1,
-        "home_odds": 6.02,
-        "home_implied": 16.6,
-        "draw_odds": 4.3,
-        "draw_implied": 23.3,
-        "fav_spread": -1.0,
-        "fav_odds": 1.99,
-        "dog_spread": 1.0,
-        "dog_odds": 1.92,
-        "over_odds": 1.93,
-        "over_point": 2.5,
-        "under_odds": 1.96
-      },
-      "ensemble": {
-        "win_a": 19.4,
-        "draw": 23.8,
-        "win_b": 56.8,
-        "source": "ensemble"
-      },
-      "edge": {
-        "home": {
-          "model_pct": 27.6,
-          "market_odds": 6.02,
-          "market_implied": 16.6,
-          "edge": 11.0,
-          "kelly_full": 13.2,
-          "kelly_quarter": 3.3,
-          "has_edge": true
-        },
-        "draw": {
-          "model_pct": 27.3,
-          "market_odds": 4.3,
-          "market_implied": 23.3,
-          "edge": 4.0,
-          "kelly_full": 5.3,
-          "kelly_quarter": 1.3,
-          "has_edge": true
-        },
-        "away": {
-          "model_pct": 45.1,
-          "market_odds": 1.56,
-          "market_implied": 64.1,
-          "edge": -19.0,
-          "kelly_full": 0,
-          "kelly_quarter": 0,
-          "has_edge": false
-        },
-        "over": {
-          "market_odds": 1.93,
-          "point": 2.5
-        }
-      },
-      "ai": {
-        "verdict": "buy",
-        "pick": "直接压约旦不败",
-        "summary": "市场严重高估阿尔及利亚——综合56.8%但赔率隐含64.1%，约旦被低估7.3%，主胜edge+2.8%",
-        "edge": "+2.8%",
-        "confidence": "中",
-        "bets": [
-          {
-            "market": "胜负盘",
-            "pick": "主胜",
-            "odds": "~6.02",
-            "reason": "综合19.4%vs市场16.6%，edge+2.8%，高赔率高回报"
-          },
-          {
-            "market": "大小球",
-            "pick": "大2.5",
-            "odds": "~1.93",
-            "reason": "模型52.2%vs市场51.5%，edge仅+0.7%，无价值"
-          },
-          {
-            "market": "BTTS",
-            "pick": "是",
-            "odds": "N/A",
-            "reason": "BTTS是56.3%，两队都有进球能力"
-          },
-          {
-            "market": "比分",
-            "pick": "1-1",
-            "odds": "~6.0",
-            "reason": "最可能比分13.0%，双方实力接近"
-          }
-        ]
-      }
-    },
-    {
       "home": "portugal",
       "away": "uzbekistan",
       "match_time": "2026-06-23",
-      "hours_until": 21.6,
+      "hours_until": 20.5,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -765,7 +613,7 @@
       "home": "england",
       "away": "ghana",
       "match_time": "2026-06-23",
-      "hours_until": 21.6,
+      "hours_until": 20.5,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -917,7 +765,7 @@
       "home": "panama",
       "away": "croatia",
       "match_time": "2026-06-23",
-      "hours_until": 21.6,
+      "hours_until": 20.5,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -1061,6 +909,158 @@
             "pick": "1-1",
             "odds": "~6.0",
             "reason": "最可能比分12.0%，巴拿马主场可能逼平"
+          }
+        ]
+      }
+    },
+    {
+      "home": "jordan",
+      "away": "algeria",
+      "match_time": "2026-06-23T03:00Z",
+      "hours_until": 23.5,
+      "city": "Santa Clara, California",
+      "venue": "Levi's Stadium",
+      "home_score": 0,
+      "away_score": 0,
+      "state": "pre",
+      "status": "STATUS_SCHEDULED",
+      "money_line": {
+        "win_a": "27.6",
+        "draw": "27.3",
+        "win_b": "45.1"
+      },
+      "xg": {
+        "a": "1.19",
+        "b": "1.57"
+      },
+      "elo": {
+        "a": 1485,
+        "b": 1657,
+        "diff": -172
+      },
+      "top_scores": [
+        [
+          "1-1",
+          "13.0"
+        ],
+        [
+          "1-2",
+          "9.3"
+        ],
+        [
+          "0-1",
+          "8.8"
+        ]
+      ],
+      "over_under": {
+        "2.5": {
+          "over": "52.2",
+          "under": "47.8"
+        }
+      },
+      "btts": {
+        "yes": "56.3",
+        "no": "43.7"
+      },
+      "spread": {
+        "jordan -1.5": "11.7",
+        "algeria +1.5": "88.3"
+      },
+      "half_time": {
+        "win_a": "23.1",
+        "draw": "43.6",
+        "win_b": "33.3"
+      },
+      "squad_quality": {
+        "a": -0.46,
+        "b": -0.34
+      },
+      "market_odds": {
+        "source": "pinnacle",
+        "time": "2026-06-23T03:00:00Z",
+        "away_odds": 1.56,
+        "away_implied": 64.1,
+        "home_odds": 6.02,
+        "home_implied": 16.6,
+        "draw_odds": 4.29,
+        "draw_implied": 23.3,
+        "fav_spread": -1.0,
+        "fav_odds": 1.99,
+        "dog_spread": 1.0,
+        "dog_odds": 1.92,
+        "over_odds": 1.93,
+        "over_point": 2.5,
+        "under_odds": 1.95
+      },
+      "ensemble": {
+        "win_a": 19.4,
+        "draw": 23.8,
+        "win_b": 56.8,
+        "source": "ensemble"
+      },
+      "edge": {
+        "home": {
+          "model_pct": 27.6,
+          "market_odds": 6.02,
+          "market_implied": 16.6,
+          "edge": 11.0,
+          "kelly_full": 13.2,
+          "kelly_quarter": 3.3,
+          "has_edge": true
+        },
+        "draw": {
+          "model_pct": 27.3,
+          "market_odds": 4.29,
+          "market_implied": 23.3,
+          "edge": 4.0,
+          "kelly_full": 5.2,
+          "kelly_quarter": 1.3,
+          "has_edge": true
+        },
+        "away": {
+          "model_pct": 45.1,
+          "market_odds": 1.56,
+          "market_implied": 64.1,
+          "edge": -19.0,
+          "kelly_full": 0,
+          "kelly_quarter": 0,
+          "has_edge": false
+        },
+        "over": {
+          "market_odds": 1.93,
+          "point": 2.5
+        }
+      },
+      "ai": {
+        "verdict": "buy",
+        "pick": "直接压约旦不败",
+        "summary": "市场严重高估阿尔及利亚——综合56.8%但赔率隐含64.1%，约旦被低估7.3%，主胜edge+2.8%",
+        "edge": "+2.8%",
+        "confidence": "中",
+        "bets": [
+          {
+            "market": "胜负盘",
+            "pick": "主胜",
+            "odds": "~6.02",
+            "reason": "综合19.4%vs市场16.6%，edge+2.8%，高赔率高回报"
+          },
+          {
+            "market": "大小球",
+            "pick": "大2.5",
+            "odds": "~1.93",
+            "reason": "模型52.2%vs市场51.5%，edge仅+0.7%，无价值"
+          },
+          {
+            "market": "BTTS",
+            "pick": "是",
+            "odds": "N/A",
+            "reason": "BTTS是56.3%，两队都有进球能力"
+          },
+          {
+            "market": "比分",
+            "pick": "1-1",
+            "odds": "~6.0",
+            "reason": "最可能比分13.0%，双方实力接近"
           }
         ]
       }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22 02:24 UTC",
+  "updated_at": "2026-06-22 03:30 UTC",
   "matches": [
     {
       "home": "usa",
@@ -66,6 +66,12 @@
       "away": "cape-verde",
       "home_score": 2,
       "away_score": 2
+    },
+    {
+      "home": "new-zealand",
+      "away": "egypt",
+      "home_score": 1,
+      "away_score": 3
     }
   ],
   "elo_rankings": [
@@ -182,6 +188,10 @@
       "elo": 1731
     },
     {
+      "slug": "egypt",
+      "elo": 1727
+    },
+    {
       "slug": "ivory-coast",
       "elo": 1724
     },
@@ -192,10 +202,6 @@
     {
       "slug": "serbia",
       "elo": 1695
-    },
-    {
-      "slug": "egypt",
-      "elo": 1689
     }
   ]
 }
