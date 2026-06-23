@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5122,
-  "accuracy": 0.6818,
-  "total_reviewed": 44,
-  "correct_count": 30,
+  "cumulative_brier": 0.5188,
+  "accuracy": 0.6739,
+  "total_reviewed": 46,
+  "correct_count": 31,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -18,15 +18,15 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.689,
-      "actual": 0.714,
-      "count": 14
+      "predicted": 0.694,
+      "actual": 0.667,
+      "count": 15
     },
     {
       "bin": "80-100%",
-      "predicted": 0.865,
-      "actual": 0.75,
-      "count": 4
+      "predicted": 0.854,
+      "actual": 0.8,
+      "count": 5
     }
   ],
   "brier_trend": [
@@ -249,6 +249,16 @@
       "match": 44,
       "brier": 0.3068,
       "label": "约旦 vs 阿尔及利亚"
+    },
+    {
+      "match": 45,
+      "brier": 0.2847,
+      "label": "葡萄牙 vs 乌兹别克斯坦"
+    },
+    {
+      "match": 46,
+      "brier": 0.5953,
+      "label": "英格兰 vs 加纳"
     }
   ],
   "match_reviews": [
@@ -911,7 +921,37 @@
       "brier": 0.4521,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "葡萄牙 vs 乌兹别克斯坦",
+      "home": "portugal",
+      "away": "uzbekistan",
+      "predicted": {
+        "home": 0.8109999999999999,
+        "draw": 0.149,
+        "away": 0.04
+      },
+      "result": "5-0",
+      "actual_outcome": "主胜",
+      "brier": 0.0595,
+      "correct": true,
+      "predicted_score": "2-0"
+    },
+    {
+      "match": "英格兰 vs 加纳",
+      "home": "england",
+      "away": "ghana",
+      "predicted": {
+        "home": 0.764,
+        "draw": 0.174,
+        "away": 0.062
+      },
+      "result": "0-0",
+      "actual_outcome": "平局",
+      "brier": 1.2698,
+      "correct": false,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-23T07:07:17.124793+00:00"
+  "updated_at": "2026-06-23T23:26:19.315261+00:00"
 }
