@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5136,
-  "accuracy": 0.6744,
-  "total_reviewed": 43,
-  "correct_count": 29,
+  "cumulative_brier": 0.5122,
+  "accuracy": 0.6818,
+  "total_reviewed": 44,
+  "correct_count": 30,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.514,
-      "actual": 0.591,
-      "count": 22
+      "predicted": 0.512,
+      "actual": 0.609,
+      "count": 23
     },
     {
       "bin": "60-80%",
@@ -244,6 +244,11 @@
       "match": 43,
       "brier": 0.3318,
       "label": "挪威 vs 塞内加尔"
+    },
+    {
+      "match": 44,
+      "brier": 0.3068,
+      "label": "约旦 vs 阿尔及利亚"
     }
   ],
   "match_reviews": [
@@ -891,7 +896,22 @@
       "brier": 0.5999,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "约旦 vs 阿尔及利亚",
+      "home": "jordan",
+      "away": "algeria",
+      "predicted": {
+        "home": 0.276,
+        "draw": 0.273,
+        "away": 0.451
+      },
+      "result": "1-2",
+      "actual_outcome": "客胜",
+      "brier": 0.4521,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-23T03:03:00.676014+00:00"
+  "updated_at": "2026-06-23T07:07:17.124793+00:00"
 }

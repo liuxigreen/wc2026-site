@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23 03:03 UTC",
+  "updated_at": "2026-06-23 07:07 UTC",
   "matches": [
     {
       "home": "netherlands",
@@ -65,6 +65,12 @@
       "home": "norway",
       "away": "senegal",
       "home_score": 3,
+      "away_score": 2
+    },
+    {
+      "home": "jordan",
+      "away": "algeria",
+      "home_score": 1,
       "away_score": 2
     }
   ],
