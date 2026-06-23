@@ -1,30 +1,6 @@
 {
-  "updated_at": "2026-06-22 23:02 UTC",
+  "updated_at": "2026-06-23 03:03 UTC",
   "matches": [
-    {
-      "home": "usa",
-      "away": "australia",
-      "home_score": 2,
-      "away_score": 0
-    },
-    {
-      "home": "scotland",
-      "away": "morocco",
-      "home_score": 0,
-      "away_score": 1
-    },
-    {
-      "home": "brazil",
-      "away": "haiti",
-      "home_score": 3,
-      "away_score": 0
-    },
-    {
-      "home": "turkey",
-      "away": "paraguay",
-      "home_score": 0,
-      "away_score": 1
-    },
     {
       "home": "netherlands",
       "away": "sweden",
@@ -78,6 +54,18 @@
       "away": "austria",
       "home_score": 2,
       "away_score": 0
+    },
+    {
+      "home": "france",
+      "away": "iraq",
+      "home_score": 3,
+      "away_score": 0
+    },
+    {
+      "home": "norway",
+      "away": "senegal",
+      "home_score": 3,
+      "away_score": 2
     }
   ],
   "elo_rankings": [
@@ -86,12 +74,12 @@
       "elo": 2078
     },
     {
-      "slug": "spain",
-      "elo": 2054
+      "slug": "france",
+      "elo": 2055
     },
     {
-      "slug": "france",
-      "elo": 2053
+      "slug": "spain",
+      "elo": 2054
     },
     {
       "slug": "england",
@@ -146,10 +134,6 @@
       "elo": 1838
     },
     {
-      "slug": "senegal",
-      "elo": 1817
-    },
-    {
       "slug": "switzerland",
       "elo": 1809
     },
@@ -158,12 +142,16 @@
       "elo": 1801
     },
     {
-      "slug": "denmark",
-      "elo": 1790
+      "slug": "norway",
+      "elo": 1796
     },
     {
-      "slug": "norway",
-      "elo": 1771
+      "slug": "senegal",
+      "elo": 1792
+    },
+    {
+      "slug": "denmark",
+      "elo": 1790
     },
     {
       "slug": "australia",
