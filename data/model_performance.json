@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5188,
-  "accuracy": 0.6739,
-  "total_reviewed": 46,
-  "correct_count": 31,
+  "cumulative_brier": 0.5141,
+  "accuracy": 0.6809,
+  "total_reviewed": 47,
+  "correct_count": 32,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -12,9 +12,9 @@
     },
     {
       "bin": "40-60%",
-      "predicted": 0.512,
-      "actual": 0.609,
-      "count": 23
+      "predicted": 0.513,
+      "actual": 0.625,
+      "count": 24
     },
     {
       "bin": "60-80%",
@@ -259,6 +259,11 @@
       "match": 46,
       "brier": 0.5953,
       "label": "英格兰 vs 加纳"
+    },
+    {
+      "match": 47,
+      "brier": 0.5195,
+      "label": "巴拿马 vs 克罗地亚"
     }
   ],
   "match_reviews": [
@@ -951,7 +956,22 @@
       "brier": 1.2698,
       "correct": false,
       "predicted_score": "2-0"
+    },
+    {
+      "match": "巴拿马 vs 克罗地亚",
+      "home": "panama",
+      "away": "croatia",
+      "predicted": {
+        "home": 0.191,
+        "draw": 0.253,
+        "away": 0.557
+      },
+      "result": "0-1",
+      "actual_outcome": "客胜",
+      "brier": 0.2967,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-23T23:26:19.315261+00:00"
+  "updated_at": "2026-06-24T02:20:52.051859+00:00"
 }

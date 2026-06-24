@@ -1,24 +1,6 @@
 {
-  "updated_at": "2026-06-23 23:39 UTC",
+  "updated_at": "2026-06-24 03:41 UTC",
   "matches": [
-    {
-      "home": "netherlands",
-      "away": "sweden",
-      "home_score": 5,
-      "away_score": 1
-    },
-    {
-      "home": "germany",
-      "away": "ivory-coast",
-      "home_score": 2,
-      "away_score": 1
-    },
-    {
-      "home": "ecuador",
-      "away": "curacao",
-      "home_score": 0,
-      "away_score": 0
-    },
     {
       "home": "tunisia",
       "away": "japan",
@@ -84,6 +66,12 @@
       "away": "ghana",
       "home_score": 0,
       "away_score": 0
+    },
+    {
+      "home": "panama",
+      "away": "croatia",
+      "home_score": 0,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -137,7 +125,7 @@
     },
     {
       "slug": "croatia",
-      "elo": 1856
+      "elo": 1868
     },
     {
       "slug": "mexico",
