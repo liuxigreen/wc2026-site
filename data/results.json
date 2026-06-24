@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24 19:50 UTC",
+  "updated_at": "2026-06-24 23:52 UTC",
   "matches": [
     {
       "home": "tunisia",
@@ -78,6 +78,18 @@
       "away": "dr-congo",
       "home_score": 1,
       "away_score": 0
+    },
+    {
+      "home": "bosnia-and-herzegovina",
+      "away": "qatar",
+      "home_score": 3,
+      "away_score": 1
+    },
+    {
+      "home": "switzerland",
+      "away": "canada",
+      "home_score": 2,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -147,7 +159,7 @@
     },
     {
       "slug": "switzerland",
-      "elo": 1809
+      "elo": 1825
     },
     {
       "slug": "uruguay",
@@ -186,10 +198,6 @@
       "elo": 1738
     },
     {
-      "slug": "canada",
-      "elo": 1735
-    },
-    {
       "slug": "iran",
       "elo": 1731
     },
@@ -200,6 +208,10 @@
     {
       "slug": "ivory-coast",
       "elo": 1724
+    },
+    {
+      "slug": "canada",
+      "elo": 1719
     },
     {
       "slug": "poland",
