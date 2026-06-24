@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24 03:41 UTC",
+  "updated_at": "2026-06-24 07:46 UTC",
   "matches": [
     {
       "home": "tunisia",
@@ -72,6 +72,12 @@
       "away": "croatia",
       "home_score": 0,
       "away_score": 1
+    },
+    {
+      "home": "colombia",
+      "away": "dr-congo",
+      "home_score": 1,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
@@ -117,7 +123,7 @@
     },
     {
       "slug": "colombia",
-      "elo": 1896
+      "elo": 1900
     },
     {
       "slug": "japan",

@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5141,
-  "accuracy": 0.6809,
-  "total_reviewed": 47,
-  "correct_count": 32,
+  "cumulative_brier": 0.5053,
+  "accuracy": 0.6875,
+  "total_reviewed": 48,
+  "correct_count": 33,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -18,9 +18,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.694,
-      "actual": 0.667,
-      "count": 15
+      "predicted": 0.698,
+      "actual": 0.688,
+      "count": 16
     },
     {
       "bin": "80-100%",
@@ -264,6 +264,11 @@
       "match": 47,
       "brier": 0.5195,
       "label": "巴拿马 vs 克罗地亚"
+    },
+    {
+      "match": 48,
+      "brier": 0.4295,
+      "label": "哥伦比亚 vs 刚果金"
     }
   ],
   "match_reviews": [
@@ -971,7 +976,22 @@
       "brier": 0.2967,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "哥伦比亚 vs 刚果金",
+      "home": "colombia",
+      "away": "dr-congo",
+      "predicted": {
+        "home": 0.7609999999999999,
+        "draw": 0.17600000000000002,
+        "away": 0.063
+      },
+      "result": "1-0",
+      "actual_outcome": "主胜",
+      "brier": 0.0921,
+      "correct": true,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-24T02:20:52.051859+00:00"
+  "updated_at": "2026-06-24T07:46:47.080787+00:00"
 }
