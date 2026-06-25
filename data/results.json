@@ -1,36 +1,6 @@
 {
-  "updated_at": "2026-06-24 23:52 UTC",
+  "updated_at": "2026-06-25 03:55 UTC",
   "matches": [
-    {
-      "home": "tunisia",
-      "away": "japan",
-      "home_score": 0,
-      "away_score": 4
-    },
-    {
-      "home": "spain",
-      "away": "saudi-arabia",
-      "home_score": 4,
-      "away_score": 0
-    },
-    {
-      "home": "belgium",
-      "away": "iran",
-      "home_score": 0,
-      "away_score": 0
-    },
-    {
-      "home": "uruguay",
-      "away": "cape-verde",
-      "home_score": 2,
-      "away_score": 2
-    },
-    {
-      "home": "new-zealand",
-      "away": "egypt",
-      "home_score": 1,
-      "away_score": 3
-    },
     {
       "home": "argentina",
       "away": "austria",
@@ -90,6 +60,30 @@
       "away": "canada",
       "home_score": 2,
       "away_score": 1
+    },
+    {
+      "home": "morocco",
+      "away": "haiti",
+      "home_score": 4,
+      "away_score": 2
+    },
+    {
+      "home": "scotland",
+      "away": "brazil",
+      "home_score": 0,
+      "away_score": 3
+    },
+    {
+      "home": "czech-republic",
+      "away": "mexico",
+      "home_score": 0,
+      "away_score": 3
+    },
+    {
+      "home": "south-africa",
+      "away": "south-korea",
+      "home_score": 1,
+      "away_score": 0
     }
   ],
   "elo_rankings": [
@@ -107,7 +101,7 @@
     },
     {
       "slug": "brazil",
-      "elo": 1983
+      "elo": 1999
     },
     {
       "slug": "england",
@@ -131,7 +125,7 @@
     },
     {
       "slug": "morocco",
-      "elo": 1904
+      "elo": 1908
     },
     {
       "slug": "colombia",
@@ -142,12 +136,12 @@
       "elo": 1893
     },
     {
-      "slug": "croatia",
-      "elo": 1868
+      "slug": "mexico",
+      "elo": 1880
     },
     {
-      "slug": "mexico",
-      "elo": 1856
+      "slug": "croatia",
+      "elo": 1868
     },
     {
       "slug": "usa",
@@ -190,10 +184,6 @@
       "elo": 1754
     },
     {
-      "slug": "south-korea",
-      "elo": 1739
-    },
-    {
       "slug": "ecuador",
       "elo": 1738
     },
@@ -216,6 +206,10 @@
     {
       "slug": "poland",
       "elo": 1715
+    },
+    {
+      "slug": "south-korea",
+      "elo": 1704
     },
     {
       "slug": "serbia",
