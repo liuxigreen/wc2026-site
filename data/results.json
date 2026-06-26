@@ -1,30 +1,6 @@
 {
-  "updated_at": "2026-06-25 20:03 UTC",
+  "updated_at": "2026-06-26 00:04 UTC",
   "matches": [
-    {
-      "home": "argentina",
-      "away": "austria",
-      "home_score": 2,
-      "away_score": 0
-    },
-    {
-      "home": "france",
-      "away": "iraq",
-      "home_score": 3,
-      "away_score": 0
-    },
-    {
-      "home": "norway",
-      "away": "senegal",
-      "home_score": 3,
-      "away_score": 2
-    },
-    {
-      "home": "jordan",
-      "away": "algeria",
-      "home_score": 1,
-      "away_score": 2
-    },
     {
       "home": "portugal",
       "away": "uzbekistan",
@@ -84,6 +60,18 @@
       "away": "south-korea",
       "home_score": 1,
       "away_score": 0
+    },
+    {
+      "home": "curacao",
+      "away": "ivory-coast",
+      "home_score": 0,
+      "away_score": 2
+    },
+    {
+      "home": "ecuador",
+      "away": "germany",
+      "home_score": 2,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -112,10 +100,6 @@
       "elo": 1952
     },
     {
-      "slug": "germany",
-      "elo": 1940
-    },
-    {
       "slug": "portugal",
       "elo": 1915
     },
@@ -126,6 +110,10 @@
     {
       "slug": "morocco",
       "elo": 1908
+    },
+    {
+      "slug": "germany",
+      "elo": 1903
     },
     {
       "slug": "colombia",
@@ -172,6 +160,10 @@
       "elo": 1790
     },
     {
+      "slug": "ecuador",
+      "elo": 1775
+    },
+    {
       "slug": "australia",
       "elo": 1768
     },
@@ -184,7 +176,7 @@
       "elo": 1754
     },
     {
-      "slug": "ecuador",
+      "slug": "ivory-coast",
       "elo": 1738
     },
     {
@@ -194,10 +186,6 @@
     {
       "slug": "egypt",
       "elo": 1727
-    },
-    {
-      "slug": "ivory-coast",
-      "elo": 1724
     },
     {
       "slug": "canada",
