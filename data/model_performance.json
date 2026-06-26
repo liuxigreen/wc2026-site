@@ -1,26 +1,26 @@
 {
-  "cumulative_brier": 0.4993,
-  "accuracy": 0.6964,
-  "total_reviewed": 56,
-  "correct_count": 39,
+  "cumulative_brier": 0.5102,
+  "accuracy": 0.6667,
+  "total_reviewed": 60,
+  "correct_count": 40,
   "calibration_bins": [
     {
       "bin": "20-40%",
-      "predicted": 0.377,
-      "actual": 1.0,
-      "count": 4
+      "predicted": 0.379,
+      "actual": 0.8,
+      "count": 5
     },
     {
       "bin": "40-60%",
       "predicted": 0.511,
-      "actual": 0.607,
-      "count": 28
+      "actual": 0.567,
+      "count": 30
     },
     {
       "bin": "60-80%",
-      "predicted": 0.694,
-      "actual": 0.737,
-      "count": 19
+      "predicted": 0.693,
+      "actual": 0.75,
+      "count": 20
     },
     {
       "bin": "80-100%",
@@ -309,6 +309,26 @@
       "match": 56,
       "brier": 0.581,
       "label": "厄瓜多尔 vs 德国"
+    },
+    {
+      "match": 57,
+      "brier": 0.7258,
+      "label": "日本 vs 瑞典"
+    },
+    {
+      "match": 58,
+      "brier": 0.537,
+      "label": "突尼斯 vs 荷兰"
+    },
+    {
+      "match": 59,
+      "brier": 0.6778,
+      "label": "巴拉圭 vs 澳大利亚"
+    },
+    {
+      "match": 60,
+      "brier": 0.6633,
+      "label": "土耳其 vs 美国"
     }
   ],
   "match_reviews": [
@@ -1151,7 +1171,67 @@
       "brier": 0.8869,
       "correct": false,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "日本 vs 瑞典",
+      "home": "japan",
+      "away": "sweden",
+      "predicted": {
+        "home": 0.536,
+        "draw": 0.258,
+        "away": 0.207
+      },
+      "result": "1-1",
+      "actual_outcome": "平局",
+      "brier": 0.8807,
+      "correct": false,
+      "predicted_score": "1-1"
+    },
+    {
+      "match": "突尼斯 vs 荷兰",
+      "home": "tunisia",
+      "away": "netherlands",
+      "predicted": {
+        "home": 0.109,
+        "draw": 0.213,
+        "away": 0.6779999999999999
+      },
+      "result": "1-3",
+      "actual_outcome": "客胜",
+      "brier": 0.1609,
+      "correct": true,
+      "predicted_score": "0-2"
+    },
+    {
+      "match": "巴拉圭 vs 澳大利亚",
+      "home": "paraguay",
+      "away": "australia",
+      "predicted": {
+        "home": 0.332,
+        "draw": 0.278,
+        "away": 0.389
+      },
+      "result": "0-0",
+      "actual_outcome": "平局",
+      "brier": 0.7828,
+      "correct": false,
+      "predicted_score": "1-1"
+    },
+    {
+      "match": "土耳其 vs 美国",
+      "home": "turkey",
+      "away": "usa",
+      "predicted": {
+        "home": 0.265,
+        "draw": 0.271,
+        "away": 0.46399999999999997
+      },
+      "result": "3-2",
+      "actual_outcome": "主胜",
+      "brier": 0.829,
+      "correct": false,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-25T23:25:56.867813+00:00"
+  "updated_at": "2026-06-26T04:11:52.909124+00:00"
 }
