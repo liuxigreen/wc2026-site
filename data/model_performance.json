@@ -1,14 +1,14 @@
 {
-  "cumulative_brier": 0.5022,
-  "accuracy": 0.6719,
-  "total_reviewed": 64,
-  "correct_count": 43,
+  "cumulative_brier": 0.5023,
+  "accuracy": 0.6667,
+  "total_reviewed": 66,
+  "correct_count": 44,
   "calibration_bins": [
     {
       "bin": "20-40%",
-      "predicted": 0.38,
-      "actual": 0.667,
-      "count": 6
+      "predicted": 0.379,
+      "actual": 0.571,
+      "count": 7
     },
     {
       "bin": "40-60%",
@@ -18,9 +18,9 @@
     },
     {
       "bin": "60-80%",
-      "predicted": 0.695,
-      "actual": 0.762,
-      "count": 21
+      "predicted": 0.692,
+      "actual": 0.773,
+      "count": 22
     },
     {
       "bin": "80-100%",
@@ -349,6 +349,16 @@
       "match": 64,
       "brier": 0.3825,
       "label": "乌拉圭 vs 西班牙"
+    },
+    {
+      "match": 65,
+      "brier": 0.4927,
+      "label": "埃及 vs 伊朗"
+    },
+    {
+      "match": 66,
+      "brier": 0.5218,
+      "label": "新西兰 vs 比利时"
     }
   ],
   "match_reviews": [
@@ -1311,7 +1321,37 @@
       "brier": 0.2976,
       "correct": true,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "埃及 vs 伊朗",
+      "home": "egypt",
+      "away": "iran",
+      "predicted": {
+        "home": 0.37,
+        "draw": 0.27899999999999997,
+        "away": 0.35100000000000003
+      },
+      "result": "1-1",
+      "actual_outcome": "平局",
+      "brier": 0.7799,
+      "correct": false,
+      "predicted_score": "1-1"
+    },
+    {
+      "match": "新西兰 vs 比利时",
+      "home": "new-zealand",
+      "away": "belgium",
+      "predicted": {
+        "home": 0.15,
+        "draw": 0.23600000000000002,
+        "away": 0.614
+      },
+      "result": "1-5",
+      "actual_outcome": "客胜",
+      "brier": 0.2272,
+      "correct": true,
+      "predicted_score": "0-2"
     }
   ],
-  "updated_at": "2026-06-27T03:31:18.016906+00:00"
+  "updated_at": "2026-06-27T08:28:52.017015+00:00"
 }

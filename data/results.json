@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27 04:26 UTC",
+  "updated_at": "2026-06-27 08:29 UTC",
   "matches": [
     {
       "home": "bosnia-and-herzegovina",
@@ -96,6 +96,18 @@
       "away": "spain",
       "home_score": 0,
       "away_score": 1
+    },
+    {
+      "home": "egypt",
+      "away": "iran",
+      "home_score": 1,
+      "away_score": 1
+    },
+    {
+      "home": "new-zealand",
+      "away": "belgium",
+      "home_score": 1,
+      "away_score": 5
     }
   ],
   "elo_rankings": [
@@ -157,7 +169,7 @@
     },
     {
       "slug": "belgium",
-      "elo": 1838
+      "elo": 1861
     },
     {
       "slug": "switzerland",
@@ -205,11 +217,11 @@
     },
     {
       "slug": "iran",
-      "elo": 1731
+      "elo": 1737
     },
     {
       "slug": "egypt",
-      "elo": 1727
+      "elo": 1721
     },
     {
       "slug": "canada",
