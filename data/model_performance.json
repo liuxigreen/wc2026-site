@@ -1,20 +1,20 @@
 {
-  "cumulative_brier": 0.501,
-  "accuracy": 0.6774,
-  "total_reviewed": 62,
-  "correct_count": 42,
+  "cumulative_brier": 0.5022,
+  "accuracy": 0.6719,
+  "total_reviewed": 64,
+  "correct_count": 43,
   "calibration_bins": [
     {
       "bin": "20-40%",
-      "predicted": 0.379,
-      "actual": 0.8,
-      "count": 5
+      "predicted": 0.38,
+      "actual": 0.667,
+      "count": 6
     },
     {
       "bin": "40-60%",
-      "predicted": 0.511,
-      "actual": 0.581,
-      "count": 31
+      "predicted": 0.512,
+      "actual": 0.594,
+      "count": 32
     },
     {
       "bin": "60-80%",
@@ -339,6 +339,16 @@
       "match": 62,
       "brier": 0.5154,
       "label": "塞内加尔 vs 伊拉克"
+    },
+    {
+      "match": 63,
+      "brier": 0.5153,
+      "label": "佛得角 vs 沙特"
+    },
+    {
+      "match": 64,
+      "brier": 0.3825,
+      "label": "乌拉圭 vs 西班牙"
     }
   ],
   "match_reviews": [
@@ -1271,7 +1281,37 @@
       "brier": 0.1108,
       "correct": true,
       "predicted_score": "2-0"
+    },
+    {
+      "match": "佛得角 vs 沙特",
+      "home": "cape-verde",
+      "away": "saudi-arabia",
+      "predicted": {
+        "home": 0.336,
+        "draw": 0.278,
+        "away": 0.385
+      },
+      "result": "0-0",
+      "actual_outcome": "平局",
+      "brier": 0.7824,
+      "correct": false,
+      "predicted_score": "1-1"
+    },
+    {
+      "match": "乌拉圭 vs 西班牙",
+      "home": "uruguay",
+      "away": "spain",
+      "predicted": {
+        "home": 0.191,
+        "draw": 0.253,
+        "away": 0.556
+      },
+      "result": "0-1",
+      "actual_outcome": "客胜",
+      "brier": 0.2976,
+      "correct": true,
+      "predicted_score": "1-1"
     }
   ],
-  "updated_at": "2026-06-27T00:22:46.166478+00:00"
+  "updated_at": "2026-06-27T03:31:18.016906+00:00"
 }

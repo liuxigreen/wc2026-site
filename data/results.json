@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27 00:22 UTC",
+  "updated_at": "2026-06-27 04:26 UTC",
   "matches": [
     {
       "home": "bosnia-and-herzegovina",
@@ -84,6 +84,18 @@
       "away": "iraq",
       "home_score": 5,
       "away_score": 0
+    },
+    {
+      "home": "cape-verde",
+      "away": "saudi-arabia",
+      "home_score": 0,
+      "away_score": 0
+    },
+    {
+      "home": "uruguay",
+      "away": "spain",
+      "home_score": 0,
+      "away_score": 1
     }
   ],
   "elo_rankings": [
@@ -97,7 +109,7 @@
     },
     {
       "slug": "spain",
-      "elo": 2054
+      "elo": 2069
     },
     {
       "slug": "brazil",
@@ -156,16 +168,16 @@
       "elo": 1812
     },
     {
-      "slug": "uruguay",
-      "elo": 1801
-    },
-    {
       "slug": "senegal",
       "elo": 1800
     },
     {
       "slug": "denmark",
       "elo": 1790
+    },
+    {
+      "slug": "uruguay",
+      "elo": 1786
     },
     {
       "slug": "ecuador",
