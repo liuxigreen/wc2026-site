@@ -1,8 +1,8 @@
 {
-  "cumulative_brier": 0.5102,
-  "accuracy": 0.6667,
-  "total_reviewed": 60,
-  "correct_count": 40,
+  "cumulative_brier": 0.501,
+  "accuracy": 0.6774,
+  "total_reviewed": 62,
+  "correct_count": 42,
   "calibration_bins": [
     {
       "bin": "20-40%",
@@ -13,14 +13,14 @@
     {
       "bin": "40-60%",
       "predicted": 0.511,
-      "actual": 0.567,
-      "count": 30
+      "actual": 0.581,
+      "count": 31
     },
     {
       "bin": "60-80%",
-      "predicted": 0.693,
-      "actual": 0.75,
-      "count": 20
+      "predicted": 0.695,
+      "actual": 0.762,
+      "count": 21
     },
     {
       "bin": "80-100%",
@@ -329,6 +329,16 @@
       "match": 60,
       "brier": 0.6633,
       "label": "土耳其 vs 美国"
+    },
+    {
+      "match": 61,
+      "brier": 0.5279,
+      "label": "挪威 vs 法国"
+    },
+    {
+      "match": 62,
+      "brier": 0.5154,
+      "label": "塞内加尔 vs 伊拉克"
     }
   ],
   "match_reviews": [
@@ -1231,7 +1241,37 @@
       "brier": 0.829,
       "correct": false,
       "predicted_score": "1-1"
+    },
+    {
+      "match": "挪威 vs 法国",
+      "home": "norway",
+      "away": "france",
+      "predicted": {
+        "home": 0.214,
+        "draw": 0.26,
+        "away": 0.525
+      },
+      "result": "1-4",
+      "actual_outcome": "客胜",
+      "brier": 0.339,
+      "correct": true,
+      "predicted_score": "1-1"
+    },
+    {
+      "match": "塞内加尔 vs 伊拉克",
+      "home": "senegal",
+      "away": "iraq",
+      "predicted": {
+        "home": 0.736,
+        "draw": 0.188,
+        "away": 0.076
+      },
+      "result": "5-0",
+      "actual_outcome": "主胜",
+      "brier": 0.1108,
+      "correct": true,
+      "predicted_score": "2-0"
     }
   ],
-  "updated_at": "2026-06-26T04:11:52.909124+00:00"
+  "updated_at": "2026-06-27T00:22:46.166478+00:00"
 }
