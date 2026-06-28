@@ -1,42 +1,6 @@
 {
-  "updated_at": "2026-06-27 20:33 UTC",
+  "updated_at": "2026-06-28 00:33 UTC",
   "matches": [
-    {
-      "home": "bosnia-and-herzegovina",
-      "away": "qatar",
-      "home_score": 3,
-      "away_score": 1
-    },
-    {
-      "home": "switzerland",
-      "away": "canada",
-      "home_score": 2,
-      "away_score": 1
-    },
-    {
-      "home": "morocco",
-      "away": "haiti",
-      "home_score": 4,
-      "away_score": 2
-    },
-    {
-      "home": "scotland",
-      "away": "brazil",
-      "home_score": 0,
-      "away_score": 3
-    },
-    {
-      "home": "czech-republic",
-      "away": "mexico",
-      "home_score": 0,
-      "away_score": 3
-    },
-    {
-      "home": "south-africa",
-      "away": "south-korea",
-      "home_score": 1,
-      "away_score": 0
-    },
     {
       "home": "curacao",
       "away": "ivory-coast",
@@ -108,6 +72,18 @@
       "away": "belgium",
       "home_score": 1,
       "away_score": 5
+    },
+    {
+      "home": "croatia",
+      "away": "ghana",
+      "home_score": 2,
+      "away_score": 1
+    },
+    {
+      "home": "panama",
+      "away": "england",
+      "home_score": 0,
+      "away_score": 2
     }
   ],
   "elo_rankings": [
@@ -129,7 +105,7 @@
     },
     {
       "slug": "england",
-      "elo": 1981
+      "elo": 1991
     },
     {
       "slug": "netherlands",
@@ -160,12 +136,12 @@
       "elo": 1880
     },
     {
-      "slug": "japan",
+      "slug": "croatia",
       "elo": 1878
     },
     {
-      "slug": "croatia",
-      "elo": 1868
+      "slug": "japan",
+      "elo": 1878
     },
     {
       "slug": "belgium",
