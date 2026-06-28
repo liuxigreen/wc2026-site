@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-28 04:36 UTC",
+  "updated_at": "2026-06-28 08:38 UTC",
   "matches": [
     {
       "home": "south-africa",
       "away": "canada",
       "match_time": "2026-06-28T19:00Z",
-      "hours_until": 14.4,
+      "hours_until": 10.4,
       "city": "Inglewood, California",
       "venue": "SoFi Stadium",
       "home_score": 0,
@@ -66,56 +66,56 @@
       "market_odds": {
         "source": "pinnacle",
         "time": "2026-06-28T19:00:00Z",
-        "away_odds": 1.69,
-        "away_implied": 59.2,
-        "home_odds": 5.72,
-        "home_implied": 17.5,
-        "draw_odds": 3.69,
-        "draw_implied": 27.1,
+        "away_odds": 1.68,
+        "away_implied": 59.5,
+        "home_odds": 5.89,
+        "home_implied": 17.0,
+        "draw_odds": 3.73,
+        "draw_implied": 26.8,
         "fav_spread": -0.75,
-        "fav_odds": 1.91,
+        "fav_odds": 1.89,
         "dog_spread": 0.75,
-        "dog_odds": 2.0,
-        "over_odds": 1.92,
+        "dog_odds": 2.03,
+        "over_odds": 1.87,
         "over_point": 2.25,
-        "under_odds": 1.97
+        "under_odds": 2.04
       },
       "ensemble": {
-        "win_a": 18.7,
-        "draw": 26.2,
-        "win_b": 55.0,
+        "win_a": 18.5,
+        "draw": 26.1,
+        "win_b": 55.4,
         "source": "ensemble"
       },
       "edge": {
         "home": {
           "model_pct": 23.3,
-          "market_odds": 5.72,
-          "market_implied": 17.5,
-          "edge": 5.8,
-          "kelly_full": 7.1,
-          "kelly_quarter": 1.8,
+          "market_odds": 5.89,
+          "market_implied": 17.0,
+          "edge": 6.3,
+          "kelly_full": 7.6,
+          "kelly_quarter": 1.9,
           "has_edge": true
         },
         "draw": {
           "model_pct": 26.5,
-          "market_odds": 3.69,
-          "market_implied": 27.1,
-          "edge": -0.6,
+          "market_odds": 3.73,
+          "market_implied": 26.8,
+          "edge": -0.3,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "away": {
           "model_pct": 50.2,
-          "market_odds": 1.69,
-          "market_implied": 59.2,
-          "edge": -9.0,
+          "market_odds": 1.68,
+          "market_implied": 59.5,
+          "edge": -9.3,
           "kelly_full": 0,
           "kelly_quarter": 0,
           "has_edge": false
         },
         "over": {
-          "market_odds": 1.92,
+          "market_odds": 1.87,
           "point": 2.25
         }
       }
@@ -124,7 +124,7 @@
       "home": "1c",
       "away": "2f",
       "match_time": "2026-06-29",
-      "hours_until": 19.4,
+      "hours_until": 15.4,
       "city": "",
       "venue": "",
       "home_score": 0,
@@ -163,7 +163,7 @@
       "home": "1e",
       "away": "3rd",
       "match_time": "2026-06-29",
-      "hours_until": 19.4,
+      "hours_until": 15.4,
       "city": "",
       "venue": "",
       "home_score": 0,
