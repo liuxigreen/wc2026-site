@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28 00:33 UTC",
+  "updated_at": "2026-06-28 04:36 UTC",
   "matches": [
     {
       "home": "curacao",
@@ -84,16 +84,40 @@
       "away": "england",
       "home_score": 0,
       "away_score": 2
+    },
+    {
+      "home": "colombia",
+      "away": "portugal",
+      "home_score": 0,
+      "away_score": 0
+    },
+    {
+      "home": "dr-congo",
+      "away": "uzbekistan",
+      "home_score": 3,
+      "away_score": 1
+    },
+    {
+      "home": "algeria",
+      "away": "austria",
+      "home_score": 3,
+      "away_score": 3
+    },
+    {
+      "home": "jordan",
+      "away": "argentina",
+      "home_score": 1,
+      "away_score": 3
     }
   ],
   "elo_rankings": [
     {
-      "slug": "france",
-      "elo": 2080
+      "slug": "argentina",
+      "elo": 2082
     },
     {
-      "slug": "argentina",
-      "elo": 2078
+      "slug": "france",
+      "elo": 2080
     },
     {
       "slug": "spain",
@@ -113,7 +137,7 @@
     },
     {
       "slug": "portugal",
-      "elo": 1915
+      "elo": 1920
     },
     {
       "slug": "italy",
@@ -129,7 +153,7 @@
     },
     {
       "slug": "colombia",
-      "elo": 1900
+      "elo": 1895
     },
     {
       "slug": "mexico",
@@ -185,7 +209,7 @@
     },
     {
       "slug": "austria",
-      "elo": 1754
+      "elo": 1755
     },
     {
       "slug": "ivory-coast",
